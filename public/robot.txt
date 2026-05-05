@@ -8,5 +8,5 @@ Disallow: /account
 Disallow: /api/
 Disallow: /404
 
-Sitemap: https://vapelinkstore.com.au/sitemap.xml
-Host: vapelinkstore.com.au
+Sitemap: https://mrnicevape.com/sitemap.xml
+Host: mrnicevape.com

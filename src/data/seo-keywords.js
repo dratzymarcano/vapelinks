@@ -1,6 +1,6 @@
-// SEO Keyword Mapping Database for vapelinkstore.com.au
+// SEO Keyword Mapping Database for mrnicevape.com
 // Generated: 2026-02-11
-// Focus: Australian vape market, buyer-intent, long-tail, low-difficulty keywords
+// Focus: deutscher Vape-Markt, buyer-intent, long-tail, low-difficulty keywords
 
 export const SEO_KEYWORDS = {
   // ═══════════════════════════════════════════════════════════════
@@ -8,16 +8,16 @@ export const SEO_KEYWORDS = {
   // ═══════════════════════════════════════════════════════════════
   productTypes: {
     EJUICE: {
-      primary: "buy vape juice online australia",
+      primary: "e-liquid online kaufen deutschland",
       secondary: [
-        "e-liquid australia fast shipping",
-        "cheap vape juice australia",
-        "best e-liquid australia 2026",
-        "vape juice australia afterpay",
-        "nicotine free vape juice australia",
-        "premium e-liquid australia",
-        "vape juice bulk buy australia",
-        "e-juice online store australia",
+        "e-liquid deutschland schneller versand",
+        "günstige vape juice deutschland",
+        "best e-liquid deutschland 2026",
+        "vape juice deutschland sepa",
+        "nicotine free vape juice deutschland",
+        "premium e-liquid deutschland",
+        "vape juice bulk deutschland",
+        "e-juice online-shop deutschland",
       ],
       lsi: [
         "e-juice",
@@ -39,16 +39,16 @@ export const SEO_KEYWORDS = {
     },
 
     COILS: {
-      primary: "vape coils australia",
+      primary: "vape coils deutschland",
       secondary: [
-        "buy replacement coils australia",
-        "cheap vape coils online australia",
-        "sub ohm coils australia",
-        "mesh coils australia",
+        "replacement coils deutschland",
+        "günstige vape coils online deutschland",
+        "sub ohm coils deutschland",
+        "mesh coils deutschland",
         "best vape coils for flavour",
-        "vape coils express shipping australia",
-        "replacement coil heads australia",
-        "bulk vape coils australia",
+        "vape coils express shipping deutschland",
+        "replacement coil heads deutschland",
+        "bulk vape coils deutschland",
       ],
       lsi: [
         "coil heads",
@@ -67,13 +67,13 @@ export const SEO_KEYWORDS = {
     },
 
     CARTRIDGES: {
-      primary: "vape cartridges australia",
+      primary: "vape cartridges deutschland",
       secondary: [
-        "pod cartridges australia",
+        "pod cartridges deutschland",
         "replacement vape cartridges online",
-        "buy vape pods australia",
-        "empty vape cartridges australia",
-        "refillable cartridges australia",
+        "vape pods deutschland",
+        "empty vape cartridges deutschland",
+        "refillable cartridges deutschland",
         "pod cartridge replacement",
       ],
       lsi: [
@@ -87,16 +87,16 @@ export const SEO_KEYWORDS = {
     },
 
     ACCESSORIES: {
-      primary: "vape accessories australia",
+      primary: "vape accessories deutschland",
       secondary: [
-        "buy vape accessories online australia",
-        "vaping accessories fast shipping australia",
-        "vape tool kit australia",
-        "vape carry case australia",
-        "vape bands australia",
-        "vape lanyard australia",
-        "vape cleaning kit australia",
-        "cheap vape accessories online",
+        "vape accessories online deutschland",
+        "vaping accessories schneller versand deutschland",
+        "vape tool kit deutschland",
+        "vape carry case deutschland",
+        "vape bands deutschland",
+        "vape lanyard deutschland",
+        "vape cleaning kit deutschland",
+        "günstige vape accessories online",
       ],
       lsi: [
         "vape case",
@@ -113,13 +113,13 @@ export const SEO_KEYWORDS = {
     },
 
     REPLACEMENT_GLASS: {
-      primary: "replacement vape glass australia",
+      primary: "replacement vape glass deutschland",
       secondary: [
-        "buy vape tank glass australia",
+        "vape tank glass deutschland",
         "replacement pyrex glass vape",
-        "vape glass tube australia",
+        "vape glass tube deutschland",
         "spare vape glass online",
-        "rta replacement glass australia",
+        "rta replacement glass deutschland",
         "bubble glass vape tank",
       ],
       lsi: [
@@ -133,14 +133,14 @@ export const SEO_KEYWORDS = {
     },
 
     DRIP_TIPS: {
-      primary: "drip tips australia",
+      primary: "drip tips deutschland",
       secondary: [
-        "510 drip tip australia",
-        "810 drip tip australia",
-        "buy drip tips online australia",
-        "resin drip tip australia",
+        "510 drip tip deutschland",
+        "810 drip tip deutschland",
+        "drip tips online deutschland",
+        "resin drip tip deutschland",
         "wide bore drip tip",
-        "custom drip tips australia",
+        "custom drip tips deutschland",
       ],
       lsi: [
         "510 mouthpiece",
@@ -155,16 +155,16 @@ export const SEO_KEYWORDS = {
     },
 
     STARTER_KITS: {
-      primary: "vape starter kit australia",
+      primary: "vape starter kit deutschland",
       secondary: [
-        "best vape starter kit australia 2026",
-        "cheap vape kit australia",
-        "beginner vape kit australia",
-        "buy vape kit online australia",
-        "vape starter kit fast shipping australia",
-        "vape pen starter kit australia",
+        "best vape starter kit deutschland 2026",
+        "günstige vape kit deutschland",
+        "beginner vape kit deutschland",
+        "vape kit online deutschland",
+        "vape starter kit schneller versand deutschland",
+        "vape pen starter kit deutschland",
         "easy vape kit for beginners",
-        "vape kit afterpay australia",
+        "vape kit sepa deutschland",
       ],
       lsi: [
         "vape kit",
@@ -180,16 +180,16 @@ export const SEO_KEYWORDS = {
     },
 
     MODS: {
-      primary: "vape mods australia",
+      primary: "vape mods deutschland",
       secondary: [
-        "buy box mod australia",
-        "best vape mod australia 2026",
-        "cheap vape mods online australia",
-        "regulated box mod australia",
-        "dual battery vape mod australia",
-        "single battery mod australia",
-        "vape mod fast shipping australia",
-        "small vape mod australia",
+        "box mod deutschland",
+        "best vape mod deutschland 2026",
+        "günstige vape mods online deutschland",
+        "regulated box mod deutschland",
+        "dual battery vape mod deutschland",
+        "single battery mod deutschland",
+        "vape mod schneller versand deutschland",
+        "small vape mod deutschland",
       ],
       lsi: [
         "box mod",
@@ -207,16 +207,16 @@ export const SEO_KEYWORDS = {
     },
 
     DRY_HERB_VAPORIZERS: {
-      primary: "dry herb vaporizer australia",
+      primary: "dry herb vaporizer deutschland",
       secondary: [
-        "buy dry herb vape australia",
-        "best dry herb vaporizer australia 2026",
-        "cheap dry herb vape australia",
-        "portable dry herb vaporizer australia",
-        "herbal vaporizer australia",
-        "dry herb vape pen australia",
-        "desktop vaporizer australia",
-        "convection vaporizer australia",
+        "dry herb vape deutschland",
+        "best dry herb vaporizer deutschland 2026",
+        "günstige dry herb vape deutschland",
+        "portable dry herb vaporizer deutschland",
+        "herbal vaporizer deutschland",
+        "dry herb vape pen deutschland",
+        "desktop vaporizer deutschland",
+        "convection vaporizer deutschland",
       ],
       lsi: [
         "herbal vaporizer",
@@ -233,15 +233,15 @@ export const SEO_KEYWORDS = {
     },
 
     POD_KITS: {
-      primary: "pod vape australia",
+      primary: "pod vape deutschland",
       secondary: [
-        "best pod system australia 2026",
-        "buy pod kit online australia",
-        "refillable pod vape australia",
-        "cheap pod system australia",
-        "pod mod australia",
-        "mtl pod vape australia",
-        "pod vape express shipping australia",
+        "best pod system deutschland 2026",
+        "pod kit online deutschland",
+        "refillable pod vape deutschland",
+        "günstige pod system deutschland",
+        "pod mod deutschland",
+        "mtl pod vape deutschland",
+        "pod vape express shipping deutschland",
         "draw activated pod vape",
       ],
       lsi: [
@@ -260,16 +260,16 @@ export const SEO_KEYWORDS = {
     },
 
     RDA: {
-      primary: "rda australia",
+      primary: "rda deutschland",
       secondary: [
-        "buy rda online australia",
-        "best rda australia 2026",
-        "cheap rda australia",
-        "single coil rda australia",
-        "dual coil rda australia",
-        "flavour rda australia",
-        "cloud chasing rda australia",
-        "squonk rda australia",
+        "rda online deutschland",
+        "best rda deutschland 2026",
+        "günstige rda deutschland",
+        "single coil rda deutschland",
+        "dual coil rda deutschland",
+        "flavour rda deutschland",
+        "cloud chasing rda deutschland",
+        "squonk rda deutschland",
       ],
       lsi: [
         "rebuildable dripping atomizer",
@@ -288,14 +288,14 @@ export const SEO_KEYWORDS = {
     },
 
     TANKS: {
-      primary: "sub ohm tank australia",
+      primary: "sub ohm tank deutschland",
       secondary: [
-        "buy vape tank online australia",
-        "best sub ohm tank australia 2026",
-        "cheap sub ohm tank australia",
-        "mesh tank australia",
-        "vape tank fast shipping australia",
-        "top fill vape tank australia",
+        "vape tank online deutschland",
+        "best sub ohm tank deutschland 2026",
+        "günstige sub ohm tank deutschland",
+        "mesh tank deutschland",
+        "vape tank schneller versand deutschland",
+        "top fill vape tank deutschland",
         "leak proof vape tank",
       ],
       lsi: [
@@ -313,16 +313,16 @@ export const SEO_KEYWORDS = {
     },
 
     RTA: {
-      primary: "rta australia",
+      primary: "rta deutschland",
       secondary: [
-        "buy rta online australia",
-        "best rta australia 2026",
-        "single coil rta australia",
-        "dual coil rta australia",
-        "top airflow rta australia",
-        "postless rta australia",
-        "flavour rta australia",
-        "mesh rta australia",
+        "rta online deutschland",
+        "best rta deutschland 2026",
+        "single coil rta deutschland",
+        "dual coil rta deutschland",
+        "top airflow rta deutschland",
+        "postless rta deutschland",
+        "flavour rta deutschland",
+        "mesh rta deutschland",
       ],
       lsi: [
         "rebuildable tank atomizer",
@@ -339,16 +339,16 @@ export const SEO_KEYWORDS = {
     },
 
     BATTERIES: {
-      primary: "vape batteries australia",
+      primary: "vape batteries deutschland",
       secondary: [
-        "18650 battery australia",
-        "21700 battery australia",
-        "buy vape batteries online australia",
-        "samsung 18650 battery australia",
-        "sony vtc6 australia",
-        "high drain battery australia",
+        "18650 battery deutschland",
+        "21700 battery deutschland",
+        "vape batteries online deutschland",
+        "samsung 18650 battery deutschland",
+        "sony vtc6 deutschland",
+        "high drain battery deutschland",
         "best 18650 battery for vaping",
-        "molicel p42a australia",
+        "molicel p42a deutschland",
       ],
       lsi: [
         "18650 battery",
@@ -367,14 +367,14 @@ export const SEO_KEYWORDS = {
     },
 
     CBD: {
-      primary: "cbd vape australia",
+      primary: "cbd vape deutschland",
       secondary: [
-        "buy cbd e-liquid australia",
-        "cbd vape juice australia",
-        "cbd vape oil australia",
-        "best cbd vape australia",
-        "cbd vape pen australia",
-        "hemp vape juice australia",
+        "cbd e-liquid deutschland",
+        "cbd vape juice deutschland",
+        "cbd vape oil deutschland",
+        "best cbd vape deutschland",
+        "cbd vape pen deutschland",
+        "hemp vape juice deutschland",
       ],
       lsi: [
         "cbd e-liquid",
@@ -389,14 +389,14 @@ export const SEO_KEYWORDS = {
     },
 
     ORGANIC_COTTON: {
-      primary: "vape cotton australia",
+      primary: "vape cotton deutschland",
       secondary: [
-        "buy organic cotton vape australia",
+        "organic cotton vape deutschland",
         "best wicking cotton vape",
         "japanese organic cotton vape",
-        "cotton bacon australia",
-        "muji cotton vape australia",
-        "vape wicking material australia",
+        "cotton bacon deutschland",
+        "muji cotton vape deutschland",
+        "vape wicking material deutschland",
       ],
       lsi: [
         "organic cotton",
@@ -412,13 +412,13 @@ export const SEO_KEYWORDS = {
     },
 
     RDTA: {
-      primary: "rdta australia",
+      primary: "rdta deutschland",
       secondary: [
-        "buy rdta online australia",
-        "best rdta australia 2026",
-        "rdta tank australia",
-        "rebuildable dripping tank australia",
-        "rdta atomizer australia",
+        "rdta online deutschland",
+        "best rdta deutschland 2026",
+        "rdta tank deutschland",
+        "rebuildable dripping tank deutschland",
+        "rdta atomizer deutschland",
       ],
       lsi: [
         "rebuildable dripping tank atomizer",
@@ -431,13 +431,13 @@ export const SEO_KEYWORDS = {
     },
 
     CHARGERS: {
-      primary: "vape battery charger australia",
+      primary: "vape battery charger deutschland",
       secondary: [
-        "18650 charger australia",
-        "buy vape charger online australia",
-        "nitecore charger australia",
-        "4 bay battery charger australia",
-        "efest charger australia",
+        "18650 charger deutschland",
+        "vape charger online deutschland",
+        "nitecore charger deutschland",
+        "4 bay battery charger deutschland",
+        "efest charger deutschland",
         "USB battery charger 18650",
       ],
       lsi: [
@@ -454,15 +454,15 @@ export const SEO_KEYWORDS = {
     },
 
     DIY_TOOLS: {
-      primary: "vape diy tools australia",
+      primary: "vape diy tools deutschland",
       secondary: [
-        "buy coil building kit australia",
-        "vape tool kit australia",
-        "ceramic tweezers vape australia",
-        "coil jig australia",
-        "wire cutters vape australia",
-        "ohm meter vape australia",
-        "vape build kit australia",
+        "coil building kit deutschland",
+        "vape tool kit deutschland",
+        "ceramic tweezers vape deutschland",
+        "coil jig deutschland",
+        "wire cutters vape deutschland",
+        "ohm meter vape deutschland",
+        "vape build kit deutschland",
       ],
       lsi: [
         "coil jig",
@@ -484,16 +484,16 @@ export const SEO_KEYWORDS = {
   // ═══════════════════════════════════════════════════════════════
   brands: {
     Vaporesso: {
-      primary: "vaporesso australia",
+      primary: "vaporesso deutschland",
       secondary: [
-        "buy vaporesso online australia",
-        "vaporesso gen australia",
-        "vaporesso xros australia",
-        "vaporesso luxe australia",
-        "vaporesso target australia",
-        "vaporesso swag australia",
+        "vaporesso online deutschland",
+        "vaporesso gen deutschland",
+        "vaporesso xros deutschland",
+        "vaporesso luxe deutschland",
+        "vaporesso target deutschland",
+        "vaporesso swag deutschland",
         "vaporesso gen s mod",
-        "vaporesso itank australia",
+        "vaporesso itank deutschland",
       ],
       lsi: [
         "vaporesso coils",
@@ -509,16 +509,16 @@ export const SEO_KEYWORDS = {
     },
 
     GeekVape: {
-      primary: "geekvape australia",
+      primary: "geekvape deutschland",
       secondary: [
-        "buy geekvape online australia",
-        "geekvape aegis australia",
-        "geekvape aegis legend australia",
-        "geekvape zeus tank australia",
-        "geekvape wenax australia",
-        "geek vape australia",
-        "geekvape aegis x australia",
-        "geekvape boost australia",
+        "geekvape online deutschland",
+        "geekvape aegis deutschland",
+        "geekvape aegis legend deutschland",
+        "geekvape zeus tank deutschland",
+        "geekvape wenax deutschland",
+        "geek vape deutschland",
+        "geekvape aegis x deutschland",
+        "geekvape boost deutschland",
       ],
       lsi: [
         "geekvape coils",
@@ -534,16 +534,16 @@ export const SEO_KEYWORDS = {
     },
 
     UWELL: {
-      primary: "uwell australia",
+      primary: "uwell deutschland",
       secondary: [
-        "buy uwell online australia",
-        "uwell caliburn australia",
-        "uwell caliburn g australia",
-        "uwell valyrian australia",
-        "uwell crown australia",
-        "uwell caliburn a2 australia",
-        "uwell whirl australia",
-        "uwell caliburn g2 australia",
+        "uwell online deutschland",
+        "uwell caliburn deutschland",
+        "uwell caliburn g deutschland",
+        "uwell valyrian deutschland",
+        "uwell crown deutschland",
+        "uwell caliburn a2 deutschland",
+        "uwell whirl deutschland",
+        "uwell caliburn g2 deutschland",
       ],
       lsi: [
         "uwell coils",
@@ -558,15 +558,15 @@ export const SEO_KEYWORDS = {
     },
 
     VandyVape: {
-      primary: "vandy vape australia",
+      primary: "vandy vape deutschland",
       secondary: [
-        "buy vandy vape online australia",
-        "vandy vape kylin rta australia",
-        "vandy vape pulse australia",
-        "vandy vape mesh rda australia",
-        "vandy vape berserker australia",
-        "vandy vape jackaroo australia",
-        "vandyvape australia",
+        "vandy vape online deutschland",
+        "vandy vape kylin rta deutschland",
+        "vandy vape pulse deutschland",
+        "vandy vape mesh rda deutschland",
+        "vandy vape berserker deutschland",
+        "vandy vape jackaroo deutschland",
+        "vandyvape deutschland",
       ],
       lsi: [
         "vandy vape rda",
@@ -581,14 +581,14 @@ export const SEO_KEYWORDS = {
     },
 
     SteamCrave: {
-      primary: "steam crave australia",
+      primary: "steam crave deutschland",
       secondary: [
-        "buy steam crave online australia",
-        "steam crave aromamizer australia",
-        "steam crave aromamizer plus australia",
-        "steam crave supreme australia",
-        "steam crave titan australia",
-        "steam crave rdta australia",
+        "steam crave online deutschland",
+        "steam crave aromamizer deutschland",
+        "steam crave aromamizer plus deutschland",
+        "steam crave supreme deutschland",
+        "steam crave titan deutschland",
+        "steam crave rdta deutschland",
       ],
       lsi: [
         "steam crave rta",
@@ -602,16 +602,16 @@ export const SEO_KEYWORDS = {
     },
 
     SMOK: {
-      primary: "smok australia",
+      primary: "smok deutschland",
       secondary: [
-        "buy smok online australia",
-        "smok nord australia",
-        "smok rpm australia",
-        "smok vape pen australia",
-        "smok mag australia",
-        "smok tfv16 australia",
-        "smok coils australia",
-        "smok novo australia",
+        "smok online deutschland",
+        "smok nord deutschland",
+        "smok rpm deutschland",
+        "smok vape pen deutschland",
+        "smok mag deutschland",
+        "smok tfv16 deutschland",
+        "smok coils deutschland",
+        "smok novo deutschland",
       ],
       lsi: [
         "smok coils",
@@ -628,16 +628,16 @@ export const SEO_KEYWORDS = {
     },
 
     Aspire: {
-      primary: "aspire vape australia",
+      primary: "aspire vape deutschland",
       secondary: [
-        "buy aspire online australia",
-        "aspire nautilus australia",
-        "aspire pockex australia",
-        "aspire breeze australia",
-        "aspire tigon australia",
-        "aspire coils australia",
-        "aspire deco mod australia",
-        "aspire flexus australia",
+        "aspire online deutschland",
+        "aspire nautilus deutschland",
+        "aspire pockex deutschland",
+        "aspire breeze deutschland",
+        "aspire tigon deutschland",
+        "aspire coils deutschland",
+        "aspire deco mod deutschland",
+        "aspire flexus deutschland",
       ],
       lsi: [
         "aspire coils",
@@ -652,16 +652,16 @@ export const SEO_KEYWORDS = {
     },
 
     VooPoo: {
-      primary: "voopoo australia",
+      primary: "voopoo deutschland",
       secondary: [
-        "buy voopoo online australia",
-        "voopoo drag australia",
-        "voopoo drag x australia",
-        "voopoo argus australia",
-        "voopoo vinci australia",
-        "voopoo pnp coils australia",
-        "voopoo drag 3 australia",
-        "voopoo vmate australia",
+        "voopoo online deutschland",
+        "voopoo drag deutschland",
+        "voopoo drag x deutschland",
+        "voopoo argus deutschland",
+        "voopoo vinci deutschland",
+        "voopoo pnp coils deutschland",
+        "voopoo drag 3 deutschland",
+        "voopoo vmate deutschland",
       ],
       lsi: [
         "voopoo coils",
@@ -677,15 +677,15 @@ export const SEO_KEYWORDS = {
     },
 
     LostVape: {
-      primary: "lost vape australia",
+      primary: "lost vape deutschland",
       secondary: [
-        "buy lost vape online australia",
-        "lost vape orion australia",
-        "lost vape thelema australia",
-        "lost vape ursa australia",
-        "lost vape centaurus australia",
-        "lost vape quest australia",
-        "lost vape drone australia",
+        "lost vape online deutschland",
+        "lost vape orion deutschland",
+        "lost vape thelema deutschland",
+        "lost vape ursa deutschland",
+        "lost vape centaurus deutschland",
+        "lost vape quest deutschland",
+        "lost vape drone deutschland",
       ],
       lsi: [
         "lost vape mod",
@@ -700,14 +700,14 @@ export const SEO_KEYWORDS = {
     },
 
     Vapefly: {
-      primary: "vapefly australia",
+      primary: "vapefly deutschland",
       secondary: [
-        "buy vapefly online australia",
-        "vapefly kriemhild tank australia",
-        "vapefly brunhilde rta australia",
-        "vapefly galaxies rda australia",
-        "vapefly firebolt cotton australia",
-        "vapefly jester australia",
+        "vapefly online deutschland",
+        "vapefly kriemhild tank deutschland",
+        "vapefly brunhilde rta deutschland",
+        "vapefly galaxies rda deutschland",
+        "vapefly firebolt cotton deutschland",
+        "vapefly jester deutschland",
       ],
       lsi: [
         "vapefly rta",
@@ -722,15 +722,15 @@ export const SEO_KEYWORDS = {
     },
 
     Eleaf: {
-      primary: "eleaf australia",
+      primary: "eleaf deutschland",
       secondary: [
-        "buy eleaf online australia",
-        "eleaf istick australia",
-        "eleaf pico australia",
-        "eleaf melo tank australia",
-        "eleaf ipower australia",
-        "eleaf istick pico australia",
-        "eleaf coils australia",
+        "eleaf online deutschland",
+        "eleaf istick deutschland",
+        "eleaf pico deutschland",
+        "eleaf melo tank deutschland",
+        "eleaf ipower deutschland",
+        "eleaf istick pico deutschland",
+        "eleaf coils deutschland",
       ],
       lsi: [
         "eleaf mod",
@@ -746,15 +746,15 @@ export const SEO_KEYWORDS = {
     },
 
     Yocan: {
-      primary: "yocan australia",
+      primary: "yocan deutschland",
       secondary: [
-        "buy yocan online australia",
-        "yocan evolve australia",
-        "yocan hit vaporizer australia",
-        "yocan vane australia",
-        "yocan uni australia",
-        "yocan orbit australia",
-        "yocan dry herb vape australia",
+        "yocan online deutschland",
+        "yocan evolve deutschland",
+        "yocan hit vaporizer deutschland",
+        "yocan vane deutschland",
+        "yocan uni deutschland",
+        "yocan orbit deutschland",
+        "yocan dry herb vape deutschland",
       ],
       lsi: [
         "yocan vaporizer",
@@ -768,14 +768,14 @@ export const SEO_KEYWORDS = {
     },
 
     CandyKing: {
-      primary: "candy king e-liquid australia",
+      primary: "candy king e-liquid deutschland",
       secondary: [
-        "buy candy king vape juice australia",
-        "candy king ejuice australia",
+        "candy king vape juice deutschland",
+        "candy king ejuice deutschland",
         "candy king e juice online",
-        "candy king belts australia",
-        "candy king batch australia",
-        "candy king bubblegum australia",
+        "candy king belts deutschland",
+        "candy king batch deutschland",
+        "candy king bubblegum deutschland",
         "candy king strawberry watermelon",
       ],
       lsi: [
@@ -790,14 +790,14 @@ export const SEO_KEYWORDS = {
     },
 
     Vapetasia: {
-      primary: "vapetasia australia",
+      primary: "vapetasia deutschland",
       secondary: [
-        "buy vapetasia online australia",
-        "vapetasia killer kustard australia",
-        "vapetasia milk of the poppy australia",
-        "vapetasia e-liquid australia",
+        "vapetasia online deutschland",
+        "vapetasia killer kustard deutschland",
+        "vapetasia milk of the poppy deutschland",
+        "vapetasia e-liquid deutschland",
         "vapetasia vape juice online",
-        "vapetasia royalty ii australia",
+        "vapetasia royalty ii deutschland",
       ],
       lsi: [
         "vapetasia e-juice",
@@ -811,15 +811,15 @@ export const SEO_KEYWORDS = {
     },
 
     DinnerLady: {
-      primary: "dinner lady vape juice australia",
+      primary: "dinner lady vape juice deutschland",
       secondary: [
-        "buy dinner lady e-liquid australia",
-        "dinner lady lemon tart australia",
-        "dinner lady ejuice online australia",
-        "dinner lady nic salt australia",
+        "dinner lady e-liquid deutschland",
+        "dinner lady lemon tart deutschland",
+        "dinner lady ejuice online deutschland",
+        "dinner lady nic salt deutschland",
         "dinner lady blackberry crumble",
         "dinner lady strawberry custard",
-        "vape dinner lady australia",
+        "vape dinner lady deutschland",
       ],
       lsi: [
         "dinner lady e-liquid",
@@ -833,15 +833,15 @@ export const SEO_KEYWORDS = {
     },
 
     Wotofo: {
-      primary: "wotofo australia",
+      primary: "wotofo deutschland",
       secondary: [
-        "buy wotofo online australia",
-        "wotofo profile rda australia",
-        "wotofo serpent rta australia",
-        "wotofo recurve rda australia",
-        "wotofo troll rda australia",
-        "wotofo mesh coil australia",
-        "wotofo agleted cotton australia",
+        "wotofo online deutschland",
+        "wotofo profile rda deutschland",
+        "wotofo serpent rta deutschland",
+        "wotofo recurve rda deutschland",
+        "wotofo troll rda deutschland",
+        "wotofo mesh coil deutschland",
+        "wotofo agleted cotton deutschland",
       ],
       lsi: [
         "wotofo rda",
@@ -857,15 +857,15 @@ export const SEO_KEYWORDS = {
     },
 
     Samsung: {
-      primary: "samsung 18650 battery australia",
+      primary: "samsung 18650 battery deutschland",
       secondary: [
-        "samsung 25r battery australia",
-        "samsung 30q battery australia",
-        "samsung 40t 21700 australia",
-        "buy samsung vape battery australia",
-        "samsung inr 18650 australia",
-        "samsung 25r5 australia",
-        "samsung 21700 battery australia",
+        "samsung 25r battery deutschland",
+        "samsung 30q battery deutschland",
+        "samsung 40t 21700 deutschland",
+        "samsung vape battery deutschland",
+        "samsung inr 18650 deutschland",
+        "samsung 25r5 deutschland",
+        "samsung 21700 battery deutschland",
       ],
       lsi: [
         "samsung battery",
@@ -881,15 +881,15 @@ export const SEO_KEYWORDS = {
     },
 
     Nitecore: {
-      primary: "nitecore charger australia",
+      primary: "nitecore charger deutschland",
       secondary: [
-        "buy nitecore charger online australia",
-        "nitecore i2 charger australia",
-        "nitecore i4 charger australia",
-        "nitecore d2 charger australia",
-        "nitecore d4 charger australia",
-        "nitecore new i4 australia",
-        "nitecore sc4 charger australia",
+        "nitecore charger online deutschland",
+        "nitecore i2 charger deutschland",
+        "nitecore i4 charger deutschland",
+        "nitecore d2 charger deutschland",
+        "nitecore d4 charger deutschland",
+        "nitecore new i4 deutschland",
+        "nitecore sc4 charger deutschland",
       ],
       lsi: [
         "nitecore battery charger",
@@ -904,16 +904,16 @@ export const SEO_KEYWORDS = {
     },
 
     Innokin: {
-      primary: "innokin australia",
+      primary: "innokin deutschland",
       secondary: [
-        "buy innokin online australia",
-        "innokin endura australia",
-        "innokin coolfire australia",
-        "innokin proton australia",
-        "innokin zlide tank australia",
-        "innokin kroma australia",
-        "innokin sensis australia",
-        "innokin coils australia",
+        "innokin online deutschland",
+        "innokin endura deutschland",
+        "innokin coolfire deutschland",
+        "innokin proton deutschland",
+        "innokin zlide tank deutschland",
+        "innokin kroma deutschland",
+        "innokin sensis deutschland",
+        "innokin coils deutschland",
       ],
       lsi: [
         "innokin mod",
@@ -929,15 +929,15 @@ export const SEO_KEYWORDS = {
     },
 
     Hellvape: {
-      primary: "hellvape australia",
+      primary: "hellvape deutschland",
       secondary: [
-        "buy hellvape online australia",
-        "hellvape dead rabbit australia",
-        "hellvape destiny rta australia",
-        "hellvape rebirth rta australia",
-        "hellvape drop dead rda australia",
-        "hellvape fat rabbit tank australia",
-        "hellvape md rta australia",
+        "hellvape online deutschland",
+        "hellvape dead rabbit deutschland",
+        "hellvape destiny rta deutschland",
+        "hellvape rebirth rta deutschland",
+        "hellvape drop dead rda deutschland",
+        "hellvape fat rabbit tank deutschland",
+        "hellvape md rta deutschland",
       ],
       lsi: [
         "hellvape rda",
@@ -958,33 +958,33 @@ export const SEO_KEYWORDS = {
   // GENERIC / SITEWIDE KEYWORDS
   // ═══════════════════════════════════════════════════════════════
   generic: [
-    "vape shop australia",
-    "online vape store australia",
-    "vape australia fast shipping",
-    "buy vape online australia",
-    "australian vape shop",
-    "vape store australia",
-    "cheap vape australia",
-    "best online vape shop australia",
-    "vape australia afterpay",
-    "vape supplies australia",
-    "vaping australia",
-    "vape gear australia",
-    "vape products australia",
-    "vape deals australia",
-    "vape sale australia",
-    "vape australia fast delivery",
+    "vape shop deutschland",
+    "online vape store deutschland",
+    "vape deutschland schneller versand",
+    "vape online deutschland",
+    "deutschlandn vape shop",
+    "vape store deutschland",
+    "günstige vape deutschland",
+    "best online vape shop deutschland",
+    "vape deutschland sepa",
+    "vape supplies deutschland",
+    "vaping deutschland",
+    "vape gear deutschland",
+    "vape products deutschland",
+    "vape deals deutschland",
+    "vape sale deutschland",
+    "vape deutschland fast delivery",
     "vape shop near me",
-    "vape shop sydney",
-    "vape shop melbourne",
-    "vape shop brisbane",
-    "vape shop perth",
-    "vape shop adelaide",
-    "australian vape store online",
-    "vape hardware australia",
-    "discount vape australia",
-    "vapelink",
-    "vape link australia",
+    "vape shop berlin",
+    "vape shop koeln",
+    "vape shop hamburg",
+    "vape shop muenchen",
+    "vape shop frankfurt",
+    "deutscher vape store online",
+    "vape hardware deutschland",
+    "discount vape deutschland",
+    "mrnicevape",
+    "vape link deutschland",
   ],
 
   // ═══════════════════════════════════════════════════════════════
@@ -994,38 +994,38 @@ export const SEO_KEYWORDS = {
   productPatterns: {
     // Flavour profile patterns (for e-liquids)
     flavourProfiles: {
-      strawberry: ["strawberry vape juice australia", "strawberry e-liquid", "strawberry flavour vape"],
-      mango: ["mango vape juice australia", "mango e-liquid", "mango flavour e-juice"],
-      watermelon: ["watermelon vape juice australia", "watermelon e-liquid", "watermelon flavour vape"],
-      menthol: ["menthol vape juice australia", "menthol e-liquid", "ice vape juice", "cool mint vape"],
-      tobacco: ["tobacco vape juice australia", "tobacco e-liquid", "tobacco flavour vape juice"],
-      custard: ["custard vape juice australia", "custard e-liquid", "vanilla custard vape"],
-      dessert: ["dessert vape juice australia", "dessert e-liquid", "bakery vape juice"],
-      candy: ["candy vape juice australia", "candy e-liquid", "sweet vape juice"],
+      strawberry: ["strawberry vape juice deutschland", "strawberry e-liquid", "strawberry flavour vape"],
+      mango: ["mango vape juice deutschland", "mango e-liquid", "mango flavour e-juice"],
+      watermelon: ["watermelon vape juice deutschland", "watermelon e-liquid", "watermelon flavour vape"],
+      menthol: ["menthol vape juice deutschland", "menthol e-liquid", "ice vape juice", "cool mint vape"],
+      tobacco: ["tobacco vape juice deutschland", "tobacco e-liquid", "tobacco flavour vape juice"],
+      custard: ["custard vape juice deutschland", "custard e-liquid", "vanilla custard vape"],
+      dessert: ["dessert vape juice deutschland", "dessert e-liquid", "bakery vape juice"],
+      candy: ["candy vape juice deutschland", "candy e-liquid", "sweet vape juice"],
       bubblegum: ["bubblegum vape juice", "bubblegum e-liquid", "bubble gum vape"],
-      lemon: ["lemon vape juice australia", "lemon e-liquid", "citrus vape juice"],
-      grape: ["grape vape juice australia", "grape e-liquid", "grape flavour vape"],
-      blueberry: ["blueberry vape juice australia", "blueberry e-liquid", "berry vape juice"],
-      peach: ["peach vape juice australia", "peach e-liquid", "peach flavour vape"],
-      apple: ["apple vape juice australia", "apple e-liquid", "apple flavour vape"],
-      mint: ["mint vape juice australia", "mint e-liquid", "cool mint vape juice", "peppermint vape"],
-      ice: ["ice vape juice australia", "iced e-liquid", "menthol ice vape"],
+      lemon: ["lemon vape juice deutschland", "lemon e-liquid", "citrus vape juice"],
+      grape: ["grape vape juice deutschland", "grape e-liquid", "grape flavour vape"],
+      blueberry: ["blueberry vape juice deutschland", "blueberry e-liquid", "berry vape juice"],
+      peach: ["peach vape juice deutschland", "peach e-liquid", "peach flavour vape"],
+      apple: ["apple vape juice deutschland", "apple e-liquid", "apple flavour vape"],
+      mint: ["mint vape juice deutschland", "mint e-liquid", "cool mint vape juice", "peppermint vape"],
+      ice: ["ice vape juice deutschland", "iced e-liquid", "menthol ice vape"],
       cream: ["cream vape juice", "creamy e-liquid", "cream flavour vape"],
-      vanilla: ["vanilla vape juice australia", "vanilla e-liquid", "vanilla custard vape"],
-      coffee: ["coffee vape juice australia", "coffee e-liquid", "coffee flavour vape"],
-      tropical: ["tropical vape juice australia", "tropical fruit e-liquid", "tropical flavour vape"],
+      vanilla: ["vanilla vape juice deutschland", "vanilla e-liquid", "vanilla custard vape"],
+      coffee: ["coffee vape juice deutschland", "coffee e-liquid", "coffee flavour vape"],
+      tropical: ["tropical vape juice deutschland", "tropical fruit e-liquid", "tropical flavour vape"],
     },
 
     // Device type patterns
     deviceTypes: {
-      "starter kit": ["vape starter kit australia", "beginner vape kit"],
-      "pod kit": ["pod vape australia", "pod kit online australia"],
-      "pod mod": ["pod mod australia", "pod mod kit online"],
-      "box mod": ["box mod australia", "buy box mod online"],
-      "squonk": ["squonk mod australia", "squonk kit online"],
-      "pen": ["vape pen australia", "vape pen kit online"],
-      "aio": ["aio vape australia", "all in one vape kit"],
-      "mesh": ["mesh coil tank australia", "mesh rda australia"],
+      "starter kit": ["vape starter kit deutschland", "beginner vape kit"],
+      "pod kit": ["pod vape deutschland", "pod kit online deutschland"],
+      "pod mod": ["pod mod deutschland", "pod mod kit online"],
+      "box mod": ["box mod deutschland", "box mod online"],
+      "squonk": ["squonk mod deutschland", "squonk kit online"],
+      "pen": ["vape pen deutschland", "vape pen kit online"],
+      "aio": ["aio vape deutschland", "all in one vape kit"],
+      "mesh": ["mesh coil tank deutschland", "mesh rda deutschland"],
     },
   },
 
@@ -1034,9 +1034,9 @@ export const SEO_KEYWORDS = {
   // Use for meta descriptions, blog posts, FAQ pages
   // ═══════════════════════════════════════════════════════════════
   informational: [
-    "how to vape australia",
-    "best vape for beginners australia",
-    "vaping guide australia",
+    "how to vape deutschland",
+    "best vape for beginners deutschland",
+    "vaping guide deutschland",
     "how to choose a vape",
     "vape coil guide",
     "sub ohm vaping guide",
@@ -1044,11 +1044,11 @@ export const SEO_KEYWORDS = {
     "how to build a coil",
     "vape battery safety",
     "how to wick an rta",
-    "vaping laws australia",
-    "is vaping legal in australia",
-    "nicotine vape laws australia 2026",
-    "vaping regulations australia",
-    "tga vaping australia",
+    "vaping laws deutschland",
+    "is vaping legal in deutschland",
+    "nicotine vape laws deutschland 2026",
+    "vaping regulations deutschland",
+    "tga vaping deutschland",
     "best vape juice flavours 2026",
     "vape troubleshooting",
     "why does my vape taste burnt",

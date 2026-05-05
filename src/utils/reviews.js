@@ -18,17 +18,12 @@ function createRNG(seed) {
 }
 
 const FIRST_NAMES = [
-  "Sarah", "James", "Liam", "Emma", "Jack", "Olivia", "Noah", "Charlotte",
-  "Ethan", "Mia", "Lucas", "Amelia", "Mason", "Isla", "Oliver", "Ava",
-  "William", "Chloe", "Thomas", "Grace", "Cooper", "Zoe", "Harry", "Ella",
-  "Charlie", "Lily", "Oscar", "Sophie", "Leo", "Ruby", "Archer", "Harper",
-  "Henry", "Matilda", "Riley", "Sienna", "Kai", "Layla", "Hunter", "Willow",
-  "Max", "Phoebe", "Alexander", "Evie", "Daniel", "Ivy", "Ryan", "Aria",
-  "Jake", "Luna", "Ben", "Jade", "Sam", "Tara", "Brooke", "Tyler",
-  "Dylan", "Maddison", "Caleb", "Ellie", "Josh", "Scarlett", "Aiden", "Bella",
-  "Mitchell", "Hannah", "Nathan", "Paige", "Connor", "Georgia", "Blake", "Poppy",
-  "Cameron", "Stella", "Beau", "Violet", "Finn", "Jasmine", "Marcus", "Caitlin",
-  "Patrick", "Tegan", "Shane", "Bianca", "Darcy", "Tahlia"
+  "Anna", "Ben", "Clara", "David", "Emma", "Felix", "Hannah", "Jonas",
+  "Laura", "Lukas", "Mia", "Noah", "Sophie", "Leon", "Marie", "Paul",
+  "Lena", "Max", "Julia", "Tim", "Nina", "Moritz", "Lea", "Jan",
+  "Katharina", "Tobias", "Sarah", "Daniel", "Lisa", "Florian", "Mara", "Simon",
+  "Franziska", "Niklas", "Amelie", "Tom", "Johanna", "Philipp", "Klara", "Robin",
+  "Melina", "Sebastian", "Jana", "Marc", "Alina", "Matthias", "Luisa", "Fabian"
 ];
 
 const LAST_INITIALS = [
@@ -37,113 +32,104 @@ const LAST_INITIALS = [
 ];
 
 const REVIEW_TITLES = [
-  "Great quality!",
-  "Exactly what I needed",
-  "Good but could be better",
-  "Excellent flavour",
-  "Decent product",
-  "Love it!",
-  "Highly recommend",
-  "Solid purchase",
-  "Not bad at all",
-  "Amazing value",
-  "Best I've tried",
-  "Really impressed",
-  "Better than expected",
-  "Would buy again",
-  "Perfect for me",
-  "Very satisfied",
-  "Good everyday vape",
-  "Smooth and consistent",
-  "Top notch",
-  "Couldn't be happier",
-  "Five stars from me",
-  "Pleasantly surprised",
-  "Great flavour, great clouds",
-  "Does the job well",
-  "Nice and reliable",
-  "Super happy with this",
-  "Wish I bought sooner",
-  "Good quality for the price",
-  "Fantastic product",
-  "Pretty average honestly",
-  "Not what I expected",
-  "Disappointing",
-  "Won't buy again",
-  "Meh, it's okay",
-  "Could be better",
-  "Great clouds!",
-  "Smooth hit every time",
-  "Awesome throat hit",
-  "My new daily driver",
-  "Just okay",
-  "Brilliant quality",
-  "Feels premium",
-  "Quick delivery too!",
-  "Perfect upgrade",
-  "Really enjoying this",
-  "Flavour is unreal",
-  "Compact and powerful",
-  "Easy to use",
-  "Great for beginners",
-  "Best value around",
-  "Stylish and functional",
-  "No complaints",
-  "Does exactly what it should"
+  "Sehr gute Qualität",
+  "Genau das Richtige",
+  "Gut, aber mit Luft nach oben",
+  "Sehr guter Geschmack",
+  "Solides Produkt",
+  "Klare Empfehlung",
+  "Zuverlässiger Kauf",
+  "Besser als erwartet",
+  "Würde ich wieder kaufen",
+  "Passt perfekt für mich",
+  "Sehr zufrieden",
+  "Gut für den Alltag",
+  "Sanft und konstant",
+  "Top verarbeitet",
+  "Fünf Sterne von mir",
+  "Positiv überrascht",
+  "Guter Geschmack, gute Dampfentwicklung",
+  "Macht genau, was es soll",
+  "Schön zuverlässig",
+  "Sehr zufrieden damit",
+  "Hätte ich früher kaufen sollen",
+  "Gute Qualität für den Preis",
+  "Starkes Produkt",
+  "Eher durchschnittlich",
+  "Nicht ganz wie erwartet",
+  "Enttäuschend",
+  "Würde ich nicht erneut kaufen",
+  "Ganz okay",
+  "Könnte besser sein",
+  "Gute Dampfentwicklung",
+  "Angenehm bei jedem Zug",
+  "Mein neues Alltagsgerät",
+  "Brillante Qualität",
+  "Fühlt sich hochwertig an",
+  "Schnelle Lieferung",
+  "Perfektes Upgrade",
+  "Macht wirklich Spaß",
+  "Geschmack sehr intensiv",
+  "Kompakt und leistungsstark",
+  "Einfach zu bedienen",
+  "Gut für Einsteiger",
+  "Sehr gutes Preis-Leistungs-Verhältnis",
+  "Schick und funktional",
+  "Keine Beschwerden"
 ];
 
 const POSITIVE_BODIES = [
-  "Amazing throat hit, super smooth. Would buy again without hesitation.",
-  "Been using this for a few weeks now and I'm really impressed with the flavour and vapour production. Definitely worth the money.",
-  "Exactly what I was looking for. Great quality and the flavour is spot on.",
-  "This is hands down the best product I've tried. The flavour is incredible and it lasts ages.",
-  "Really happy with this purchase. Performs just as described and the flavour is top notch.",
-  "I've tried heaps of different products and this one is easily in my top three. Highly recommend to anyone.",
-  "Solid build quality and great performance. Can't fault it at all.",
-  "The flavour on this is unreal. Smooth draw and really satisfying. Will definitely be ordering again.",
-  "Bought this on a whim and it's become my go-to. Absolutely love it.",
-  "Great product, fast shipping from Vapelink as always. Very happy.",
-  "Perfect for all-day vaping. Not too harsh, not too mild. Just right.",
-  "Upgraded from my old device and the difference is night and day. So much better.",
-  "Super impressed with the quality. Works flawlessly straight out of the box.",
-  "Best purchase I've made in a while. The clouds are massive and the flavour is clean.",
-  "Really enjoy using this every day. Consistent performance and great taste.",
-  "Mates recommended this to me and they were spot on. Great product.",
-  "Absolutely loving this. The flavour profiles come through really well and the vapour production is solid.",
-  "Can't believe how good this is for the price. Punches well above its weight.",
-  "So smooth, no harshness at all. Perfect throat hit every time.",
-  "This ticks all the boxes for me. Quality build, great flavour, long lasting. What more could you want?",
-  "Better than I expected honestly. The draw is smooth and the battery life is impressive.",
-  "Brilliant product. I've already recommended it to a few mates.",
-  "Really consistent flavour from start to finish. No drop-off in quality at all.",
-  "Top quality product. Works perfectly and the flavour is amazing every single time."
+  "Sehr angenehmer Zug und sauberer Geschmack. Würde ich ohne Zögern wieder bestellen.",
+  "Ich nutze das Produkt seit einigen Wochen und bin von Geschmack und Leistung wirklich überzeugt.",
+  "Genau das, was ich gesucht habe. Gute Qualität und der Geschmack passt sehr gut.",
+  "Eines der besten Produkte, die ich bisher getestet habe. Der Geschmack bleibt lange konstant.",
+  "Sehr zufrieden mit dem Kauf. Funktioniert wie beschrieben und wirkt hochwertig.",
+  "Ich habe schon einiges ausprobiert, aber dieses Produkt gehört klar zu meinen Favoriten.",
+  "Solide Verarbeitung und starke Leistung. Bisher gibt es nichts zu beanstanden.",
+  "Der Geschmack kommt sehr klar durch, der Zug ist angenehm und gleichmäßig.",
+  "Spontan bestellt und inzwischen mein Favorit für den Alltag.",
+  "Gutes Produkt und schneller Versand von Mr. Nice Vape. Bin sehr zufrieden.",
+  "Gut geeignet für den ganzen Tag. Nicht zu stark, nicht zu mild, genau richtig.",
+  "Der Umstieg von meinem alten Gerät hat sich definitiv gelohnt.",
+  "Direkt einsatzbereit und qualitativ überzeugend. Funktioniert tadellos.",
+  "Sehr guter Kauf. Der Geschmack ist sauber und die Dampfentwicklung ordentlich.",
+  "Nutze es täglich und bekomme eine konstant gute Leistung.",
+  "Wurde mir empfohlen und die Empfehlung war absolut richtig.",
+  "Die Geschmacksnoten kommen gut durch und die Dampfentwicklung ist stabil.",
+  "Für den Preis wirklich stark. Macht einen deutlich hochwertigeren Eindruck.",
+  "Sehr sanft, keine unangenehme Schärfe. Für mich genau passend.",
+  "Erfüllt für mich alle wichtigen Punkte: Qualität, Geschmack und Haltbarkeit.",
+  "Besser als erwartet. Der Zug ist angenehm und die Laufzeit überzeugt.",
+  "Sehr gutes Produkt, das ich bereits weiterempfohlen habe.",
+  "Der Geschmack bleibt von Anfang bis Ende konstant. Sehr angenehm.",
+  "Top Qualität. Funktioniert zuverlässig und schmeckt jedes Mal gut."
 ];
 
 const NEUTRAL_BODIES = [
-  "Does the job. Nothing special but reliable.",
-  "It's alright. Gets the job done but I've had better. Wouldn't say no to trying something else next time.",
-  "Decent product for the price. Not the best I've used but certainly not the worst either.",
-  "Pretty standard really. Works fine, flavour is okay, nothing to write home about.",
-  "It's fine. Does what it says on the box. Might try a different one next time just for variety.",
-  "Average product. The flavour is decent but the draw could be a bit smoother.",
-  "Serviceable. It works and does what I need but I'm not blown away by it.",
-  "Middle of the road for me. Some things are good, some could be improved. Overall it's okay.",
-  "Not bad, not great. Flavour is passable and it works consistently at least.",
-  "Reasonable quality. I'd give it a solid three out of five.",
-  "It does the job day to day. Nothing exciting but nothing wrong with it either.",
-  "Okay product. The flavour could be a bit more pronounced but otherwise fine."
+  "Erfüllt seinen Zweck. Nicht außergewöhnlich, aber zuverlässig.",
+  "In Ordnung. Funktioniert gut, ich würde beim nächsten Mal aber vielleicht etwas anderes testen.",
+  "Für den Preis solide. Nicht mein Favorit, aber auch nicht schlecht.",
+  "Ziemlich durchschnittlich. Funktioniert, der Geschmack ist okay.",
+  "Macht, was es soll. Beim nächsten Mal probiere ich vielleicht eine andere Variante.",
+  "Ordentliches Produkt, der Zug könnte für mich etwas sanfter sein.",
+  "Brauchbar und zuverlässig, aber nicht überragend.",
+  "Einige Punkte sind gut, andere könnten besser sein. Insgesamt okay.",
+  "Nicht schlecht, aber auch nicht außergewöhnlich. Immerhin konstant.",
+  "Solide Qualität. Für mich etwa drei von fünf Sternen.",
+  "Für den Alltag okay. Nichts Besonderes, aber auch kein Fehlkauf.",
+  "Der Geschmack könnte intensiver sein, ansonsten passt es."
 ];
 
 const NEGATIVE_BODIES = [
-  "Not what I expected. Flavour was off and the draw felt too tight.",
-  "Disappointed with this one. The flavour wasn't great and it didn't last as long as I'd hoped.",
-  "Wouldn't recommend. Had issues with it from day one and the flavour was pretty bland.",
-  "Not a fan. The throat hit was way too harsh for my liking and the flavour was underwhelming.",
-  "Pretty let down by this. Expected much better based on the description. Flavour was weak.",
-  "Didn't enjoy this at all. Harsh draw and barely any flavour. Went back to my old product."
+  "Nicht ganz wie erwartet. Der Geschmack war schwächer und der Zug zu straff.",
+  "Leider enttäuschend. Der Geschmack war nicht überzeugend und die Laufzeit kürzer als erhofft.",
+  "Würde ich eher nicht empfehlen. Hatte von Anfang an kleinere Probleme damit.",
+  "Für meinen Geschmack zu hart im Zug und insgesamt etwas flach.",
+  "Ich hatte anhand der Beschreibung mehr erwartet. Der Geschmack war mir zu schwach.",
+  "Hat mich nicht überzeugt. Der Zug war unangenehm und der Geschmack kaum vorhanden."
 ];
 
-const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const MONTHS = ["Jan.", "Feb.", "März", "Apr.", "Mai", "Juni", "Juli", "Aug.", "Sept.", "Okt.", "Nov.", "Dez."];
 
 function formatDate(timestamp) {
   const d = new Date(timestamp);
@@ -208,7 +194,7 @@ export function generateReviews(handle) {
   // Sort newest first
   reviews.sort((a, b) => b._ts - a._ts);
 
-  // Remove internal timestamp
+  // Entfernen internal timestamp
   reviews.forEach((r) => delete r._ts);
 
   const sum = reviews.reduce((acc, r) => acc + r.rating, 0);

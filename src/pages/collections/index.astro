@@ -14,22 +14,22 @@ const emptyCollections = collectionsData
   .sort((a: any, b: any) => a.title.localeCompare(b.title));
 ---
 
-<Layout title="Vape Collections | Browse by Brand & Category – Vapelink Australia" description="All our vape collections in one spot. Search by brand, category or product type — kits, e-liquids, disposables, coils, accessories and more.">
+<Layout title="Vape-Kategorien & Marken | Mr. Nice Vape Deutschland" description="Alle Vape-Kategorien und Marken an einem Ort. Stöbern Sie nach E-Liquids, Einweg-Vapes, Kits, Coils, Pods, Zubehör und mehr.">
 
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      "name": "All Vape Collections",
-      "description": "All vape collections at Vapelink Australia. Search by brand, category or product type.",
-      "url": "https://vapelinkstore.com.au/collections",
+      "name": "Alle Vape-Kategorien",
+      "description": "Alle Vape-Kategorien bei Mr. Nice Vape Deutschland. Stöbern nach Marke, Kategorie oder Produkttyp.",
+      "url": "https://mrnicevape.com/collections",
       "numberOfItems": collections.length,
-      "isPartOf": { "@type": "WebSite", "@id": "https://vapelinkstore.com.au/#website" },
+      "isPartOf": { "@type": "WebSite", "@id": "https://mrnicevape.com/#website" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vapelinkstore.com.au/" },
-          { "@type": "ListItem", "position": 2, "name": "Collections", "item": "https://vapelinkstore.com.au/collections" }
+          { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://mrnicevape.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Kategorien", "item": "https://mrnicevape.com/collections" }
         ]
       },
       "mainEntity": {
@@ -38,7 +38,7 @@ const emptyCollections = collectionsData
         "itemListElement": collections.map((c: any, idx: number) => ({
           "@type": "ListItem",
           "position": idx + 1,
-          "url": `https://vapelinkstore.com.au/collections/${c.handle}`,
+          "url": `https://mrnicevape.com/collections/${c.handle}`,
           "name": c.title,
           "image": c.image?.src || ''
         }))
@@ -51,17 +51,17 @@ const emptyCollections = collectionsData
     <div class="container">
       <nav style="margin-bottom:1rem;">
         <ol class="breadcrumb">
-          <li><a href="/">Home</a></li>
+          <li><a href="/">Startseite</a></li>
           <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></li>
-          <li><span class="breadcrumb-current">Collections</span></li>
+          <li><span class="breadcrumb-current">Kategorien</span></li>
         </ol>
       </nav>
-      <span class="section-label">{collections.length} collections</span>
-      <h1 class="font-display page-title">All Collections</h1>
+      <span class="section-label">{collections.length} Kategorien</span>
+      <h1 class="font-display page-title">Alle Kategorien</h1>
     </div>
   </section>
 
-  <!-- Collections Grid -->
+  <!-- collections Grid -->
   <section class="container" style="padding:2rem 0 4rem;">
     <div class="collections-grid stagger-children">
       {collections.map((collection: any) => (
@@ -72,7 +72,7 @@ const emptyCollections = collectionsData
     {emptyCollections.length > 0 && (
       <div style="margin-top:3rem;">
         <hr style="border:none;border-top:1px solid var(--color-border);margin-bottom:1.75rem;" />
-        <h2 class="font-display" style="font-size:1rem;font-weight:600;color:var(--color-text);margin-bottom:1rem;">Other Collections</h2>
+        <h2 class="font-display" style="font-size:1rem;font-weight:600;color:var(--color-text);margin-bottom:1rem;">Weitere Kategorien</h2>
         <div class="tags-wrap">
           {emptyCollections.map((c: any) => (
             <a href={`/collections/${c.handle}`} class="tag-pill">{c.title}</a>

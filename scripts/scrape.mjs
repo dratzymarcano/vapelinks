@@ -234,7 +234,7 @@ async function buildCollectionProductMap(collections) {
 }
 
 async function main() {
-  console.log('🚀 Starting VapeLink scraper...\n');
+  console.log('🚀 Starting Mr. Nice Vape scraper...\n');
 
   // Fetch all data
   const products = await fetchAllProducts();
@@ -316,22 +316,22 @@ async function main() {
   try {
     const meta = await fetchJSON(`${BASE_URL}/meta.json`);
     homepageData = {
-      title: 'Vapelink Vape Shop in Melbourne, Victoria Australia',
-      site_name: meta.name || 'Vapelink Australia',
+      title: 'Mr. Nice Vape — Online-Vape-Shop in Köln, Deutschland',
+      site_name: meta.name || 'Mr. Nice Vape Deutschland',
       description: meta.description || '',
-      contact_email: 'info@vapelink.com',
-      currency: meta.currency || 'AUD',
-      money_format: '$ {{amount}} AUD',
+      contact_email: 'info@mrnicevape.com',
+      currency: meta.currency || 'EUR',
+      money_format: '€ {{amount}}',
     };
   } catch (e) {
     console.log('  ⚠️ Could not fetch meta.json, using fallback');
     homepageData = {
-      title: 'Vapelink Vape Shop in Melbourne, Victoria Australia',
-      site_name: 'Vapelink Australia',
-      description: "Vapelink Vape Shop Melbourne. Australia's favourite online vape shop with a huge collection of electronic cigarettes, vape pen, disposable vapes, coils, vape juice, and vaping accessories.",
-      contact_email: 'info@vapelink.com',
-      currency: 'AUD',
-      money_format: '$ {{amount}} AUD',
+      title: 'Mr. Nice Vape — Online-Vape-Shop in Köln, Deutschland',
+      site_name: 'Mr. Nice Vape Deutschland',
+      description: 'Mr. Nice Vape — Online-Vape-Shop aus Köln. Großes Sortiment an Vape-Kits, Einweg-Vapes, E-Liquids, Coils, Pods und Zubehör. Schneller deutschlandweiter Versand.',
+      contact_email: 'info@mrnicevape.com',
+      currency: 'EUR',
+      money_format: '€ {{amount}}',
     };
   }
   writeFileSync(join(DATA_DIR, 'site.json'), JSON.stringify(homepageData, null, 2));

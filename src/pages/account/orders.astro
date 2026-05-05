@@ -2,13 +2,13 @@
 import Layout from '../../layouts/Layout.astro';
 ---
 
-<Layout title="Track Orders – Vapelink Australia" description="Look up your order history using your checkout email." noindex={true}>
+<Layout title="Bestellungen verfolgen – Mr. Nice Vape Deutschland" description="Rufen Sie Ihre Bestellhistorie mit der beim Checkout verwendeten E-Mail-Adresse auf." noindex={true}>
   <nav class="breadcrumb-bar">
     <div class="container">
       <ol class="breadcrumb">
-        <li><a href="/">Home</a></li>
+        <li><a href="/">Startseite</a></li>
         <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></li>
-        <li><span class="breadcrumb-current">Track Orders</span></li>
+        <li><span class="breadcrumb-current">Bestellungen verfolgen</span></li>
       </ol>
     </div>
   </nav>
@@ -16,17 +16,17 @@ import Layout from '../../layouts/Layout.astro';
   <section class="container orders-page">
     <div class="orders-header">
       <div>
-        <h1 class="font-display orders-title">Track Your Orders</h1>
-        <p class="orders-subtitle">Enter the same email used at checkout to view your orders on this device.</p>
+        <h1 class="font-display orders-title">Deine Bestellungen verfolgen</h1>
+        <p class="orders-subtitle">Geben Sie die E-Mail-Adresse ein, die Sie beim Checkout verwendet haben, um Ihre Bestellungen auf diesem Gerät anzuzeigen.</p>
       </div>
     </div>
 
     <div class="lookup-card">
       <form id="orders-lookup-form" class="lookup-form">
-        <label class="lookup-label" for="lookup-email">Checkout Email</label>
+        <label class="lookup-label" for="lookup-email">Checkout-E-Mail</label>
         <div class="lookup-row">
-          <input id="lookup-email" type="email" class="lookup-input" placeholder="your@email.com" required />
-          <button type="submit" class="btn-primary" style="padding:0.75rem 1.5rem;">Find Orders</button>
+          <input id="lookup-email" type="email" class="lookup-input" placeholder="name@beispiel.de" required />
+          <button type="submit" class="btn-primary" style="padding:0.75rem 1.5rem;">Bestellungen finden</button>
         </div>
         <p id="lookup-msg" class="lookup-msg" style="display:none;"></p>
       </form>
@@ -37,7 +37,7 @@ import Layout from '../../layouts/Layout.astro';
 
   <script>
     function getUserOrders(email: string): any[] {
-      try { return JSON.parse(localStorage.getItem(`vapelink_orders_${email}`) || '[]'); } catch { return []; }
+      try { return JSON.parse(localStorage.getItem(`mrnicevape_orders_${email}`) || '[]'); } catch { return []; }
     }
 
     function renderOrdersForEmail(rawEmail: string) {
@@ -47,7 +47,7 @@ import Layout from '../../layouts/Layout.astro';
       if (!listEl || !msgEl) return;
 
       if (!email) {
-        msgEl.textContent = 'Please enter a valid email address.';
+        msgEl.textContent = 'Bitte geben Sie eine gültige E-Mail-Adresse ein.';
         msgEl.style.display = 'block';
         listEl.innerHTML = '';
         return;
@@ -56,16 +56,16 @@ import Layout from '../../layouts/Layout.astro';
       const orders = getUserOrders(email);
       msgEl.style.display = 'block';
       msgEl.textContent = orders.length === 0
-        ? 'No orders found for this email on this browser/device yet.'
-        : `${orders.length} order${orders.length !== 1 ? 's' : ''} found.`;
+        ? 'Für diese E-Mail wurden auf diesem Gerät noch keine Bestellungen gefunden.'
+        : `${orders.length} Bestellung${orders.length !== 1 ? 'en' : ''} gefunden.`;
 
       if (orders.length === 0) {
         listEl.innerHTML = `
           <div class="orders-empty">
             <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-dim)" stroke-width="1.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-            <p style="margin-top:1rem;font-size:1rem;font-weight:600;color:var(--color-text);">No orders found</p>
-            <p style="color:var(--color-text-secondary);font-size:0.88rem;margin-top:0.25rem;">Place an order first, then come back here with the same checkout email.</p>
-            <a href="/collections/shop" class="btn-primary" style="margin-top:1.5rem;padding:0.75rem 2rem;text-decoration:none;">Start Shopping</a>
+            <p style="margin-top:1rem;font-size:1rem;font-weight:600;color:var(--color-text);">Keine Bestellungen gefunden</p>
+            <p style="color:var(--color-text-secondary);font-size:0.88rem;margin-top:0.25rem;">Gib zuerst eine Bestellung auf und melde dich dann mit derselben Checkout-E-Mail an.</p>
+            <a href="/collections/shop" class="btn-primary" style="margin-top:1.5rem;padding:0.75rem 2rem;text-decoration:none;">Jetzt einkaufen</a>
           </div>`;
         return;
       }
@@ -74,44 +74,44 @@ import Layout from '../../layouts/Layout.astro';
         const subtotal = parseFloat(o.subtotal || '0') || (o.items || []).reduce((s: number, i: any) => s + (parseFloat(i.price || '0') * (i.qty || 1)), 0);
         const shipping = parseFloat(o.shippingCost || '0') || 0;
         const total = parseFloat(o.total || '0') || (subtotal + shipping);
-        const date = o.date ? new Date(o.date).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
-        const time = o.date ? new Date(o.date).toLocaleTimeString('en-AU', { hour: '2-digit', minute: '2-digit' }) : '';
+        const date = o.date ? new Date(o.date).toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+        const time = o.date ? new Date(o.date).toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' }) : '';
 
         return `
           <div class="order-detail-card">
             <div class="order-detail-header">
               <div class="order-detail-meta">
                 <span class="order-detail-number">${o.orderNumber || 'N/A'}</span>
-                <span class="order-detail-date">${date}${time ? ` at ${time}` : ''}</span>
+                <span class="order-detail-date">${date}${time ? ` um ${time}` : ''}</span>
               </div>
               <div class="order-detail-total-wrap">
-                <span class="order-detail-total font-display">$${total.toFixed(2)} AUD</span>
-                <span class="order-detail-status">Order Placed</span>
+                <span class="order-detail-total font-display">€${total.toFixed(2)}</span>
+                <span class="order-detail-status">Bestellung aufgegeben</span>
               </div>
             </div>
 
             <div class="order-detail-items">
               ${(o.items || []).map((i: any) => `
                 <div class="order-detail-item">
-                  ${i.image ? `<img src="${i.image}" alt="${i.title || 'Order product image'}" class="order-detail-item-img" onerror="this.style.display='none'" />` : '<div class="order-detail-item-img-placeholder"></div>'}
+                  ${i.image ? `<img src="${i.image}" alt="${i.title || 'Produktbild der Bestellung'}" class="order-detail-item-img" onerror="this.style.display='none'" />` : '<div class="order-detail-item-img-placeholder"></div>'}
                   <div class="order-detail-item-info">
                     <a href="/products/${i.handle}" class="order-detail-item-title">${i.title}</a>
-                    <span class="order-detail-item-meta">Qty: ${i.qty || 1} × $${parseFloat(i.price || '0').toFixed(2)}</span>
+                    <span class="order-detail-item-meta">Menge: ${i.qty || 1} × €${parseFloat(i.price || '0').toFixed(2)}</span>
                   </div>
-                  <span class="order-detail-item-price font-display">$${(parseFloat(i.price || '0') * (i.qty || 1)).toFixed(2)}</span>
+                  <span class="order-detail-item-price font-display">€${(parseFloat(i.price || '0') * (i.qty || 1)).toFixed(2)}</span>
                 </div>
               `).join('')}
             </div>
 
             <div class="order-detail-summary">
-              <div class="order-detail-summary-row"><span>Subtotal</span><span class="font-display">$${subtotal.toFixed(2)}</span></div>
-              <div class="order-detail-summary-row"><span>Shipping</span><span class="font-display">$${shipping.toFixed(2)}</span></div>
-              <div class="order-detail-summary-row order-detail-summary-total"><span>Total</span><span class="font-display">$${total.toFixed(2)} AUD</span></div>
+              <div class="order-detail-summary-row"><span>Zwischensumme</span><span class="font-display">€${subtotal.toFixed(2)}</span></div>
+              <div class="order-detail-summary-row"><span>Versand</span><span class="font-display">€${shipping.toFixed(2)}</span></div>
+              <div class="order-detail-summary-row order-detail-summary-total"><span>Gesamt</span><span class="font-display">€${total.toFixed(2)}</span></div>
             </div>
 
             ${o.address || o.city ? `
               <div class="order-detail-shipping-info">
-                <span class="order-detail-shipping-label">Shipped to:</span>
+                <span class="order-detail-shipping-label">Versand an:</span>
                 <span>${o.firstName || ''} ${o.lastName || ''}, ${o.address || ''} ${o.address2 || ''}, ${o.city || ''} ${o.state || ''} ${o.postcode || ''}</span>
               </div>
             ` : ''}
@@ -129,7 +129,7 @@ import Layout from '../../layouts/Layout.astro';
     });
 
     try {
-      const lastOrder = JSON.parse(localStorage.getItem('vapelink_last_order') || 'null');
+      const lastOrder = JSON.parse(localStorage.getItem('mrnicevape_last_order') || 'null');
       if (lastOrder?.email && lookupEmailInput) {
         lookupEmailInput.value = String(lastOrder.email).toLowerCase();
         renderOrdersForEmail(lookupEmailInput.value);

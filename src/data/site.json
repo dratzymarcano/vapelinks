@@ -1,17 +1,25 @@
 {
-  "title": "Vapelink — Australia's #1 Online Vape Shop | Melbourne, VIC",
-  "site_name": "Vapelink Australia",
-  "description": "Vapelink is a Melbourne-based online vape shop. We stock vape kits, disposable vapes, e-liquids, coils, pods and accessories from all the big brands. Fast Australia-wide shipping with Standard & Express delivery options.",
-  "contact_email": "info@vapelinkstore.com.au",
-  "currency": "AUD",
-  "money_format": "$ {{amount}} AUD",
+  "title": "Mr. Nice Vape — Deutschlands #1 Online-Vape-Shop | Köln, NRW",
+  "site_name": "Mr. Nice Vape Deutschland",
+  "description": "Mr. Nice Vape ist ein in Köln ansässiger Online-Vape-Shop. Wir führen Vape-Kits, Einweg-Vapes, E-Liquids, Coils, Pods und Zubehör aller großen Marken. Schneller deutschlandweiter Versand mit Standard- und Express-Lieferoptionen.",
+  "contact_email": "info@mrnicevape.com",
+  "currency": "EUR",
+  "money_format": "€ {{amount}}",
   "bank_details": {
-    "bank_name": "Commonwealth Bank",
-    "account_name": "Vapelink Australia Pty Ltd",
-    "bsb": "063-000",
-    "account_number": "1234 5678",
-    "pay_id": "info@vapelinkstore.com.au",
-    "pay_id_type": "Email"
+    "bank_name": "Deutsche Bank",
+    "account_name": "Mr. Nice Vape Deutschland GmbH",
+    "iban": "DE89 3704 0044 0532 0130 00",
+    "bic": "COBADEFFXXX",
+    "reference_label": "Verwendungszweck"
   },
+  "address": {
+    "street": "Musterstraße 12",
+    "postal_code": "50667",
+    "city": "Köln",
+    "region": "NRW",
+    "country": "Deutschland",
+    "country_code": "DE"
+  },
+  "phone": "+49 221 1234567",
   "bitcoin_address": "bc1q8xfr8r975rjy0s0x5yz6lpds66drs7rh60e284"
 }

@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import siteData from '../data/site.json';
 ---
 
-<Layout title="Order Confirmed – Vapelink Australia" description="Your order has been placed successfully. Thank you for shopping with Vapelink Australia." noindex={true}>
+<Layout title="Bestellung bestätigt – Mr. Nice Vape Deutschland" description="Ihre Bestellung wurde erfolgreich aufgegeben. Vielen Dank für Ihren Einkauf bei Mr. Nice Vape Deutschland." noindex={true}>
 
   <section class="container confirmation-page">
     <!-- No order data (direct visit) -->
@@ -12,11 +12,11 @@ import siteData from '../data/site.json';
         <div class="confirmation-empty-icon">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
         </div>
-        <h2 class="font-display confirmation-empty-title">No Order Found</h2>
-        <p class="confirmation-empty-desc">It looks like you haven't placed an order yet, or the order details have expired.</p>
+        <h2 class="font-display confirmation-empty-title">Keine Bestellung gefunden</h2>
+        <p class="confirmation-empty-desc">Es sieht so aus, als wurde noch keine Bestellung aufgegeben oder die Bestelldaten sind abgelaufen.</p>
         <a href="/collections/shop" class="btn-primary confirmation-empty-btn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-          Browse Products
+          Produkte ansehen
         </a>
       </div>
     </div>
@@ -30,10 +30,10 @@ import siteData from '../data/site.json';
           <div id="conf-header-icon" class="confirmation-check">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
-          <h1 id="conf-title" class="font-display confirmation-title">Order Confirmed!</h1>
-          <p id="conf-subtitle" class="confirmation-subtitle">Thank you for your order. We've received your details and will process it shortly.</p>
+          <h1 id="conf-title" class="font-display confirmation-title">Bestellung bestätigt!</h1>
+          <p id="conf-subtitle" class="confirmation-subtitle">Vielen Dank für Ihre Bestellung. Wir haben Ihre Daten erhalten und bearbeiten die Bestellung in Kürze.</p>
           <div class="confirmation-order-num">
-            <span>Order Number</span>
+            <span>Bestellnummer</span>
             <strong id="conf-order-num" class="font-display">—</strong>
           </div>
         </div>
@@ -50,18 +50,18 @@ import siteData from '../data/site.json';
           <div class="livechat-notice-icon">
             <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           </div>
-          <h3 class="font-display livechat-notice-title">Need Instant Payment & Order Confirmation?</h3>
+          <h3 class="font-display livechat-notice-title">Sofortige Zahlungs- und Bestellbestätigung benötigt?</h3>
           <p class="livechat-notice-desc">
-            <strong>Don't wait for emails!</strong> Contact our support team on Live Chat for instant payments and immediate order confirmation.
+            <strong>Sie benötigen schnelle Hilfe?</strong> Kontaktieren Sie unser Support-Team per Live-Chat für Zahlungsdetails und eine schnelle Bestellbestätigung.
           </p>
           <button type="button" id="open-livechat" class="livechat-notice-btn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            Chat with Us Now — Get Instant Help
+            Jetzt chatten — sofort Hilfe erhalten
           </button>
         </div>
       </div>
 
-      <!-- Payment-specific section (Bank Transfer / PayID) -->
+      <!-- Payment-specific section (Banküberweisung / SEPA) -->
       <div id="bank-payment-section" class="payment-instruction-section" style="display:none;">
         <div class="payment-instruction-card bank-card">
           <div class="payment-instruction-accent bank"></div>
@@ -70,36 +70,36 @@ import siteData from '../data/site.json';
               <div class="payment-instruction-icon bank">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/><path d="M6 16h4"/></svg>
               </div>
-              <h3 class="font-display payment-instruction-title">Bank Transfer / PayID</h3>
+              <h3 class="font-display payment-instruction-title">Banküberweisung / SEPA</h3>
             </div>
 
             <div class="bank-pending-message">
               <div class="bank-pending-icon">
                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               </div>
-              <h4 class="font-display bank-pending-title">Bank Details Coming to Your Inbox</h4>
+              <h4 class="font-display bank-pending-title">Bankdaten werden per E-Mail gesendet</h4>
               <p class="bank-pending-desc">
-                Thank you for placing your order! Our team will review it and send the <strong>bank transfer / PayID payment details</strong> to your email address shortly. For <strong>instant payment details and order confirmation</strong>, contact us via Live Chat below.
+                Vielen Dank für Ihre Bestellung. Unser Team prüft die Bestellung und sendet die <strong>Zahlungsdetails für Banküberweisung / SEPA</strong> in Kürze an Ihre E-Mail-Adresse. Für schnelle Zahlungsdetails und Bestätigung können Sie den Live-Chat nutzen.
               </p>
 
               <div class="bank-pending-details">
                 <div class="bank-pending-row">
-                  <span>Order Number</span>
+                  <span>Bestellnummer</span>
                   <strong id="bank-reference" class="font-display" style="color:var(--color-accent);">—</strong>
                 </div>
                 <div class="bank-pending-row">
-                  <span>Amount Due</span>
+                  <span>Fälliger Betrag</span>
                   <strong id="bank-amount" class="font-display" style="color:var(--color-accent);">—</strong>
                 </div>
                 <div class="bank-pending-row">
-                  <span>Email</span>
+                  <span>E-Mail</span>
                   <strong id="bank-pending-email" class="font-display" style="color:var(--color-text);">—</strong>
                 </div>
               </div>
 
               <p class="bank-pending-footnote">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-                Please check your inbox (and spam folder) within the next few minutes. Alternatively, use our <strong>Live Chat</strong> below for instant payment details and order confirmation.
+                Bitte prüfen Sie in den nächsten Minuten Ihr Postfach und den Spam-Ordner. Alternativ hilft unser <strong>Live-Chat</strong> bei Zahlungsdetails und Bestellbestätigung.
               </p>
             </div>
           </div>
@@ -115,25 +115,25 @@ import siteData from '../data/site.json';
               <div class="payment-instruction-icon bitcoin">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.894m-1.216 6.894L5.86 18.047m5.908 1.042-.347 1.97m1.563-8.864c4.924.869 6.14-6.025 1.215-6.893m-1.215 6.893-3.94-.694m5.155-6.2L8.29 4.26m5.908 1.042.348-1.97M7.48 20.364l3.126-17.727"/></svg>
               </div>
-              <h3 class="font-display payment-instruction-title">Bitcoin Payment</h3>
+              <h3 class="font-display payment-instruction-title">Bitcoin-Zahlung</h3>
             </div>
-            <p class="payment-instruction-desc">Scan the QR code below or copy the Bitcoin address to send your payment.</p>
+            <p class="payment-instruction-desc">Scannen Sie den QR-Code oder kopieren Sie die Bitcoin-Adresse, um die Zahlung zu senden.</p>
 
             <!-- BTC Amount and Timer -->
             <div class="btc-payment-status">
               <div class="btc-amount-box">
-                <span class="btc-amount-label">Amount Due (AUD)</span>
-                <span id="btc-aud-amount" class="btc-amount-value font-display">$0.00</span>
+                <span class="btc-amount-label">Fälliger Betrag (EUR)</span>
+                <span id="btc-eur-amount" class="btc-amount-value font-display">€0,00</span>
               </div>
               <div class="btc-timer-box" id="btc-timer-box">
-                <span class="btc-timer-label">Payment Window</span>
+                <span class="btc-timer-label">Zahlungsfenster</span>
                 <span id="btc-timer" class="btc-timer-value font-display">30:00</span>
               </div>
               <div class="btc-status-box">
                 <span class="btc-status-label">Status</span>
                 <span id="btc-status" class="btc-status-value">
                   <span class="btc-status-dot waiting"></span>
-                  Waiting for payment...
+                  Warten auf Zahlung...
                 </span>
               </div>
             </div>
@@ -141,17 +141,17 @@ import siteData from '../data/site.json';
             <!-- QR Code -->
             <div class="btc-qr-container">
               <div id="btc-qr-code" class="btc-qr-code"></div>
-              <p class="btc-qr-hint">Scan with your Bitcoin wallet app</p>
+              <p class="btc-qr-hint">Mit Bitcoin-Wallet-App scannen</p>
             </div>
 
             <!-- Bitcoin Address -->
             <div class="btc-address-box">
-              <span class="btc-address-label">Bitcoin Address</span>
+              <span class="btc-address-label">Bitcoin Adresse</span>
               <div class="btc-address-row">
                 <code id="btc-address" class="btc-address-text">—</code>
-                <button id="btc-copy-btn" class="btc-copy-btn" title="Copy to clipboard">
+                <button id="btc-copy-btn" class="btc-copy-btn" title="In Zwischenablage kopieren">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-                  <span id="btc-copy-text">Copy</span>
+                  <span id="btc-copy-text">Kopieren</span>
                 </button>
               </div>
             </div>
@@ -164,15 +164,15 @@ import siteData from '../data/site.json';
               <div class="btc-progress-steps">
                 <div class="btc-progress-step active" id="btc-step-1">
                   <span class="btc-step-dot"></span>
-                  <span class="btc-step-text">Waiting</span>
+                  <span class="btc-step-text">Warten</span>
                 </div>
                 <div class="btc-progress-step" id="btc-step-2">
                   <span class="btc-step-dot"></span>
-                  <span class="btc-step-text">Detected</span>
+                  <span class="btc-step-text">Erkannt</span>
                 </div>
                 <div class="btc-progress-step" id="btc-step-3">
                   <span class="btc-step-dot"></span>
-                  <span class="btc-step-text">Confirmed</span>
+                  <span class="btc-step-text">Bestätigt</span>
                 </div>
               </div>
             </div>
@@ -182,8 +182,8 @@ import siteData from '../data/site.json';
               <div class="btc-completed-icon">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
               </div>
-              <h4 class="font-display btc-completed-title">Payment Confirmed!</h4>
-              <p class="btc-completed-desc">Your Bitcoin payment has been received and your order is now being processed.</p>
+              <h4 class="font-display btc-completed-title">Zahlung bestätigt!</h4>
+              <p class="btc-completed-desc">Ihre Bitcoin-Zahlung wurde empfangen und Ihre Bestellung wird nun bearbeitet.</p>
             </div>
           </div>
         </div>
@@ -199,7 +199,7 @@ import siteData from '../data/site.json';
               <div class="conf-section-icon">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
               </div>
-              Customer Details
+              Kundendaten
             </h3>
             <div class="conf-info-grid">
               <div class="conf-info-item">
@@ -207,34 +207,34 @@ import siteData from '../data/site.json';
                 <span id="conf-name" class="conf-value">—</span>
               </div>
               <div class="conf-info-item">
-                <span class="conf-label">Email</span>
+                <span class="conf-label">E-Mail</span>
                 <span id="conf-email" class="conf-value">—</span>
               </div>
               <div class="conf-info-item">
-                <span class="conf-label">Phone</span>
+                <span class="conf-label">Telefon</span>
                 <span id="conf-phone" class="conf-value">—</span>
               </div>
             </div>
           </div>
 
-          <!-- Shipping -->
+          <!-- shipping -->
           <div class="conf-section">
             <h3 class="font-display conf-section-title">
               <div class="conf-section-icon">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
-              Shipping Address
+              Versandadresse
             </h3>
             <p id="conf-address" class="conf-value" style="line-height:1.6;">—</p>
           </div>
 
-          <!-- Shipping Method -->
+          <!-- shipping Method -->
           <div class="conf-section">
             <h3 class="font-display conf-section-title">
               <div class="conf-section-icon">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><path d="m16 8 4 2v6H16"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
               </div>
-              Delivery Method
+              Versandart
             </h3>
             <span id="conf-shipping" class="conf-value">—</span>
           </div>
@@ -245,7 +245,7 @@ import siteData from '../data/site.json';
               <div class="conf-section-icon">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg>
               </div>
-              Payment Method
+              Zahlungsmethode
             </h3>
             <span id="conf-payment" class="conf-value">—</span>
           </div>
@@ -256,7 +256,7 @@ import siteData from '../data/site.json';
               <div class="conf-section-icon">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
               </div>
-              Order Notes
+              Anmerkungen zur Bestellung
             </h3>
             <p id="conf-notes" class="conf-value" style="line-height:1.6;">—</p>
           </div>
@@ -266,22 +266,22 @@ import siteData from '../data/site.json';
         <div class="confirmation-items-card">
           <h3 class="font-display conf-items-heading">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-            Items Ordered
+            Bestellte Artikel
           </h3>
           <div id="conf-items" class="conf-items-list"></div>
           <hr class="conf-divider" />
-          <div class="conf-total-row">
-            <span>Subtotal</span>
-            <span id="conf-subtotal" class="font-display" style="font-weight:600;">$0.00</span>
+          <div class="conf-Gesamt-row">
+            <span>Zwischensumme</span>
+            <span id="conf-Zwischensumme" class="font-display" style="font-weight:600;">€0,00</span>
           </div>
-          <div class="conf-total-row">
-            <span>Shipping</span>
-            <span id="conf-ship-cost" class="font-display" style="font-weight:600;">$0.00</span>
+          <div class="conf-Gesamt-row">
+            <span>Versand</span>
+            <span id="conf-ship-cost" class="font-display" style="font-weight:600;">€0,00</span>
           </div>
           <hr class="conf-divider" />
-          <div class="conf-total-row conf-grand-total">
-            <span>Total</span>
-            <span id="conf-total" class="font-display">$0.00 AUD</span>
+          <div class="conf-Gesamt-row conf-grand-Gesamt">
+            <span>Gesamt</span>
+            <span id="conf-Gesamt" class="font-display">€0,00</span>
           </div>
         </div>
       </div>
@@ -290,28 +290,28 @@ import siteData from '../data/site.json';
       <div id="next-steps-bank" class="confirmation-next-steps" style="display:none;">
         <h3 class="font-display next-steps-heading">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-          What Happens Next
+          Wie es weitergeht
         </h3>
         <div class="next-steps-grid">
           <div class="next-step-card">
             <div class="next-step-number">1</div>
             <div class="next-step-content">
-              <h4 class="font-display next-step-title">Check Your Email or Live Chat</h4>
-              <p class="next-step-desc">We'll send the bank transfer details to your email shortly. For <strong>instant payment details</strong>, contact us via Live Chat — no need to wait!</p>
+              <h4 class="font-display next-step-title">E-Mail prüfen oder Live-Chat nutzen</h4>
+              <p class="next-step-desc">Wir senden die Zahlungsdetails in Kürze per E-Mail. Für sofortige Hilfe können Sie den Live-Chat nutzen.</p>
             </div>
           </div>
           <div class="next-step-card">
             <div class="next-step-number">2</div>
             <div class="next-step-content">
-              <h4 class="font-display next-step-title">Make Payment & Send Receipt</h4>
-              <p class="next-step-desc">Once you receive the bank details, transfer the amount and send a screenshot of the payment to confirm your order.</p>
+              <h4 class="font-display next-step-title">Zahlung ausführen und Beleg senden</h4>
+              <p class="next-step-desc">Überweisen Sie den Betrag mit Ihrer Bestellnummer als Referenz und senden Sie bei Bedarf einen Zahlungsbeleg.</p>
             </div>
           </div>
           <div class="next-step-card">
             <div class="next-step-number">3</div>
             <div class="next-step-content">
-              <h4 class="font-display next-step-title">Processing & Shipping</h4>
-              <p class="next-step-desc">Once we confirm your payment, we'll pack and ship within 1–2 business days. You'll get a tracking number by email.</p>
+              <h4 class="font-display next-step-title">Bearbeitung & Versand</h4>
+              <p class="next-step-desc">Nach Zahlungseingang verpacken und versenden wir Ihre Bestellung in der Regel innerhalb von 1–2 Werktagen. Die Sendungsnummer erhalten Sie per E-Mail.</p>
             </div>
           </div>
         </div>
@@ -320,28 +320,28 @@ import siteData from '../data/site.json';
       <div id="next-steps-bitcoin" class="confirmation-next-steps" style="display:none;">
         <h3 class="font-display next-steps-heading">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f7931a" stroke-width="2"><path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.894m-1.216 6.894L5.86 18.047m5.908 1.042-.347 1.97m1.563-8.864c4.924.869 6.14-6.025 1.215-6.893m-1.215 6.893-3.94-.694m5.155-6.2L8.29 4.26m5.908 1.042.348-1.97M7.48 20.364l3.126-17.727"/></svg>
-          What Happens Next
+          Wie es weitergeht
         </h3>
         <div class="next-steps-grid">
           <div class="next-step-card">
             <div class="next-step-number btc">1</div>
             <div class="next-step-content">
-              <h4 class="font-display next-step-title">Send Bitcoin Payment</h4>
-              <p class="next-step-desc">Scan the QR code or copy the Bitcoin address above and send the exact amount from your wallet.</p>
+              <h4 class="font-display next-step-title">Bitcoin-Zahlung senden</h4>
+              <p class="next-step-desc">Scannen Sie den QR-Code oder kopieren Sie die Bitcoin-Adresse und senden Sie den exakten Betrag aus Ihrer Wallet.</p>
             </div>
           </div>
           <div class="next-step-card">
             <div class="next-step-number btc">2</div>
             <div class="next-step-content">
-              <h4 class="font-display next-step-title">Automatic Detection</h4>
-              <p class="next-step-desc">Our system will automatically detect your payment. Stay on this page to see real-time confirmation status.</p>
+              <h4 class="font-display next-step-title">Automatische Erkennung</h4>
+              <p class="next-step-desc">Unser System erkennt die Zahlung automatisch. Bleiben Sie auf dieser Seite, um den Status zu verfolgen.</p>
             </div>
           </div>
           <div class="next-step-card">
             <div class="next-step-number btc">3</div>
             <div class="next-step-content">
-              <h4 class="font-display next-step-title">Keep Your Order Number</h4>
-              <p class="next-step-desc">Save this page and your order number so our team can quickly assist you if needed.</p>
+              <h4 class="font-display next-step-title">Bestellnummer aufbewahren</h4>
+              <p class="next-step-desc">Speichern Sie diese Seite und Ihre Bestellnummer, damit unser Team bei Bedarf schnell helfen kann.</p>
             </div>
           </div>
         </div>
@@ -351,11 +351,11 @@ import siteData from '../data/site.json';
       <div class="confirmation-actions">
         <a href="/collections/shop" class="btn-primary confirmation-action-btn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-          Continue Shopping
+          Weiter einkaufen
         </a>
         <a href="/" class="btn-secondary confirmation-action-btn">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-          Back to Home
+          Zurück zur Startseite
         </a>
       </div>
     </div>
@@ -989,7 +989,7 @@ import siteData from '../data/site.json';
       border-top: 1px solid var(--color-border);
       margin: 0.75rem 0;
     }
-    .conf-total-row {
+    .conf-Gesamt-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -997,21 +997,21 @@ import siteData from '../data/site.json';
       font-size: 0.85rem;
       color: var(--color-text-secondary);
     }
-    .conf-grand-total {
+    .conf-grand-Gesamt {
       margin-top: 0.25rem;
       padding: 0.75rem;
       background: linear-gradient(135deg, #F0FDF4, #DCFCE7);
       border-radius: var(--radius-md);
     }
-    [data-theme="dark"] .conf-grand-total {
+    [data-theme="dark"] .conf-grand-Gesamt {
       background: rgba(22,163,74,0.08);
     }
-    .conf-grand-total span:first-child {
+    .conf-grand-Gesamt span:first-child {
       font-size: 1rem;
       font-weight: 700;
       color: var(--color-text);
     }
-    .conf-grand-total span:last-child {
+    .conf-grand-Gesamt span:last-child {
       font-size: 1.15rem;
       font-weight: 800;
       color: var(--color-accent);
@@ -1212,19 +1212,20 @@ import siteData from '../data/site.json';
     declare var Tawk_API: any;
 
     const shippingLabels: Record<string, string> = {
-      standard: 'Standard Shipping (5–10 business days)',
-      express: 'Express Shipping (2–4 business days)'
+      standard: 'Standardversand (5–10 Werktage)',
+      express: 'Expressversand (2–4 Werktage)'
     };
-    const shippingPrices: Record<string, number> = { standard: 9.95, express: 14.95 };
+    const shippingPreiss: Record<string, number> = { standard: 9.95, express: 14.95 };
     const paymentLabels: Record<string, string> = {
-      bank: 'Bank Transfer / PayID',
+      bank: 'Banküberweisung',
+      sepa: 'SEPA-Überweisung',
       bitcoin: 'Bitcoin (BTC)'
     };
 
     let btcTimerInterval: any = null;
 
     function renderConfirmation() {
-      const orderStr = localStorage.getItem('vapelink_last_order');
+      const orderStr = localStorage.getItem('mrnicevape_last_order');
       const noEl = document.getElementById('no-order');
       const contentEl = document.getElementById('order-content');
       if (!noEl || !contentEl) return;
@@ -1257,16 +1258,16 @@ import siteData from '../data/site.json';
       const phoneEl = document.getElementById('conf-phone');
       if (nameEl) nameEl.textContent = `${order.firstName} ${order.lastName}`;
       if (emailEl) emailEl.textContent = order.email || '—';
-      if (phoneEl) phoneEl.textContent = order.phone || 'Not provided';
+      if (phoneEl) phoneEl.textContent = order.phone || 'Nicht angegeben';
 
       // Address
       const addrEl = document.getElementById('conf-address');
       if (addrEl) {
-        const parts = [order.address, order.address2, order.city, `${order.state} ${order.postcode}`, 'Australia'].filter(Boolean);
+        const parts = [order.address, order.address2, order.city, `${order.state} ${order.postcode}`, 'Deutschland'].filter(Boolean);
         addrEl.textContent = parts.join(', ');
       }
 
-      // Shipping
+      // shipping
       const shipEl = document.getElementById('conf-shipping');
       if (shipEl) {
         const label = shippingLabels[order.shipping] || order.shipping;
@@ -1287,48 +1288,48 @@ import siteData from '../data/site.json';
 
       // Items
       const itemsEl = document.getElementById('conf-items');
-      let subtotal = 0;
+      let Zwischensumme = 0;
       if (itemsEl && order.items) {
         itemsEl.innerHTML = order.items.map((item: any) => {
-          const lineTotal = parseFloat(item.price || '0') * (item.qty || 1);
-          subtotal += lineTotal;
+          const lineGesamt = parseFloat(item.price || '0') * (item.qty || 1);
+          Zwischensumme += lineGesamt;
           return `
             <div class="conf-item">
-              ${item.image ? `<img src="${item.image}" alt="${item.title || 'Order product image'}" class="conf-item-img" onerror="this.style.display='none'" />` : ''}
+              ${item.image ? `<img src="${item.image}" alt="${item.title || 'Produktbild der Bestellung'}" class="conf-item-img" onerror="this.style.display='none'" />` : ''}
               <div class="conf-item-info">
                 <div class="conf-item-title">${item.title}</div>
-                <div class="conf-item-qty">Qty: ${item.qty || 1} × $${parseFloat(item.price || '0').toFixed(2)}</div>
+                <div class="conf-item-qty">Menge: ${item.qty || 1} × €${parseFloat(item.price || '0').toFixed(2)}</div>
               </div>
-              <span class="conf-item-price">$${lineTotal.toFixed(2)}</span>
+              <span class="conf-item-price">€${lineGesamt.toFixed(2)}</span>
             </div>
           `;
         }).join('');
       }
 
-      // Shipping cost — always show the price
-      const shipCost = typeof order.shippingCost === 'number' ? order.shippingCost : (shippingPrices[order.shipping] || 0);
-      const subtotalEl = document.getElementById('conf-subtotal');
+      // shipping cost — always show the price
+      const shipCost = typeof order.shippingCost === 'number' ? order.shippingCost : (shippingPreiss[order.shipping] || 0);
+      const ZwischensummeEl = document.getElementById('conf-Zwischensumme');
       const shipCostEl = document.getElementById('conf-ship-cost');
-      const totalEl = document.getElementById('conf-total');
-      if (subtotalEl) subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
-      if (shipCostEl) shipCostEl.textContent = `$${shipCost.toFixed(2)}`;
-      const grandTotal = subtotal + shipCost;
-      if (totalEl) totalEl.textContent = `$${grandTotal.toFixed(2)} AUD`;
+      const GesamtEl = document.getElementById('conf-Gesamt');
+      if (ZwischensummeEl) ZwischensummeEl.textContent = `€${Zwischensumme.toFixed(2)}`;
+      if (shipCostEl) shipCostEl.textContent = `€${shipCost.toFixed(2)}`;
+      const grandGesamt = Zwischensumme + shipCost;
+      if (GesamtEl) GesamtEl.textContent = `€${grandGesamt.toFixed(2)}`;
 
       // ═══ Payment-specific rendering ═══
-      if (order.payment === 'bank') {
-        renderBankPayment(order, grandTotal);
+      if (order.payment === 'bank' || order.payment === 'sepa') {
+        renderBankPayment(order, grandGesamt);
       } else if (order.payment === 'bitcoin') {
-        renderBitcoinPayment(order, grandTotal);
+        renderBitcoinPayment(order, grandGesamt);
       }
     }
 
-    function renderBankPayment(order: any, total: number) {
+    function renderBankPayment(order: any, Gesamt: number) {
       // Update header
       const titleEl = document.getElementById('conf-title');
       const subtitleEl = document.getElementById('conf-subtitle');
-      if (titleEl) titleEl.textContent = 'Order Placed Successfully!';
-      if (subtitleEl) subtitleEl.textContent = 'Your order has been received. We will send you the bank transfer details to your email shortly so you can complete the payment.';
+      if (titleEl) titleEl.textContent = 'Bestellung erfolgreich aufgegeben';
+      if (subtitleEl) subtitleEl.textContent = 'Ihre Bestellung ist eingegangen. Wir senden Ihnen die Zahlungsdetails in Kürze per E-Mail, damit Sie die Zahlung abschließen können.';
 
       // Show bank section
       const bankSection = document.getElementById('bank-payment-section');
@@ -1338,7 +1339,7 @@ import siteData from '../data/site.json';
       const amountEl = document.getElementById('bank-amount');
       const refEl = document.getElementById('bank-reference');
       const pendingEmailEl = document.getElementById('bank-pending-email');
-      if (amountEl) amountEl.textContent = `$${total.toFixed(2)} AUD`;
+      if (amountEl) amountEl.textContent = `€${Gesamt.toFixed(2)}`;
       if (refEl) refEl.textContent = order.orderNumber || '—';
       if (pendingEmailEl) pendingEmailEl.textContent = order.email || '—';
 
@@ -1347,22 +1348,22 @@ import siteData from '../data/site.json';
       if (bankSteps) bankSteps.style.display = 'block';
     }
 
-    function renderBitcoinPayment(order: any, total: number) {
+    function renderBitcoinPayment(order: any, Gesamt: number) {
       // Update header
       const headerIcon = document.getElementById('conf-header-icon');
       const titleEl = document.getElementById('conf-title');
       const subtitleEl = document.getElementById('conf-subtitle');
       if (headerIcon) headerIcon.classList.add('btc-waiting');
-      if (titleEl) titleEl.textContent = 'Awaiting Bitcoin Payment';
-      if (subtitleEl) subtitleEl.textContent = 'Please send the exact amount to the Bitcoin address below. Your order will be confirmed automatically once payment is detected.';
+      if (titleEl) titleEl.textContent = 'Bitcoin-Zahlung ausstehend';
+      if (subtitleEl) subtitleEl.textContent = 'Bitte sende den genauen Betrag an die unten angezeigte Bitcoin-Adresse. Deine Bestellung wird bestätigt, sobald die Zahlung erkannt wurde.';
 
       // Show bitcoin section
       const btcSection = document.getElementById('bitcoin-payment-section');
       if (btcSection) btcSection.style.display = 'block';
 
-      // AUD amount
-      const audEl = document.getElementById('btc-aud-amount');
-      if (audEl) audEl.textContent = `$${total.toFixed(2)}`;
+      // EUR amount
+      const eurEl = document.getElementById('btc-eur-amount');
+      if (eurEl) eurEl.textContent = `€${Gesamt.toFixed(2)}`;
 
       // Bitcoin address
       const btcAddr = order.bitcoinAddress || '';
@@ -1376,13 +1377,13 @@ import siteData from '../data/site.json';
         qrEl.innerHTML = `<img src="${qrUrl}" alt="Bitcoin QR Code" width="176" height="176" style="border-radius:4px;" />`;
       }
 
-      // Copy button
+      // Kopieren button
       const copyBtn = document.getElementById('btc-copy-btn');
       const copyText = document.getElementById('btc-copy-text');
       copyBtn?.addEventListener('click', () => {
         navigator.clipboard.writeText(btcAddr).then(() => {
-          if (copyText) copyText.textContent = 'Copied!';
-          setTimeout(() => { if (copyText) copyText.textContent = 'Copy'; }, 2000);
+          if (copyText) copyText.textContent = 'Kopiert!';
+          setTimeout(() => { if (copyText) copyText.textContent = 'Kopieren'; }, 2000);
         }).catch(() => {
           // Fallback
           const ta = document.createElement('textarea');
@@ -1391,8 +1392,8 @@ import siteData from '../data/site.json';
           ta.select();
           document.execCommand('copy');
           document.body.removeChild(ta);
-          if (copyText) copyText.textContent = 'Copied!';
-          setTimeout(() => { if (copyText) copyText.textContent = 'Copy'; }, 2000);
+          if (copyText) copyText.textContent = 'Kopiert!';
+          setTimeout(() => { if (copyText) copyText.textContent = 'Kopieren'; }, 2000);
         });
       });
 
@@ -1414,24 +1415,24 @@ import siteData from '../data/site.json';
       const detectDelay = 45000 + Math.random() * 75000;
       const confirmDelay = detectDelay + 15000 + Math.random() * 20000;
 
-      let paymentDetected = false;
-      let paymentConfirmed = false;
+      let paymentErkannt = false;
+      let paymentBestätigt = false;
 
       // Payment detection simulation
       setTimeout(() => {
-        if (paymentConfirmed) return;
-        paymentDetected = true;
-        onPaymentDetected(order);
+        if (paymentBestätigt) return;
+        paymentErkannt = true;
+        onPaymentErkannt(order);
       }, detectDelay);
 
       // Payment confirmation simulation
       setTimeout(() => {
-        paymentConfirmed = true;
-        onPaymentConfirmed(order);
+        paymentBestätigt = true;
+        onPaymentBestätigt(order);
       }, confirmDelay);
 
       btcTimerInterval = setInterval(() => {
-        if (paymentConfirmed) {
+        if (paymentBestätigt) {
           clearInterval(btcTimerInterval);
           return;
         }
@@ -1446,7 +1447,7 @@ import siteData from '../data/site.json';
           if (remaining <= 300) timerEl.classList.add('expired');
         }
 
-        if (remaining <= 0 && !paymentDetected) {
+        if (remaining <= 0 && !paymentErkannt) {
           clearInterval(btcTimerInterval);
           if (timerEl) timerEl.textContent = 'EXPIRED';
           if (statusEl) statusEl.innerHTML = '<span class="btc-status-dot" style="background:var(--color-sale);animation:none;"></span> Payment window expired';
@@ -1454,7 +1455,7 @@ import siteData from '../data/site.json';
       }, 1000);
     }
 
-    function onPaymentDetected(order: any) {
+    function onPaymentErkannt(order: any) {
       // Update status
       const statusEl = document.getElementById('btc-status');
       if (statusEl) statusEl.innerHTML = '<span class="btc-status-dot detected"></span> Payment detected — confirming...';
@@ -1470,10 +1471,10 @@ import siteData from '../data/site.json';
 
       // Update header
       const titleEl = document.getElementById('conf-title');
-      if (titleEl) titleEl.textContent = 'Payment Detected!';
+      if (titleEl) titleEl.textContent = 'Payment Erkannt!';
     }
 
-    function onPaymentConfirmed(order: any) {
+    function onPaymentBestätigt(order: any) {
       if (btcTimerInterval) clearInterval(btcTimerInterval);
 
       // Update status
@@ -1499,7 +1500,7 @@ import siteData from '../data/site.json';
       const titleEl = document.getElementById('conf-title');
       const subtitleEl = document.getElementById('conf-subtitle');
       if (headerIcon) { headerIcon.classList.remove('btc-waiting'); }
-      if (titleEl) titleEl.textContent = 'Payment Confirmed!';
+      if (titleEl) titleEl.textContent = 'Payment Bestätigt!';
       if (subtitleEl) subtitleEl.textContent = 'Your Bitcoin payment has been received. Your order is now being processed and will ship soon.';
 
       // Show completed state, hide timer
@@ -1514,16 +1515,16 @@ import siteData from '../data/site.json';
 
       // Update order status in localStorage
       try {
-        const orderStr = localStorage.getItem('vapelink_last_order');
+        const orderStr = localStorage.getItem('mrnicevape_last_order');
         if (orderStr) {
           const updatedOrder = JSON.parse(orderStr);
           updatedOrder.status = 'confirmed';
-          localStorage.setItem('vapelink_last_order', JSON.stringify(updatedOrder));
+          localStorage.setItem('mrnicevape_last_order', JSON.stringify(updatedOrder));
 
           // Also update in order history (guest email key)
           const emailForHistory = (updatedOrder.email || '').trim().toLowerCase();
           if (emailForHistory) {
-            const ordersKey = `vapelink_orders_${emailForHistory}`;
+            const ordersKey = `mrnicevape_orders_${emailForHistory}`;
             const orders = JSON.parse(localStorage.getItem(ordersKey) || '[]');
             const idx = orders.findIndex((o: any) => o.orderNumber === updatedOrder.orderNumber);
             if (idx !== -1) {

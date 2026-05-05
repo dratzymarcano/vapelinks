@@ -2,42 +2,42 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Your Cart – Vapelink Australia" description="Review your cart items before checkout at Vapelink Australia." noindex={true}>
+<Layout title="Dein Warenkorb – Mr. Nice Vape Deutschland" description="Prüfen Sie Ihre Artikel im Warenkorb, bevor Sie bei Mr. Nice Vape Deutschland zur Kasse gehen." noindex={true}>
   <nav class="breadcrumb-bar">
     <div class="container">
       <ol class="breadcrumb">
-        <li><a href="/">Home</a></li>
+        <li><a href="/">Startseite</a></li>
         <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></li>
-        <li><span class="breadcrumb-current">Cart</span></li>
+        <li><span class="breadcrumb-current">Warenkorb</span></li>
       </ol>
     </div>
   </nav>
 
   <section class="container cart-page">
-    <h1 class="font-display cart-page-title">Your Cart</h1>
+    <h1 class="font-display cart-page-title">Dein Warenkorb</h1>
 
     <!-- Empty state -->
     <div id="cart-page-empty" class="cart-page-empty">
       <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-dim)" stroke-width="1.2">
         <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
       </svg>
-      <p>Your cart is empty</p>
+      <p>Dein Warenkorb ist leer</p>
       <a href="/collections/shop" class="btn-primary" style="margin-top:1.25rem;padding:0.75rem 2rem;">
-        Browse Products
+        Produkte ansehen
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
       </a>
     </div>
 
-    <!-- Cart content -->
+    <!-- cart content -->
     <div id="cart-page-content" class="cart-page-content" style="display:none;">
       <div class="cart-page-grid">
         <!-- Items -->
         <div class="cart-page-items">
           <div class="cart-table-header">
-            <span class="cart-col-product">Product</span>
-            <span class="cart-col-price">Price</span>
-            <span class="cart-col-qty">Qty</span>
-            <span class="cart-col-total">Total</span>
+            <span class="cart-col-product">Produkt</span>
+            <span class="cart-col-price">Preis</span>
+            <span class="cart-col-qty">Menge</span>
+            <span class="cart-col-total">Gesamt</span>
             <span class="cart-col-remove"></span>
           </div>
           <div id="cart-page-rows"></div>
@@ -45,19 +45,19 @@ import Layout from '../layouts/Layout.astro';
 
         <!-- Summary -->
         <aside class="cart-summary">
-          <h2 class="font-display cart-summary-title">Order Summary</h2>
+          <h2 class="font-display cart-summary-title">Bestellübersicht</h2>
           <div class="cart-summary-row">
-            <span>Subtotal</span>
-            <span id="cart-summary-subtotal" class="font-display" style="font-weight:700;">$0.00</span>
+            <span>Zwischensumme</span>
+            <span id="cart-summary-subtotal" class="font-display" style="font-weight:700;">€0,00</span>
           </div>
           <div class="cart-summary-row">
-            <span>Shipping</span>
-            <span class="cart-shipping-note">Calculated at checkout</span>
+            <span>Versand</span>
+            <span class="cart-shipping-note">Wird an der Kasse berechnet</span>
           </div>
           <div class="cart-summary-divider"></div>
           <div class="cart-summary-row cart-summary-total">
-            <span>Total</span>
-            <span id="cart-summary-total" class="font-display">$0.00 AUD</span>
+            <span>Gesamt</span>
+            <span id="cart-summary-total" class="font-display">€0,00</span>
           </div>
 
           <!-- Minimum Order Banner -->
@@ -66,30 +66,30 @@ import Layout from '../layouts/Layout.astro';
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
             </div>
             <div class="min-order-text">
-              <strong>Minimum order: $300.00 AUD</strong>
-              <p id="min-order-msg">Add <span id="min-order-remaining" class="min-order-amount">$300.00</span> more to your cart to proceed to checkout.</p>
+              <strong>Mindestbestellung: €300,00 EUR</strong>
+              <p id="min-order-msg">Lege noch <span id="min-order-remaining" class="min-order-amount">€300,00</span> in den Warenkorb, um zur Kasse zu gehen.</p>
             </div>
           </div>
 
-          <!-- Progress Bar to $300 -->
+          <!-- Progress Bar to €300 -->
           <div id="min-order-progress-wrap" class="min-order-progress-wrap" style="display:none;">
             <div class="min-order-progress-bar">
               <div id="min-order-progress-fill" class="min-order-progress-fill" style="width:0%;"></div>
             </div>
             <div class="min-order-progress-labels">
-              <span id="min-order-current">$0.00</span>
-              <span>$300.00</span>
+              <span id="min-order-current">€0,00</span>
+              <span>€300,00</span>
             </div>
           </div>
 
           <a href="/checkout" id="cart-checkout-link" class="btn-primary cart-checkout-btn">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg>
-            Proceed to Checkout
+            Zur Kasse gehen
           </a>
           <a href="/collections/shop" class="btn-secondary cart-continue-btn">
-            Continue Shopping
+            Weiter einkaufen
           </a>
-          <button id="cart-page-clear" class="cart-page-clear-btn">Clear Cart</button>
+          <button id="cart-page-clear" class="cart-page-clear-btn">Warenkorb leeren</button>
         </aside>
       </div>
     </div>
@@ -97,10 +97,10 @@ import Layout from '../layouts/Layout.astro';
 
   <script>
     function getCart(): any[] {
-      try { return JSON.parse(localStorage.getItem('vapelink_cart') || '[]'); } catch { return []; }
+      try { return JSON.parse(localStorage.getItem('mrnicevape_cart') || '[]'); } catch { return []; }
     }
     function saveCart(cart: any[]) {
-      localStorage.setItem('vapelink_cart', JSON.stringify(cart));
+      localStorage.setItem('mrnicevape_cart', JSON.stringify(cart));
       window.dispatchEvent(new CustomEvent('cart-updated'));
     }
 
@@ -122,23 +122,23 @@ import Layout from '../layouts/Layout.astro';
 
       let subtotal = 0;
       rowsEl.innerHTML = cart.map((item: any, idx: number) => {
-        const unitPrice = parseFloat(item.price || '0');
+        const unitPreis = parseFloat(item.price || '0');
         const qty = item.qty || 1;
-        const lineTotal = unitPrice * qty;
-        subtotal += lineTotal;
+        const lineGesamt = unitPreis * qty;
+        subtotal += lineGesamt;
         const imgSrc = item.image || '';
         return `
           <div class="cart-row">
             <div class="cart-col-product">
               <div class="cart-row-product">
-                ${imgSrc ? `<a href="/products/${item.handle}" class="cart-row-img-link"><img src="${imgSrc}" alt="${item.title || 'Cart product image'}" class="cart-row-img" onerror="this.style.display='none'" /></a>` : ''}
+                ${imgSrc ? `<a href="/products/${item.handle}" class="cart-row-img-link"><img src="${imgSrc}" alt="${item.title || 'Produktbild im Warenkorb'}" class="cart-row-img" onerror="this.style.display='none'" /></a>` : ''}
                 <div class="cart-row-info">
                   <a href="/products/${item.handle}" class="cart-row-title">${item.title}</a>
-                  <span class="cart-row-unit-mobile">$${unitPrice.toFixed(2)} AUD</span>
+                  <span class="cart-row-unit-mobile">€${unitPreis.toFixed(2)}</span>
                 </div>
               </div>
             </div>
-            <span class="cart-col-price">$${unitPrice.toFixed(2)}</span>
+            <span class="cart-col-price">€${unitPreis.toFixed(2)}</span>
             <div class="cart-col-qty">
               <div class="cart-row-qty">
                 <button class="cart-row-qty-btn" data-action="minus" data-idx="${idx}">−</button>
@@ -146,8 +146,8 @@ import Layout from '../layouts/Layout.astro';
                 <button class="cart-row-qty-btn" data-action="plus" data-idx="${idx}">+</button>
               </div>
             </div>
-            <span class="cart-col-total font-display">$${lineTotal.toFixed(2)}</span>
-            <button class="cart-col-remove cart-row-remove" data-action="remove" data-idx="${idx}" aria-label="Remove">
+            <span class="cart-col-total font-display">€${lineGesamt.toFixed(2)}</span>
+            <button class="cart-col-remove cart-row-remove" data-action="remove" data-idx="${idx}" aria-label="Entfernen">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
             </button>
           </div>
@@ -156,10 +156,10 @@ import Layout from '../layouts/Layout.astro';
 
       const subtotalEl = document.getElementById('cart-summary-subtotal');
       const totalEl = document.getElementById('cart-summary-total');
-      if (subtotalEl) subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
-      if (totalEl) totalEl.textContent = `$${subtotal.toFixed(2)} AUD`;
+      if (subtotalEl) subtotalEl.textContent = `€${subtotal.toFixed(2)}`;
+      if (totalEl) totalEl.textContent = `€${subtotal.toFixed(2)}`;
 
-      // ── Minimum $300 Order Enforcement ──
+      // ── Minimum €300 Order Enforcement ──
       const MIN_ORDER = 300;
       const remaining = MIN_ORDER - subtotal;
       const minBanner = document.getElementById('min-order-banner');
@@ -172,10 +172,10 @@ import Layout from '../layouts/Layout.astro';
       if (subtotal < MIN_ORDER) {
         // Show warning banner
         if (minBanner) minBanner.style.display = 'flex';
-        if (minRemaining) minRemaining.textContent = `$${remaining.toFixed(2)}`;
+        if (minRemaining) minRemaining.textContent = `€${remaining.toFixed(2)}`;
         if (minProgressWrap) minProgressWrap.style.display = 'block';
         if (minProgressFill) minProgressFill.style.width = `${Math.min((subtotal / MIN_ORDER) * 100, 100)}%`;
-        if (minCurrent) minCurrent.textContent = `$${subtotal.toFixed(2)}`;
+        if (minCurrent) minCurrent.textContent = `€${subtotal.toFixed(2)}`;
 
         // Disable checkout button
         if (checkoutLink) {
@@ -184,7 +184,7 @@ import Layout from '../layouts/Layout.astro';
           checkoutLink.style.pointerEvents = 'none';
           checkoutLink.style.cursor = 'not-allowed';
           checkoutLink.setAttribute('aria-disabled', 'true');
-          checkoutLink.setAttribute('title', `Minimum order is $${MIN_ORDER.toFixed(2)} AUD. Add $${remaining.toFixed(2)} more.`);
+          checkoutLink.setAttribute('title', `Mindestbestellung: €${MIN_ORDER.toFixed(2)}. Es fehlen noch €${remaining.toFixed(2)}.`);
         }
       } else {
         // Hide warning, enable checkout
@@ -286,7 +286,7 @@ import Layout from '../layouts/Layout.astro';
     }
   }
 
-  /* Cart row */
+  /* cart row */
   .cart-row {
     display: flex;
     flex-wrap: wrap;
@@ -358,7 +358,7 @@ import Layout from '../layouts/Layout.astro';
     .cart-col-total { display: block; }
   }
 
-  /* Qty */
+  /* Menge */
   .cart-row-qty {
     display: inline-flex;
     align-items: center;

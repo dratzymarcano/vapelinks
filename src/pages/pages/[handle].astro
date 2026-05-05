@@ -13,7 +13,23 @@ export function getStaticPaths() {
 
 const { page } = Astro.props;
 const plainDescription = (page.body_html || '').replace(/<[^>]*>/g, '').substring(0, 155).trim() || page.title;
-const seoTitle = `${page.title} | Vapelink Australia`;
+const seoTitle = `${page.title} | Mr. Nice Vape Deutschland`;
+const INDEXABLE_PAGE_HANDLES = new Set([
+  'about-us',
+  'battery-info',
+  'brands',
+  'vape-brands',
+  'vape-shop-koeln',
+  'disposable-vapes-deutschland',
+  'e-liquid-online-shop-deutschland',
+  'nikotin-vape-juice-deutschland',
+  'terms-conditions',
+  'privacy-policy',
+  'refund-policy',
+  'shipping-policy',
+  'cookies-policy',
+]);
+const shouldNoindex = !INDEXABLE_PAGE_HANDLES.has(page.handle);
 
 // FAQ page detection — extract Q&A pairs from HTML structure (h4 = question, followed by p = answer)
 const isFaqPage = page.handle === 'faq';
@@ -35,8 +51,8 @@ if (isFaqPage && page.body_html) {
       "@type": "FAQPage",
       "name": page.title,
       "description": plainDescription,
-      "url": `https://vapelinkstore.com.au/pages/${page.handle}`,
-      "isPartOf": { "@type": "WebSite", "@id": "https://vapelinkstore.com.au/#website" },
+      "url": `https://mrnicevape.com/pages/${page.handle}`,
+      "isPartOf": { "@type": "WebSite", "@id": "https://mrnicevape.com/#website" },
       "mainEntity": faqPairs.map((faq) => ({
         "@type": "Question",
         "name": faq.question,
@@ -48,8 +64,8 @@ if (isFaqPage && page.body_html) {
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vapelinkstore.com.au/" },
-          { "@type": "ListItem", "position": 2, "name": page.title, "item": `https://vapelinkstore.com.au/pages/${page.handle}` }
+          { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://mrnicevape.com/" },
+          { "@type": "ListItem", "position": 2, "name": page.title, "item": `https://mrnicevape.com/pages/${page.handle}` }
         ]
       }
     };
@@ -57,7 +73,7 @@ if (isFaqPage && page.body_html) {
 }
 ---
 
-<Layout title={seoTitle} description={plainDescription}>
+<Layout title={seoTitle} description={plainDescription} noindex={shouldNoindex}>
   <Fragment slot="head">
     {faqSchema ? (
       <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
@@ -67,13 +83,13 @@ if (isFaqPage && page.body_html) {
         "@type": "WebPage",
         "name": page.title,
         "description": plainDescription,
-        "url": `https://vapelinkstore.com.au/pages/${page.handle}`,
-        "isPartOf": { "@type": "WebSite", "@id": "https://vapelinkstore.com.au/#website" },
+        "url": `https://mrnicevape.com/pages/${page.handle}`,
+        "isPartOf": { "@type": "WebSite", "@id": "https://mrnicevape.com/#website" },
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vapelinkstore.com.au/" },
-            { "@type": "ListItem", "position": 2, "name": page.title, "item": `https://vapelinkstore.com.au/pages/${page.handle}` }
+            { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://mrnicevape.com/" },
+            { "@type": "ListItem", "position": 2, "name": page.title, "item": `https://mrnicevape.com/pages/${page.handle}` }
           ]
         }
       })} />
@@ -85,7 +101,7 @@ if (isFaqPage && page.body_html) {
     <div class="container">
       <nav aria-label="Breadcrumb" style="margin-bottom:1rem;">
         <ol class="breadcrumb">
-          <li><a href="/">Home</a></li>
+          <li><a href="/">Startseite</a></li>
           <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></li>
           <li><span class="breadcrumb-current">{page.title}</span></li>
         </ol>
@@ -93,7 +109,7 @@ if (isFaqPage && page.body_html) {
       <h1 class="font-display page-title">{page.title}</h1>
       {page.updated_at && (
         <p style="color:var(--color-text-muted);font-size:0.78rem;margin-top:0.35rem;">
-          Last updated: {new Date(page.updated_at).toLocaleDateString('en-AU', { year: 'numeric', month: 'long', day: 'numeric' })}
+          Aktualisiert am {new Date(page.updated_at).toLocaleDateString('de-DE', { year: 'numeric', month: 'long', day: 'numeric' })}
         </p>
       )}
     </div>
@@ -105,7 +121,7 @@ if (isFaqPage && page.body_html) {
       {page.body_html ? (
         <div class="prose-content" set:html={page.body_html} />
       ) : (
-        <p style="color:var(--color-text-muted);">This page has no content yet.</p>
+        <p style="color:var(--color-text-muted);">Diese Seite enthält derzeit noch keine Inhalte.</p>
       )}
     </div>
   </section>

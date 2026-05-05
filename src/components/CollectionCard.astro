@@ -46,9 +46,9 @@ const imageAlt = collection.image?.alt || collection.title;
     />
     <!-- Bottom gradient overlay -->
     <div class="cc-gradient"></div>
-    <!-- Product count badge -->
+    <!-- product count badge -->
     {collection.products_count > 0 && (
-      <span class="cc-count-badge">{collection.products_count} products</span>
+      <span class="cc-count-badge">{collection.products_count} Produkte</span>
     )}
   </div>
   <div class="cc-body">
@@ -109,7 +109,7 @@ const imageAlt = collection.image?.alt || collection.title;
     pointer-events: none;
   }
 
-  /* Product count floating badge */
+  /* product count floating badge */
   .cc-count-badge {
     position: absolute;
     bottom: 0.55rem;

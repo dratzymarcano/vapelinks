@@ -7,7 +7,7 @@ import pagesData from '../data/pages.json';
 
 export const prerender = true;
 
-const SITE = 'https://vapelinkstore.com.au';
+const SITE = 'https://mrnicevape.com';
 
 function normalizePath(pathname: string) {
   if (!pathname) return '/';
@@ -30,6 +30,22 @@ function isIndexablePath(pathname: string) {
   if (hasLowQualitySlug(pathname)) return false;
   return true;
 }
+
+const INDEXABLE_PAGE_HANDLES = new Set([
+  'about-us',
+  'battery-info',
+  'brands',
+  'vape-brands',
+  'vape-shop-koeln',
+  'disposable-vapes-deutschland',
+  'e-liquid-online-shop-deutschland',
+  'nikotin-vape-juice-deutschland',
+  'terms-conditions',
+  'privacy-policy',
+  'refund-policy',
+  'shipping-policy',
+  'cookies-policy',
+]);
 
 function escapeXml(value: string) {
   return value
@@ -70,7 +86,7 @@ export const GET: APIRoute = () => {
 
   const pageRoutes = (pagesData as any[])
     .map((page) => page?.handle)
-    .filter(Boolean)
+    .filter((handle) => handle && INDEXABLE_PAGE_HANDLES.has(handle))
     .map((handle) => `/pages/${handle}`);
 
   const excluded = new Set(['/cart', '/checkout', '/order-confirmation', '/search', '/404']);

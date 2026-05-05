@@ -1,12 +1,12 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
-import sitemap from '@astrojs/sitemap';
+import sitemap, { ChangeFreqEnum } from '@astrojs/sitemap';
 import cloudflare from '@astrojs/cloudflare';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://vapelinkstore.com.au',
+  site: 'https://mrnicevape.com',
   output: 'server',
   adapter: cloudflare(),
   integrations: [
@@ -20,29 +20,29 @@ export default defineConfig({
       serialize(item) {
         const url = item.url;
         // Homepage
-        if (url === 'https://vapelinkstore.com.au/' || url === 'https://vapelinkstore.com.au') {
+        if (url === 'https://mrnicevape.com/' || url === 'https://mrnicevape.com') {
           item.priority = 1.0;
-          item.changefreq = 'daily';
+          item.changefreq = ChangeFreqEnum.DAILY;
         }
         // Collection pages
         else if (url.includes('/collections/')) {
           item.priority = 0.8;
-          item.changefreq = 'daily';
+          item.changefreq = ChangeFreqEnum.DAILY;
         }
         // Product pages
         else if (url.includes('/products/')) {
           item.priority = 0.6;
-          item.changefreq = 'weekly';
+          item.changefreq = ChangeFreqEnum.WEEKLY;
         }
         // Info/legal pages
         else if (url.includes('/pages/')) {
           item.priority = 0.4;
-          item.changefreq = 'monthly';
+          item.changefreq = ChangeFreqEnum.MONTHLY;
         }
         // Everything else
         else {
           item.priority = 0.5;
-          item.changefreq = 'weekly';
+          item.changefreq = ChangeFreqEnum.WEEKLY;
         }
         item.lastmod = new Date().toISOString();
         return item;

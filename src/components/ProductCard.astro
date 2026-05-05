@@ -11,9 +11,9 @@ interface Props {
 const { product } = Astro.props;
 const isBestSeller = bestSellerSet.has(product.handle);
 const price = product.variants[0]?.price || '0.00';
-const comparePrice = product.variants[0]?.compare_at_price;
-const hasDiscount = comparePrice && parseFloat(comparePrice) > parseFloat(price);
-const discountPercent = hasDiscount ? Math.round((1 - parseFloat(price) / parseFloat(comparePrice)) * 100) : 0;
+const comparePreis = product.variants[0]?.compare_at_price;
+const hasDiscount = comparePreis && parseFloat(comparePreis) > parseFloat(price);
+const discountPercent = hasDiscount ? Math.round((1 - parseFloat(price) / parseFloat(comparePreis)) * 100) : 0;
 const image = product.images[0];
 const reviewData = generateReviews(product.handle);
 ---
@@ -39,14 +39,14 @@ const reviewData = generateReviews(product.handle);
         <span class="card-badge-sale">−{discountPercent}%</span>
       )}
       {isBestSeller && !hasDiscount && (
-        <span class="card-badge-best">Best Seller</span>
+        <span class="card-badge-best">Bestseller</span>
       )}
       {isBestSeller && hasDiscount && (
-        <span class="card-badge-best badge-best-secondary">Best Seller</span>
+        <span class="card-badge-best badge-best-secondary">Bestseller</span>
       )}
       <!-- Quick-add overlay -->
       <div class="card-overlay">
-        <span class="card-overlay-hint">View Product</span>
+        <span class="card-overlay-hint">Produkt ansehen</span>
       </div>
     </div>
   </a>
@@ -60,10 +60,9 @@ const reviewData = generateReviews(product.handle);
       <h3 class="card-title">{product.title}</h3>
     </a>
     <div class="card-price-row">
-      <span class="card-price">${parseFloat(price).toFixed(2)}</span>
-      <span class="card-currency">AUD</span>
+      <span class="card-price">€{parseFloat(price).toFixed(2)}</span>
       {hasDiscount && (
-        <span class="card-compare">${parseFloat(comparePrice).toFixed(2)}</span>
+        <span class="card-compare">€{parseFloat(comparePreis).toFixed(2)}</span>
       )}
     </div>
     <div class="card-meta-row">
@@ -80,7 +79,7 @@ const reviewData = generateReviews(product.handle);
   <div class="card-footer">
     <button class="card-cart-btn" data-product={product.handle} data-title={product.title} data-price={price} data-image={image?.local || ''}>
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-      Add to Cart
+      In den Warenkorb
     </button>
   </div>
 </div>

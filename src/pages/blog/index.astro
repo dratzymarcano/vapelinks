@@ -7,38 +7,38 @@ const sortedPosts = [...blogPosts].sort((a: any, b: any) => new Date(b.date).get
 const categories = [...new Set(blogPosts.map((p: any) => p.category))];
 ---
 
-<Layout title="Vaping Blog – Guides, Tips & Reviews | Vapelink Australia" description="Expert vaping guides, tips, product comparisons and news from Vapelink Australia. Everything you need to know about vaping.">
+<Layout title="Vape-Blog – Ratgeber, Tipps & Bewertungen | Mr. Nice Vape Deutschland" description="Deutsche Vape-Ratgeber, Produkttipps, Vergleiche und News von Mr. Nice Vape Deutschland. Verständlich erklärt für Einsteiger und erfahrene Nutzer.">
   <Fragment slot="head">
-    <meta name="keywords" content="vaping blog, vape guide australia, vaping tips, e-liquid guide, vape maintenance, vape coil guide, sub ohm vaping, Vapelink blog" />
+    <meta name="keywords" content="vape blog deutschland, e-zigarette ratgeber, e-liquid guide, vape pflege, coil ratgeber, sub ohm vaping, Mr. Nice Vape Blog" />
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Blog",
-      "name": "Vapelink Blog – Guides, Tips & Reviews",
-      "description": "Expert vaping guides, tips, product comparisons and news from Vapelink Australia.",
-      "url": "https://vapelinkstore.com.au/blog",
+      "name": "Mr. Nice Vape Blog – Ratgeber, Tipps & Bewertungen",
+      "description": "Deutsche Vape-Ratgeber, Produkttipps, Vergleiche und News von Mr. Nice Vape Deutschland.",
+      "url": "https://mrnicevape.com/blog",
       "publisher": {
         "@type": "Organization",
-        "name": "Vapelink Australia",
-        "logo": { "@type": "ImageObject", "url": "https://vapelinkstore.com.au/images/logo.svg" }
+        "name": "Mr. Nice Vape Deutschland",
+        "logo": { "@type": "ImageObject", "url": "https://mrnicevape.com/images/logo.svg" }
       },
-      "isPartOf": { "@type": "WebSite", "@id": "https://vapelinkstore.com.au/#website" },
-      "inLanguage": "en-AU",
+      "isPartOf": { "@type": "WebSite", "@id": "https://mrnicevape.com/#website" },
+      "inLanguage": "de-DE",
       "blogPost": sortedPosts.slice(0, 20).map((p: any) => ({
         "@type": "BlogPosting",
         "headline": p.title,
         "description": p.excerpt,
-        "url": `https://vapelinkstore.com.au/blog/${p.slug}`,
+        "url": `https://mrnicevape.com/blog/${p.slug}`,
         "datePublished": p.date,
-        "image": p.image.startsWith('http') ? p.image : `https://vapelinkstore.com.au${p.image}`,
-        "author": { "@type": "Organization", "name": "Vapelink Australia" }
+        "image": p.image.startsWith('http') ? p.image : `https://mrnicevape.com${p.image}`,
+        "author": { "@type": "Organization", "name": "Mr. Nice Vape Deutschland" }
       }))
     })} />
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vapelinkstore.com.au/" },
-        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://vapelinkstore.com.au/blog" }
+        { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://mrnicevape.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://mrnicevape.com/blog" }
       ]
     })} />
   </Fragment>
@@ -47,7 +47,7 @@ const categories = [...new Set(blogPosts.map((p: any) => p.category))];
   <nav class="breadcrumb-bar">
     <div class="container">
       <ol class="breadcrumb">
-        <li><a href="/">Home</a></li>
+        <li><a href="/">Startseite</a></li>
         <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></li>
         <li><span class="breadcrumb-current">Blog</span></li>
       </ol>
@@ -57,16 +57,16 @@ const categories = [...new Set(blogPosts.map((p: any) => p.category))];
   <!-- Hero -->
   <section class="blog-hero">
     <div class="container">
-      <span class="section-label">Vapelink Blog</span>
-      <h1 class="font-display blog-hero-title">Guides, Tips & Reviews</h1>
-      <p class="blog-hero-desc">Expert advice and helpful guides for vapers of all experience levels.</p>
+      <span class="section-label">Mr. Nice Vape Blog</span>
+      <h1 class="font-display blog-hero-title">Ratgeber, Tipps & Bewertungen</h1>
+      <p class="blog-hero-desc">Verständliche Empfehlungen und praxisnahe Guides für Einsteiger und erfahrene Vape-Nutzer.</p>
     </div>
   </section>
 
-  <!-- Category Filter -->
+  <!-- Category filter -->
   <section class="container blog-filter-section">
     <div class="blog-filters">
-      <button class="blog-filter-btn active" data-category="all">All</button>
+      <button class="blog-filter-btn active" data-category="all">Alle</button>
       {categories.map((cat: any) => (
         <button class="blog-filter-btn" data-category={cat}>{cat}</button>
       ))}
@@ -85,7 +85,7 @@ const categories = [...new Set(blogPosts.map((p: any) => p.category))];
             </div>
             <div class="blog-card-body">
               <div class="blog-card-meta">
-                <span>{new Date(post.date).toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+                <span>{new Date(post.date).toLocaleDateString('de-DE', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
                 <span class="blog-meta-dot">·</span>
                 <span>{post.readTime}</span>
               </div>
@@ -107,11 +107,11 @@ const categories = [...new Set(blogPosts.map((p: any) => p.category))];
   <section class="blog-cta-section">
     <div class="container">
       <div class="blog-cta-box">
-        <h2 class="font-display" style="font-size:1.3rem;color:var(--color-text);margin-bottom:0.5rem;">Need Help Choosing?</h2>
-        <p style="color:var(--color-text-secondary);font-size:0.88rem;margin-bottom:1.25rem;">Our team at Vapelink is always happy to help. Visit our store in Coburg, Melbourne or get in touch.</p>
+        <h2 class="font-display" style="font-size:1.3rem;color:var(--color-text);margin-bottom:0.5rem;">Hilfe bei der Auswahl?</h2>
+        <p style="color:var(--color-text-secondary);font-size:0.88rem;margin-bottom:1.25rem;">Unser Team hilft Ihnen gern bei Produktauswahl, Kompatibilität und passenden Ersatzteilen.</p>
         <div style="display:flex;gap:0.75rem;flex-wrap:wrap;justify-content:center;">
-          <a href="/collections/shop" class="btn-primary" style="padding:0.7rem 1.75rem;">Shop Now</a>
-          <a href="/contact" class="btn-secondary" style="padding:0.7rem 1.75rem;">Contact Us</a>
+          <a href="/collections/shop" class="btn-primary" style="padding:0.7rem 1.75rem;">Zum Shop</a>
+          <a href="/contact" class="btn-secondary" style="padding:0.7rem 1.75rem;">Kontakt</a>
         </div>
       </div>
     </div>
