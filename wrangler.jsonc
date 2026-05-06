@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mrnicevape",
+  "main": "./dist/_worker.js/index.js",
+  "compatibility_date": "2025-05-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "account_id": "6ec0ea1c77a409e45f69eebaeeeb04e8",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    { "pattern": "mrnicevape.com", "zone_name": "mrnicevape.com", "custom_domain": true },
+    { "pattern": "www.mrnicevape.com", "zone_name": "mrnicevape.com", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

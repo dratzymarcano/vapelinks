@@ -3,14 +3,14 @@
     "id": 9000000001,
     "handle": "iget-bar-3500-strawberry-watermelon",
     "title": "IGET Bar 3500 Puffs - Strawberry Watermelon",
-    "body_html": "<h1>IGET Bar 3500 Puffs - Strawberry Watermelon</h1><p>Experience the irresistible combination of ripe strawberries and juicy watermelon with the IGET Bar 3500. This premium disposable vape delivers a refreshing, sweet blend that perfectly captures the essence of summer fruits in every puff. The smooth draw and consistent flavour make this one of the most popular choices among Australian vapers.</p><p>The IGET Bar 3500 features a sleek, pocket-friendly design with no buttons or complicated settings — simply inhale and enjoy. Pre-filled and pre-charged, it's ready to use straight out of the box, making it ideal for beginners and experienced vapers alike who want a hassle-free experience.</p><ul><li>Puff Count: Approximately 3500 puffs</li><li>Battery: 1500mAh (non-rechargeable)</li><li>E-Liquid Capacity: 12ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Sweet strawberry with refreshing watermelon</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>IGET Bar 3500 Puffs - Strawberry Watermelon</h2>\n<p>IGET Bar 3500 Puffs - Strawberry Watermelon ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 14,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "IGET",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-09-15T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-09-15T10:00:00+11:00",
     "tags": [
-      "Brand IGET",
+      "Marke IGET",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -19,11 +19,11 @@
     "variants": [
       {
         "id": 90000001,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "14.95",
         "compare_at_price": "19.95",
         "sku": "DISP-IGET-BAR-001",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -31,10 +31,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -50,14 +50,14 @@
     "id": 9000000002,
     "handle": "iget-bar-3500-mango-bomb",
     "title": "IGET Bar 3500 Puffs - Mango Bomb",
-    "body_html": "<h1>IGET Bar 3500 Puffs - Mango Bomb</h1><p>Unleash a tropical explosion with the IGET Bar 3500 Mango Bomb. This flavour delivers an intense, authentic mango taste that bursts with sweetness from the very first puff. Rich and full-bodied, the Mango Bomb is crafted for those who crave bold, tropical fruit flavours with a smooth, satisfying finish.</p><p>Designed for convenience and portability, the IGET Bar 3500 slips easily into your pocket or bag. There are no refills, no charging, and no maintenance required — it's the ultimate grab-and-go vaping solution for busy Australians who refuse to compromise on flavour quality.</p><ul><li>Puff Count: Approximately 3500 puffs</li><li>Battery: 1500mAh (non-rechargeable)</li><li>E-Liquid Capacity: 12ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Rich, tropical mango burst</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>IGET Bar 3500 Puffs - Mango Bomb</h2>\n<p>IGET Bar 3500 Puffs - Mango Bomb ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 14,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "IGET",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-09-18T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-09-18T10:00:00+11:00",
     "tags": [
-      "Brand IGET",
+      "Marke IGET",
       "Disposable",
       "Disposable Vapes",
       "Tropical",
@@ -67,11 +67,11 @@
     "variants": [
       {
         "id": 90000002,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "14.95",
         "compare_at_price": "19.95",
         "sku": "DISP-IGET-BAR-002",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -79,10 +79,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -98,14 +98,14 @@
     "id": 9000000003,
     "handle": "iget-bar-3500-blue-razz",
     "title": "IGET Bar 3500 Puffs - Blue Razz",
-    "body_html": "<h1>IGET Bar 3500 Puffs - Blue Razz</h1><p>Dive into the tangy, sweet world of blue raspberry with the IGET Bar 3500 Blue Razz. This fan-favourite flavour combines the nostalgic taste of blue raspberry candy with a smooth, cool exhale that keeps you coming back for more. It's a perfectly balanced blend of sweet and tart that satisfies all day long.</p><p>With an impressive 3500 puff capacity, this disposable vape is built to last. The compact, lightweight design features a comfortable mouthpiece and ergonomic body that feels natural in your hand. No buttons, no settings — just pure, consistent flavour from start to finish.</p><ul><li>Puff Count: Approximately 3500 puffs</li><li>Battery: 1500mAh (non-rechargeable)</li><li>E-Liquid Capacity: 12ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Sweet and tangy blue raspberry</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>IGET Bar 3500 Puffs - Blue Razz</h2>\n<p>IGET Bar 3500 Puffs - Blue Razz ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 14,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "IGET",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-09-20T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-09-20T10:00:00+11:00",
     "tags": [
-      "Brand IGET",
+      "Marke IGET",
       "Disposable",
       "Disposable Vapes",
       "Candy",
@@ -115,11 +115,11 @@
     "variants": [
       {
         "id": 90000003,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "14.95",
         "compare_at_price": "19.95",
         "sku": "DISP-IGET-BAR-003",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -127,10 +127,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -146,14 +146,14 @@
     "id": 9000000004,
     "handle": "iget-bar-3500-grape-ice",
     "title": "IGET Bar 3500 Puffs - Grape Ice",
-    "body_html": "<h1>IGET Bar 3500 Puffs - Grape Ice</h1><p>Cool down with the bold, fruity taste of the IGET Bar 3500 Grape Ice. This flavour masterfully blends the deep, sweet essence of ripe grapes with a brisk menthol finish that delivers a refreshing chill on every exhale. It's the perfect combination for vapers who love fruit flavours with an icy twist.</p><p>The IGET Bar 3500 is engineered for reliability, featuring a high-capacity battery and generous e-liquid reservoir that ensures you get the most out of every device. Whether you're at work, out with mates, or relaxing at home, this disposable vape provides a premium experience without any of the fuss.</p><ul><li>Puff Count: Approximately 3500 puffs</li><li>Battery: 1500mAh (non-rechargeable)</li><li>E-Liquid Capacity: 12ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Sweet grape with icy menthol finish</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>IGET Bar 3500 Puffs - Grape Ice</h2>\n<p>IGET Bar 3500 Puffs - Grape Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 14,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "IGET",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-09-22T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-09-22T10:00:00+11:00",
     "tags": [
-      "Brand IGET",
+      "Marke IGET",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -164,11 +164,11 @@
     "variants": [
       {
         "id": 90000004,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "14.95",
         "compare_at_price": "19.95",
         "sku": "DISP-IGET-BAR-004",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -176,10 +176,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -195,14 +195,14 @@
     "id": 9000000005,
     "handle": "iget-bar-3500-lush-ice",
     "title": "IGET Bar 3500 Puffs - Lush Ice",
-    "body_html": "<h1>IGET Bar 3500 Puffs - Lush Ice</h1><p>The IGET Bar 3500 Lush Ice is a timeless classic that never disappoints. Combining the crisp, juicy sweetness of ripe watermelon with a cool menthol breeze, this flavour delivers a clean and refreshing vaping experience that's perfect for any time of day. It's one of the best-selling disposable vape flavours in Australia for good reason.</p><p>Every IGET Bar 3500 is manufactured to the highest quality standards, ensuring consistent flavour delivery and smooth vapour production throughout the life of the device. The sleek, modern design is both stylish and discreet, making it your ideal everyday carry.</p><ul><li>Puff Count: Approximately 3500 puffs</li><li>Battery: 1500mAh (non-rechargeable)</li><li>E-Liquid Capacity: 12ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Watermelon with cool menthol</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>IGET Bar 3500 Puffs - Lush Ice</h2>\n<p>IGET Bar 3500 Puffs - Lush Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 14,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "IGET",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-09-25T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-09-25T10:00:00+11:00",
     "tags": [
-      "Brand IGET",
+      "Marke IGET",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -213,11 +213,11 @@
     "variants": [
       {
         "id": 90000005,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "14.95",
         "compare_at_price": "19.95",
         "sku": "DISP-IGET-BAR-005",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -225,10 +225,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -244,14 +244,14 @@
     "id": 9000000006,
     "handle": "iget-bar-3500-mixed-berry",
     "title": "IGET Bar 3500 Puffs - Mixed Berry",
-    "body_html": "<h1>IGET Bar 3500 Puffs - Mixed Berry</h1><p>Indulge in a medley of ripe berries with the IGET Bar 3500 Mixed Berry. This delicious blend combines the sweetness of strawberries, the tartness of blueberries, and the depth of blackberries into one harmonious flavour that's both complex and incredibly satisfying. Each puff is like biting into a handful of freshly picked berries.</p><p>Built for longevity, the IGET Bar 3500 provides up to 3500 puffs of premium vaping enjoyment. The device requires zero maintenance — no coil changes, no refills, no charging. When it's done, simply dispose of it responsibly and grab a new one from Vapelink.</p><ul><li>Puff Count: Approximately 3500 puffs</li><li>Battery: 1500mAh (non-rechargeable)</li><li>E-Liquid Capacity: 12ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Blend of strawberry, blueberry, and blackberry</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>IGET Bar 3500 Puffs - Mixed Berry</h2>\n<p>IGET Bar 3500 Puffs - Mixed Berry ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 14,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "IGET",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-09-28T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-09-28T10:00:00+11:00",
     "tags": [
-      "Brand IGET",
+      "Marke IGET",
       "Disposable",
       "Disposable Vapes",
       "Berry",
@@ -261,11 +261,11 @@
     "variants": [
       {
         "id": 90000006,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "14.95",
         "compare_at_price": "19.95",
         "sku": "DISP-IGET-BAR-006",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -273,10 +273,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -292,14 +292,14 @@
     "id": 9000000007,
     "handle": "iget-legend-4000-cola-ice",
     "title": "IGET Legend 4000 Puffs - Cola Ice",
-    "body_html": "<h1>IGET Legend 4000 Puffs - Cola Ice</h1><p>Crack open a cold one with the IGET Legend 4000 Cola Ice. This unique flavour captures the fizzy, caramel sweetness of classic cola and pairs it with a refreshing icy exhale that mimics the sensation of an ice-cold drink on a hot Australian day. It's a nostalgic, fun flavour that stands out from the crowd.</p><p>The IGET Legend 4000 steps up the game with an enhanced 4000 puff capacity, giving you even more value per device. Its ergonomic cylindrical design fits comfortably in your hand, and the mesh coil technology ensures rich, full-bodied vapour production with every draw.</p><ul><li>Puff Count: Approximately 4000 puffs</li><li>Battery: 1500mAh (non-rechargeable)</li><li>E-Liquid Capacity: 12ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Classic cola with icy menthol</li><li>Mesh coil technology</li></ul>",
+    "body_html": "<h2>IGET Legend 4000 Puffs - Cola Ice</h2>\n<p>IGET Legend 4000 Puffs - Cola Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 16,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "IGET",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-10-15T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-10-15T10:00:00+11:00",
     "tags": [
-      "Brand IGET",
+      "Marke IGET",
       "Disposable",
       "Disposable Vapes",
       "Menthol",
@@ -310,11 +310,11 @@
     "variants": [
       {
         "id": 90000007,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "16.95",
         "compare_at_price": "22.95",
         "sku": "DISP-IGET-LEG-001",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -322,10 +322,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -341,14 +341,14 @@
     "id": 9000000008,
     "handle": "iget-legend-4000-blackberry-ice",
     "title": "IGET Legend 4000 Puffs - Blackberry Ice",
-    "body_html": "<h1>IGET Legend 4000 Puffs - Blackberry Ice</h1><p>Savour the deep, rich flavour of sun-ripened blackberries paired with a frosty menthol finish in the IGET Legend 4000 Blackberry Ice. This sophisticated flavour profile offers a slightly tart, intensely fruity vape that's complemented by a cooling sensation on the exhale, creating a well-rounded experience that berry lovers will adore.</p><p>The IGET Legend 4000 is built to deliver up to 4000 puffs of premium vapour, making it one of the longest-lasting disposable vapes available at Vapelink. Its advanced mesh coil technology maximises flavour extraction and provides a smooth, satisfying throat hit with every puff.</p><ul><li>Puff Count: Approximately 4000 puffs</li><li>Battery: 1500mAh (non-rechargeable)</li><li>E-Liquid Capacity: 12ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Rich blackberry with icy menthol finish</li><li>Mesh coil technology</li></ul>",
+    "body_html": "<h2>IGET Legend 4000 Puffs - Blackberry Ice</h2>\n<p>IGET Legend 4000 Puffs - Blackberry Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 16,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "IGET",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-10-18T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-10-18T10:00:00+11:00",
     "tags": [
-      "Brand IGET",
+      "Marke IGET",
       "Disposable",
       "Disposable Vapes",
       "Berry",
@@ -359,11 +359,11 @@
     "variants": [
       {
         "id": 90000008,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "16.95",
         "compare_at_price": "22.95",
         "sku": "DISP-IGET-LEG-002",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -371,10 +371,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -390,14 +390,14 @@
     "id": 9000000009,
     "handle": "iget-legend-4000-passion-fruit-mango",
     "title": "IGET Legend 4000 Puffs - Passion Fruit Mango",
-    "body_html": "<h1>IGET Legend 4000 Puffs - Passion Fruit Mango</h1><p>Transport yourself to the tropics with the IGET Legend 4000 Passion Fruit Mango. This exotic blend marries the tangy, aromatic notes of passion fruit with the luscious sweetness of ripe mango, creating a tropical paradise in every puff. It's a vibrant, sun-drenched flavour that's perfect for Australian summers.</p><p>With 4000 puffs packed into a single device, the IGET Legend delivers outstanding value for money. The device features a premium build quality with a leak-proof design and consistent airflow, ensuring that every puff from the first to the last tastes exactly as it should.</p><ul><li>Puff Count: Approximately 4000 puffs</li><li>Battery: 1500mAh (non-rechargeable)</li><li>E-Liquid Capacity: 12ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Tangy passion fruit with sweet mango</li><li>Mesh coil technology</li></ul>",
+    "body_html": "<h2>IGET Legend 4000 Puffs - Passion Fruit Mango</h2>\n<p>IGET Legend 4000 Puffs - Passion Fruit Mango ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 16,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "IGET",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-10-20T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-10-20T10:00:00+11:00",
     "tags": [
-      "Brand IGET",
+      "Marke IGET",
       "Disposable",
       "Disposable Vapes",
       "Tropical",
@@ -407,11 +407,11 @@
     "variants": [
       {
         "id": 90000009,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "16.95",
         "compare_at_price": "22.95",
         "sku": "DISP-IGET-LEG-003",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -419,10 +419,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -438,14 +438,14 @@
     "id": 9000000010,
     "handle": "iget-legend-4000-peach-ice",
     "title": "IGET Legend 4000 Puffs - Peach Ice",
-    "body_html": "<h1>IGET Legend 4000 Puffs - Peach Ice</h1><p>Enjoy the delicate sweetness of tree-ripened peaches with a crisp, cooling finish in the IGET Legend 4000 Peach Ice. This beautifully balanced flavour delivers a smooth, nectar-like peach taste on the inhale followed by a refreshing icy exhale that leaves you feeling revitalised. It's a gentle yet deeply satisfying vape.</p><p>The IGET Legend 4000 combines cutting-edge mesh coil technology with a high-capacity battery to ensure you enjoy every last drop of e-liquid. The draw-activated mechanism means there are no buttons to fiddle with — just pick it up and vape whenever the mood strikes.</p><ul><li>Puff Count: Approximately 4000 puffs</li><li>Battery: 1500mAh (non-rechargeable)</li><li>E-Liquid Capacity: 12ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Sweet peach with cooling ice</li><li>Mesh coil technology</li></ul>",
+    "body_html": "<h2>IGET Legend 4000 Puffs - Peach Ice</h2>\n<p>IGET Legend 4000 Puffs - Peach Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 16,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "IGET",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-10-23T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-10-23T10:00:00+11:00",
     "tags": [
-      "Brand IGET",
+      "Marke IGET",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -456,11 +456,11 @@
     "variants": [
       {
         "id": 90000010,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "16.95",
         "compare_at_price": "22.95",
         "sku": "DISP-IGET-LEG-004",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -468,10 +468,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -487,14 +487,14 @@
     "id": 9000000011,
     "handle": "iget-legend-4000-strawberry-kiwi",
     "title": "IGET Legend 4000 Puffs - Strawberry Kiwi",
-    "body_html": "<h1>IGET Legend 4000 Puffs - Strawberry Kiwi</h1><p>The IGET Legend 4000 Strawberry Kiwi brings together two beloved fruits in a match made in flavour heaven. Sweet, ripe strawberries are perfectly complemented by the tangy, slightly tart notes of fresh kiwi fruit, resulting in a vibrant and well-balanced vape that keeps your taste buds engaged puff after puff.</p><p>With its generous 4000 puff capacity and advanced mesh coil system, the IGET Legend sets the standard for disposable vapes in Australia. Each device is quality tested to ensure reliable performance, consistent vapour production, and flavour that remains true from the first puff to the last.</p><ul><li>Puff Count: Approximately 4000 puffs</li><li>Battery: 1500mAh (non-rechargeable)</li><li>E-Liquid Capacity: 12ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Sweet strawberry with tangy kiwi</li><li>Mesh coil technology</li></ul>",
+    "body_html": "<h2>IGET Legend 4000 Puffs - Strawberry Kiwi</h2>\n<p>IGET Legend 4000 Puffs - Strawberry Kiwi ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 16,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "IGET",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-10-26T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-10-26T10:00:00+11:00",
     "tags": [
-      "Brand IGET",
+      "Marke IGET",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -503,11 +503,11 @@
     "variants": [
       {
         "id": 90000011,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "16.95",
         "compare_at_price": "22.95",
         "sku": "DISP-IGET-LEG-005",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -515,10 +515,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -534,14 +534,14 @@
     "id": 9000000012,
     "handle": "iget-legend-4000-watermelon-lemon",
     "title": "IGET Legend 4000 Puffs - Watermelon Lemon",
-    "body_html": "<h1>IGET Legend 4000 Puffs - Watermelon Lemon</h1><p>Quench your thirst with the IGET Legend 4000 Watermelon Lemon. This invigorating flavour combines the juicy sweetness of watermelon with a zesty lemon twist, creating a refreshing flavour that's reminiscent of a chilled summer beverage. The citrus kick perfectly cuts through the watermelon sweetness for a clean, crisp finish.</p><p>The IGET Legend 4000 is a premium disposable vape that delivers exceptional value with up to 4000 puffs per device. Its advanced internal components ensure smooth, consistent performance while the compact design makes it easy to carry wherever your day takes you across Australia.</p><ul><li>Puff Count: Approximately 4000 puffs</li><li>Battery: 1500mAh (non-rechargeable)</li><li>E-Liquid Capacity: 12ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Juicy watermelon with zesty lemon</li><li>Mesh coil technology</li></ul>",
+    "body_html": "<h2>IGET Legend 4000 Puffs - Watermelon Lemon</h2>\n<p>IGET Legend 4000 Puffs - Watermelon Lemon ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 16,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "IGET",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-10-30T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-10-30T10:00:00+11:00",
     "tags": [
-      "Brand IGET",
+      "Marke IGET",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -551,11 +551,11 @@
     "variants": [
       {
         "id": 90000012,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "16.95",
         "compare_at_price": "22.95",
         "sku": "DISP-IGET-LEG-006",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -563,10 +563,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -582,14 +582,14 @@
     "id": 9000000013,
     "handle": "gunnpod-2000-banana-ice",
     "title": "GunnPod 2000 Puffs - Banana Ice",
-    "body_html": "<h1>GunnPod 2000 Puffs - Banana Ice</h1><p>Get your tropical fix with the GunnPod 2000 Banana Ice. This creamy, smooth flavour delivers the authentic taste of ripe bananas with a cool menthol undertone that adds a refreshing dimension to every puff. It's a unique and satisfying flavour that's quickly becoming a favourite among Australian vapers looking for something different.</p><p>The GunnPod 2000 is a compact, affordable disposable vape that punches well above its weight. With 2000 puffs of consistent flavour, a reliable battery, and a comfortable mouthpiece, it's the ideal choice for vapers who want great taste without breaking the bank. Simply unwrap, vape, and enjoy.</p><ul><li>Puff Count: Approximately 2000 puffs</li><li>Battery: 1000mAh (non-rechargeable)</li><li>E-Liquid Capacity: 8ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Creamy banana with cool menthol</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>GunnPod 2000 Puffs - Banana Ice</h2>\n<p>GunnPod 2000 Puffs - Banana Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 12,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> GunnPod</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "GunnPod",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-11-15T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-11-15T10:00:00+11:00",
     "tags": [
-      "Brand GunnPod",
+      "Marke GunnPod",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -600,11 +600,11 @@
     "variants": [
       {
         "id": 90000013,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "12.95",
         "compare_at_price": "16.95",
         "sku": "DISP-GUNN-2000-001",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -612,10 +612,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -631,14 +631,14 @@
     "id": 9000000014,
     "handle": "gunnpod-2000-blue-razz-lemonade",
     "title": "GunnPod 2000 Puffs - Blue Razz Lemonade",
-    "body_html": "<h1>GunnPod 2000 Puffs - Blue Razz Lemonade</h1><p>Enjoy the ultimate summer refreshment with the GunnPod 2000 Blue Razz Lemonade. This flavour combines the sweet, tangy taste of blue raspberry with freshly squeezed lemonade, creating a fizzy, thirst-quenching vape experience that's bursting with flavour. It's sweet, it's tart, and it's absolutely delicious.</p><p>The GunnPod 2000 offers an excellent entry point into disposable vaping. Lightweight, compact, and incredibly easy to use, it's designed for vapers who value simplicity and flavour above all else. Each device delivers consistent vapour production and satisfying nicotine delivery throughout its 2000 puff lifespan.</p><ul><li>Puff Count: Approximately 2000 puffs</li><li>Battery: 1000mAh (non-rechargeable)</li><li>E-Liquid Capacity: 8ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Blue raspberry with tangy lemonade</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>GunnPod 2000 Puffs - Blue Razz Lemonade</h2>\n<p>GunnPod 2000 Puffs - Blue Razz Lemonade ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 12,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> GunnPod</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "GunnPod",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-11-18T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-11-18T10:00:00+11:00",
     "tags": [
-      "Brand GunnPod",
+      "Marke GunnPod",
       "Disposable",
       "Disposable Vapes",
       "Candy",
@@ -648,11 +648,11 @@
     "variants": [
       {
         "id": 90000014,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "12.95",
         "compare_at_price": "16.95",
         "sku": "DISP-GUNN-2000-002",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -660,10 +660,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -679,14 +679,14 @@
     "id": 9000000015,
     "handle": "gunnpod-2000-guava-ice",
     "title": "GunnPod 2000 Puffs - Guava Ice",
-    "body_html": "<h1>GunnPod 2000 Puffs - Guava Ice</h1><p>Discover the exotic taste of tropical guava paired with a refreshing icy finish in the GunnPod 2000 Guava Ice. This flavour captures the unique, aromatic sweetness of ripe guava fruit — slightly musky, wonderfully fragrant, and irresistibly tropical. The menthol undertone adds a clean, cool edge that makes this an all-day vape.</p><p>The GunnPod 2000 is designed with portability in mind. Its slim, lightweight form factor makes it easy to slip into a pocket or purse, while the reliable internal components ensure you get 2000 puffs of consistent, flavourful vapour. No charging cables, no replacement pods — just pure convenience from Vapelink.</p><ul><li>Puff Count: Approximately 2000 puffs</li><li>Battery: 1000mAh (non-rechargeable)</li><li>E-Liquid Capacity: 8ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Exotic guava with icy menthol</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>GunnPod 2000 Puffs - Guava Ice</h2>\n<p>GunnPod 2000 Puffs - Guava Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 12,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> GunnPod</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "GunnPod",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-11-20T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-11-20T10:00:00+11:00",
     "tags": [
-      "Brand GunnPod",
+      "Marke GunnPod",
       "Disposable",
       "Disposable Vapes",
       "Tropical",
@@ -697,11 +697,11 @@
     "variants": [
       {
         "id": 90000015,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "12.95",
         "compare_at_price": "16.95",
         "sku": "DISP-GUNN-2000-003",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -709,10 +709,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -728,14 +728,14 @@
     "id": 9000000016,
     "handle": "gunnpod-2000-mango-peach",
     "title": "GunnPod 2000 Puffs - Mango Peach",
-    "body_html": "<h1>GunnPod 2000 Puffs - Mango Peach</h1><p>The GunnPod 2000 Mango Peach is a tropical dream come true. This flavour artfully blends the bold, sweet taste of ripe mangoes with the soft, velvety sweetness of fresh peaches, creating a smooth, layered flavour that evolves beautifully with every puff. It's fruity, it's sweet, and it's incredibly moreish.</p><p>Perfect for beginners and seasoned vapers alike, the GunnPod 2000 requires absolutely no setup. Each device comes fully charged and pre-filled, ready to deliver 2000 puffs of exceptional flavour. The draw-activated mechanism ensures instant vapour production the moment you take a puff.</p><ul><li>Puff Count: Approximately 2000 puffs</li><li>Battery: 1000mAh (non-rechargeable)</li><li>E-Liquid Capacity: 8ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Sweet mango with velvety peach</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>GunnPod 2000 Puffs - Mango Peach</h2>\n<p>GunnPod 2000 Puffs - Mango Peach ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 12,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> GunnPod</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "GunnPod",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-11-23T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-11-23T10:00:00+11:00",
     "tags": [
-      "Brand GunnPod",
+      "Marke GunnPod",
       "Disposable",
       "Disposable Vapes",
       "Tropical",
@@ -745,11 +745,11 @@
     "variants": [
       {
         "id": 90000016,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "12.95",
         "compare_at_price": "16.95",
         "sku": "DISP-GUNN-2000-004",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -757,10 +757,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -776,14 +776,14 @@
     "id": 9000000017,
     "handle": "gunnpod-2000-strawberry-banana",
     "title": "GunnPod 2000 Puffs - Strawberry Banana",
-    "body_html": "<h1>GunnPod 2000 Puffs - Strawberry Banana</h1><p>Relive the classic smoothie combination with the GunnPod 2000 Strawberry Banana. This creamy, fruity flavour blends the bright sweetness of ripe strawberries with the smooth, mellow taste of banana for a vape that tastes like your favourite blended drink. It's comforting, familiar, and absolutely delightful.</p><p>The GunnPod 2000 is the perfect companion for vapers on the go. With its pocket-friendly size and impressive 2000 puff count, you'll have reliable, delicious vapour wherever your adventures take you. Each device is produced under strict quality controls to ensure consistent performance and safety.</p><ul><li>Puff Count: Approximately 2000 puffs</li><li>Battery: 1000mAh (non-rechargeable)</li><li>E-Liquid Capacity: 8ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Sweet strawberry with creamy banana</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>GunnPod 2000 Puffs - Strawberry Banana</h2>\n<p>GunnPod 2000 Puffs - Strawberry Banana ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 12,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> GunnPod</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "GunnPod",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-11-26T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-11-26T10:00:00+11:00",
     "tags": [
-      "Brand GunnPod",
+      "Marke GunnPod",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -792,11 +792,11 @@
     "variants": [
       {
         "id": 90000017,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "12.95",
         "compare_at_price": "16.95",
         "sku": "DISP-GUNN-2000-005",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -804,10 +804,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -823,14 +823,14 @@
     "id": 9000000018,
     "handle": "gunnpod-2000-watermelon-ice",
     "title": "GunnPod 2000 Puffs - Watermelon Ice",
-    "body_html": "<h1>GunnPod 2000 Puffs - Watermelon Ice</h1><p>Cool off with the GunnPod 2000 Watermelon Ice, a refreshingly simple yet utterly satisfying flavour. The sweet, juicy taste of fresh watermelon is enhanced by a blast of cool menthol, creating a vape that feels like biting into an ice-cold slice of watermelon on a scorching Australian summer day.</p><p>The GunnPod 2000 Watermelon Ice is one of the most popular disposable vape flavours at Vapelink for good reason. It delivers clean, consistent vapour with a flavour that never gets old. The compact design and hassle-free operation make it the perfect choice for anyone looking for a reliable, affordable disposable vape.</p><ul><li>Puff Count: Approximately 2000 puffs</li><li>Battery: 1000mAh (non-rechargeable)</li><li>E-Liquid Capacity: 8ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Fresh watermelon with icy menthol</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>GunnPod 2000 Puffs - Watermelon Ice</h2>\n<p>GunnPod 2000 Puffs - Watermelon Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 12,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> GunnPod</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "GunnPod",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-11-30T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-11-30T10:00:00+11:00",
     "tags": [
-      "Brand GunnPod",
+      "Marke GunnPod",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -841,11 +841,11 @@
     "variants": [
       {
         "id": 90000018,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "12.95",
         "compare_at_price": "16.95",
         "sku": "DISP-GUNN-2000-006",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -853,10 +853,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -872,14 +872,14 @@
     "id": 9000000019,
     "handle": "hqd-cuvie-plus-1200-blueberry-lemonade",
     "title": "HQD Cuvie Plus 1200 Puffs - Blueberry Lemonade",
-    "body_html": "<h1>HQD Cuvie Plus 1200 Puffs - Blueberry Lemonade</h1><p>Refresh your palate with the HQD Cuvie Plus Blueberry Lemonade. This delightful flavour pairs the sweet, slightly tart taste of plump blueberries with the bright, citrusy zing of freshly squeezed lemonade. The result is a balanced, thirst-quenching vape that's perfect for everyday enjoyment.</p><p>The HQD Cuvie Plus is a compact powerhouse that delivers 1200 puffs of smooth, flavourful vapour. Its ultra-portable design makes it one of the most discreet disposable vapes on the market. With HQD's reputation for quality and consistency, you can trust that every puff will be as good as the first.</p><ul><li>Puff Count: Approximately 1200 puffs</li><li>Battery: 950mAh (non-rechargeable)</li><li>E-Liquid Capacity: 5ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Sweet blueberry with tangy lemonade</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>HQD Cuvie Plus 1200 Puffs - Blueberry Lemonade</h2>\n<p>HQD Cuvie Plus 1200 Puffs - Blueberry Lemonade ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 9,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "HQD",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-12-15T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-12-15T10:00:00+11:00",
     "tags": [
-      "Brand HQD",
+      "Marke HQD",
       "Disposable",
       "Disposable Vapes",
       "Berry",
@@ -889,11 +889,11 @@
     "variants": [
       {
         "id": 90000019,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "9.95",
         "compare_at_price": "14.95",
         "sku": "DISP-HQD-CUV-001",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -901,10 +901,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -920,14 +920,14 @@
     "id": 9000000020,
     "handle": "hqd-cuvie-plus-1200-grapey",
     "title": "HQD Cuvie Plus 1200 Puffs - Grapey",
-    "body_html": "<h1>HQD Cuvie Plus 1200 Puffs - Grapey</h1><p>Indulge in the bold, sweet taste of the HQD Cuvie Plus Grapey. This flavour delivers a rich, candy-like grape experience that's reminiscent of your favourite grape-flavoured sweets. It's intensely fruity, wonderfully sweet, and utterly addictive — one puff and you'll understand why Grapey is one of HQD's most popular flavours.</p><p>The HQD Cuvie Plus packs serious flavour into a remarkably small package. At just 1200 puffs, it's the ideal size for trying new flavours or keeping as a backup in your bag. HQD's proven track record for manufacturing quality ensures reliable performance and consistent flavour every single time.</p><ul><li>Puff Count: Approximately 1200 puffs</li><li>Battery: 950mAh (non-rechargeable)</li><li>E-Liquid Capacity: 5ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Sweet, candy-like grape</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>HQD Cuvie Plus 1200 Puffs - Grapey</h2>\n<p>HQD Cuvie Plus 1200 Puffs - Grapey ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 9,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "HQD",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-12-18T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-12-18T10:00:00+11:00",
     "tags": [
-      "Brand HQD",
+      "Marke HQD",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -937,11 +937,11 @@
     "variants": [
       {
         "id": 90000020,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "9.95",
         "compare_at_price": "14.95",
         "sku": "DISP-HQD-CUV-002",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -949,10 +949,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -968,14 +968,14 @@
     "id": 9000000021,
     "handle": "hqd-cuvie-plus-1200-mango-ice",
     "title": "HQD Cuvie Plus 1200 Puffs - Mango Ice",
-    "body_html": "<h1>HQD Cuvie Plus 1200 Puffs - Mango Ice</h1><p>Experience the tropical bliss of the HQD Cuvie Plus Mango Ice. Lush, ripe mango flavour takes centre stage with its naturally sweet, tropical taste, while a subtle menthol chill on the exhale adds a refreshing coolness that balances the sweetness perfectly. It's a flavour combination that transports you straight to a tropical island.</p><p>The ultra-compact HQD Cuvie Plus is designed for vapers who want premium flavour in a pocket-sized package. With 1200 puffs of consistently smooth vapour, it's an affordable way to enjoy high-quality disposable vaping. Available now at Vapelink with fast shipping across Australia.</p><ul><li>Puff Count: Approximately 1200 puffs</li><li>Battery: 950mAh (non-rechargeable)</li><li>E-Liquid Capacity: 5ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Tropical mango with cool menthol</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>HQD Cuvie Plus 1200 Puffs - Mango Ice</h2>\n<p>HQD Cuvie Plus 1200 Puffs - Mango Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 9,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "HQD",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-12-20T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-12-20T10:00:00+11:00",
     "tags": [
-      "Brand HQD",
+      "Marke HQD",
       "Disposable",
       "Disposable Vapes",
       "Tropical",
@@ -986,11 +986,11 @@
     "variants": [
       {
         "id": 90000021,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "9.95",
         "compare_at_price": "14.95",
         "sku": "DISP-HQD-CUV-003",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -998,10 +998,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -1017,14 +1017,14 @@
     "id": 9000000022,
     "handle": "hqd-cuvie-plus-1200-strawberry-banana",
     "title": "HQD Cuvie Plus 1200 Puffs - Strawberry Banana",
-    "body_html": "<h1>HQD Cuvie Plus 1200 Puffs - Strawberry Banana</h1><p>The HQD Cuvie Plus Strawberry Banana is a smooth, creamy delight that captures the essence of a freshly blended fruit smoothie. Juicy strawberries and ripe bananas come together in perfect harmony, creating a flavour that's sweet, smooth, and endlessly enjoyable. It's comfort vaping at its finest.</p><p>Compact enough to fit in the palm of your hand, the HQD Cuvie Plus is the ultimate grab-and-go disposable vape. Its 1200 puff capacity makes it ideal for a weekend out, a work day, or as a convenient backup device. HQD's commitment to quality means you can count on a satisfying experience every time.</p><ul><li>Puff Count: Approximately 1200 puffs</li><li>Battery: 950mAh (non-rechargeable)</li><li>E-Liquid Capacity: 5ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Sweet strawberry with creamy banana</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>HQD Cuvie Plus 1200 Puffs - Strawberry Banana</h2>\n<p>HQD Cuvie Plus 1200 Puffs - Strawberry Banana ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 9,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "HQD",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-12-23T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-12-23T10:00:00+11:00",
     "tags": [
-      "Brand HQD",
+      "Marke HQD",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -1033,11 +1033,11 @@
     "variants": [
       {
         "id": 90000022,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "9.95",
         "compare_at_price": "14.95",
         "sku": "DISP-HQD-CUV-004",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -1045,10 +1045,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -1064,14 +1064,14 @@
     "id": 9000000023,
     "handle": "hqd-cuvie-plus-1200-mix-berries",
     "title": "HQD Cuvie Plus 1200 Puffs - Mix Berries",
-    "body_html": "<h1>HQD Cuvie Plus 1200 Puffs - Mix Berries</h1><p>Dive into a luscious berry medley with the HQD Cuvie Plus Mix Berries. This rich, fruity flavour blends strawberries, blueberries, raspberries, and blackberries into one irresistible combination. The result is a complex, multi-layered berry experience that's sweet, slightly tart, and incredibly satisfying from start to finish.</p><p>The HQD Cuvie Plus delivers premium disposable vaping at an unbeatable price point. With its reliable 950mAh battery and 5ml e-liquid capacity, it provides up to 1200 puffs of smooth, flavour-packed vapour. It's the perfect choice for berry lovers who want a hassle-free vaping experience from Vapelink.</p><ul><li>Puff Count: Approximately 1200 puffs</li><li>Battery: 950mAh (non-rechargeable)</li><li>E-Liquid Capacity: 5ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Mixed berry medley</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>HQD Cuvie Plus 1200 Puffs - Mix Berries</h2>\n<p>HQD Cuvie Plus 1200 Puffs - Mix Berries ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 9,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "HQD",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-12-27T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-12-27T10:00:00+11:00",
     "tags": [
-      "Brand HQD",
+      "Marke HQD",
       "Disposable",
       "Disposable Vapes",
       "Berry",
@@ -1081,11 +1081,11 @@
     "variants": [
       {
         "id": 90000023,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "9.95",
         "compare_at_price": "14.95",
         "sku": "DISP-HQD-CUV-005",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -1093,10 +1093,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -1112,14 +1112,14 @@
     "id": 9000000024,
     "handle": "hqd-cuvie-plus-1200-peach-ice",
     "title": "HQD Cuvie Plus 1200 Puffs - Peach Ice",
-    "body_html": "<h1>HQD Cuvie Plus 1200 Puffs - Peach Ice</h1><p>Savour the gentle sweetness of ripe peaches with a crisp, cooling menthol finish in the HQD Cuvie Plus Peach Ice. This elegant flavour delivers a soft, nectar-like peach taste that's enhanced by a subtle icy exhale, creating a refreshing and sophisticated vaping experience that's easy to enjoy all day long.</p><p>The HQD Cuvie Plus Peach Ice is a standout in the budget-friendly disposable vape category. Despite its compact size, it packs impressive flavour and vapour production. Whether you're new to vaping or a seasoned enthusiast, the Cuvie Plus offers a premium experience at a price that won't break the bank.</p><ul><li>Puff Count: Approximately 1200 puffs</li><li>Battery: 950mAh (non-rechargeable)</li><li>E-Liquid Capacity: 5ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Soft peach with cool menthol</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>HQD Cuvie Plus 1200 Puffs - Peach Ice</h2>\n<p>HQD Cuvie Plus 1200 Puffs - Peach Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 9,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "HQD",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2025-12-30T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2025-12-30T10:00:00+11:00",
     "tags": [
-      "Brand HQD",
+      "Marke HQD",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -1130,11 +1130,11 @@
     "variants": [
       {
         "id": 90000024,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "9.95",
         "compare_at_price": "14.95",
         "sku": "DISP-HQD-CUV-006",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -1142,10 +1142,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -1161,14 +1161,14 @@
     "id": 9000000025,
     "handle": "elux-firerose-nova-600-apple-peach-pear",
     "title": "Elux Firerose Nova 600 Puffs - Apple Peach Pear",
-    "body_html": "<h1>Elux Firerose Nova 600 Puffs - Apple Peach Pear</h1><p>The Elux Firerose Nova Apple Peach Pear is a sophisticated triple-fruit blend that delivers a beautifully balanced vaping experience. Crisp green apple, sweet peach, and juicy pear come together in a harmonious medley that's light, refreshing, and perfect for those who prefer subtler, more nuanced fruit flavours over bold, sweet profiles.</p><p>The Elux Firerose Nova 600 is a stylish, ultra-compact disposable vape designed for simplicity and portability. With 600 puffs of smooth vapour, it's ideal for social occasions, travel, or as an introduction to vaping. Its sleek design and premium build quality make it a standout choice at Vapelink's affordable price point.</p><ul><li>Puff Count: Approximately 600 puffs</li><li>Battery: 550mAh (non-rechargeable)</li><li>E-Liquid Capacity: 2ml</li><li>Nicotine Strength: 2% (20mg/ml)</li><li>Flavour Profile: Crisp apple, sweet peach, and juicy pear</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>Elux Firerose Nova 600 Puffs - Apple Peach Pear</h2>\n<p>Elux Firerose Nova 600 Puffs - Apple Peach Pear ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 7,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "Elux",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2026-01-05T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2026-01-05T10:00:00+11:00",
     "tags": [
-      "Brand Elux",
+      "Marke Elux",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -1177,11 +1177,11 @@
     "variants": [
       {
         "id": 90000025,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "7.95",
         "compare_at_price": "12.95",
         "sku": "DISP-ELUX-NOVA-001",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -1189,10 +1189,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -1208,14 +1208,14 @@
     "id": 9000000026,
     "handle": "elux-firerose-nova-600-blue-razz-cherry",
     "title": "Elux Firerose Nova 600 Puffs - Blue Razz Cherry",
-    "body_html": "<h1>Elux Firerose Nova 600 Puffs - Blue Razz Cherry</h1><p>Get ready for a flavour explosion with the Elux Firerose Nova Blue Razz Cherry. This vibrant flavour combines the sweet, tangy kick of blue raspberry with the deep, rich sweetness of ripe cherries. The result is a bold, candy-inspired vape that's playful, fun, and incredibly moreish — perfect for vapers with a sweet tooth.</p><p>The Elux Firerose Nova 600 is crafted with attention to detail, from its stylish exterior to its smooth-drawing mouthpiece. At just 600 puffs, it's the perfect compact companion for a night out or a quick flavour fix. Experience premium disposable vaping at a fraction of the price with Vapelink.</p><ul><li>Puff Count: Approximately 600 puffs</li><li>Battery: 550mAh (non-rechargeable)</li><li>E-Liquid Capacity: 2ml</li><li>Nicotine Strength: 2% (20mg/ml)</li><li>Flavour Profile: Tangy blue raspberry with sweet cherry</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>Elux Firerose Nova 600 Puffs - Blue Razz Cherry</h2>\n<p>Elux Firerose Nova 600 Puffs - Blue Razz Cherry ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 7,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "Elux",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2026-01-07T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2026-01-07T10:00:00+11:00",
     "tags": [
-      "Brand Elux",
+      "Marke Elux",
       "Disposable",
       "Disposable Vapes",
       "Candy",
@@ -1225,11 +1225,11 @@
     "variants": [
       {
         "id": 90000026,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "7.95",
         "compare_at_price": "12.95",
         "sku": "DISP-ELUX-NOVA-002",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -1237,10 +1237,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -1256,14 +1256,14 @@
     "id": 9000000027,
     "handle": "elux-firerose-nova-600-cotton-candy",
     "title": "Elux Firerose Nova 600 Puffs - Cotton Candy",
-    "body_html": "<h1>Elux Firerose Nova 600 Puffs - Cotton Candy</h1><p>Relive the magic of the carnival with the Elux Firerose Nova Cotton Candy. This whimsical flavour perfectly recreates the airy, spun-sugar sweetness of freshly made cotton candy. It's light, fluffy, and wonderfully sweet — a nostalgic flavour that brings a smile with every puff and appeals to vapers who love dessert-style profiles.</p><p>The Elux Firerose Nova 600 packs a delightful vaping experience into a beautifully designed, ultra-portable device. With its 600 puff capacity and smooth draw, it's the perfect disposable vape for casual use or as a fun flavour to rotate into your collection. Available now at Vapelink with express delivery across Australia.</p><ul><li>Puff Count: Approximately 600 puffs</li><li>Battery: 550mAh (non-rechargeable)</li><li>E-Liquid Capacity: 2ml</li><li>Nicotine Strength: 2% (20mg/ml)</li><li>Flavour Profile: Sweet, airy cotton candy</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>Elux Firerose Nova 600 Puffs - Cotton Candy</h2>\n<p>Elux Firerose Nova 600 Puffs - Cotton Candy ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 7,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "Elux",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2026-01-09T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2026-01-09T10:00:00+11:00",
     "tags": [
-      "Brand Elux",
+      "Marke Elux",
       "Disposable",
       "Disposable Vapes",
       "Candy",
@@ -1273,11 +1273,11 @@
     "variants": [
       {
         "id": 90000027,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "7.95",
         "compare_at_price": "12.95",
         "sku": "DISP-ELUX-NOVA-003",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -1285,10 +1285,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -1304,14 +1304,14 @@
     "id": 9000000028,
     "handle": "elux-firerose-nova-600-grape",
     "title": "Elux Firerose Nova 600 Puffs - Grape",
-    "body_html": "<h1>Elux Firerose Nova 600 Puffs - Grape</h1><p>Enjoy the classic, bold taste of ripe grapes with the Elux Firerose Nova Grape. This straightforward yet satisfying flavour delivers a rich, authentic grape taste that's sweet, full-bodied, and deeply flavourful. No gimmicks, no complexity — just pure, delicious grape in every puff for vapers who appreciate simplicity done right.</p><p>The Elux Firerose Nova 600 is one of the most affordable disposable vapes available at Vapelink, making it an excellent choice for anyone looking to try disposable vaping without a significant investment. Its reliable performance and attractive design prove that you don't have to spend a fortune for a quality vaping experience.</p><ul><li>Puff Count: Approximately 600 puffs</li><li>Battery: 550mAh (non-rechargeable)</li><li>E-Liquid Capacity: 2ml</li><li>Nicotine Strength: 2% (20mg/ml)</li><li>Flavour Profile: Rich, sweet grape</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>Elux Firerose Nova 600 Puffs - Grape</h2>\n<p>Elux Firerose Nova 600 Puffs - Grape ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 7,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "Elux",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2026-01-11T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2026-01-11T10:00:00+11:00",
     "tags": [
-      "Brand Elux",
+      "Marke Elux",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -1320,11 +1320,11 @@
     "variants": [
       {
         "id": 90000028,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "7.95",
         "compare_at_price": "12.95",
         "sku": "DISP-ELUX-NOVA-004",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -1332,10 +1332,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -1351,14 +1351,14 @@
     "id": 9000000029,
     "handle": "elux-firerose-nova-600-mr-blue",
     "title": "Elux Firerose Nova 600 Puffs - Mr Blue",
-    "body_html": "<h1>Elux Firerose Nova 600 Puffs - Mr Blue</h1><p>The Elux Firerose Nova Mr Blue is a mysterious, multi-layered flavour that combines blueberry, raspberry, and a hint of anise for a complex, intriguing vape. The sweet berry notes are balanced by a subtle coolness and depth that sets this flavour apart from typical fruit blends. It's a sophisticated choice for vapers who enjoy something a little different.</p><p>Wrapped in the Firerose Nova's elegant design, the Mr Blue flavour is as visually appealing as it is delicious. This compact 600-puff device is perfect for social settings, travel, or as a palate-cleansing change of pace from your usual flavours. Discover why Mr Blue has earned a loyal following at Vapelink.</p><ul><li>Puff Count: Approximately 600 puffs</li><li>Battery: 550mAh (non-rechargeable)</li><li>E-Liquid Capacity: 2ml</li><li>Nicotine Strength: 2% (20mg/ml)</li><li>Flavour Profile: Blueberry and raspberry with subtle coolness</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>Elux Firerose Nova 600 Puffs - Mr Blue</h2>\n<p>Elux Firerose Nova 600 Puffs - Mr Blue ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 7,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "Elux",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2026-01-13T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2026-01-13T10:00:00+11:00",
     "tags": [
-      "Brand Elux",
+      "Marke Elux",
       "Disposable",
       "Disposable Vapes",
       "Berry",
@@ -1368,11 +1368,11 @@
     "variants": [
       {
         "id": 90000029,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "7.95",
         "compare_at_price": "12.95",
         "sku": "DISP-ELUX-NOVA-005",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -1380,10 +1380,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -1399,14 +1399,14 @@
     "id": 9000000030,
     "handle": "elux-firerose-nova-600-watermelon",
     "title": "Elux Firerose Nova 600 Puffs - Watermelon",
-    "body_html": "<h1>Elux Firerose Nova 600 Puffs - Watermelon</h1><p>Nothing beats the refreshing simplicity of the Elux Firerose Nova Watermelon. This pure, clean watermelon flavour delivers the authentic taste of freshly sliced watermelon — juicy, sweet, and incredibly refreshing. It's a timeless favourite that appeals to virtually every vaper and tastes fantastic all year round.</p><p>The Elux Firerose Nova 600 Watermelon is the perfect introduction to the Elux range. Affordable, compact, and bursting with flavour, it demonstrates why Elux has become one of the fastest-growing disposable vape brands in Australia. Order yours today from Vapelink and taste the difference quality makes.</p><ul><li>Puff Count: Approximately 600 puffs</li><li>Battery: 550mAh (non-rechargeable)</li><li>E-Liquid Capacity: 2ml</li><li>Nicotine Strength: 2% (20mg/ml)</li><li>Flavour Profile: Fresh, sweet watermelon</li><li>Draw-activated firing mechanism</li></ul>",
+    "body_html": "<h2>Elux Firerose Nova 600 Puffs - Watermelon</h2>\n<p>Elux Firerose Nova 600 Puffs - Watermelon ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 7,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "Elux",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2026-01-15T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2026-01-15T10:00:00+11:00",
     "tags": [
-      "Brand Elux",
+      "Marke Elux",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -1415,11 +1415,11 @@
     "variants": [
       {
         "id": 90000030,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "7.95",
         "compare_at_price": "12.95",
         "sku": "DISP-ELUX-NOVA-006",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -1427,10 +1427,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -1446,14 +1446,14 @@
     "id": 9000000031,
     "handle": "lost-mary-bm6000-triple-mango",
     "title": "Lost Mary BM6000 6000 Puffs - Triple Mango",
-    "body_html": "<h1>Lost Mary BM6000 6000 Puffs - Triple Mango</h1><p>The Lost Mary BM6000 Triple Mango delivers an unparalleled mango experience with three distinct mango varieties blended into one extraordinary flavour. From the sweet, honey-like notes of Alphonso mango to the tangy brightness of green mango and the rich depth of ripe red mango, this is the ultimate vape for mango enthusiasts who demand maximum flavour intensity.</p><p>The Lost Mary BM6000 represents the pinnacle of disposable vape technology. With an incredible 6000 puff capacity and a rechargeable 650mAh battery, it outlasts virtually every other disposable on the market. The advanced mesh coil system ensures exceptional flavour extraction, while the generous 14ml e-liquid capacity means you'll enjoy every single puff.</p><ul><li>Puff Count: Approximately 6000 puffs</li><li>Battery: 650mAh (rechargeable via USB-C)</li><li>E-Liquid Capacity: 14ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Triple mango blend — Alphonso, green, and red mango</li><li>Mesh coil technology with USB-C charging</li></ul>",
+    "body_html": "<h2>Lost Mary BM6000 6000 Puffs - Triple Mango</h2>\n<p>Lost Mary BM6000 6000 Puffs - Triple Mango ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 19,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "Lost Mary",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2026-01-20T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2026-01-20T10:00:00+11:00",
     "tags": [
-      "Brand Lost Mary",
+      "Marke Lost Mary",
       "Disposable",
       "Disposable Vapes",
       "Tropical",
@@ -1463,11 +1463,11 @@
     "variants": [
       {
         "id": 90000031,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "19.95",
         "compare_at_price": "24.95",
         "sku": "DISP-LMARY-BM6K-001",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -1475,10 +1475,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -1494,14 +1494,14 @@
     "id": 9000000032,
     "handle": "lost-mary-bm6000-blueberry-ice",
     "title": "Lost Mary BM6000 6000 Puffs - Blueberry Ice",
-    "body_html": "<h1>Lost Mary BM6000 6000 Puffs - Blueberry Ice</h1><p>Cool down with the Lost Mary BM6000 Blueberry Ice, a premium flavour that combines plump, sweet blueberries with a bracing menthol chill. The blueberry flavour is rich and authentic, delivering a burst of juicy berry sweetness on the inhale, while the icy exhale leaves your palate feeling refreshed and invigorated. It's a masterful combination of fruit and frost.</p><p>With an extraordinary 6000 puff capacity, the Lost Mary BM6000 is built for vapers who want a long-lasting device without sacrificing flavour quality. The rechargeable battery ensures you use every drop of the generous 14ml e-liquid reserve, while the advanced mesh coil provides dense, flavourful clouds with a smooth throat hit.</p><ul><li>Puff Count: Approximately 6000 puffs</li><li>Battery: 650mAh (rechargeable via USB-C)</li><li>E-Liquid Capacity: 14ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Sweet blueberry with icy menthol</li><li>Mesh coil technology with USB-C charging</li></ul>",
+    "body_html": "<h2>Lost Mary BM6000 6000 Puffs - Blueberry Ice</h2>\n<p>Lost Mary BM6000 6000 Puffs - Blueberry Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 19,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "Lost Mary",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2026-01-22T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2026-01-22T10:00:00+11:00",
     "tags": [
-      "Brand Lost Mary",
+      "Marke Lost Mary",
       "Disposable",
       "Disposable Vapes",
       "Berry",
@@ -1512,11 +1512,11 @@
     "variants": [
       {
         "id": 90000032,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "19.95",
         "compare_at_price": "24.95",
         "sku": "DISP-LMARY-BM6K-002",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -1524,10 +1524,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -1543,14 +1543,14 @@
     "id": 9000000033,
     "handle": "lost-mary-bm6000-strawberry-ice",
     "title": "Lost Mary BM6000 6000 Puffs - Strawberry Ice",
-    "body_html": "<h1>Lost Mary BM6000 6000 Puffs - Strawberry Ice</h1><p>The Lost Mary BM6000 Strawberry Ice is a beautifully crafted flavour that pairs the natural sweetness of sun-ripened strawberries with a cooling menthol breeze. Each puff delivers a burst of authentic strawberry flavour that's sweet without being overwhelming, followed by a clean, icy finish that refreshes and satisfies. It's a classic combination perfected.</p><p>The BM6000 showcases Lost Mary's commitment to innovation in the disposable vape space. The USB-C rechargeable battery ensures you never waste e-liquid due to a depleted battery, and the premium mesh coil technology provides industry-leading vapour production and flavour fidelity throughout the device's impressive 6000 puff lifespan.</p><ul><li>Puff Count: Approximately 6000 puffs</li><li>Battery: 650mAh (rechargeable via USB-C)</li><li>E-Liquid Capacity: 14ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Fresh strawberry with cool menthol</li><li>Mesh coil technology with USB-C charging</li></ul>",
+    "body_html": "<h2>Lost Mary BM6000 6000 Puffs - Strawberry Ice</h2>\n<p>Lost Mary BM6000 6000 Puffs - Strawberry Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 19,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "Lost Mary",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2026-01-25T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2026-01-25T10:00:00+11:00",
     "tags": [
-      "Brand Lost Mary",
+      "Marke Lost Mary",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -1561,11 +1561,11 @@
     "variants": [
       {
         "id": 90000033,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "19.95",
         "compare_at_price": "24.95",
         "sku": "DISP-LMARY-BM6K-003",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -1573,10 +1573,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -1592,14 +1592,14 @@
     "id": 9000000034,
     "handle": "lost-mary-bm6000-grape-jelly",
     "title": "Lost Mary BM6000 6000 Puffs - Grape Jelly",
-    "body_html": "<h1>Lost Mary BM6000 6000 Puffs - Grape Jelly</h1><p>Indulge your sweet side with the Lost Mary BM6000 Grape Jelly. This unique flavour recreates the taste of rich, wobbly grape jelly — sweet, smooth, and bursting with concentrated grape flavour. It's a playful, dessert-inspired vape that stands apart from typical fruit flavours with its candy-like sweetness and smooth, satisfying exhale.</p><p>The Lost Mary BM6000 is designed for the discerning vaper who wants maximum puffs and maximum flavour. With 6000 puffs, a rechargeable USB-C battery, and 14ml of premium e-liquid, it offers unmatched longevity in the disposable vape category. Every device is quality tested to meet Lost Mary's exacting standards before reaching Vapelink's shelves.</p><ul><li>Puff Count: Approximately 6000 puffs</li><li>Battery: 650mAh (rechargeable via USB-C)</li><li>E-Liquid Capacity: 14ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Sweet grape jelly with candy undertones</li><li>Mesh coil technology with USB-C charging</li></ul>",
+    "body_html": "<h2>Lost Mary BM6000 6000 Puffs - Grape Jelly</h2>\n<p>Lost Mary BM6000 6000 Puffs - Grape Jelly ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 19,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "Lost Mary",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2026-01-27T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2026-01-27T10:00:00+11:00",
     "tags": [
-      "Brand Lost Mary",
+      "Marke Lost Mary",
       "Disposable",
       "Disposable Vapes",
       "Candy",
@@ -1609,11 +1609,11 @@
     "variants": [
       {
         "id": 90000034,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "19.95",
         "compare_at_price": "24.95",
         "sku": "DISP-LMARY-BM6K-004",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -1621,10 +1621,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -1640,14 +1640,14 @@
     "id": 9000000035,
     "handle": "lost-mary-bm6000-watermelon",
     "title": "Lost Mary BM6000 6000 Puffs - Watermelon",
-    "body_html": "<h1>Lost Mary BM6000 6000 Puffs - Watermelon</h1><p>The Lost Mary BM6000 Watermelon delivers the pure, unadulterated taste of fresh watermelon in its most premium form. Every puff is a burst of juicy, sweet watermelon flavour that's incredibly true to life — it's like biting into a perfectly ripe watermelon fresh from the market. Clean, refreshing, and endlessly enjoyable.</p><p>With the BM6000's industry-leading 6000 puff capacity, you'll enjoy weeks of premium watermelon vaping from a single device. The rechargeable design means no wasted e-liquid, and the mesh coil technology delivers rich, satisfying clouds packed with flavour. It's the ultimate watermelon vaping experience, available exclusively at Vapelink.</p><ul><li>Puff Count: Approximately 6000 puffs</li><li>Battery: 650mAh (rechargeable via USB-C)</li><li>E-Liquid Capacity: 14ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Pure, fresh watermelon</li><li>Mesh coil technology with USB-C charging</li></ul>",
+    "body_html": "<h2>Lost Mary BM6000 6000 Puffs - Watermelon</h2>\n<p>Lost Mary BM6000 6000 Puffs - Watermelon ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 19,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "Lost Mary",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2026-01-30T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2026-01-30T10:00:00+11:00",
     "tags": [
-      "Brand Lost Mary",
+      "Marke Lost Mary",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -1656,11 +1656,11 @@
     "variants": [
       {
         "id": 90000035,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "19.95",
         "compare_at_price": "24.95",
         "sku": "DISP-LMARY-BM6K-005",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -1668,10 +1668,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],
@@ -1687,14 +1687,14 @@
     "id": 9000000036,
     "handle": "lost-mary-bm6000-cherry-peach-lemonade",
     "title": "Lost Mary BM6000 6000 Puffs - Cherry Peach Lemonade",
-    "body_html": "<h1>Lost Mary BM6000 6000 Puffs - Cherry Peach Lemonade</h1><p>The Lost Mary BM6000 Cherry Peach Lemonade is a sophisticated three-flavour blend that's both complex and refreshing. Tart, juicy cherries meet soft, sweet peaches, all rounded out by a bright, zesty lemonade base that ties everything together. It's a layered flavour profile that evolves with every puff, revealing new dimensions of taste each time.</p><p>As the flagship model in the Lost Mary range, the BM6000 is packed with premium features including a rechargeable USB-C battery, 14ml e-liquid capacity, and state-of-the-art mesh coil. With 6000 puffs of this outstanding cherry peach lemonade flavour, it's an investment in long-lasting vaping satisfaction. Shop with confidence at Vapelink — Australia's trusted vape destination.</p><ul><li>Puff Count: Approximately 6000 puffs</li><li>Battery: 650mAh (rechargeable via USB-C)</li><li>E-Liquid Capacity: 14ml</li><li>Nicotine Strength: 5% (50mg/ml)</li><li>Flavour Profile: Tart cherry, sweet peach, and zesty lemonade</li><li>Mesh coil technology with USB-C charging</li></ul>",
+    "body_html": "<h2>Lost Mary BM6000 6000 Puffs - Cherry Peach Lemonade</h2>\n<p>Lost Mary BM6000 6000 Puffs - Cherry Peach Lemonade ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 19,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
     "vendor": "Lost Mary",
-    "product_type": "Disposable Vapes",
+    "product_type": "Einweg-Vape",
     "created_at": "2026-02-01T10:00:00+11:00",
     "updated_at": "2026-02-10T10:00:00+11:00",
     "published_at": "2026-02-01T10:00:00+11:00",
     "tags": [
-      "Brand Lost Mary",
+      "Marke Lost Mary",
       "Disposable",
       "Disposable Vapes",
       "Fruity",
@@ -1704,11 +1704,11 @@
     "variants": [
       {
         "id": 90000036,
-        "title": "Default Title",
+        "title": "Standardtitel",
         "price": "19.95",
         "compare_at_price": "24.95",
         "sku": "DISP-LMARY-BM6K-006",
-        "option1": "Default Title",
+        "option1": "Standardtitel",
         "option2": null,
         "option3": null,
         "available": true
@@ -1716,10 +1716,10 @@
     ],
     "options": [
       {
-        "name": "Title",
+        "name": "Titel",
         "position": 1,
         "values": [
-          "Default Title"
+          "Standardtitel"
         ]
       }
     ],

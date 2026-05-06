@@ -12,14 +12,14 @@ interface Props {
 
 const {
   title,
-  description = "Vapelink is a Melbourne-based online vape shop. We stock vape kits, disposable vapes, e-liquids, coils, pods and accessories. Fast Australia-wide shipping with Standard & Express delivery options.",
+  description = "Mr. Nice Vape ist Ihr Online-Vape-Shop aus Köln für Vape-Kits, Einweg-Vapes, E-Liquids, Coils, Pods und Zubehör. Schneller Versand deutschlandweit mit Standard- und Expressoptionen.",
   image = '/images/hero-bg.jpg',
   canonicalUrl,
   type = 'website',
   noindex = false
 } = Astro.props;
 
-const siteTitle = title.includes('Vapelink') ? title : `${title} – Vapelink Australia`;
+const siteTitle = title.includes('Mr. Nice Vape') ? title : `${title} – Mr. Nice Vape Deutschland`;
 const currentUrl = canonicalUrl || Astro.url.href;
 
 function cleanMetaText(value: string) {
@@ -43,11 +43,11 @@ const SEO_DESC_MIN = 140;
 const seoTitle = trimAtWord(cleanMetaText(siteTitle), SEO_TITLE_MAX);
 let seoDescription = trimAtWord(cleanMetaText(description), SEO_DESC_MAX);
 if (!noindex && seoDescription.length < SEO_DESC_MIN) {
-  seoDescription = trimAtWord(`${seoDescription} Shop genuine vape products online at Vapelink Australia.`, SEO_DESC_MAX);
+  seoDescription = trimAtWord(`${seoDescription} Originale Vape-Produkte online bei Mr. Nice Vape Deutschland kaufen.`, SEO_DESC_MAX);
 }
 
-const seoImage = image.startsWith('http') ? image : `https://vapelinkstore.com.au${image}`;
-const seoImageAlt = `${seoTitle} featured image`;
+const seoImage = image.startsWith('http') ? image : `https://mrnicevape.com${image}`;
+const seoImageAlt = `${seoTitle} Titelbild`;
 
 import siteData from '../data/site.json';
 import collectionsData from '../data/collections.json';
@@ -59,7 +59,7 @@ const navCollections = collectionsData
 ---
 
 <!DOCTYPE html>
-<html lang="en-AU">
+<html lang="de-DE">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -77,7 +77,7 @@ const navCollections = collectionsData
   <meta property="og:url" content={currentUrl} />
   <meta property="og:image" content={seoImage} />
   <meta property="og:image:alt" content={seoImageAlt} />
-  <meta property="og:site_name" content="Vapelink Australia" />
+  <meta property="og:site_name" content="Mr. Nice Vape Deutschland" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -87,15 +87,17 @@ const navCollections = collectionsData
   <meta name="twitter:image:alt" content={seoImageAlt} />
 
   <link rel="canonical" href={currentUrl} />
+  <link rel="alternate" hreflang="de-DE" href={currentUrl} />
+  <link rel="alternate" hreflang="x-default" href={currentUrl} />
   <meta name="generator" content={Astro.generator} />
 
   <!-- Geo & Locale -->
-  <meta name="geo.region" content="AU-VIC" />
-  <meta name="geo.country" content="AU" />
-  <meta name="geo.placename" content="Melbourne" />
-  <meta name="geo.position" content="-37.7749;144.9632" />
-  <meta name="ICBM" content="-37.7749, 144.9632" />
-  <meta property="og:locale" content="en_AU" />
+  <meta name="geo.region" content="DE-NW" />
+  <meta name="geo.country" content="DE" />
+  <meta name="geo.placename" content="Köln" />
+  <meta name="geo.position" content="50.9375;6.9603" />
+  <meta name="ICBM" content="50.9375, 6.9603" />
+  <meta property="og:locale" content="de_DE" />
 
   <!-- Sitewide Organization & WebSite Schema -->
   <script type="application/ld+json" set:html={JSON.stringify({
@@ -103,40 +105,40 @@ const navCollections = collectionsData
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://vapelinkstore.com.au/#organization",
-        "name": "Vapelink Australia",
-        "url": "https://vapelinkstore.com.au",
+        "@id": "https://mrnicevape.com/#organization",
+        "name": "Mr. Nice Vape Deutschland",
+        "url": "https://mrnicevape.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://vapelinkstore.com.au/images/logo.svg"
+          "url": "https://mrnicevape.com/images/logo.svg"
         },
         "contactPoint": {
           "@type": "ContactPoint",
-          "email": "info@vapelinkstore.com.au",
+          "email": "info@mrnicevape.com",
           "contactType": "customer service",
-          "areaServed": "AU",
-          "availableLanguage": "English"
+          "areaServed": "DE",
+          "availableLanguage": "German"
         },
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Coburg North",
-          "addressRegion": "VIC",
-          "addressCountry": "AU"
+          "addressLocality": "Köln",
+          "addressRegion": "NRW",
+          "addressCountry": "DE"
         },
         "sameAs": []
       },
       {
         "@type": "WebSite",
-        "@id": "https://vapelinkstore.com.au/#website",
-        "url": "https://vapelinkstore.com.au",
-        "name": "Vapelink Australia",
-        "publisher": { "@id": "https://vapelinkstore.com.au/#organization" },
-        "inLanguage": "en-AU",
+        "@id": "https://mrnicevape.com/#website",
+        "url": "https://mrnicevape.com",
+        "name": "Mr. Nice Vape Deutschland",
+        "publisher": { "@id": "https://mrnicevape.com/#organization" },
+        "inLanguage": "de-DE",
         "potentialAction": {
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://vapelinkstore.com.au/search?q={search_term_string}"
+            "urlTemplate": "https://mrnicevape.com/search?q={search_term_string}"
           },
           "query-input": "required name=search_term_string"
         }
@@ -155,16 +157,16 @@ const navCollections = collectionsData
         <div style="width:56px;height:56px;margin:0 auto 1.25rem;border-radius:var(--radius-lg);background:var(--color-accent-soft);display:flex;align-items:center;justify-content:center;">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
-        <h2 class="font-display" style="font-size:1.2rem;font-weight:700;color:var(--color-text);margin-bottom:0.4rem;">Age Verification</h2>
+        <h2 class="font-display" style="font-size:1.2rem;font-weight:700;color:var(--color-text);margin-bottom:0.4rem;">Altersprüfung</h2>
         <p style="color:var(--color-text-secondary);font-size:0.88rem;line-height:1.6;margin-bottom:1.75rem;">
-          You must be <strong style="color:var(--color-text)">18 years or older</strong> to access this website.
+          Sie müssen <strong style="color:var(--color-text)">mindestens 18 Jahre alt</strong> sein, um diese Website zu nutzen.
         </p>
         <div style="display:flex;gap:0.6rem;justify-content:center;">
-          <button id="age-yes" class="btn-primary cursor-pointer" style="padding:0.75rem 2.25rem;font-size:0.95rem;">I'm 18+</button>
-          <button id="age-no" class="btn-secondary cursor-pointer" style="padding:0.75rem 2.25rem;font-size:0.95rem;">Exit</button>
+          <button id="age-yes" class="btn-primary cursor-pointer" style="padding:0.75rem 2.25rem;font-size:0.95rem;">Ich bin 18+</button>
+          <button id="age-no" class="btn-secondary cursor-pointer" style="padding:0.75rem 2.25rem;font-size:0.95rem;">Verlassen</button>
         </div>
         <p style="color:var(--color-text-muted);font-size:0.72rem;margin-top:1.25rem;line-height:1.5;">
-          By entering, you agree you are of legal age to purchase nicotine products in your jurisdiction.
+          Mit dem Betreten bestätigen Sie, dass Sie in Ihrem Land zum Kauf nikotinhaltiger Produkte berechtigt sind.
         </p>
       </div>
     </div>
@@ -176,42 +178,42 @@ const navCollections = collectionsData
       <div class="announcement-inner" id="announcement-inner">
         <span class="announcement-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          Standard & Express shipping Australia-wide
+          Standard- & Expressversand deutschlandweit
         </span>
         <span class="announcement-sep">·</span>
         <span class="announcement-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          18+ only — Age verification required
+          Nur 18+ — Altersprüfung erforderlich
         </span>
         <span class="announcement-sep">·</span>
         <span class="announcement-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          Melbourne, VIC — Australia-wide shipping
+          Köln, NRW — Versand deutschlandweit
         </span>
         <span class="announcement-sep">·</span>
         <span class="announcement-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-          Australia's favourite vape shop
+          Deutschlands beliebter Vape-Shop
         </span>
         <span class="announcement-sep">·</span>
         <span class="announcement-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          Standard & Express shipping Australia-wide
+          Standard- & Expressversand deutschlandweit
         </span>
         <span class="announcement-sep">·</span>
         <span class="announcement-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          18+ only — Age verification required
+          Nur 18+ — Altersprüfung erforderlich
         </span>
         <span class="announcement-sep">·</span>
         <span class="announcement-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          Melbourne, VIC — Australia-wide shipping
+          Köln, NRW — Versand deutschlandweit
         </span>
         <span class="announcement-sep">·</span>
         <span class="announcement-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-          Australia's favourite vape shop
+          Deutschlands beliebter Vape-Shop
         </span>
         <span class="announcement-sep">·</span>
       </div>
@@ -223,19 +225,19 @@ const navCollections = collectionsData
     <div class="header-container">
 
       <!-- Logo -->
-      <a href="/" class="logo-link" aria-label="Vapelink Australia — Home">
-        <img src="/images/logo.svg" alt="Vapelink Australia" class="logo-img" loading="eager" />
+      <a href="/" class="logo-link" aria-label="Mr. Nice Vape — Startseite">
+        <span class="logo-text font-display">Mr. Nice Vape</span>
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="desktop-nav" aria-label="Main navigation">
-        <a href="/" class="nav-link">Home</a>
-        <a href="/collections/shop" class="nav-link">Shop</a>
+      <nav class="desktop-nav" aria-label="Hauptnavigation">
+        <a href="/" class="nav-link">Startseite</a>
+        <a href="/collections/shop" class="nav-link">Alle Produkte</a>
 
-        <!-- Collections Mega Menu -->
+        <!-- collections Mega menu -->
         <div class="mega-wrap" id="mega-wrap">
           <button class="nav-link mega-trigger" id="mega-trigger" aria-haspopup="true" aria-expanded="false">
-            Collections
+            Kategorien
             <svg class="mega-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
           </button>
           <div class="mega-menu" id="mega-menu" role="menu">
@@ -250,7 +252,7 @@ const navCollections = collectionsData
               </div>
               <div class="mega-footer">
                 <a href="/collections" class="mega-all-link">
-                  Browse all collections
+                  Alle Kategorien ansehen
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                 </a>
               </div>
@@ -259,25 +261,25 @@ const navCollections = collectionsData
         </div>
 
         <a href="/blog" class="nav-link">Blog</a>
-        <a href="/about" class="nav-link">About</a>
-        <a href="/contact" class="nav-link">Contact</a>
+        <a href="/about" class="nav-link">Über uns</a>
+        <a href="/contact" class="nav-link">Kontakt</a>
       </nav>
 
       <!-- Header Actions -->
       <div class="header-actions">
-        <!-- Search -->
-        <button id="search-toggle" class="hdr-btn" aria-label="Open search">
+        <!-- search -->
+        <button id="search-toggle" class="hdr-btn" aria-label="Suche öffnen">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         </button>
 
-        <!-- Cart -->
-        <button id="cart-toggle" class="hdr-btn hdr-cart-btn" aria-label="Open cart">
+        <!-- cart -->
+        <button id="cart-toggle" class="hdr-btn hdr-cart-btn" aria-label="Warenkorb öffnen">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
           <span id="cart-count" class="cart-badge" style="display:none;">0</span>
         </button>
 
         <!-- Mobile Hamburger -->
-        <button id="mobile-menu-btn" class="hdr-btn hdr-menu-btn" aria-label="Open menu" aria-expanded="false">
+        <button id="mobile-menu-btn" class="hdr-btn hdr-menu-btn" aria-label="Menü öffnen" aria-expanded="false">
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
           <span class="hamburger-line"></span>
@@ -286,12 +288,12 @@ const navCollections = collectionsData
 
     </div>
 
-    <!-- Search Slide-Down Bar -->
+    <!-- search Slide-Down Bar -->
     <div id="search-bar" class="search-bar" aria-hidden="true">
       <form action="/search" method="get" class="search-bar-form">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-        <input id="search-bar-input" type="text" name="q" placeholder="Search products, brands, collections…" class="search-bar-input" autocomplete="off" spellcheck="false" />
-        <button type="button" id="search-close" class="search-bar-close" aria-label="Close search">
+        <input id="search-bar-input" type="text" name="q" placeholder="Produkte, Marken, Kategorien suchen…" class="search-bar-input" autocomplete="off" spellcheck="false" />
+        <button type="button" id="search-close" class="search-bar-close" aria-label="Suche schließen">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
         </button>
       </form>
@@ -300,29 +302,29 @@ const navCollections = collectionsData
 
   <!-- ═══ Mobile Nav Overlay ═══ -->
   <div id="mobile-overlay" class="mobile-overlay" aria-hidden="true"></div>
-  <aside id="mobile-menu" class="mobile-drawer" aria-label="Mobile navigation" aria-hidden="true">
+  <aside id="mobile-menu" class="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
     <div class="mobile-drawer-head">
       <a href="/" class="logo-link">
-        <img src="/images/logo.svg" alt="Vapelink Australia" style="height:36px;" />
+        <span class="logo-text font-display" style="font-size:1.05rem;">Mr. Nice Vape</span>
       </a>
-      <button id="mobile-close" class="hdr-btn" aria-label="Close menu">
+      <button id="mobile-close" class="hdr-btn" aria-label="Menü schließen">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
       </button>
     </div>
     <nav class="mobile-nav-list">
       <a href="/" class="mobile-nav-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        Home
+        Startseite
       </a>
       <a href="/collections/shop" class="mobile-nav-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-        Shop All
+        Alle Produkte
       </a>
-      <!-- Mobile Collections Accordion -->
+      <!-- Mobile collections Accordion -->
       <div class="mobile-accordion">
         <button class="mobile-nav-item mobile-accordion-trigger" id="mobile-collections-btn" aria-expanded="false">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="7" height="7"/><rect x="15" y="3" width="7" height="7"/><rect x="15" y="14" width="7" height="7"/><rect x="2" y="14" width="7" height="7"/></svg>
-          Collections
+          Kategorien
           <svg class="accordion-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
         </button>
         <div class="mobile-accordion-panel" id="mobile-collections-panel">
@@ -332,7 +334,7 @@ const navCollections = collectionsData
               <span class="mobile-sub-count">{c.products_count}</span>
             </a>
           ))}
-          <a href="/collections" class="mobile-sub-item mobile-sub-all">All collections →</a>
+          <a href="/collections" class="mobile-sub-item mobile-sub-all">Alle Kategorien →</a>
         </div>
       </div>
       <a href="/blog" class="mobile-nav-item">
@@ -341,46 +343,46 @@ const navCollections = collectionsData
       </a>
       <a href="/about" class="mobile-nav-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-        About
+        Über uns
       </a>
       <a href="/contact" class="mobile-nav-item">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.53 3.47 2 2 0 0 1 3.5 1.26h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.34a16 16 0 0 0 6.29 6.29l.38-.38a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.28 16.92z"/></svg>
-        Contact
+        Kontakt
       </a>
     </nav>
     <div class="mobile-drawer-foot">
       <a href="/account/orders" class="mobile-foot-link">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"/><path d="m7.5 4.27 9 5.15"/><polyline points="3.29 7 12 12 20.71 7"/><line x1="12" y1="22" x2="12" y2="12"/><circle cx="18.5" cy="15.5" r="2.5"/><path d="M20.27 17.27 22 19"/></svg>
-        Track My Orders
+        Meine Bestellungen verfolgen
       </a>
-      <p class="mobile-legal">18+ only. Products contain nicotine, an addictive substance.</p>
+      <p class="mobile-legal">Nur ab 18 Jahren. Nikotin ist ein Stoff mit Abhängigkeitspotenzial.</p>
     </div>
   </aside>
 
-  <!-- Search overlay hidden — search bar now in header -->
+  <!-- search overlay hidden — search bar now in header -->
 
   <!-- Main -->
   <main>
     <slot />
   </main>
 
-  <!-- ═══ Cart Drawer ═══ -->
+  <!-- ═══ cart Drawer ═══ -->
   <div id="cart-overlay" class="cart-overlay" style="display:none;"></div>
   <aside id="cart-drawer" class="cart-drawer" style="transform:translateX(100%);">
     <div class="cart-drawer-header">
-      <h2 class="font-display" style="font-size:1.1rem;font-weight:700;color:var(--color-text);">Your Cart</h2>
-      <button id="cart-close" class="cart-close-btn" aria-label="Close cart">
+      <h2 class="font-display" style="font-size:1.1rem;font-weight:700;color:var(--color-text);">Dein Warenkorb</h2>
+      <button id="cart-close" class="cart-close-btn" aria-label="Warenkorb schließen">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
       </button>
     </div>
     <div id="cart-items" class="cart-items"></div>
     <div id="cart-footer" class="cart-footer" style="display:none;">
-      <!-- Minimum Order Warning -->
+      <!-- Hinweis zum Mindestbestellwert -->
       <div id="drawer-min-order-banner" class="drawer-min-order-banner" style="display:none;">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
         <div>
-          <strong style="font-size:0.78rem;color:#92400E;">Minimum order: $300.00 AUD</strong>
-          <p id="drawer-min-order-msg" style="font-size:0.72rem;color:#A16207;margin:0.1rem 0 0;">Add <span id="drawer-min-remaining" style="font-weight:700;color:#92400E;">$300.00</span> more to checkout.</p>
+          <strong style="font-size:0.78rem;color:#92400E;">Mindestbestellung: €200,00 EUR</strong>
+          <p id="drawer-min-order-msg" style="font-size:0.72rem;color:#A16207;margin:0.1rem 0 0;">Lege noch <span id="drawer-min-remaining" style="font-weight:700;color:#92400E;">€200,00</span> in den Warenkorb.</p>
         </div>
       </div>
       <!-- Min order progress -->
@@ -391,27 +393,27 @@ const navCollections = collectionsData
       </div>
 
       <div class="cart-total-row">
-        <span style="font-weight:600;color:var(--color-text);">Total</span>
-        <span id="cart-total" class="font-display" style="font-size:1.15rem;font-weight:700;color:var(--color-text);">$0.00 AUD</span>
+        <span style="font-weight:600;color:var(--color-text);">Gesamt</span>
+        <span id="cart-total" class="font-display" style="font-size:1.15rem;font-weight:700;color:var(--color-text);">€0,00</span>
       </div>
       <a href="/checkout" class="btn-primary" id="cart-checkout-btn" style="width:100%;padding:0.85rem;justify-content:center;font-size:0.95rem;">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        Checkout
+        Zur Kasse
       </a>
       <a href="/cart" class="btn-secondary" style="width:100%;padding:0.75rem;justify-content:center;font-size:0.88rem;margin-top:0.5rem;text-decoration:none;">
-        View Cart
+        Warenkorb ansehen
       </a>
       <button id="cart-continue" class="btn-secondary" style="width:100%;padding:0.75rem;justify-content:center;font-size:0.88rem;margin-top:0.5rem;">
-        Continue Shopping
+        Weiter einkaufen
       </button>
       <button id="cart-clear" class="cart-clear-link">
-        Clear Cart
+        Warenkorb leeren
       </button>
     </div>
     <div id="cart-empty" class="cart-empty">
       <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-dim)" stroke-width="1.5"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-      <p style="color:var(--color-text-secondary);font-size:0.9rem;margin-top:0.75rem;">Your cart is empty</p>
-      <a href="/collections/shop" class="btn-secondary" style="margin-top:1rem;padding:0.55rem 1.5rem;font-size:0.82rem;">Browse Products</a>
+      <p style="color:var(--color-text-secondary);font-size:0.9rem;margin-top:0.75rem;">Dein Warenkorb ist leer</p>
+      <a href="/collections/shop" class="btn-secondary" style="margin-top:1rem;padding:0.55rem 1.5rem;font-size:0.82rem;">Produkte ansehen</a>
     </div>
   </aside>
 
@@ -420,35 +422,35 @@ const navCollections = collectionsData
     <div class="container footer-inner">
       <div class="footer-grid">
         <div>
-          <img src="/images/logo.svg" alt="Vapelink Australia" style="height:42px;margin-bottom:1rem;" />
+          <span class="logo-text font-display" style="display:inline-block;font-size:1.35rem;margin-bottom:1rem;color:var(--color-text);">Mr. Nice Vape</span>
           <p class="footer-desc">{siteData.description.substring(0, 180)}</p>
         </div>
         <div>
-          <h3 class="font-display footer-heading">Quick Links</h3>
+          <h3 class="font-display footer-heading">Schnelllinks</h3>
           <ul class="footer-links">
-            <li><a href="/collections/shop">Shop All</a></li>
-            <li><a href="/collections/all-vape-kits">Vape Kits</a></li>
-            <li><a href="/collections/all-accessories">Accessories</a></li>
-            <li><a href="/collections/all-clearance">Clearance</a></li>
+            <li><a href="/collections/shop">Alle Produkte</a></li>
+            <li><a href="/collections/all-vape-kits">Vape-Kits</a></li>
+            <li><a href="/collections/all-accessories">Zubehör</a></li>
+            <li><a href="/collections/all-clearance">Sale</a></li>
           </ul>
         </div>
         <div>
           <h3 class="font-display footer-heading">Information</h3>
           <ul class="footer-links">
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/pages/shipping-policy">Shipping Policy</a></li>
-            <li><a href="/pages/refund-policy">Refund Policy</a></li>
-            <li><a href="/pages/privacy-policy">Privacy Policy</a></li>
-            <li><a href="/pages/terms-conditions">Terms & Conditions</a></li>
-            <li><a href="/pages/cookies-policy">Cookies Policy</a></li>
+            <li><a href="/about">Über uns</a></li>
+            <li><a href="/contact">Kontakt</a></li>
+            <li><a href="/pages/shipping-policy">Versandbedingungen</a></li>
+            <li><a href="/pages/refund-policy">Rückgaberecht</a></li>
+            <li><a href="/pages/privacy-policy">Datenschutzerklärung</a></li>
+            <li><a href="/pages/terms-conditions">AGB</a></li>
+            <li><a href="/pages/cookies-policy">Cookie-Richtlinie</a></li>
             <li><a href="/faq">FAQ</a></li>
           </ul>
         </div>
         <div>
-          <h3 class="font-display footer-heading">Get in Touch</h3>
+          <h3 class="font-display footer-heading">Kontakt aufnehmen</h3>
           <div class="footer-contact">
-            <a href="mailto:info@vapelinkstore.com.au" class="contact-item">
+            <a href="mailto:info@mrnicevape.com" class="contact-item">
               <span class="contact-icon">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               </span>
@@ -458,7 +460,7 @@ const navCollections = collectionsData
               <span class="contact-icon">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
               </span>
-              Melbourne, VIC, Australia
+              Köln, NRW, Deutschland
             </div>
           </div>
         </div>
@@ -466,19 +468,19 @@ const navCollections = collectionsData
 
       <!-- Legal disclaimer -->
       <div class="footer-legal">
-        <p>WARNING: This product contains nicotine. Nicotine is an addictive chemical. Products sold on this site are intended for adults of legal smoking age only (18+). By using this website, you agree to our <a href="/pages/terms-conditions" style="text-decoration:underline;">Terms & Conditions</a> and <a href="/pages/privacy-policy" style="text-decoration:underline;">Privacy Policy</a>.</p>
+        <p>WARNHINWEIS: Nikotin ist ein Stoff mit Abhängigkeitspotenzial. Die auf dieser Website angebotenen Produkte richten sich ausschließlich an volljährige Personen ab 18 Jahren. Mit der Nutzung dieser Website stimmen Sie unseren <a href="/pages/terms-conditions" style="text-decoration:underline;">AGB</a> und unserer <a href="/pages/privacy-policy" style="text-decoration:underline;">Datenschutzerklärung</a> zu.</p>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Vapelink Australia. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Mr. Nice Vape Deutschland. Alle Rechte vorbehalten.</p>
         <div class="footer-pay-badges">
           <span class="pay-badge">
             <svg class="pay-icon" width="18" height="18" viewBox="0 0 64 64" fill="none"><rect x="4" y="54" width="56" height="4" rx="1" fill="currentColor" opacity="0.7"/><rect x="4" y="24" width="56" height="5" rx="1" fill="currentColor" opacity="0.5"/><path d="M32 4L4 24h56L32 4z" fill="currentColor" opacity="0.5"/><rect x="10" y="29" width="5" height="25" rx="1" fill="currentColor" opacity="0.3"/><rect x="22" y="29" width="5" height="25" rx="1" fill="currentColor" opacity="0.3"/><rect x="37" y="29" width="5" height="25" rx="1" fill="currentColor" opacity="0.3"/><rect x="49" y="29" width="5" height="25" rx="1" fill="currentColor" opacity="0.3"/></svg>
-            Bank Transfer
+            Banküberweisung
           </span>
           <span class="pay-badge">
             <svg class="pay-icon" width="18" height="18" viewBox="0 0 64 64" fill="none"><rect width="64" height="64" rx="12" fill="#00B2A9" opacity="0.15"/><text x="32" y="40" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="24" fill="#00B2A9" text-anchor="middle" letter-spacing="-1">PAY</text><circle cx="50" cy="20" r="4" fill="#00B2A9"/><rect x="48" y="24" width="4" height="14" rx="2" fill="#00B2A9"/></svg>
-            PayID
+            SEPA
           </span>
           <span class="pay-badge">
             <svg class="pay-icon" width="18" height="18" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="#F7931A"/><path d="M46.1 27.4c.6-4.2-2.6-6.5-7-8l1.4-5.7-3.5-.9-1.4 5.5c-.9-.2-1.9-.4-2.8-.7l1.4-5.5-3.5-.9-1.4 5.7c-.8-.2-1.5-.3-2.2-.5l0 0-4.8-1.2-1 3.7s2.6.6 2.5.6c1.4.4 1.7 1.3 1.6 2l-1.6 6.5c.1 0 .2.1.3.1l-.3-.1-2.3 9.1c-.2.4-.6 1.1-1.6.8 0 0-2.5-.6-2.5-.6l-1.7 4 4.5 1.1c.8.2 1.7.4 2.5.6l-1.5 5.8 3.5.9 1.4-5.7c1 .3 1.9.5 2.8.7l-1.4 5.7 3.5.9 1.5-5.8c5.8 1.1 10.2.7 12-4.6 1.5-4.2-.1-6.7-3.2-8.3 2.2-.5 3.9-2 4.4-5.1zM39.5 38.2c-1.1 4.2-8.2 1.9-10.5 1.4l1.9-7.5c2.3.6 9.7 1.7 8.6 6.1zm1-10.9c-1 3.9-6.9 1.9-8.8 1.4l1.7-6.8c2 .5 8.2 1.4 7.1 5.4z" fill="white"/></svg>
@@ -486,10 +488,10 @@ const navCollections = collectionsData
           </span>
         </div>
         <div class="footer-bottom-links">
-          <a href="/pages/privacy-policy">Privacy</a>
-          <a href="/pages/terms-conditions">Terms</a>
-          <a href="/pages/refund-policy">Refunds</a>
-          <a href="/pages/shipping-policy">Shipping</a>
+          <a href="/pages/privacy-policy">Datenschutz</a>
+          <a href="/pages/terms-conditions">AGB</a>
+          <a href="/pages/refund-policy">Rückgaben</a>
+          <a href="/pages/shipping-policy">Versand</a>
         </div>
       </div>
     </div>
@@ -500,11 +502,11 @@ const navCollections = collectionsData
     <div class="cookie-consent-inner">
       <div class="cookie-consent-text">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-        <p>We use cookies to improve your experience, keep your cart working, and analyse site traffic. By continuing to browse, you agree to our use of cookies. <a href="/pages/cookies-policy" style="color:var(--color-accent);text-decoration:underline;font-weight:600;">Cookies Policy</a></p>
+        <p>Wir verwenden Cookies, um Ihr Einkaufserlebnis zu verbessern, den Warenkorb bereitzustellen und die Nutzung der Website zu analysieren. Wenn Sie fortfahren, stimmen Sie der Verwendung von Cookies zu. <a href="/pages/cookies-policy" style="color:var(--color-accent);text-decoration:underline;font-weight:600;">Cookie-Richtlinie</a></p>
       </div>
       <div class="cookie-consent-actions">
-        <button id="cookie-accept" class="btn-primary" style="padding:0.55rem 1.5rem;font-size:0.82rem;white-space:nowrap;">Accept All</button>
-        <button id="cookie-dismiss" class="btn-secondary" style="padding:0.55rem 1rem;font-size:0.82rem;white-space:nowrap;">Dismiss</button>
+        <button id="cookie-accept" class="btn-primary" style="padding:0.55rem 1.5rem;font-size:0.82rem;white-space:nowrap;">Alle akzeptieren</button>
+        <button id="cookie-dismiss" class="btn-secondary" style="padding:0.55rem 1rem;font-size:0.82rem;white-space:nowrap;">Schließen</button>
       </div>
     </div>
   </div>
@@ -597,6 +599,17 @@ const navCollections = collectionsData
       width: auto;
       filter: saturate(1.1);
     }
+    .logo-text {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      color: var(--color-text);
+      line-height: 1;
+      white-space: nowrap;
+    }
+    @media (min-width: 1024px) {
+      .logo-text { font-size: 1.35rem; }
+    }
 
     /* ═══════════════════════════════════════
        DESKTOP NAVIGATION
@@ -653,7 +666,7 @@ const navCollections = collectionsData
     }
     .nav-link.active::after { transform: scaleX(1); }
 
-    /* ── Mega Menu ── */
+    /* ── Mega menu ── */
     .mega-wrap {
       position: static;
     }
@@ -1031,7 +1044,7 @@ const navCollections = collectionsData
       margin-top: 0.75rem;
     }
 
-    /* ── Cart Clear Link ── */
+    /* ── cart Clear Link ── */
     .cart-clear-link {
       display: block;
       width: 100%;
@@ -1047,7 +1060,7 @@ const navCollections = collectionsData
     }
     .cart-clear-link:hover { color: var(--color-sale); }
 
-    /* Min Order Banner in Drawer */
+    /* Mindestbestellung Banner in Drawer */
     .drawer-min-order-banner {
       display: flex;
       gap: 0.6rem;
@@ -1206,7 +1219,7 @@ const navCollections = collectionsData
       .footer-pay-badges { justify-content: center; }
     }
 
-    /* ── Cart Drawer ── */
+    /* ── cart Drawer ── */
     .cart-overlay {
       position: fixed;
       inset: 0;
@@ -1482,7 +1495,7 @@ const navCollections = collectionsData
       header?.classList.toggle('scrolled', window.scrollY > 40);
     }, { passive: true });
 
-    // ── Mega Menu (desktop Collections) ──
+    // ── Mega menu (desktop collections) ──
     const megaWrap = document.getElementById('mega-wrap');
     const megaMenu = document.getElementById('mega-menu');
     const megaTrigger = document.getElementById('mega-trigger') as HTMLButtonElement | null;
@@ -1507,7 +1520,7 @@ const navCollections = collectionsData
     megaMenu?.addEventListener('mouseenter', () => clearTimeout(megaTimer));
     megaMenu?.addEventListener('mouseleave', closeMega);
 
-    // ── Search slide-down bar ──
+    // ── search slide-down bar ──
     const searchBar = document.getElementById('search-bar');
     const searchBarInput = document.getElementById('search-bar-input') as HTMLInputElement | null;
     // keep legacy overlay reference (null) to avoid errors from old JS
@@ -1525,33 +1538,33 @@ const navCollections = collectionsData
     document.getElementById('search-toggle')?.addEventListener('click', openSearch);
     document.getElementById('search-close')?.addEventListener('click', closeSearch);
 
-    // ── Cart system ──
+    // ── cart system ──
     function getCart(): any[] {
-      try { return JSON.parse(localStorage.getItem('vapelink_cart') || '[]'); } catch { return []; }
+      try { return JSON.parse(localStorage.getItem('mrnicevape_cart') || '[]'); } catch { return []; }
     }
 
     function saveCart(cart: any[]) {
-      localStorage.setItem('vapelink_cart', JSON.stringify(cart));
+      localStorage.setItem('mrnicevape_cart', JSON.stringify(cart));
       window.dispatchEvent(new CustomEvent('cart-updated'));
     }
 
     function updateCartBadges() {
       const cart = getCart();
-      const totalQty = cart.reduce((s: number, i: any) => s + (i.qty || 1), 0);
+      const totalMenge = cart.reduce((s: number, i: any) => s + (i.qty || 1), 0);
       const el = document.getElementById('cart-count');
       if (el) {
-        el.textContent = String(totalQty);
-        el.style.display = totalQty > 0 ? 'flex' : 'none';
+        el.textContent = String(totalMenge);
+        el.style.display = totalMenge > 0 ? 'flex' : 'none';
       }
     }
 
-    // ── Cart Drawer ──
+    // ── cart Drawer ──
     const cartDrawer = document.getElementById('cart-drawer');
     const cartOverlay = document.getElementById('cart-overlay');
     const cartItemsEl = document.getElementById('cart-items');
     const cartFooterEl = document.getElementById('cart-footer');
     const cartEmptyEl = document.getElementById('cart-empty');
-    const cartTotalEl = document.getElementById('cart-total');
+    const cartGesamtEl = document.getElementById('cart-total');
 
     function openCart() {
       if (cartDrawer) cartDrawer.style.transform = 'translateX(0)';
@@ -1582,15 +1595,15 @@ const navCollections = collectionsData
 
       let total = 0;
       cartItemsEl.innerHTML = cart.map((item: any, idx: number) => {
-        const itemTotal = parseFloat(item.price || '0') * (item.qty || 1);
-        total += itemTotal;
+        const itemGesamt = parseFloat(item.price || '0') * (item.qty || 1);
+        total += itemGesamt;
         const imgSrc = item.image || '';
         return `
           <div class="cart-item">
-            ${imgSrc ? `<img src="${imgSrc}" alt="${item.title || 'Cart product image'}" class="cart-item-img" onerror="this.style.display='none'"/>` : ''}
+            ${imgSrc ? `<img src="${imgSrc}" alt="${item.title || 'Produktbild im Warenkorb'}" class="cart-item-img" onerror="this.style.display='none'"/>` : ''}
             <div class="cart-item-info">
               <a href="/products/${item.handle}" class="cart-item-title" style="text-decoration:none;">${item.title}</a>
-              <div class="cart-item-price">$${itemTotal.toFixed(2)} AUD</div>
+              <div class="cart-item-price">€${itemGesamt.toFixed(2)}</div>
               <div class="cart-item-qty">
                 <button class="cart-qty-btn" data-action="minus" data-idx="${idx}">−</button>
                 <span class="cart-qty-val">${item.qty || 1}</span>
@@ -1604,10 +1617,10 @@ const navCollections = collectionsData
         `;
       }).join('');
 
-      if (cartTotalEl) cartTotalEl.textContent = `$${total.toFixed(2)} AUD`;
+      if (cartGesamtEl) cartGesamtEl.textContent = `€${total.toFixed(2)}`;
 
-      // ── Minimum $300 Order Enforcement (Drawer) ──
-      const DRAWER_MIN = 300;
+      // ── Mindestbestellwert von €200 prüfen (Drawer) ──
+      const DRAWER_MIN = 200;
       const drawerRemaining = DRAWER_MIN - total;
       const drawerBanner = document.getElementById('drawer-min-order-banner');
       const drawerRemEl = document.getElementById('drawer-min-remaining');
@@ -1617,7 +1630,7 @@ const navCollections = collectionsData
 
       if (total < DRAWER_MIN) {
         if (drawerBanner) drawerBanner.style.display = 'flex';
-        if (drawerRemEl) drawerRemEl.textContent = `$${drawerRemaining.toFixed(2)}`;
+        if (drawerRemEl) drawerRemEl.textContent = `€${drawerRemaining.toFixed(2)}`;
         if (drawerProgress) drawerProgress.style.display = 'block';
         if (drawerFill) drawerFill.style.width = `${Math.min((total / DRAWER_MIN) * 100, 100)}%`;
         if (drawerCheckoutBtn) {
@@ -1659,7 +1672,7 @@ const navCollections = collectionsData
       });
     }
 
-    // Cart icon opens drawer
+    // cart icon opens drawer
     document.getElementById('cart-toggle')?.addEventListener('click', (e) => { e.preventDefault(); openCart(); });
     document.getElementById('cart-close')?.addEventListener('click', closeCart);
     cartOverlay?.addEventListener('click', closeCart);
@@ -1676,7 +1689,7 @@ const navCollections = collectionsData
       renderCart();
     });
 
-    // Handle "Add to Cart" buttons on product cards
+    // Handle "In den Warenkorb" buttons on product cards
     document.querySelectorAll('.card-cart-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();

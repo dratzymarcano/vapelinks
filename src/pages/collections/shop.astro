@@ -11,22 +11,22 @@ const productsData = [...productsRaw, ...disposableVapes] as any[];
 const PRODUCTS_PER_PAGE = 24;
 ---
 
-<Layout title="Shop All Vape Products Online Australia | Vapelink" description="All our vape kits, disposables, e-liquids, coils, pods and accessories in one place. Fast Australia-wide shipping from Melbourne with Standard & Express delivery.">
+<Layout title="Vape-Produkte online kaufen | Mr. Nice Vape Deutschland" description="Vape-Kits, Einweg-Vapes, E-Liquids, Coils, Pods und Zubehör an einem Ort. Schneller Versand aus Köln deutschlandweit.">
 
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      "name": "Shop All Vape Products",
-      "description": "All vape products from Vapelink Australia — kits, disposables, e-liquids, coils, pods and accessories.",
-      "url": "https://vapelinkstore.com.au/collections/shop",
+      "name": "Alle Vape-Produkte",
+      "description": "Vape-Produkte von Mr. Nice Vape Deutschland: Kits, Einweg-Vapes, E-Liquids, Coils, Pods und Zubehör.",
+      "url": "https://mrnicevape.com/collections/shop",
       "numberOfItems": productsData.length,
-      "isPartOf": { "@type": "WebSite", "@id": "https://vapelinkstore.com.au/#website" },
+      "isPartOf": { "@type": "WebSite", "@id": "https://mrnicevape.com/#website" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vapelinkstore.com.au/" },
-          { "@type": "ListItem", "position": 2, "name": "Shop All Products", "item": "https://vapelinkstore.com.au/collections/shop" }
+          { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://mrnicevape.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Alle Produkte ansehen", "item": "https://mrnicevape.com/collections/shop" }
         ]
       },
       "mainEntity": {
@@ -35,7 +35,7 @@ const PRODUCTS_PER_PAGE = 24;
         "itemListElement": productsData.slice(0, 30).map((p: any, idx: number) => ({
           "@type": "ListItem",
           "position": idx + 1,
-          "url": `https://vapelinkstore.com.au/products/${p.handle}`,
+          "url": `https://mrnicevape.com/products/${p.handle}`,
           "name": p.title,
           "image": p.images?.[0]?.src || ''
         }))
@@ -48,21 +48,21 @@ const PRODUCTS_PER_PAGE = 24;
     <div class="container">
       <nav style="margin-bottom:1rem;">
         <ol class="breadcrumb">
-          <li><a href="/">Home</a></li>
+          <li><a href="/">Startseite</a></li>
           <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></li>
           <li><span class="breadcrumb-current">Shop</span></li>
         </ol>
       </nav>
-      <span class="section-label">{productsData.length.toLocaleString()} products</span>
-      <h1 class="font-display page-title">Shop All Products</h1>
+      <span class="section-label">{productsData.length.toLocaleString('de-DE')} Produkte</span>
+      <h1 class="font-display page-title">Alle Vape-Produkte</h1>
     </div>
   </section>
 
-  <!-- Products -->
+  <!-- products -->
   <section class="container" style="padding:2rem 0 4rem;">
     <div class="results-bar">
       <p class="results-text" id="results-text">
-        Showing 1–{Math.min(PRODUCTS_PER_PAGE, productsData.length)} of {productsData.length.toLocaleString()}
+        Zeige 1–{Math.min(PRODUCTS_PER_PAGE, productsData.length)} von {productsData.length.toLocaleString('de-DE')}
       </p>
     </div>
 
@@ -100,7 +100,7 @@ const PRODUCTS_PER_PAGE = 24;
         (item as HTMLElement).style.display = (i >= start && i < end) ? '' : 'none';
       });
       if (resultsText) {
-        resultsText.textContent = `Showing ${start + 1}–${Math.min(end, total)} of ${total.toLocaleString()}`;
+        resultsText.textContent = `Zeige ${start + 1}–${Math.min(end, total)} von ${total.toLocaleString('de-DE')}`;
       }
       renderPagination(page);
       window.scrollTo({ top: 0, behavior: 'smooth' });

@@ -2,48 +2,48 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="About Us — Vapelink Australia | Melbourne Vape Shop" description="Learn about Vapelink Australia — a Melbourne-based vape shop in Coburg North, VIC. Established in 2019, we stock genuine vape products from top brands and ship Australia-wide.">
+<Layout title="Über uns — Mr. Nice Vape Deutschland | Vape-Shop aus Köln" description="Erfahren Sie mehr über Mr. Nice Vape Deutschland: ein Online-Vape-Shop aus Köln mit Originalprodukten, ehrlicher Beratung und Versand in ganz Deutschland.">
   <Fragment slot="head">
-    <meta name="keywords" content="about vapelink, vape shop melbourne, coburg north vape, australian vape store, vapelink australia" />
+    <meta name="keywords" content="über mrnicevape, vape shop köln, online vape shop deutschland, vapes online kaufen, mrnicevape deutschland" />
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "AboutPage",
-      "name": "About Vapelink Australia",
-      "description": "Learn about Vapelink Australia — a Melbourne-based vape shop in Coburg North, VIC.",
-      "url": "https://vapelinkstore.com.au/about",
-      "isPartOf": { "@type": "WebSite", "@id": "https://vapelinkstore.com.au/#website" },
+      "name": "Über Mr. Nice Vape Deutschland",
+      "description": "Erfahren Sie mehr über Mr. Nice Vape Deutschland — einen Online-Vape-Shop aus Köln, NRW.",
+      "url": "https://mrnicevape.com/about",
+      "isPartOf": { "@type": "WebSite", "@id": "https://mrnicevape.com/#website" },
       "about": {
         "@type": "Store",
-        "name": "Vapelink Australia",
-        "url": "https://vapelinkstore.com.au",
-        "logo": "https://vapelinkstore.com.au/images/logo.svg",
-        "image": "https://vapelinkstore.com.au/images/logo.svg",
-        "description": "Melbourne-based online vape shop stocking vape kits, disposable vapes, e-liquids, coils, pods and accessories from all the big brands.",
+        "name": "Mr. Nice Vape Deutschland",
+        "url": "https://mrnicevape.com",
+        "logo": "https://mrnicevape.com/images/logo.svg",
+        "image": "https://mrnicevape.com/images/logo.svg",
+        "description": "Online-Vape-Shop aus Köln für Vape-Kits, Einweg-Vapes, E-Liquids, Coils, Pods und Zubehör führender Marken.",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "5/951 Sydney Rd",
-          "addressLocality": "Coburg North",
-          "addressRegion": "VIC",
-          "postalCode": "3058",
-          "addressCountry": "AU"
+          "streetAddress": "Musterstraße 12",
+          "addressLocality": "Köln",
+          "addressRegion": "NRW",
+          "postalCode": "50667",
+          "addressCountry": "DE"
         },
-        "telephone": "+61451085862",
-        "email": "info@vapelinkstore.com.au",
+        "telephone": "+492211234567",
+        "email": "info@mrnicevape.com",
         "foundingDate": "2019",
         "priceRange": "$$",
-        "currenciesAccepted": "AUD",
-        "paymentAccepted": "Bank Transfer, PayID, Bitcoin",
+        "currenciesAccepted": "EUR",
+        "paymentAccepted": "Banküberweisung, SEPA, Bitcoin",
         "openingHoursSpecification": [
           { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:30", "closes": "19:30" },
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:30", "closes": "18:00" },
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:30", "closes": "16:00" }
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Samstag", "opens": "10:30", "closes": "18:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sonntag", "opens": "10:30", "closes": "16:00" }
         ]
       },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vapelinkstore.com.au/" },
-          { "@type": "ListItem", "position": 2, "name": "About Us", "item": "https://vapelinkstore.com.au/about" }
+          { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://mrnicevape.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Über uns", "item": "https://mrnicevape.com/about" }
         ]
       }
     })} />
@@ -53,9 +53,9 @@ import Layout from '../layouts/Layout.astro';
   <nav class="breadcrumb-bar" aria-label="Breadcrumb">
     <div class="container">
       <ol class="breadcrumb">
-        <li><a href="/">Home</a></li>
+        <li><a href="/">Startseite</a></li>
         <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></li>
-        <li><span class="breadcrumb-current">About Us</span></li>
+        <li><span class="breadcrumb-current">Über uns</span></li>
       </ol>
     </div>
   </nav>
@@ -66,14 +66,14 @@ import Layout from '../layouts/Layout.astro';
     <div class="container about-hero-inner">
       <div class="about-hero-badge">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-        Melbourne, VIC — Since 2019
+        Köln, NRW — seit 2019
       </div>
-      <h1 class="font-display about-hero-title">G'day! We're <span class="about-hero-accent">Vapelink</span>.</h1>
-      <p class="about-hero-desc">A Melbourne-based vape shop built by vapers, for vapers. Since 2019, we've been helping Australians find the right gear — no pressure, no upselling, just honest advice and quality products.</p>
+      <h1 class="font-display about-hero-title">Wir sind <span class="about-hero-accent">Mr. Nice Vape</span>.</h1>
+      <p class="about-hero-desc">Ein Vape-Shop aus Köln, aufgebaut für Menschen, die Qualität, klare Beratung und eine gute Produktauswahl schätzen. Seit 2019 helfen wir Kundinnen und Kunden in Deutschland, das passende Setup zu finden.</p>
       <div class="about-hero-pills">
-        <span class="about-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> 100% Genuine Products</span>
-        <span class="about-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> Australia-Wide Delivery</span>
-        <span class="about-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Trusted Since 2019</span>
+        <span class="about-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> 100% Originalprodukte</span>
+        <span class="about-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> Deutschlandweite Lieferung</span>
+        <span class="about-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Vertrauenswürdig seit 2019</span>
       </div>
     </div>
   </section>
@@ -84,22 +84,22 @@ import Layout from '../layouts/Layout.astro';
       <div class="about-stats">
         <div class="about-stat">
           <span class="about-stat-number font-display">2019</span>
-          <span class="about-stat-label">Established</span>
+          <span class="about-stat-label">Gegründet</span>
         </div>
         <div class="about-stat-divider"></div>
         <div class="about-stat">
           <span class="about-stat-number font-display">1,500+</span>
-          <span class="about-stat-label">Products</span>
+          <span class="about-stat-label">Produkte</span>
         </div>
         <div class="about-stat-divider"></div>
         <div class="about-stat">
           <span class="about-stat-number font-display">50+</span>
-          <span class="about-stat-label">Top Brands</span>
+          <span class="about-stat-label">Top-Marken</span>
         </div>
         <div class="about-stat-divider"></div>
         <div class="about-stat">
           <span class="about-stat-number font-display">24/7</span>
-          <span class="about-stat-label">Online Shop</span>
+          <span class="about-stat-label">Online-Shop</span>
         </div>
       </div>
     </div>
@@ -110,32 +110,32 @@ import Layout from '../layouts/Layout.astro';
     <div class="container">
       <div class="about-story-grid">
         <div class="about-story-content">
-          <span class="about-section-label">Our Story</span>
-          <h2 class="font-display about-story-title">More Than Just a Vape Shop</h2>
-          <p class="about-story-text">We started Vapelink in 2019 with a simple idea: create a vape shop that treats customers the way we'd want to be treated. That means stocking only <strong>genuine, quality products</strong>, giving honest advice, and never pressuring anyone into buying something they don't need.</p>
-          <p class="about-story-text">Today, we're proud to serve thousands of customers across every state and territory in Australia — from our physical shop in <strong>Coburg North, Melbourne</strong> to our 24/7 online store.</p>
+          <span class="about-section-label">Unsere Geschichte</span>
+          <h2 class="font-display about-story-title">Mehr als nur ein Vape-Shop</h2>
+          <p class="about-story-text">Wir haben Mr. Nice Vape 2019 mit einer einfachen Idee gestartet: ein Vape-Shop, der Kundinnen und Kunden so berät, wie wir selbst beraten werden möchten. Deshalb setzen wir auf <strong>originale Qualitätsprodukte</strong>, ehrliche Empfehlungen und verständliche Informationen.</p>
+          <p class="about-story-text">Heute beliefern wir Kundinnen und Kunden in ganz Deutschland — mit einem kuratierten Sortiment, zuverlässigem Versand und einem Online-Shop, der rund um die Uhr erreichbar ist.</p>
         </div>
         <div class="about-story-visual">
           <div class="about-story-card-stack">
             <div class="about-story-mini-card">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
               <div>
-                <strong>Coburg North, VIC</strong>
-                <span>5/951 Sydney Rd, 3058</span>
+                <strong>Köln, NRW</strong>
+                <span>Musterstraße 12, 50667</span>
               </div>
             </div>
             <div class="about-story-mini-card">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
               <div>
-                <strong>Open 7 Days</strong>
-                <span>Mon–Sun · In-store &amp; online</span>
+                <strong>Online rund um die Uhr</strong>
+                <span>Beratung an Werktagen</span>
               </div>
             </div>
             <div class="about-story-mini-card">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
               <div>
-                <strong>100% Authentic</strong>
-                <span>Every product is genuine</span>
+                <strong>100% Originalware</strong>
+                <span>Jedes Produkt ist original</span>
               </div>
             </div>
           </div>
@@ -148,8 +148,8 @@ import Layout from '../layouts/Layout.astro';
   <section class="about-features">
     <div class="container">
       <div class="about-features-header">
-        <span class="about-section-label">Why Vapelink</span>
-        <h2 class="font-display about-features-title">What Sets Us Apart</h2>
+        <span class="about-section-label">Warum Mr. Nice Vape</span>
+        <h2 class="font-display about-features-title">Was uns auszeichnet</h2>
       </div>
       <div class="about-grid">
         <div class="about-card">
@@ -157,11 +157,11 @@ import Layout from '../layouts/Layout.astro';
           <div class="about-card-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
-          <h3 class="font-display about-card-title">Visit Our Shop</h3>
-          <p class="about-card-text">Based in <strong>Coburg North, Melbourne</strong> — pop in to browse, chat with our team, and grab your gear in person. Online shop runs 24/7 so you can order whenever it suits you.</p>
+          <h3 class="font-display about-card-title">Besuche unseren Shop</h3>
+          <p class="about-card-text">Unser Team sitzt in <strong>Köln</strong> und betreut Bestellungen aus ganz Deutschland. Der Online-Shop ist rund um die Uhr erreichbar, damit Sie bestellen können, wann es passt.</p>
           <div class="about-card-footer">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>5/951 Sydney Rd, Coburg North VIC 3058</span>
+            <span>Musterstraße 12, 50667 Köln</span>
           </div>
         </div>
 
@@ -170,11 +170,11 @@ import Layout from '../layouts/Layout.astro';
           <div class="about-card-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
           </div>
-          <h3 class="font-display about-card-title">100% Genuine Products</h3>
-          <p class="about-card-text">Every product is sourced from <strong>authorised distributors</strong>. No knockoffs, no grey-market gear. When you buy from Vapelink, you know exactly what you're getting.</p>
+          <h3 class="font-display about-card-title">100% Originalprodukte</h3>
+          <p class="about-card-text">Unsere Produkte stammen aus <strong>geprüften Bezugsquellen</strong>. Keine zweifelhaften Importe, keine unklare Herkunft: Bei Mr. Nice Vape wissen Sie, was Sie kaufen.</p>
           <div class="about-card-footer">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-            <span>SMOK, Vaporesso, GeekVape, Voopoo, Uwell &amp; more</span>
+            <span>SMOK, Vaporesso, GeekVape, Voopoo, Uwell &amp; mehr</span>
           </div>
         </div>
 
@@ -183,11 +183,11 @@ import Layout from '../layouts/Layout.astro';
           <div class="about-card-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
           </div>
-          <h3 class="font-display about-card-title">Australia-Wide Shipping</h3>
-          <p class="about-card-text">We deliver to every state and territory. Choose <strong>Standard (5–10 business days)</strong> or <strong>Express (2–4 business days)</strong> at checkout — reliable and tracked.</p>
+          <h3 class="font-display about-card-title">Deutschlandweit Versand</h3>
+          <p class="about-card-text">Wir liefern in alle Bundesländer. Wählen Sie an der Kasse <strong>Standardversand (5–10 Werktage)</strong> oder <strong>Expressversand (2–4 Werktage)</strong> — zuverlässig und nachverfolgbar.</p>
           <div class="about-card-footer">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            <span>Standard &amp; Express options available</span>
+            <span>Standard- und Expressoptionen verfügbar</span>
           </div>
         </div>
 
@@ -196,11 +196,11 @@ import Layout from '../layouts/Layout.astro';
           <div class="about-card-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h3 class="font-display about-card-title">Real People, Real Help</h3>
-          <p class="about-card-text">We're vapers ourselves — we use what we sell. Need a recommendation? Not sure what's compatible with your setup? <strong>Just ask.</strong> No scripts, no bots, just real help.</p>
+          <h3 class="font-display about-card-title">Echte Beratung</h3>
+          <p class="about-card-text">Fragen zur Kompatibilität, zur passenden Nikotinstärke oder zum nächsten Upgrade? <strong>Schreiben Sie uns.</strong> Unser Team hilft mit klaren Empfehlungen statt Standardantworten.</p>
           <div class="about-card-footer">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            <span>info@vapelinkstore.com.au</span>
+            <span>info@mrnicevape.com</span>
           </div>
         </div>
       </div>
@@ -218,31 +218,31 @@ import Layout from '../layouts/Layout.astro';
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
             </div>
             <div>
-              <h2 class="font-display about-hours-title">Store Hours</h2>
-              <p class="about-hours-subtitle">Our Coburg North store</p>
+              <h2 class="font-display about-hours-title">Öffnungszeiten</h2>
+              <p class="about-hours-subtitle">Unser Team in Köln</p>
             </div>
           </div>
           <div class="about-hours-grid">
             <div class="about-hours-row">
-              <span class="about-hours-day">Monday – Friday</span>
-              <span class="about-hours-time">10:30 AM – 7:30 PM</span>
+              <span class="about-hours-day">Montag – Freitag</span>
+              <span class="about-hours-time">10:30 – 19:30 Uhr</span>
             </div>
             <div class="about-hours-row">
-              <span class="about-hours-day">Saturday</span>
-              <span class="about-hours-time">10:30 AM – 6:00 PM</span>
+              <span class="about-hours-day">Samstag</span>
+              <span class="about-hours-time">10:30 – 18:00 Uhr</span>
             </div>
             <div class="about-hours-row">
-              <span class="about-hours-day">Sunday</span>
-              <span class="about-hours-time">10:30 AM – 4:00 PM</span>
+              <span class="about-hours-day">Sonntag</span>
+              <span class="about-hours-time">10:30 – 16:00 Uhr</span>
             </div>
             <div class="about-hours-row about-hours-closed">
-              <span class="about-hours-day">Public Holidays</span>
-              <span class="about-hours-time closed">Closed</span>
+              <span class="about-hours-day">Feiertage</span>
+              <span class="about-hours-time closed">Geschlossen</span>
             </div>
           </div>
           <p class="about-hours-note">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-            Hours may vary on public holidays. The online shop is always open.
+            An Feiertagen können die Zeiten abweichen. Der Online-Shop ist jederzeit geöffnet.
           </p>
         </div>
 
@@ -253,29 +253,29 @@ import Layout from '../layouts/Layout.astro';
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
             </div>
             <div>
-              <h2 class="font-display about-delivery-title">Delivery Options</h2>
-              <p class="about-delivery-subtitle">We ship Australia-wide</p>
+              <h2 class="font-display about-delivery-title">Lieferoptionen</h2>
+              <p class="about-delivery-subtitle">Wir versenden deutschlandweit</p>
             </div>
           </div>
           <div class="about-delivery-options">
             <div class="about-delivery-option">
               <div class="about-delivery-option-header">
-                <span class="about-delivery-option-name font-display">Standard Shipping</span>
-                <span class="about-delivery-option-price font-display">$9.95</span>
+                <span class="about-delivery-option-name font-display">Standard Versand</span>
+                <span class="about-delivery-option-price font-display">€9,95</span>
               </div>
-              <span class="about-delivery-option-time">5–10 business days · Tracked</span>
+              <span class="about-delivery-option-time">5–10 Werktage · Sendungsverfolgung</span>
             </div>
             <div class="about-delivery-option express">
               <div class="about-delivery-option-header">
-                <span class="about-delivery-option-name font-display">Express Shipping</span>
-                <span class="about-delivery-option-price font-display">$14.95</span>
+                <span class="about-delivery-option-name font-display">Express Versand</span>
+                <span class="about-delivery-option-price font-display">€14,95</span>
               </div>
-              <span class="about-delivery-option-time">2–4 business days · Priority tracked</span>
+              <span class="about-delivery-option-time">2–4 Werktage · priorisierte Sendungsverfolgung</span>
             </div>
           </div>
           <p class="about-delivery-note">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            All orders shipped from Melbourne to every state &amp; territory.
+            Alle Bestellungen werden aus Köln in alle Bundesländer versendet.
           </p>
         </div>
       </div>
@@ -289,16 +289,16 @@ import Layout from '../layouts/Layout.astro';
         <div class="about-cta-icon">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </div>
-        <h2 class="font-display about-cta-title">Come Say G'day</h2>
-        <p class="about-cta-desc">Whether you're just starting out or you've been vaping for years, we'd love to help. Drop by the shop, send us an email, or browse online.</p>
+        <h2 class="font-display about-cta-title">Wir beraten Sie gern</h2>
+        <p class="about-cta-desc">Ob Einstieg, Upgrade oder Ersatzteilfrage: Unser Team hilft Ihnen gern weiter. Schreiben Sie uns eine E-Mail oder stöbern Sie direkt im Online-Shop.</p>
         <div class="about-cta-actions">
           <a href="/collections/shop" class="btn-primary about-cta-btn">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-            Shop Now
+            Jetzt einkaufen
           </a>
           <a href="/contact" class="btn-secondary about-cta-btn">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            Contact Us
+            Kontakt
           </a>
         </div>
       </div>

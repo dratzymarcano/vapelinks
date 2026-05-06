@@ -11,11 +11,14 @@ export const prerender = true;
 const PRODUCTS_PER_PAGE = 24;
 
 export function getStaticPaths() {
+  const reservedCollectionHandles = new Set(['shop']);
   const productsData = [...productsRaw, ...disposableVapes] as any[];
   const perPage = 24;
   const paths: any[] = [];
 
   for (const collection of collectionsData as any[]) {
+    if (reservedCollectionHandles.has(collection.handle)) continue;
+
     const collectionProducts = collection.product_handles.length > 0
       ? productsData.filter((p: any) => collection.product_handles.includes(p.handle))
       : [];
@@ -45,6 +48,7 @@ export function getStaticPaths() {
   const deduped: any[] = [];
   const seen = new Set<string>();
   for (const collection of collectionsData as any[]) {
+    if (reservedCollectionHandles.has(collection.handle)) continue;
     if (seen.has(collection.handle)) continue;
     seen.add(collection.handle);
 
@@ -66,12 +70,12 @@ export function getStaticPaths() {
 }
 
 const { collection, allProducts, totalProducts } = Astro.props;
-const plainDescription = (collection.body_html || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').substring(0, 150).trim() || `Browse ${collection.title} at Vapelink — ${totalProducts}+ products in stock. Fast Australia-wide shipping.`;
+const plainDescription = (collection.body_html || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').substring(0, 150).trim() || `${collection.title} bei Mr. Nice Vape Deutschland online kaufen — ${totalProducts}+ Produkte auf Lager, schneller Versand deutschlandweit.`;
 const seoDesc = plainDescription.length > 160 ? plainDescription.substring(0, 157) + '...' : plainDescription;
-const collectionTitleBase = `${collection.title} | Buy Online – Vapelink Australia`;
-const collectionSeoTitle = collectionTitleBase.length > 60 ? `${collection.title} | Vapelink Australia` : collectionTitleBase;
+const collectionTitleBase = `${collection.title} | Online kaufen – Mr. Nice Vape Deutschland`;
+const collectionSeoTitle = collectionTitleBase.length > 60 ? `${collection.title} | Mr. Nice Vape Deutschland` : collectionTitleBase;
 
-// Collection SEO keywords from database
+// collection SEO keywords from database
 function getCollectionKeywords(col: any): string {
   const kw: string[] = [];
   const titleLower = col.title.toLowerCase();
@@ -104,18 +108,18 @@ function getCollectionKeywords(col: any): string {
     }
   }
 
-  kw.push(col.title, 'vape shop australia', 'buy online australia', 'fast shipping australia');
+  kw.push(col.title, 'vape shop deutschland', 'vapes online kaufen', 'schneller vape versand deutschland');
   return [...new Set(kw.filter(Boolean))].slice(0, 15).join(', ');
 }
 
 const collectionKeywords = getCollectionKeywords(collection);
 const collectionFeatureImage = collection.image?.local || collection.image?.src || allProducts?.[0]?.images?.[0]?.src || '/images/hero-bg.jpg';
-const collectionImageAlt = collection.image?.alt || `${collection.title} collection image`;
+const collectionImageAlt = collection.image?.alt || `${collection.title} Kategoriebild`;
 ---
 
 <Layout title={collectionSeoTitle} description={seoDesc} image={collectionFeatureImage}>
 
-  <!-- Collection Schema.org Structured Data -->
+  <!-- collection Schema.org Structured Data -->
   <Fragment slot="head">
     <meta name="keywords" content={collectionKeywords} />
     <script type="application/ld+json" set:html={JSON.stringify({
@@ -123,18 +127,18 @@ const collectionImageAlt = collection.image?.alt || `${collection.title} collect
       "@type": "CollectionPage",
       "name": collection.title,
       "description": seoDesc,
-      "url": `https://vapelinkstore.com.au/collections/${collection.handle}`,
+      "url": `https://mrnicevape.com/collections/${collection.handle}`,
       "numberOfItems": totalProducts,
       "isPartOf": {
         "@type": "WebSite",
-        "@id": "https://vapelinkstore.com.au/#website"
+        "@id": "https://mrnicevape.com/#website"
       },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vapelinkstore.com.au/" },
-          { "@type": "ListItem", "position": 2, "name": "Collections", "item": "https://vapelinkstore.com.au/collections" },
-          { "@type": "ListItem", "position": 3, "name": collection.title, "item": `https://vapelinkstore.com.au/collections/${collection.handle}` }
+          { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://mrnicevape.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Kategorien", "item": "https://mrnicevape.com/collections" },
+          { "@type": "ListItem", "position": 3, "name": collection.title, "item": `https://mrnicevape.com/collections/${collection.handle}` }
         ]
       },
       "mainEntity": {
@@ -143,7 +147,7 @@ const collectionImageAlt = collection.image?.alt || `${collection.title} collect
         "itemListElement": allProducts.slice(0, 30).map((p: any, idx: number) => ({
           "@type": "ListItem",
           "position": idx + 1,
-          "url": `https://vapelinkstore.com.au/products/${p.handle}`,
+          "url": `https://mrnicevape.com/products/${p.handle}`,
           "name": p.title,
           "image": p.images?.[0]?.src || ''
         }))
@@ -151,14 +155,14 @@ const collectionImageAlt = collection.image?.alt || `${collection.title} collect
     })} />
   </Fragment>
 
-  <!-- Collection Header -->
+  <!-- collection Header -->
   <section class="page-header">
     <div class="container">
       <nav style="margin-bottom:1rem;">
         <ol class="breadcrumb">
-          <li><a href="/">Home</a></li>
+          <li><a href="/">Startseite</a></li>
           <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></li>
-          <li><a href="/collections">Collections</a></li>
+          <li><a href="/collections">Kategorien</a></li>
           <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></li>
           <li><span class="breadcrumb-current">{collection.title}</span></li>
         </ol>
@@ -176,7 +180,7 @@ const collectionImageAlt = collection.image?.alt || `${collection.title} collect
           </div>
         )}
         <div>
-          <span class="section-label">{totalProducts} products</span>
+          <span class="section-label">{totalProducts} Produkte</span>
           <h1 class="font-display page-title">{collection.title}</h1>
           {collection.body_html && (
             <div class="prose-content collection-desc" set:html={collection.body_html} />
@@ -186,13 +190,13 @@ const collectionImageAlt = collection.image?.alt || `${collection.title} collect
     </div>
   </section>
 
-  <!-- Products Grid -->
+  <!-- products Grid -->
   <section class="container" style="padding:2rem 0 4rem;">
     {allProducts.length > 0 ? (
       <>
         <div class="results-bar">
           <p class="results-text" id="results-text">
-            Showing 1–{Math.min(PRODUCTS_PER_PAGE, allProducts.length)} of {allProducts.length}
+            Zeige 1–{Math.min(PRODUCTS_PER_PAGE, allProducts.length)} von {allProducts.length}
           </p>
         </div>
 
@@ -214,9 +218,9 @@ const collectionImageAlt = collection.image?.alt || `${collection.title} collect
         <div class="empty-icon">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-dim)" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
         </div>
-        <h3 class="font-display" style="font-size:1.15rem;color:var(--color-text);margin-bottom:0.4rem;">No products found</h3>
-        <p style="color:var(--color-text-secondary);margin-bottom:1.25rem;font-size:0.9rem;">This collection doesn't have any products yet.</p>
-        <a href="/collections/shop" class="btn-primary">Browse All Products</a>
+        <h3 class="font-display" style="font-size:1.15rem;color:var(--color-text);margin-bottom:0.4rem;">Keine Produkte gefunden</h3>
+        <p style="color:var(--color-text-secondary);margin-bottom:1.25rem;font-size:0.9rem;">Diese Kategorie enthält derzeit noch keine Produkte.</p>
+        <a href="/collections/shop" class="btn-primary">Alle Produkte ansehen</a>
       </div>
     )}
   </section>
@@ -241,7 +245,7 @@ const collectionImageAlt = collection.image?.alt || `${collection.title} collect
         (item as HTMLElement).style.display = (i >= start && i < end) ? '' : 'none';
       });
       if (resultsText) {
-        resultsText.textContent = `Showing ${start + 1}–${Math.min(end, total)} of ${total}`;
+        resultsText.textContent = `Zeige ${start + 1}–${Math.min(end, total)} von ${total}`;
       }
       renderPagination(page);
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -253,12 +257,12 @@ const collectionImageAlt = collection.image?.alt || `${collection.title} collect
       let html = '';
 
       // Page info for mobile
-      html += `<span class="page-info">Page ${currentPage} of ${totalPages}</span>`;
+      html += `<span class="page-info">Seite ${currentPage} von ${totalPages}</span>`;
 
       // Prev button (always shown, disabled when on first page)
       const prevDisabled = currentPage <= 1 ? ' page-nav-disabled' : '';
       const prevHref = currentPage > 1 ? `${baseUrl}?page=${currentPage - 1}` : '#';
-      html += `<a href="${prevHref}" class="page-nav${prevDisabled}" aria-label="Previous page"${currentPage > 1 ? ` data-page="${currentPage - 1}"` : ''}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg><span class="page-nav-label">Previous</span></a>`;
+      html += `<a href="${prevHref}" class="page-nav${prevDisabled}" aria-label="Vorherige Seite"${currentPage > 1 ? ` data-page="${currentPage - 1}"` : ''}><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg><span class="page-nav-label">Zurück</span></a>`;
 
       // Page numbers inside pill container
       html += `<div class="pagination-inner">`;
@@ -289,7 +293,7 @@ const collectionImageAlt = collection.image?.alt || `${collection.title} collect
       // Next button (always shown, disabled when on last page)
       const nextDisabled = currentPage >= totalPages ? ' page-nav-disabled' : '';
       const nextHref = currentPage < totalPages ? `${baseUrl}?page=${currentPage + 1}` : '#';
-      html += `<a href="${nextHref}" class="page-nav${nextDisabled}" aria-label="Next page"${currentPage < totalPages ? ` data-page="${currentPage + 1}"` : ''}><span class="page-nav-label">Next</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>`;
+      html += `<a href="${nextHref}" class="page-nav${nextDisabled}" aria-label="Nächste Seite"${currentPage < totalPages ? ` data-page="${currentPage + 1}"` : ''}><span class="page-nav-label">Weiter</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>`;
 
       paginationNav.innerHTML = html;
 

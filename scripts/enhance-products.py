@@ -22,238 +22,238 @@ PRODUCTS_FILE = os.path.join(SCRIPT_DIR, '..', 'src', 'data', 'products.json')
 TRANSACTIONAL_KEYWORDS = {
     'EJUICE': [
         'buy {flavour} vape juice online',
-        'buy {brand} e-liquid Australia',
+        'buy {brand} e-liquid Deutschland',
         '{brand} vape juice for sale',
-        'best {flavour} e-liquid Australia',
+        'best {flavour} e-liquid Deutschland',
         'order {brand} e-juice online',
         'cheap {brand} vape juice',
     ],
     'e-juice': [
         'buy {flavour} vape juice online',
-        'buy {brand} e-liquid Australia',
+        'buy {brand} e-liquid Deutschland',
         '{brand} e-juice for sale',
     ],
     'ejuice': [
         'buy {flavour} vape juice online',
-        '{brand} vape juice Australia',
+        '{brand} vape juice Deutschland',
     ],
     'Starter Kits': [
         'buy {brand} vape kit online',
-        'best vape starter kit Australia',
+        'best vape starter kit Deutschland',
         '{brand} starter kit for sale',
-        '{brand} vape kit price Australia',
+        '{brand} vape kit price Deutschland',
     ],
     'Pod Kits': [
         'buy {brand} pod system online',
-        'best pod vape Australia',
+        'best pod vape Deutschland',
         '{brand} pod kit for sale',
-        'buy pod vape Australia',
+        'buy pod vape Deutschland',
     ],
     'Mods': [
         'buy {brand} vape mod online',
-        'best box mod Australia',
+        'best box mod Deutschland',
         '{brand} mod for sale',
-        'buy vape mod Australia',
+        'buy vape mod Deutschland',
     ],
     'mod': [
         'buy {brand} vape mod online',
-        'best box mod Australia',
+        'best box mod Deutschland',
     ],
     'Box Mod': [
         'buy {brand} box mod online',
-        'best box mod Australia',
+        'best box mod Deutschland',
         '{brand} box mod for sale',
     ],
     'Squonk Mod': [
-        'buy squonk mod Australia',
+        'buy squonk mod Deutschland',
         '{brand} squonk mod for sale',
     ],
     'Squank Mods': [
-        'buy squonk mod Australia',
+        'buy squonk mod Deutschland',
         '{brand} squonk mod for sale',
     ],
     'Coils & Cartridge': [
         'buy {brand} replacement coils online',
-        '{brand} coils Australia',
+        '{brand} coils Deutschland',
         'best replacement coils for {brand}',
-        'buy vape coils online Australia',
+        'buy vape coils online Deutschland',
     ],
     'coils': [
         'buy {brand} replacement coils',
-        '{brand} coils Australia',
+        '{brand} coils Deutschland',
     ],
     'COILS & CARTRIDGE': [
         'buy {brand} replacement coils',
-        '{brand} coils Australia',
+        '{brand} coils Deutschland',
     ],
     'catridge': [
         'buy {brand} replacement pod cartridge',
-        '{brand} cartridge Australia',
+        '{brand} cartridge Deutschland',
     ],
     'Replacement Coil': [
-        'buy {brand} replacement coils Australia',
+        'buy {brand} replacement coils Deutschland',
         '{brand} coils for sale',
     ],
     'Tanks': [
         'buy {brand} vape tank online',
-        'best sub ohm tank Australia',
+        'best sub ohm tank Deutschland',
         '{brand} tank for sale',
     ],
     'tank': [
         'buy {brand} vape tank online',
-        'best vape tank Australia',
+        'best vape tank Deutschland',
     ],
     'Sub Ohm Tank': [
-        'buy sub ohm tank Australia',
+        'buy sub ohm tank Deutschland',
         'best sub ohm tank {brand}',
     ],
     'RDA': [
         'buy {brand} RDA online',
-        'best RDA Australia',
+        'best RDA Deutschland',
         '{brand} RDA for sale',
     ],
     'RTA': [
         'buy {brand} RTA online',
-        'best RTA Australia',
+        'best RTA Deutschland',
         '{brand} RTA for sale',
     ],
     'rta': [
         'buy {brand} RTA online',
-        'best RTA Australia',
+        'best RTA Deutschland',
     ],
     'RDTA': [
         'buy {brand} RDTA online',
-        'best RDTA Australia',
+        'best RDTA Deutschland',
     ],
     'Batteries': [
-        'buy vape batteries Australia',
+        'buy vape batteries Deutschland',
         'best 18650 battery for vaping',
         '{brand} vape battery for sale',
     ],
     'Replacement Glass': [
         'buy {brand} replacement glass tube',
-        '{brand} tank glass replacement Australia',
+        '{brand} tank glass replacement Deutschland',
     ],
     'glass': [
         'buy {brand} replacement glass',
-        '{brand} glass tube Australia',
+        '{brand} glass tube Deutschland',
     ],
     'Drip Tips': [
-        'buy vape drip tips Australia',
+        'buy vape drip tips Deutschland',
         'best 510 drip tip',
         'buy 810 drip tip online',
     ],
     'Accessories': [
-        'buy vape accessories Australia',
+        'buy vape accessories Deutschland',
         '{brand} vape accessories for sale',
         'best vape accessories online',
     ],
     'Dry Herb Vaporizer': [
-        'buy dry herb vaporizer Australia',
+        'buy dry herb vaporizer Deutschland',
         'best dry herb vape {brand}',
         '{brand} dry herb vaporizer for sale',
     ],
     'CBD': [
-        'buy CBD vape Australia',
+        'buy CBD vape Deutschland',
         'best CBD e-liquid online',
         '{brand} CBD for sale',
     ],
     'CBD THC': [
-        'buy CBD vape Australia',
+        'buy CBD vape Deutschland',
         'CBD vape juice for sale',
     ],
     'Organic Cotton': [
-        'buy vape cotton Australia',
+        'buy vape cotton Deutschland',
         'best organic vape cotton',
         '{brand} cotton for sale',
     ],
     'Chargers': [
-        'buy vape battery charger Australia',
+        'buy vape battery charger Deutschland',
         'best vape charger online',
     ],
     'Charging Cables & Wall Chargers': [
-        'buy vape charger Australia',
+        'buy vape charger Deutschland',
         'vape charging cable for sale',
     ],
     'DIY Tool': [
-        'buy vape tool kit Australia',
+        'buy vape tool kit Deutschland',
         'best vape building tools',
     ],
     'Vape DIY Wire': [
-        'buy vape wire Australia',
+        'buy vape wire Deutschland',
         '{brand} vape wire for sale',
     ],
     'Mesh Strip': [
-        'buy mesh coil strips Australia',
+        'buy mesh coil strips Deutschland',
         'best mesh strips for vaping',
     ],
     'Prebuilt Coil': [
-        'buy prebuilt coils Australia',
+        'buy prebuilt coils Deutschland',
         'best prebuilt vape coils',
     ],
     'Pre-Build DIY Coil': [
-        'buy prebuilt coils Australia',
+        'buy prebuilt coils Deutschland',
     ],
     'Prebuilt Wire Kit': [
-        'buy prebuilt coil kit Australia',
+        'buy prebuilt coil kit Deutschland',
     ],
     'Wax Kits': [
-        'buy wax vaporizer Australia',
+        'buy wax vaporizer Deutschland',
         'best wax pen vape',
     ],
     'Storage': [
-        'buy vape storage case Australia',
+        'buy vape storage case Deutschland',
         'vape battery case for sale',
     ],
     'Silicone Cases': [
-        'buy vape silicone case Australia',
+        'buy vape silicone case Deutschland',
         '{brand} silicone case for sale',
     ],
     'Disposable Vape': [
-        'buy disposable vape Australia',
+        'buy disposable vape Deutschland',
         'best disposable vape online',
-        'cheap disposable vape Australia',
+        'cheap disposable vape Deutschland',
     ],
     'E Hookah': [
-        'buy e-hookah Australia',
+        'buy e-hookah Deutschland',
         'electronic hookah for sale',
     ],
     'Liquid Bottle': [
-        'buy empty vape bottles Australia',
+        'buy empty vape bottles Deutschland',
         'vape squeeze bottles for sale',
     ],
     'DIY PG/VG': [
-        'buy PG VG base Australia',
+        'buy PG VG base Deutschland',
         'propylene glycol for vaping',
     ],
     'DIY VG': [
-        'buy PG VG base Australia',
+        'buy PG VG base Deutschland',
         'propylene glycol vape grade',
     ],
     'AIO': [
-        'buy AIO vape kit Australia',
+        'buy AIO vape kit Deutschland',
         'best all-in-one vape',
     ],
     'Squonk Kit': [
-        'buy squonk kit Australia',
+        'buy squonk kit Deutschland',
     ],
     'squonk tank': [
-        'buy squonk tank Australia',
+        'buy squonk tank Deutschland',
     ],
     'mech mod': [
-        'buy mechanical mod Australia',
+        'buy mechanical mod Deutschland',
     ],
     'Tank O Ring': [
-        'buy vape o-rings Australia',
+        'buy vape o-rings Deutschland',
     ],
     'Decks&RBA': [
-        'buy RBA deck Australia',
+        'buy RBA deck Deutschland',
     ],
     'RBA Cartdridge': [
-        'buy RBA cartridge Australia',
+        'buy RBA cartridge Deutschland',
     ],
     'Add-On': [
-        'buy vape flavour shots Australia',
+        'buy vape flavour shots Deutschland',
     ],
     'Valyrian Glass Tube': [
         'buy Valyrian replacement glass',
@@ -262,15 +262,15 @@ TRANSACTIONAL_KEYWORDS = {
         'buy Valyrian replacement coils',
     ],
     'RTA (Rebuild-able Tank Atomizer)': [
-        'buy RTA atomizer Australia',
+        'buy RTA atomizer Deutschland',
     ],
 }
 
 # Default for unknown types
 DEFAULT_KEYWORDS = [
-    'buy {title} Australia',
+    'buy {title} Deutschland',
     '{brand} for sale online',
-    'buy vape products Australia',
+    'buy vape products Deutschland',
 ]
 
 
@@ -362,7 +362,7 @@ def get_transactional_keyword(product_type, brand, title, flavour=''):
             flavour=flavour or 'vape juice',
         )
         return kw
-    return f'buy {title} Australia'
+    return f'buy {title} Deutschland'
 
 
 # ---------------------------------------------------------------------------
@@ -793,8 +793,8 @@ def build_seo_footer(product, brand, transactional_kw, product_type):
     price = product['variants'][0].get('price', '0.00')
 
     parts = []
-    parts.append(f'<p><strong>Why buy from Vapelink Australia?</strong> Fast Australia-wide shipping on every order. Every {title} ships from our Australian warehouse, so you get your gear quickly and without the hassle of international shipping delays.</p>')
-    parts.append(f'<p>Looking to <strong>{transactional_kw}</strong>? You\'re in the right place. Vapelink stocks genuine {brand or "premium"} products at competitive prices.</p>')
+    parts.append(f'<p><strong>Warum bei Mr. Nice Vape kaufen?</strong> Schneller deutschlandweiter Versand bei jeder Bestellung. Jedes {title} wird aus unserem Lager in Köln verschickt – ohne Wartezeit auf internationale Lieferungen.</p>')
+    parts.append(f'<p>Looking to <strong>{transactional_kw}</strong>? You\'re in the right place. Mr. Nice Vape stocks genuine {brand or "premium"} products at competitive prices.</p>')
 
     return '\n'.join(parts)
 

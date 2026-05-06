@@ -25,37 +25,37 @@ const structuredData = {
   "@type": "BlogPosting",
   "headline": post.title,
   "description": post.excerpt,
-  "image": post.image.startsWith('http') ? post.image : `https://vapelinkstore.com.au${post.image}`,
-  "author": { "@type": "Organization", "name": "Vapelink Australia" },
+  "image": post.image.startsWith('http') ? post.image : `https://mrnicevape.com${post.image}`,
+  "author": { "@type": "Organization", "name": "Mr. Nice Vape Deutschland" },
   "publisher": {
     "@type": "Organization",
-    "name": "Vapelink Australia",
-    "logo": { "@type": "ImageObject", "url": "https://vapelinkstore.com.au/images/logo.svg" }
+    "name": "Mr. Nice Vape Deutschland",
+    "logo": { "@type": "ImageObject", "url": "https://mrnicevape.com/images/logo.svg" }
   },
   "datePublished": post.date,
   "dateModified": post.date,
-  "mainEntityOfPage": { "@type": "WebPage", "@id": `https://vapelinkstore.com.au/blog/${post.slug}` },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": `https://mrnicevape.com/blog/${post.slug}` },
   "wordCount": wordCount,
   "articleSection": post.category,
   "keywords": post.tags.join(', '),
-  "inLanguage": "en-AU",
-  "isPartOf": { "@type": "WebSite", "@id": "https://vapelinkstore.com.au/#website" }
+  "inLanguage": "de-DE",
+  "isPartOf": { "@type": "WebSite", "@id": "https://mrnicevape.com/#website" }
 };
 
 const breadcrumbData = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vapelinkstore.com.au/" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://vapelinkstore.com.au/blog" },
-    { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://vapelinkstore.com.au/blog/${post.slug}` }
+    { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://mrnicevape.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://mrnicevape.com/blog" },
+    { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://mrnicevape.com/blog/${post.slug}` }
   ]
 };
 ---
 
-<Layout title={`${post.title} | Vapelink Blog`} description={post.excerpt} image={post.image} type="article">
+<Layout title={`${post.title} | Mr. Nice Vape Blog`} description={post.excerpt} image={post.image} type="article">
   <Fragment slot="head">
-    <meta name="keywords" content={post.tags.join(', ') + ', vape guide, vaping tips, Vapelink Australia'} />
+    <meta name="keywords" content={post.tags.join(', ') + ', vape guide, vaping tips, Mr. Nice Vape Deutschland'} />
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbData)} />
   </Fragment>
@@ -64,7 +64,7 @@ const breadcrumbData = {
   <nav class="breadcrumb-bar">
     <div class="container">
       <ol class="breadcrumb">
-        <li><a href="/">Home</a></li>
+        <li><a href="/">Startseite</a></li>
         <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></li>
         <li><a href="/blog">Blog</a></li>
         <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></li>
@@ -82,7 +82,7 @@ const breadcrumbData = {
         <div class="blog-article-meta">
           <span>{post.author}</span>
           <span class="blog-meta-dot">·</span>
-          <time datetime={post.date}>{new Date(post.date).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' })}</time>
+          <time datetime={post.date}>{new Date(post.date).toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' })}</time>
           <span class="blog-meta-dot">·</span>
           <span>{post.readTime}</span>
         </div>
@@ -105,9 +105,9 @@ const breadcrumbData = {
 
       <!-- Share / CTA -->
       <div class="blog-article-cta">
-        <h3 class="font-display" style="font-size:1.1rem;font-weight:700;color:var(--color-text);margin-bottom:0.4rem;">Ready to Get Started?</h3>
-        <p style="color:var(--color-text-secondary);font-size:0.88rem;margin-bottom:1rem;">Browse our range of quality vaping products with fast Australia-wide shipping.</p>
-        <a href="/collections/shop" class="btn-primary" style="padding:0.7rem 2rem;">Shop Now</a>
+        <h3 class="font-display" style="font-size:1.1rem;font-weight:700;color:var(--color-text);margin-bottom:0.4rem;">Bereit loszulegen?</h3>
+        <p style="color:var(--color-text-secondary);font-size:0.88rem;margin-bottom:1rem;">Entdecken Sie passende Vape-Produkte mit schnellem Versand deutschlandweit.</p>
+        <a href="/collections/shop" class="btn-primary" style="padding:0.7rem 2rem;">Zum Shop</a>
       </div>
     </div>
   </article>
@@ -118,8 +118,8 @@ const breadcrumbData = {
       <div class="container">
         <div class="section-header" style="margin-bottom:1.5rem;">
           <div>
-            <span class="section-label">Keep Reading</span>
-            <h2 class="font-display" style="font-size:1.25rem;font-weight:700;color:var(--color-text);margin-top:0.2rem;">Related Articles</h2>
+            <span class="section-label">Weiterlesen</span>
+            <h2 class="font-display" style="font-size:1.25rem;font-weight:700;color:var(--color-text);margin-top:0.2rem;">Ähnliche Beiträge</h2>
           </div>
         </div>
         <div class="blog-related-grid">

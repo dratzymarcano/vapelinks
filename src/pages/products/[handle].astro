@@ -18,13 +18,13 @@ export function getStaticPaths() {
 
 const { product } = Astro.props;
 const price = product.variants[0]?.price || '0.00';
-const comparePrice = product.variants[0]?.compare_at_price;
-const hasDiscount = comparePrice && parseFloat(comparePrice) > parseFloat(price);
-const discountPercent = hasDiscount ? Math.round((1 - parseFloat(price) / parseFloat(comparePrice)) * 100) : 0;
+const comparePreis = product.variants[0]?.compare_at_price;
+const hasDiscount = comparePreis && parseFloat(comparePreis) > parseFloat(price);
+const discountPercent = hasDiscount ? Math.round((1 - parseFloat(price) / parseFloat(comparePreis)) * 100) : 0;
 const primaryImage = product.images?.[0]?.local || product.images?.[0]?.src || '/images/hero-bg.jpg';
-const primaryImageAlt = product.images?.[0]?.alt || `${product.title} product image`;
+const primaryImageAlt = product.images?.[0]?.alt || `${product.title} Produktbild`;
 
-const plainDescription = (product.body_html || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+const plainBeschreibung = (product.body_html || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
 
 function trimAtWord(value: string, maxLen: number) {
   if (value.length <= maxLen) return value;
@@ -34,18 +34,18 @@ function trimAtWord(value: string, maxLen: number) {
 }
 
 // Build SEO description — extract meaningful content, cap at 155 chars
-const productDescSnippet = plainDescription.substring(0, 125).trim();
-const pricePart = hasDiscount ? `Now $${price} (was $${comparePrice})` : `$${price} AUD`;
+const productDescSnippet = plainBeschreibung.substring(0, 125).trim();
+const pricePart = hasDiscount ? `jetzt €${price} (vorher €${comparePreis})` : `€${price}`;
 const seoDescBase = productDescSnippet
-  ? `${productDescSnippet}${productDescSnippet.length >= 125 ? '...' : ''} — ${pricePart}. Fast Australia-wide shipping.`
-  : `Buy ${product.title}${product.vendor ? ` by ${product.vendor}` : ''} for ${pricePart} at Vapelink. Fast Australia-wide shipping.`;
-const seoDescription = trimAtWord(seoDescBase, 160);
+  ? `${productDescSnippet}${productDescSnippet.length >= 125 ? '...' : ''} — ${pricePart}. Schneller Versand deutschlandweit.`
+  : `${product.title}${product.vendor ? ` von ${product.vendor}` : ''} für ${pricePart} bei Mr. Nice Vape Deutschland online kaufen. Schneller Versand deutschlandweit.`;
+const seoBeschreibung = trimAtWord(seoDescBase, 160);
 
 // SEO title — brand + product + buy online, cap at 60 chars for Google
-const titleBase = `${product.title}${product.vendor ? ` – ${product.vendor}` : ''} | Vapelink Australia`;
-const seoTitle = trimAtWord(titleBase.length > 60 ? `${product.title} | Buy Online – Vapelink Australia` : titleBase, 60);
+const titleBase = `${product.title}${product.vendor ? ` – ${product.vendor}` : ''} | Mr. Nice Vape Deutschland`;
+const seoTitle = trimAtWord(titleBase.length > 60 ? `${product.title} | Online kaufen – Mr. Nice Vape Deutschland` : titleBase, 60);
 
-// Strip product images from body_html to avoid showing them twice (gallery + description)
+// Strip Produktbilds from body_html to avoid showing them twice (gallery + description)
 const cleanBodyHtml = (product.body_html || '').replace(/<img[^>]*>/gi, '');
 
 const productsData = [...productsRaw, ...disposableVapes] as any[];
@@ -60,24 +60,24 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Product",
   "name": product.title,
-  "description": seoDescription,
+  "description": seoBeschreibung,
   "image": (product.images?.length ? product.images.map((img: any) => img.src || img.local).filter(Boolean) : [primaryImage]),
   "sku": product.variants[0]?.sku || product.handle,
   "mpn": product.variants[0]?.sku || product.handle,
-  "brand": { "@type": "Brand", "name": product.vendor || "Vapelink" },
-  "category": product.product_type || "Vaping Products",
+  "brand": { "@type": "Brand", "name": product.vendor || "Mr. Nice Vape" },
+  "category": product.product_type || "Vape-Produkte",
   "offers": {
     "@type": "Offer",
-    "url": `https://vapelinkstore.com.au/products/${product.handle}`,
+    "url": `https://mrnicevape.com/products/${product.handle}`,
     "price": price,
-    "priceCurrency": "AUD",
+    "priceCurrency": "EUR",
     "availability": product.variants[0]?.available ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
     "itemCondition": "https://schema.org/NewCondition",
-    "seller": { "@type": "Organization", "name": "Vapelink Australia" },
+    "seller": { "@type": "Organization", "name": "Mr. Nice Vape Deutschland" },
     "priceValidUntil": new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
     "hasMerchantReturnPolicy": {
       "@type": "MerchantReturnPolicy",
-      "applicableCountry": "AU",
+      "applicableCountry": "DE",
       "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
       "merchantReturnDays": 14,
       "returnMethod": "https://schema.org/ReturnByMail",
@@ -89,11 +89,11 @@ const structuredData = {
       "shippingRate": {
         "@type": "MonetaryAmount",
         "value": "9.95",
-        "currency": "AUD"
+        "currency": "EUR"
       },
       "shippingDestination": {
         "@type": "DefinedRegion",
-        "addressCountry": "AU"
+        "addressCountry": "DE"
       },
       "deliveryTime": {
         "@type": "ShippingDeliveryTime",
@@ -108,10 +108,10 @@ const breadcrumbData = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vapelinkstore.com.au/" },
-    { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://vapelinkstore.com.au/collections/shop" },
-    ...(product.product_type ? [{ "@type": "ListItem", "position": 3, "name": product.product_type, "item": "https://vapelinkstore.com.au/collections/shop" }] : []),
-    { "@type": "ListItem", "position": product.product_type ? 4 : 3, "name": product.title, "item": `https://vapelinkstore.com.au/products/${product.handle}` }
+    { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://mrnicevape.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Shop", "item": "https://mrnicevape.com/collections/shop" },
+    ...(product.product_type ? [{ "@type": "ListItem", "position": 3, "name": product.product_type, "item": "https://mrnicevape.com/collections/shop" }] : []),
+    { "@type": "ListItem", "position": product.product_type ? 4 : 3, "name": product.title, "item": `https://mrnicevape.com/products/${product.handle}` }
   ]
 };
 
@@ -128,7 +128,7 @@ const starDist = getStarDistribution(reviewData.reviews);
   "worstRating": 1
 };
 
-// Add individual reviews to structured data (top 10 for Google rich results)
+// Add individual Bewertungen to structured data (top 10 for Google rich results)
 (structuredData as any).review = reviewData.reviews.slice(0, 10).map((r: any) => ({
   "@type": "Review",
   "author": { "@type": "Person", "name": r.name },
@@ -148,8 +148,6 @@ function getProductKeywords(prod: any): string {
   const kw: string[] = [];
   const titleLower = prod.title.toLowerCase();
   const typeLower = (prod.product_type || '').toLowerCase();
-  const vendorLower = (prod.vendor || '').toLowerCase();
-
   // 1. Match product type keywords
   const typeMap: Record<string, string> = {
     'ejuice': 'EJUICE', 'e-juice': 'EJUICE', 'e-liquid': 'EJUICE', 'juice': 'EJUICE',
@@ -229,7 +227,7 @@ function getProductKeywords(prod: any): string {
   kw.push(...cleanTags);
 
   // 7. Add 2 generic sitewide keywords
-  kw.push('vape shop australia', 'buy online australia');
+  kw.push('vape shop deutschland', 'vapes online kaufen deutschland');
 
   // Deduplicate & join (cap at ~20 keywords for meta tag best practice)
   const unique = [...new Set(kw.map(k => k.trim()).filter(Boolean))].slice(0, 20);
@@ -239,7 +237,7 @@ function getProductKeywords(prod: any): string {
 const seoKeywords = getProductKeywords(product);
 ---
 
-<Layout title={seoTitle} description={seoDescription} image={primaryImage} type="product">
+<Layout title={seoTitle} description={seoBeschreibung} image={primaryImage} type="product">
   <Fragment slot="head">
     <meta name="keywords" content={seoKeywords} />
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
@@ -250,7 +248,7 @@ const seoKeywords = getProductKeywords(product);
   <nav class="breadcrumb-bar">
     <div class="container">
       <ol class="breadcrumb">
-        <li><a href="/">Home</a></li>
+        <li><a href="/">Startseite</a></li>
         <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></li>
         <li><a href="/collections/shop">Shop</a></li>
         {product.product_type && (
@@ -265,7 +263,7 @@ const seoKeywords = getProductKeywords(product);
     </div>
   </nav>
 
-  <!-- Product Detail -->
+  <!-- product Detail -->
   <section class="container pdp-section">
     <div class="pdp-grid">
       <!-- Gallery -->
@@ -274,7 +272,7 @@ const seoKeywords = getProductKeywords(product);
           <div>
             <div class="pdp-main-image-wrap">
               {hasDiscount && (
-                <span class="badge-sale" style="position:absolute;top:0.75rem;right:0.75rem;z-index:3;padding:0.3rem 0.7rem;font-size:0.72rem;">-{discountPercent}% OFF</span>
+                <span class="badge-sale" style="position:absolute;top:0.75rem;right:0.75rem;z-index:3;padding:0.3rem 0.7rem;font-size:0.72rem;">-{discountPercent}%</span>
               )}
               <img
                 id="main-image"
@@ -294,7 +292,7 @@ const seoKeywords = getProductKeywords(product);
                   >
                     <img
                       src={img.local}
-                      alt={img.alt || `${product.title} image ${i + 1}`}
+                      alt={img.alt || `${product.title} Bild ${i + 1}`}
                       loading="lazy"
                       onerror={`this.onerror=null;this.src='${img.src}'`}
                     />
@@ -323,22 +321,21 @@ const seoKeywords = getProductKeywords(product);
         )}
 
         <!-- Star Rating -->
-        <a href="#reviews" class="pdp-rating-link">
+        <a href="#Bewertungen" class="pdp-rating-link">
           <div class="pdp-stars">
             {[1,2,3,4,5].map(s => (
               <svg class={`review-star-sm ${s <= Math.round(reviewData.averageRating) ? 'star-filled' : 'star-empty'}`} width="16" height="16" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             ))}
           </div>
-          <span class="pdp-rating-text">{reviewData.averageRating} ({reviewData.totalReviews} reviews)</span>
+          <span class="pdp-rating-text">{reviewData.averageRating} ({reviewData.totalReviews} Bewertungen)</span>
         </a>
 
-        <!-- Price -->
+        <!-- price -->
         <div class="pdp-price-row">
-          <span class="pdp-price font-display">${parseFloat(price).toFixed(2)}</span>
-          <span class="pdp-currency">AUD</span>
+          <span class="pdp-price font-display">€{parseFloat(price).toFixed(2)}</span>
           {hasDiscount && (
             <>
-              <span class="pdp-compare">${parseFloat(comparePrice).toFixed(2)}</span>
+              <span class="pdp-compare">€{parseFloat(comparePreis).toFixed(2)}</span>
               <span class="badge-sale">-{discountPercent}%</span>
             </>
           )}
@@ -346,7 +343,7 @@ const seoKeywords = getProductKeywords(product);
 
         <hr class="pdp-divider" />
 
-        <!-- Add to Cart -->
+        <!-- In den Warenkorb -->
         <div class="pdp-cart-actions">
           <div class="pdp-qty-wrap">
             <button class="pdp-qty-btn" id="qty-minus" type="button">-</button>
@@ -355,7 +352,7 @@ const seoKeywords = getProductKeywords(product);
           </div>
           <button class="pdp-add-cart btn-primary" id="pdp-add-cart" data-handle={product.handle} data-title={product.title} data-price={price} data-image={product.images[0]?.local || ''} style="flex:1;padding:0.85rem 1.5rem;font-size:0.95rem;justify-content:center;">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-            Add to Cart
+            In den Warenkorb
           </button>
         </div>
 
@@ -364,13 +361,13 @@ const seoKeywords = getProductKeywords(product);
         <!-- Variants -->
         {product.variants.length > 1 && (
           <div class="pdp-block">
-            <h3 class="pdp-block-label">Available Options</h3>
+            <h3 class="pdp-block-label">Verfügbare Optionen</h3>
             <div class="pdp-variants">
               {product.variants.map((v: any) => (
                 <div class="pdp-variant">
                   <span class="pdp-variant-name">{v.title}</span>
-                  {v.title !== 'Default Title' && (
-                    <span class="pdp-variant-price">${parseFloat(v.price).toFixed(2)}</span>
+                  {v.title !== 'Standardtitel' && (
+                    <span class="pdp-variant-price">€{parseFloat(v.price).toFixed(2)}</span>
                   )}
                 </div>
               ))}
@@ -390,10 +387,10 @@ const seoKeywords = getProductKeywords(product);
           </div>
         )}
 
-        <!-- Description -->
+        <!-- Beschreibung -->
         {cleanBodyHtml && cleanBodyHtml.replace(/<[^>]*>/g, '').trim() && (
           <div class="pdp-block">
-            <h3 class="pdp-block-label">Description</h3>
+            <h3 class="pdp-block-label">Beschreibung</h3>
             <div class="prose-content" set:html={cleanBodyHtml} />
           </div>
         )}
@@ -405,51 +402,51 @@ const seoKeywords = getProductKeywords(product);
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             </span>
             <div>
-              <p style="color:var(--color-text);font-weight:600;font-size:0.88rem;">Need help with this product?</p>
-              <p style="color:var(--color-text-secondary);font-size:0.78rem;">Visit our vape store in Coburg, Melbourne or contact us</p>
+              <p style="color:var(--color-text);font-weight:600;font-size:0.88rem;">Benötigen Sie Hilfe zu diesem Produkt?</p>
+              <p style="color:var(--color-text-secondary);font-size:0.78rem;">Kontaktieren Sie unser Team in Köln für Produktberatung</p>
             </div>
           </div>
-          <a href="mailto:info@vapelinkstore.com.au" class="btn-primary" style="width:100%;padding:0.75rem;justify-content:center;">
-            Contact Us
+          <a href="mailto:info@mrnicevape.com" class="btn-primary" style="width:100%;padding:0.75rem;justify-content:center;">
+            Kontakt
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ Customer Reviews Section ═══ -->
-  <section class="reviews-section" id="reviews">
+  <!-- ═══ Kundenbewertungen Section ═══ -->
+  <section class="Bewertungen-section" id="Bewertungen">
     <div class="container">
       <div class="section-header" style="margin-bottom:1.75rem;">
         <div>
-          <span class="section-label">What Customers Say</span>
-          <h2 class="font-display" style="font-size:1.35rem;font-weight:700;color:var(--color-text);margin-top:0.25rem;">Customer Reviews</h2>
+          <span class="section-label">Kundenmeinungen</span>
+          <h2 class="font-display" style="font-size:1.35rem;font-weight:700;color:var(--color-text);margin-top:0.25rem;">Kundenbewertungen</h2>
         </div>
       </div>
 
-      <div class="reviews-layout">
+      <div class="Bewertungen-layout">
         <!-- Summary Card -->
-        <div class="reviews-summary">
-          <div class="reviews-avg">
-            <span class="reviews-avg-number font-display">{reviewData.averageRating}</span>
-            <div class="reviews-avg-stars">
+        <div class="Bewertungen-summary">
+          <div class="Bewertungen-avg">
+            <span class="Bewertungen-avg-number font-display">{reviewData.averageRating}</span>
+            <div class="Bewertungen-avg-stars">
               {[1,2,3,4,5].map(s => (
                 <svg class={`review-star ${s <= Math.round(reviewData.averageRating) ? 'star-filled' : 'star-empty'}`} width="18" height="18" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               ))}
             </div>
-            <span class="reviews-avg-count">{reviewData.totalReviews} reviews</span>
+            <span class="Bewertungen-avg-count">{reviewData.totalReviews} Bewertungen</span>
           </div>
-          <div class="reviews-bars">
+          <div class="Bewertungen-bars">
             {[5,4,3,2,1].map(star => {
               const count = (starDist as any)[star] || 0;
               const pct = reviewData.totalReviews > 0 ? Math.round((count / reviewData.totalReviews) * 100) : 0;
               return (
-                <div class="reviews-bar-row">
-                  <span class="reviews-bar-label">{star}★</span>
-                  <div class="reviews-bar-track">
-                    <div class="reviews-bar-fill" style={`width:${pct}%`}></div>
+                <div class="Bewertungen-bar-row">
+                  <span class="Bewertungen-bar-label">{star}★</span>
+                  <div class="Bewertungen-bar-track">
+                    <div class="Bewertungen-bar-fill" style={`width:${pct}%`}></div>
                   </div>
-                  <span class="reviews-bar-count">{count}</span>
+                  <span class="Bewertungen-bar-count">{count}</span>
                 </div>
               );
             })}
@@ -457,7 +454,7 @@ const seoKeywords = getProductKeywords(product);
         </div>
 
         <!-- Reviews List -->
-        <div class="reviews-list" id="reviews-list">
+        <div class="Bewertungen-list" id="Bewertungen-list">
           {reviewData.reviews.map((review: any, idx: number) => (
             <div class={`review-card ${idx >= 5 ? 'review-hidden' : ''}`} data-review-index={idx}>
               <div class="review-header">
@@ -469,7 +466,7 @@ const seoKeywords = getProductKeywords(product);
                 {review.verified && (
                   <span class="review-verified">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-                    Verified
+                    Verifiziert
                   </span>
                 )}
               </div>
@@ -485,14 +482,14 @@ const seoKeywords = getProductKeywords(product);
 
         <!-- Pagination -->
         {reviewData.totalReviews > 5 && (
-          <div class="reviews-pagination" id="reviews-pagination">
-            <button class="reviews-page-btn" id="reviews-prev" disabled>
+          <div class="Bewertungen-pagination" id="Bewertungen-pagination">
+            <button class="Bewertungen-page-btn" id="Bewertungen-prev" disabled>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
-              Previous
+              Zurück
             </button>
-            <span class="reviews-page-info" id="reviews-page-info">Page 1 of {Math.ceil(reviewData.totalReviews / 5)}</span>
-            <button class="reviews-page-btn" id="reviews-next">
-              Next
+            <span class="Bewertungen-page-info" id="Bewertungen-page-info">Seite 1 von {Math.ceil(reviewData.totalReviews / 5)}</span>
+            <button class="Bewertungen-page-btn" id="Bewertungen-next">
+              Weiter
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
             </button>
           </div>
@@ -501,14 +498,14 @@ const seoKeywords = getProductKeywords(product);
     </div>
   </section>
 
-  <!-- Related Products -->
+  <!-- Ähnliche Produkte -->
   {relatedProducts.length > 0 && (
     <section class="related-section">
       <div class="container">
         <div class="section-header" style="margin-bottom:1.75rem;">
           <div>
-            <span class="section-label">You May Also Like</span>
-            <h2 class="font-display" style="font-size:1.35rem;font-weight:700;color:var(--color-text);margin-top:0.25rem;">Related Products</h2>
+            <span class="section-label">Das könnte Ihnen auch gefallen</span>
+            <h2 class="font-display" style="font-size:1.35rem;font-weight:700;color:var(--color-text);margin-top:0.25rem;">Ähnliche Produkte</h2>
           </div>
         </div>
         <div class="related-grid">
@@ -536,7 +533,7 @@ const seoKeywords = getProductKeywords(product);
       });
     });
 
-    // Quantity controls
+    // quantity controls
     const qtyInput = document.getElementById('pdp-qty') as HTMLInputElement;
     document.getElementById('qty-minus')?.addEventListener('click', () => {
       const val = parseInt(qtyInput.value) || 1;
@@ -547,7 +544,7 @@ const seoKeywords = getProductKeywords(product);
       if (val < 99) qtyInput.value = String(val + 1);
     });
 
-    // Add to cart
+    // In den Warenkorb
     document.getElementById('pdp-add-cart')?.addEventListener('click', (e) => {
       const btn = e.currentTarget as HTMLElement;
       const handle = btn.dataset.handle || '';
@@ -556,26 +553,26 @@ const seoKeywords = getProductKeywords(product);
       const image = btn.dataset.image || '';
       const qty = parseInt(qtyInput?.value) || 1;
 
-      const cart = JSON.parse(localStorage.getItem('vapelink_cart') || '[]');
+      const cart = JSON.parse(localStorage.getItem('mrnicevape_cart') || '[]');
       const existing = cart.find((item: any) => item.handle === handle);
       if (existing) {
         existing.qty += qty;
       } else {
         cart.push({ handle, title, price, image, qty });
       }
-      localStorage.setItem('vapelink_cart', JSON.stringify(cart));
+      localStorage.setItem('mrnicevape_cart', JSON.stringify(cart));
       window.dispatchEvent(new CustomEvent('cart-updated'));
 
-      // Open cart drawer for consistency
+      // Warenkorb öffnen drawer for consistency
       const drawerEl = document.getElementById('cart-drawer');
       const overlayEl = document.getElementById('cart-overlay');
       if (drawerEl) drawerEl.style.transform = 'translateX(0)';
       if (overlayEl) overlayEl.style.display = 'block';
       document.body.style.overflow = 'hidden';
 
-      btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Added!';
+      btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Hinzugefügt!';
       setTimeout(() => {
-        btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> Add to Cart';
+        btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg> In den Warenkorb';
       }, 1500);
     });
 
@@ -588,9 +585,9 @@ const seoKeywords = getProductKeywords(product);
       const totalPages = Math.ceil(allCards.length / REVIEWS_PER_PAGE);
       let currentPage = 1;
       
-      const prevBtn = document.getElementById('reviews-prev') as HTMLButtonElement;
-      const nextBtn = document.getElementById('reviews-next') as HTMLButtonElement;
-      const pageInfo = document.getElementById('reviews-page-info');
+      const prevBtn = document.getElementById('Bewertungen-prev') as HTMLButtonElement;
+      const nextBtn = document.getElementById('Bewertungen-next') as HTMLButtonElement;
+      const pageInfo = document.getElementById('Bewertungen-page-info');
       
       function showPage(page: number) {
         currentPage = page;
@@ -601,7 +598,7 @@ const seoKeywords = getProductKeywords(product);
         });
         if (prevBtn) prevBtn.disabled = page === 1;
         if (nextBtn) nextBtn.disabled = page === totalPages;
-        if (pageInfo) pageInfo.textContent = `Page ${page} of ${totalPages}`;
+        if (pageInfo) pageInfo.textContent = `Seite ${page} von ${totalPages}`;
       }
       
       prevBtn?.addEventListener('click', () => { if (currentPage > 1) showPage(currentPage - 1); });
@@ -909,18 +906,18 @@ const seoKeywords = getProductKeywords(product);
   .review-star, .review-star-sm { flex-shrink: 0; }
 
   /* ─── Reviews Section ─── */
-  .reviews-section {
+  .Bewertungen-section {
     padding: 3rem 0;
     border-top: 1px solid var(--color-border);
   }
-  .reviews-layout {
+  .Bewertungen-layout {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
 
   /* Summary */
-  .reviews-summary {
+  .Bewertungen-summary {
     display: flex;
     gap: 2rem;
     align-items: center;
@@ -931,37 +928,37 @@ const seoKeywords = getProductKeywords(product);
     flex-wrap: wrap;
     box-shadow: var(--shadow-sm);
   }
-  .reviews-avg {
+  .Bewertungen-avg {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.35rem;
     min-width: 100px;
   }
-  .reviews-avg-number {
+  .Bewertungen-avg-number {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--color-text);
     line-height: 1;
   }
-  .reviews-avg-stars { display: flex; gap: 2px; }
-  .reviews-avg-count {
+  .Bewertungen-avg-stars { display: flex; gap: 2px; }
+  .Bewertungen-avg-count {
     font-size: 0.75rem;
     color: var(--color-text-muted);
   }
-  .reviews-bars {
+  .Bewertungen-bars {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 0.35rem;
     min-width: 200px;
   }
-  .reviews-bar-row {
+  .Bewertungen-bar-row {
     display: flex;
     align-items: center;
     gap: 0.5rem;
   }
-  .reviews-bar-label {
+  .Bewertungen-bar-label {
     font-size: 0.72rem;
     font-weight: 600;
     color: var(--color-text-secondary);
@@ -969,20 +966,20 @@ const seoKeywords = getProductKeywords(product);
     text-align: right;
     font-family: var(--font-display);
   }
-  .reviews-bar-track {
+  .Bewertungen-bar-track {
     flex: 1;
     height: 8px;
     background: var(--color-surface-alt);
     border-radius: 4px;
     overflow: hidden;
   }
-  .reviews-bar-fill {
+  .Bewertungen-bar-fill {
     height: 100%;
     background: #f59e0b;
     border-radius: 4px;
     transition: width 0.3s ease;
   }
-  .reviews-bar-count {
+  .Bewertungen-bar-count {
     font-size: 0.7rem;
     color: var(--color-text-muted);
     width: 24px;
@@ -990,7 +987,7 @@ const seoKeywords = getProductKeywords(product);
   }
 
   /* Review Cards */
-  .reviews-list {
+  .Bewertungen-list {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -1048,13 +1045,13 @@ const seoKeywords = getProductKeywords(product);
   }
 
   /* Pagination */
-  .reviews-pagination {
+  .Bewertungen-pagination {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
   }
-  .reviews-page-btn {
+  .Bewertungen-page-btn {
     display: inline-flex;
     align-items: center;
     gap: 0.3rem;
@@ -1069,15 +1066,15 @@ const seoKeywords = getProductKeywords(product);
     cursor: pointer;
     transition: all 0.15s ease;
   }
-  .reviews-page-btn:hover:not(:disabled) {
+  .Bewertungen-page-btn:hover:not(:disabled) {
     border-color: var(--color-border-hover);
     color: var(--color-text);
   }
-  .reviews-page-btn:disabled {
+  .Bewertungen-page-btn:disabled {
     opacity: 0.4;
     cursor: not-allowed;
   }
-  .reviews-page-info {
+  .Bewertungen-page-info {
     font-size: 0.78rem;
     color: var(--color-text-muted);
     font-family: var(--font-display);

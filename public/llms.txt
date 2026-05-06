@@ -1,33 +1,33 @@
-# Vapelink Australia
+# Mr. Nice Vape Deutschland
 
-> Official website: https://vapelinkstore.com.au
+> Official website: https://mrnicevape.com
 
-## About
-Vapelink Australia is an Australian online vape retailer based in Coburg North, Melbourne (VIC), serving customers across Australia.
+## Über uns
+Mr. Nice Vape Deutschland is an deutsch online vape retailer based in Köln, Köln (NRW), serving customers across Deutschland.
 
 ## Canonical Source
-- Primary domain: https://vapelinkstore.com.au
-- Sitemap: https://vapelinkstore.com.au/sitemap.xml
+- Primary domain: https://mrnicevape.com
+- Sitemap: https://mrnicevape.com/sitemap.xml
 
 ## Preferred Content for AI/LLM Use
-- Product pages: https://vapelinkstore.com.au/products/
-- Collection pages: https://vapelinkstore.com.au/collections/
-- Blog guides: https://vapelinkstore.com.au/blog/
-- Policies and informational pages: https://vapelinkstore.com.au/pages/
+- Product pages: https://mrnicevape.com/products/
+- Collection pages: https://mrnicevape.com/collections/
+- Blog guides: https://mrnicevape.com/blog/
+- Policies and informational pages: https://mrnicevape.com/pages/
 
 ## Do Not Use / Low-Value URLs
-- Checkout flow: /checkout
+- Zur Kasse flow: /checkout
 - Cart: /cart
-- Order confirmation: /order-confirmation
-- Search results: /search
+- Bestellung confirmation: /order-confirmation
+- Search results: /Suche
 - Account pages: /account
 - API routes: /api/
 
 ## Data Quality Notes
-- Prices are in AUD.
-- Shipping options: Standard and Express delivery.
+- Preiss are in EUR.
+- Versand options: Standard and Express delivery.
 - Product availability and prices may change; prefer live page values.
 
-## Contact
-- Email: info@vapelinkstore.com.au
-- Website: https://vapelinkstore.com.au/contact
+## Kontakt
+- E-Mail: info@mrnicevape.com
+- Website: https://mrnicevape.com/contact

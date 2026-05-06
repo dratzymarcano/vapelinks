@@ -1,18 +1,58 @@
 export const prerender = false;
 
 import type { APIRoute } from 'astro';
-import { Resend } from 'resend';
 
 function getEnv(locals: any, key: string) {
   return locals?.runtime?.env?.[key] || import.meta.env[key];
 }
 
-function getResendClient(locals: any) {
-  const apiKey = getEnv(locals, 'RESEND_API_KEY');
-  if (!apiKey) {
-    throw new Error('Missing RESEND_API_KEY');
-  }
-  return new Resend(apiKey);
+/* ─────────────────────────────────────────────────────────
+   Brevo transport — drop-in replacement for resend.emails.send()
+   Accepts { from, to[], subject, html, replyTo? } and returns
+   { data: { id }, error?: { message } } so the rest of the file
+   is unchanged.
+   ───────────────────────────────────────────────────────── */
+function parseAddress(input: string | { email: string; name?: string }) {
+  if (typeof input !== 'string') return { email: input.email, name: input.name };
+  const m = input.match(/^\s*"?([^"<]+?)"?\s*<\s*([^>]+)\s*>\s*$/);
+  if (m) return { name: m[1].trim(), email: m[2].trim() };
+  return { email: input.trim() };
+}
+
+function getBrevoClient(locals: any) {
+  const apiKey = getEnv(locals, 'BREVO_API_KEY');
+  if (!apiKey) throw new Error('Missing BREVO_API_KEY');
+
+  return {
+    emails: {
+      async send(opts: { from: string; to: string[]; subject: string; html: string; replyTo?: string }) {
+        const sender = parseAddress(opts.from);
+        const payload: Record<string, any> = {
+          sender,
+          to: opts.to.map((addr) => parseAddress(addr)),
+          subject: opts.subject,
+          htmlContent: opts.html,
+        };
+        if (opts.replyTo) payload.replyTo = parseAddress(opts.replyTo);
+
+        const res = await fetch('https://api.brevo.com/v3/smtp/email', {
+          method: 'POST',
+          headers: {
+            accept: 'application/json',
+            'content-type': 'application/json',
+            'api-key': apiKey,
+          },
+          body: JSON.stringify(payload),
+        });
+        if (!res.ok) {
+          const detail = await res.text().catch(() => '');
+          return { data: null, error: { message: `Brevo ${res.status}: ${detail}` } };
+        }
+        const data = await res.json().catch(() => ({}));
+        return { data: { id: data.messageId || null }, error: null };
+      },
+    },
+  };
 }
 
 /* ─────────────────────────────────────────────────────────
@@ -20,12 +60,12 @@ function getResendClient(locals: any) {
    ───────────────────────────────────────────────────────── */
 function emailLayout(content: string, preheader: string = '') {
   return `<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html lang="de" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <title>Vapelink Australia</title>
+  <title>Mr. Nice Vape Deutschland</title>
   <!--[if mso]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
@@ -53,7 +93,7 @@ function emailLayout(content: string, preheader: string = '') {
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
             <tr><td style="text-align:center;padding:0 0 16px;">
               <span style="font-size:28px;font-weight:700;letter-spacing:-0.5px;color:#22c55e;">VAPELINK</span>
-              <span style="font-size:12px;font-weight:500;letter-spacing:2px;color:#64748b;display:block;margin-top:2px;">AUSTRALIA</span>
+              <span style="font-size:12px;font-weight:500;letter-spacing:2px;color:#64748b;display:block;margin-top:2px;">DEUTSCHLAND</span>
             </td></tr>
           </table>
         </td></tr>
@@ -70,11 +110,11 @@ function emailLayout(content: string, preheader: string = '') {
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
             <tr><td style="border-top:1px solid #1e293b;padding-top:24px;text-align:center;">
               <p style="font-size:12px;color:#475569;line-height:1.6;margin:0 0 8px;">
-                <a href="https://vapelinkstore.com.au" style="color:#22c55e;text-decoration:none;font-weight:500;">vapelinkstore.com.au</a>
+                <a href="https://mrnicevape.com" style="color:#22c55e;text-decoration:none;font-weight:500;">mrnicevape.com</a>
               </p>
               <p style="font-size:11px;color:#334155;line-height:1.5;margin:0;">
-                Vapelink Australia &middot; Premium Vape Products<br/>
-                &copy; ${new Date().getFullYear()} All rights reserved.
+                Mr. Nice Vape Deutschland &middot; Premium-Vape-Produkte<br/>
+                &copy; ${new Date().getFullYear()} Alle Rechte vorbehalten.
               </p>
             </td></tr>
           </table>
@@ -123,30 +163,30 @@ function itemsTable(items: any[]) {
     return `<tr>
       <td style="padding:12px 0;color:#e2e8f0;font-size:13px;font-weight:500;border-bottom:${isLast ? 'none' : '1px solid #334155'};">${item.title}</td>
       <td style="padding:12px 0;color:#94a3b8;font-size:13px;text-align:center;border-bottom:${isLast ? 'none' : '1px solid #334155'};width:50px;">&times;${item.qty || 1}</td>
-      <td style="padding:12px 0;color:#e2e8f0;font-size:13px;font-weight:600;text-align:right;border-bottom:${isLast ? 'none' : '1px solid #334155'};width:80px;">$${total}</td>
+      <td style="padding:12px 0;color:#e2e8f0;font-size:13px;font-weight:600;text-align:right;border-bottom:${isLast ? 'none' : '1px solid #334155'};width:80px;">€${total}</td>
     </tr>`;
   }).join('');
   return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0">${rows}</table>`;
 }
 
 function totalBlock(subtotal: string, shippingMethod: string, shippingCost: any, total: string) {
-  const shippingDisplay = '$' + (shippingCost || '0.00');
+  const shippingDisplay = '€' + (shippingCost || '0.00');
   return `
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f172a;border-radius:12px;padding:16px;border:1px solid #334155;">
       <tr>
-        <td style="padding:8px 16px;color:#94a3b8;font-size:13px;">Subtotal</td>
-        <td style="padding:8px 16px;color:#cbd5e1;font-size:13px;text-align:right;">$${subtotal}</td>
+        <td style="padding:8px 16px;color:#94a3b8;font-size:13px;">Zwischensumme</td>
+        <td style="padding:8px 16px;color:#cbd5e1;font-size:13px;text-align:right;">€${subtotal}</td>
       </tr>
       <tr>
-        <td style="padding:8px 16px;color:#94a3b8;font-size:13px;">Shipping (${shippingMethod || 'Standard'})</td>
+        <td style="padding:8px 16px;color:#94a3b8;font-size:13px;">Versand (${shippingMethod || 'Standard'})</td>
         <td style="padding:8px 16px;color:#cbd5e1;font-size:13px;text-align:right;">${shippingDisplay}</td>
       </tr>
       <tr>
         <td colspan="2" style="padding:4px 16px 0;"><div style="height:1px;background:#334155;"></div></td>
       </tr>
       <tr>
-        <td style="padding:12px 16px 8px;color:#f1f5f9;font-size:18px;font-weight:700;">Total</td>
-        <td style="padding:12px 16px 8px;color:#22c55e;font-size:18px;font-weight:700;text-align:right;">$${total} AUD</td>
+        <td style="padding:12px 16px 8px;color:#f1f5f9;font-size:18px;font-weight:700;">Gesamt</td>
+        <td style="padding:12px 16px 8px;color:#22c55e;font-size:18px;font-weight:700;text-align:right;">€${total}</td>
       </tr>
     </table>`;
 }
@@ -160,9 +200,9 @@ function badge(text: string, color: string) {
    ───────────────────────────────────────────────────────── */
 export const POST: APIRoute = async ({ request, locals }) => {
   try {
-    const resend = getResendClient(locals);
-    const FROM_EMAIL = getEnv(locals, 'RESEND_FROM_EMAIL') || 'Vapelink Australia <info@vapelinkstore.com.au>';
-    const ADMIN_EMAIL = getEnv(locals, 'RESEND_ADMIN_EMAIL') || 'info@vapelinkstore.com.au';
+    const resend = getBrevoClient(locals);
+    const FROM_EMAIL = getEnv(locals, 'BREVO_FROM_EMAIL') || getEnv(locals, 'RESEND_FROM_EMAIL') || 'Mr. Nice Vape Deutschland <info@mrnicevape.com>';
+    const ADMIN_EMAIL = getEnv(locals, 'BREVO_ADMIN_EMAIL') || getEnv(locals, 'RESEND_ADMIN_EMAIL') || 'info@mrnicevape.com';
     const body = await request.json();
     const { type, data } = body;
 
@@ -178,31 +218,31 @@ export const POST: APIRoute = async ({ request, locals }) => {
     switch (type) {
 
       /* ──────────────────────────────────────────────────
-         ADMIN: New Order Notification
+         ADMIN: Neue Bestellung Notification
          ────────────────────────────────────────────────── */
       case 'admin-order': {
-        const orderDate = new Date(data.date).toLocaleString('en-AU', { dateStyle: 'medium', timeStyle: 'short' });
+        const orderDate = new Date(data.date).toLocaleString('de-DE', { dateStyle: 'medium', timeStyle: 'short' });
         const statusColor = data.status === 'Paid' ? '#22c55e' : '#f59e0b';
 
         const content = `
-          ${heroSection('📦', 'New Order Received', `${data.orderNumber} &middot; ${orderDate}`)}
+          ${heroSection('📦', 'Neue Bestellung eingegangen', `${data.orderNumber} &middot; ${orderDate}`)}
 
-          <!-- Customer Info -->
+          <!-- Kunde Info -->
           <tr><td class="content-cell" style="padding:28px 32px;">
-            ${sectionLabel('Customer Details')}
+            ${sectionLabel('Kundendaten')}
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f172a;border-radius:12px;padding:4px 16px;border:1px solid #334155;">
               ${detailRow('Name', `<strong style="color:#f1f5f9;">${data.firstName} ${data.lastName}</strong>`)}
-              ${detailRow('Email', `<a href="mailto:${data.email}" style="color:#22c55e;text-decoration:none;">${data.email}</a>`)}
-              ${detailRow('Phone', data.phone || '<span style="color:#475569;">Not provided</span>')}
-              ${detailRow('Address', [data.address, data.address2, data.city, data.state, data.postcode, 'Australia'].filter(Boolean).join(', '), true)}
+              ${detailRow('E-Mail', `<a href="mailto:${data.email}" style="color:#22c55e;text-decoration:none;">${data.email}</a>`)}
+              ${detailRow('Telefon', data.phone || '<span style="color:#475569;">Nicht angegeben</span>')}
+              ${detailRow('Adresse', [data.address, data.address2, data.city, data.state, data.postcode, 'Deutschland'].filter(Boolean).join(', '), true)}
             </table>
           </td></tr>
 
           ${divider()}
 
-          <!-- Order Items -->
+          <!-- Bestellte Artikel -->
           <tr><td class="content-cell" style="padding:28px 32px;">
-            ${sectionLabel('Order Items')}
+            ${sectionLabel('Bestellte Artikel')}
             ${itemsTable(data.items || [])}
             <div style="margin-top:20px;">
               ${totalBlock(data.subtotal, data.shippingMethod, data.shippingCost, data.total)}
@@ -211,16 +251,16 @@ export const POST: APIRoute = async ({ request, locals }) => {
 
           ${divider()}
 
-          <!-- Payment -->
+          <!-- Zahlung -->
           <tr><td class="content-cell" style="padding:28px 32px;">
-            ${sectionLabel('Payment Information')}
+            ${sectionLabel('Zahlungsinformationen')}
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f172a;border-radius:12px;padding:4px 16px;border:1px solid #334155;">
-              ${detailRow('Method', `<strong>${data.paymentMethod}</strong>`)}
-              ${detailRow('Status', badge(data.status || 'Pending', statusColor))}
+              ${detailRow('Methode', `<strong>${data.paymentMethod}</strong>`)}
+              ${detailRow('Status', badge(data.status || 'Ausstehend', statusColor))}
               ${data.btcAmount ? detailRow('BTC Amount', `<code style="background:#334155;padding:3px 8px;border-radius:6px;font-size:12px;color:#fbbf24;">${data.btcAmount}</code>`) : ''}
               ${data.txId ? detailRow('TX ID', `<a href="https://mempool.space/tx/${data.txId}" style="color:#22c55e;font-size:11px;word-break:break-all;text-decoration:none;">${data.txId}</a>`, true) : ''}
-              ${!data.btcAmount && !data.txId ? detailRow('Reference', data.orderNumber, true) : ''}
-              ${data.notes ? detailRow('Notes', data.notes, true) : ''}
+              ${!data.btcAmount && !data.txId ? detailRow('Referenz', data.orderNumber, true) : ''}
+              ${data.notes ? detailRow('Hinweise', data.notes, true) : ''}
             </table>
           </td></tr>`;
 
@@ -228,49 +268,49 @@ export const POST: APIRoute = async ({ request, locals }) => {
           from: FROM_EMAIL,
           to: [ADMIN_EMAIL],
           replyTo: data.email || undefined,
-          subject: `New Order ${data.orderNumber} — $${data.total} AUD (${data.paymentMethod})`,
-          html: emailLayout(content, `New order ${data.orderNumber} from ${data.firstName} — $${data.total} AUD`),
+          subject: `Neue Bestellung ${data.orderNumber} — €${data.total} (${data.paymentMethod})`,
+          html: emailLayout(content, `New order ${data.orderNumber} from ${data.firstName} — €${data.total}`),
         });
         break;
       }
 
       /* ──────────────────────────────────────────────────
-         CUSTOMER: Order Confirmation
+         CUSTOMER: Bestellung Confirmation
          ────────────────────────────────────────────────── */
       case 'customer-confirmation': {
         const paymentInfo = (() => {
-          if (data.paymentMethod === 'Bitcoin (BTC)') {
+          if ((data.paymentMethod || '').startsWith('Bitcoin (BTC)')) {
             return `
               <div style="background:#0f172a;border-radius:12px;padding:20px;border:1px solid #334155;margin-top:16px;">
-                <p style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#fbbf24;margin:0 0 8px;">&#x20bf; Bitcoin Payment</p>
-                ${data.btcAmount ? `<p style="font-size:13px;color:#e2e8f0;margin:0 0 4px;">Amount: <strong style="color:#fbbf24;">${data.btcAmount} BTC</strong></p>` : ''}
+                <p style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#fbbf24;margin:0 0 8px;">&#x20bf; Bitcoin-Zahlung</p>
+                ${data.btcAmount ? `<p style="font-size:13px;color:#e2e8f0;margin:0 0 4px;">Betrag: <strong style="color:#fbbf24;">${data.btcAmount} BTC</strong></p>` : ''}
                 ${data.txId ? `<p style="font-size:12px;color:#94a3b8;margin:0;word-break:break-all;">TX: <a href="https://mempool.space/tx/${data.txId}" style="color:#22c55e;text-decoration:none;">${data.txId.substring(0, 16)}...</a></p>` : ''}
               </div>`;
           }
-          if (data.paymentMethod === 'Bank Transfer' || data.paymentMethod === 'PayID') {
+          if (['Bank Transfer', 'Banküberweisung', 'SEPA', 'SEPA-Überweisung'].includes(data.paymentMethod)) {
             return `
               <div style="background:#0f172a;border-radius:12px;padding:20px;border:1px solid #334155;margin-top:16px;">
-                <p style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">Payment Details</p>
-                <p style="font-size:13px;color:#e2e8f0;line-height:1.7;margin:0;">Please use <strong style="color:#22c55e;">${data.orderNumber}</strong> as your payment reference. We'll confirm once payment is received.</p>
+                <p style="font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#64748b;margin:0 0 8px;">Zahlung Details</p>
+                <p style="font-size:13px;color:#e2e8f0;line-height:1.7;margin:0;">Bitte verwende <strong style="color:#22c55e;">${data.orderNumber}</strong> als Zahlungsreferenz. Wir bestätigen deine Bestellung, sobald die Zahlung eingegangen ist.</p>
               </div>`;
           }
           return '';
         })();
 
         const content = `
-          ${heroSection('✓', `Thanks, ${data.firstName}!`, 'Your order has been confirmed')}
+          ${heroSection('✓', `Danke, ${data.firstName}!`, 'Ihre Bestellung wurde bestätigt')}
 
-          <!-- Order Number Banner -->
+          <!-- Bestellnummer Banner -->
           <tr><td style="padding:0 32px;">
             <div style="background:#22c55e12;border:1px dashed #22c55e40;border-radius:10px;padding:14px 20px;text-align:center;margin-top:24px;">
-              <span style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#94a3b8;">Order Number</span>
+              <span style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#94a3b8;">Bestellnummer</span>
               <p style="font-size:20px;font-weight:700;color:#22c55e;margin:4px 0 0;letter-spacing:0.5px;">${data.orderNumber}</p>
             </div>
           </td></tr>
 
           <!-- Items -->
           <tr><td class="content-cell" style="padding:28px 32px;">
-            ${sectionLabel('What You Ordered')}
+            ${sectionLabel('Ihre Bestellung')}
             ${itemsTable(data.items || [])}
             <div style="margin-top:20px;">
               ${totalBlock(data.subtotal || data.total, data.shippingMethod, data.shippingCost, data.total)}
@@ -280,12 +320,12 @@ export const POST: APIRoute = async ({ request, locals }) => {
 
           ${divider()}
 
-          <!-- Shipping -->
+          <!-- Versand -->
           <tr><td class="content-cell" style="padding:28px 32px;">
-            ${sectionLabel('Shipping To')}
+            ${sectionLabel('Versand an')}
             <div style="background:#0f172a;border-radius:12px;padding:20px;border:1px solid #334155;">
               <p style="font-size:14px;color:#f1f5f9;font-weight:600;margin:0 0 4px;">${data.firstName} ${data.lastName}</p>
-              <p style="font-size:13px;color:#94a3b8;line-height:1.7;margin:0;">${[data.address, data.address2].filter(Boolean).join(', ')}<br/>${data.city}, ${data.state} ${data.postcode}<br/>Australia</p>
+              <p style="font-size:13px;color:#94a3b8;line-height:1.7;margin:0;">${[data.address, data.address2].filter(Boolean).join(', ')}<br/>${data.city}, ${data.state} ${data.postcode}<br/>Deutschland</p>
             </div>
           </td></tr>
 
@@ -293,15 +333,15 @@ export const POST: APIRoute = async ({ request, locals }) => {
 
           <!-- Next Steps -->
           <tr><td class="content-cell" style="padding:28px 32px;">
-            ${sectionLabel('What Happens Next')}
+            ${sectionLabel('Wie es weitergeht')}
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
               <tr>
                 <td style="width:36px;vertical-align:top;padding-top:2px;">
                   <div style="width:28px;height:28px;line-height:28px;text-align:center;background:#22c55e18;border:1px solid #22c55e30;border-radius:8px;font-size:12px;color:#22c55e;font-weight:700;">1</div>
                 </td>
                 <td style="padding:0 0 16px 12px;">
-                  <p style="font-size:13px;color:#f1f5f9;font-weight:600;margin:0;">Order Processing</p>
-                  <p style="font-size:12px;color:#94a3b8;margin:2px 0 0;">We're preparing your order for shipment.</p>
+                  <p style="font-size:13px;color:#f1f5f9;font-weight:600;margin:0;">Bestellung wird bearbeitet</p>
+                  <p style="font-size:12px;color:#94a3b8;margin:2px 0 0;">Wir bereiten Ihre Bestellung für den Versand vor.</p>
                 </td>
               </tr>
               <tr>
@@ -309,8 +349,8 @@ export const POST: APIRoute = async ({ request, locals }) => {
                   <div style="width:28px;height:28px;line-height:28px;text-align:center;background:#22c55e18;border:1px solid #22c55e30;border-radius:8px;font-size:12px;color:#22c55e;font-weight:700;">2</div>
                 </td>
                 <td style="padding:0 0 16px 12px;">
-                  <p style="font-size:13px;color:#f1f5f9;font-weight:600;margin:0;">Shipped</p>
-                  <p style="font-size:12px;color:#94a3b8;margin:2px 0 0;">You'll receive tracking details via email.</p>
+                  <p style="font-size:13px;color:#f1f5f9;font-weight:600;margin:0;">Versendet</p>
+                  <p style="font-size:12px;color:#94a3b8;margin:2px 0 0;">Sie erhalten die Sendungsdaten per E-Mail.</p>
                 </td>
               </tr>
               <tr>
@@ -318,8 +358,8 @@ export const POST: APIRoute = async ({ request, locals }) => {
                   <div style="width:28px;height:28px;line-height:28px;text-align:center;background:#22c55e18;border:1px solid #22c55e30;border-radius:8px;font-size:12px;color:#22c55e;font-weight:700;">3</div>
                 </td>
                 <td style="padding:0 0 0 12px;">
-                  <p style="font-size:13px;color:#f1f5f9;font-weight:600;margin:0;">Delivered</p>
-                  <p style="font-size:12px;color:#94a3b8;margin:2px 0 0;">Enjoy your products!</p>
+                  <p style="font-size:13px;color:#f1f5f9;font-weight:600;margin:0;">Zugestellt</p>
+                  <p style="font-size:12px;color:#94a3b8;margin:2px 0 0;">Viel Freude mit Ihrer Bestellung!</p>
                 </td>
               </tr>
             </table>
@@ -327,18 +367,18 @@ export const POST: APIRoute = async ({ request, locals }) => {
 
           <!-- CTA -->
           <tr><td style="padding:0 32px 32px;text-align:center;">
-            <a href="https://vapelinkstore.com.au" style="display:inline-block;background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;font-size:14px;font-weight:600;padding:14px 32px;border-radius:10px;text-decoration:none;letter-spacing:0.3px;">Continue Shopping</a>
+            <a href="https://mrnicevape.com" style="display:inline-block;background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;font-size:14px;font-weight:600;padding:14px 32px;border-radius:10px;text-decoration:none;letter-spacing:0.3px;">Weiter einkaufen</a>
           </td></tr>
 
           <!-- Support -->
           <tr><td style="padding:0 32px 28px;text-align:center;">
-            <p style="font-size:12px;color:#64748b;margin:0;">Questions? Reply to this email or contact <a href="mailto:info@vapelinkstore.com.au" style="color:#22c55e;text-decoration:none;">info@vapelinkstore.com.au</a></p>
+            <p style="font-size:12px;color:#64748b;margin:0;">Fragen? Antwort an this email or contact <a href="mailto:info@mrnicevape.com" style="color:#22c55e;text-decoration:none;">info@mrnicevape.com</a></p>
           </td></tr>`;
 
         result = await resend.emails.send({
           from: FROM_EMAIL,
           to: [data.email],
-          subject: `Order Confirmed — ${data.orderNumber} | Vapelink Australia`,
+          subject: `Bestellung bestätigt — ${data.orderNumber} | Mr. Nice Vape Deutschland`,
           html: emailLayout(content, `Your order ${data.orderNumber} is confirmed! We'll start processing it right away.`),
         });
         break;
@@ -348,29 +388,29 @@ export const POST: APIRoute = async ({ request, locals }) => {
          CONTACT FORM: Admin Notification
          ────────────────────────────────────────────────── */
       case 'contact': {
-        const contactDate = new Date().toLocaleString('en-AU', { dateStyle: 'medium', timeStyle: 'short' });
+        const contactDate = new Date().toLocaleString('de-DE', { dateStyle: 'medium', timeStyle: 'short' });
 
         const adminContent = `
-          ${heroSection('💬', 'New Contact Message', contactDate)}
+          ${heroSection('💬', 'Neue Kontaktanfrage', contactDate)}
 
           <tr><td class="content-cell" style="padding:28px 32px;">
             ${sectionLabel('Sender')}
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f172a;border-radius:12px;padding:4px 16px;border:1px solid #334155;">
               ${detailRow('Name', `<strong style="color:#f1f5f9;">${data.name}</strong>`)}
-              ${detailRow('Email', `<a href="mailto:${data.email}" style="color:#22c55e;text-decoration:none;">${data.email}</a>`)}
-              ${detailRow('Subject', data.subject || 'General Enquiry', true)}
+              ${detailRow('E-Mail', `<a href="mailto:${data.email}" style="color:#22c55e;text-decoration:none;">${data.email}</a>`)}
+              ${detailRow('Betreff', data.subject || 'Allgemeine Anfrage', true)}
             </table>
           </td></tr>
 
           ${divider()}
 
           <tr><td class="content-cell" style="padding:28px 32px;">
-            ${sectionLabel('Message')}
+            ${sectionLabel('Nachricht')}
             <div style="background:#0f172a;border-radius:12px;padding:20px;border:1px solid #334155;border-left:3px solid #22c55e;">
               <p style="font-size:14px;color:#e2e8f0;line-height:1.8;margin:0;white-space:pre-wrap;">${data.message}</p>
             </div>
             <div style="margin-top:20px;text-align:center;">
-              <a href="mailto:${data.email}?subject=Re: ${encodeURIComponent(data.subject || 'Your message to Vapelink')}" style="display:inline-block;background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;font-size:13px;font-weight:600;padding:12px 28px;border-radius:10px;text-decoration:none;">Reply to ${data.name}</a>
+              <a href="mailto:${data.email}?subject=Re: ${encodeURIComponent(data.subject || 'Your message to Mr. Nice Vape')}" style="display:inline-block;background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;font-size:13px;font-weight:600;padding:12px 28px;border-radius:10px;text-decoration:none;">Antwort an ${data.name}</a>
             </div>
           </td></tr>`;
 
@@ -378,53 +418,53 @@ export const POST: APIRoute = async ({ request, locals }) => {
           from: FROM_EMAIL,
           to: [ADMIN_EMAIL],
           replyTo: data.email,
-          subject: `Contact: ${data.subject || 'New Message'} — ${data.name}`,
+          subject: `Kontakt: ${data.subject || 'New Nachricht'} — ${data.name}`,
           html: emailLayout(adminContent, `New contact form message from ${data.name}: ${(data.message || '').substring(0, 80)}`),
         });
 
-        // Customer auto-reply
+        // Kunde auto-reply
         const customerContent = `
-          ${heroSection('✉️', `Hi ${data.name}!`, "We've received your message")}
+          ${heroSection('✉️', `Hi ${data.name}!`, "Wir haben Ihre Nachricht erhalten")}
 
           <tr><td class="content-cell" style="padding:28px 32px;">
             <p style="font-size:14px;color:#cbd5e1;line-height:1.8;margin:0 0 20px;">
-              Thank you for reaching out to Vapelink Australia. Our team has received your message and will respond within <strong style="color:#f1f5f9;">24 hours</strong> on business days.
+              Vielen Dank für Ihre Nachricht an Mr. Nice Vape Deutschland. Unser Team hat Ihre Anfrage erhalten und antwortet an Werktagen in der Regel innerhalb von <strong style="color:#f1f5f9;">24 Stunden</strong>.
             </p>
-            ${sectionLabel('Your Message')}
+            ${sectionLabel('Your Nachricht')}
             <div style="background:#0f172a;border-radius:12px;padding:20px;border:1px solid #334155;">
               <p style="font-size:13px;color:#94a3b8;line-height:1.7;margin:0;white-space:pre-wrap;">${data.message}</p>
             </div>
           </td></tr>
 
           <tr><td style="padding:0 32px 32px;text-align:center;">
-            <a href="https://vapelinkstore.com.au" style="display:inline-block;background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;font-size:14px;font-weight:600;padding:14px 32px;border-radius:10px;text-decoration:none;">Visit Our Store</a>
+            <a href="https://mrnicevape.com" style="display:inline-block;background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;font-size:14px;font-weight:600;padding:14px 32px;border-radius:10px;text-decoration:none;">Zum Shop</a>
           </td></tr>`;
 
         await resend.emails.send({
           from: FROM_EMAIL,
           to: [data.email],
-          subject: 'Message Received — Vapelink Australia',
-          html: emailLayout(customerContent, "We got your message and will reply within 24 hours."),
+          subject: 'Nachricht Received — Mr. Nice Vape Deutschland',
+          html: emailLayout(customerContent, "Wir haben Ihre Nachricht erhalten und antworten innerhalb von 24 Stunden."),
         });
         break;
       }
 
       /* ──────────────────────────────────────────────────
-         BTC: Payment Confirmed (Admin)
+         BTC: Zahlung Confirmed (Admin)
          ────────────────────────────────────────────────── */
       case 'btc-confirmed': {
         const content = `
-          ${heroSection('₿', 'Bitcoin Payment Confirmed', `${data.orderNumber} &middot; ${data.confirmations || '2+'} confirmations`, '#f59e0b')}
+          ${heroSection('₿', 'Bitcoin-Zahlung bestätigt', `${data.orderNumber} &middot; ${data.confirmations || '2+'} confirmations`, '#f59e0b')}
 
           <tr><td class="content-cell" style="padding:28px 32px;">
-            ${sectionLabel('Transaction Details')}
+            ${sectionLabel('Transaktionsdetails')}
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f172a;border-radius:12px;padding:4px 16px;border:1px solid #334155;">
-              ${detailRow('Customer', `<strong style="color:#f1f5f9;">${data.firstName} ${data.lastName}</strong>`)}
-              ${detailRow('Email', `<a href="mailto:${data.email}" style="color:#22c55e;text-decoration:none;">${data.email}</a>`)}
-              ${detailRow('AUD Total', `<span style="color:#22c55e;font-weight:700;font-size:16px;">$${data.total} AUD</span>`)}
+              ${detailRow('Kunde', `<strong style="color:#f1f5f9;">${data.firstName} ${data.lastName}</strong>`)}
+              ${detailRow('E-Mail', `<a href="mailto:${data.email}" style="color:#22c55e;text-decoration:none;">${data.email}</a>`)}
+              ${detailRow('EUR Gesamt', `<span style="color:#22c55e;font-weight:700;font-size:16px;">€${data.total}</span>`)}
               ${detailRow('BTC Amount', `<code style="background:#334155;padding:3px 10px;border-radius:6px;font-size:13px;color:#fbbf24;font-weight:600;">${data.btcAmount || 'N/A'}</code>`)}
               ${detailRow('TX ID', data.txId ? `<a href="https://mempool.space/tx/${data.txId}" style="color:#22c55e;font-size:11px;word-break:break-all;text-decoration:none;">${data.txId}</a>` : 'N/A')}
-              ${detailRow('Confirmations', badge(data.confirmations || '2+', '#22c55e'), true)}
+              ${detailRow('Bestätigungen', badge(data.confirmations || '2+', '#22c55e'), true)}
             </table>
           </td></tr>
 
@@ -433,7 +473,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
             <div style="background:linear-gradient(135deg,#22c55e15,#22c55e08);border:1px solid #22c55e30;border-radius:12px;padding:20px;text-align:center;">
               <p style="font-size:24px;margin:0 0 8px;">🚀</p>
               <p style="font-size:15px;font-weight:700;color:#22c55e;margin:0;">Ready to Ship</p>
-              <p style="font-size:12px;color:#94a3b8;margin:4px 0 0;">Payment verified — this order is good to go.</p>
+              <p style="font-size:12px;color:#94a3b8;margin:4px 0 0;">Zahlung verified — this order is good to go.</p>
             </div>
           </td></tr>`;
 
@@ -441,8 +481,8 @@ export const POST: APIRoute = async ({ request, locals }) => {
           from: FROM_EMAIL,
           to: [ADMIN_EMAIL],
           replyTo: data.email || undefined,
-          subject: `BTC Confirmed — ${data.orderNumber} ($${data.total} AUD)`,
-          html: emailLayout(content, `Bitcoin payment confirmed for order ${data.orderNumber} — $${data.total} AUD. Ready to ship!`),
+          subject: `BTC Confirmed — ${data.orderNumber} (€${data.total})`,
+          html: emailLayout(content, `Bitcoin payment confirmed for order ${data.orderNumber} — €${data.total}. Ready to ship!`),
         });
         break;
       }
@@ -455,7 +495,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
     }
 
     if (result?.error) {
-      console.error('[send-email] Resend API error:', JSON.stringify(result.error));
+      console.error('[send-email] Brevo API error:', JSON.stringify(result.error));
       return new Response(JSON.stringify({ error: result.error }), {
         status: 400,
         headers: { 'Content-Type': 'application/json' },

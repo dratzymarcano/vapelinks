@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: 'vapelinks',
+      name: 'mrnicevape',
       script: './dist/server/entry.mjs',
       env: {
         HOST: '0.0.0.0',

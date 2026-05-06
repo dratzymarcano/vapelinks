@@ -3,17 +3,17 @@ import Layout from '../layouts/Layout.astro';
 import siteData from '../data/site.json';
 ---
 
-<Layout title="Checkout – Vapelink Australia" description="Complete your order at Vapelink Australia." noindex={true}>
+<Layout title="Zur Kasse – Mr. Nice Vape Deutschland" description="Schließen Sie Ihre Bestellung sicher bei Mr. Nice Vape Deutschland ab." noindex={true}>
 
   <!-- Breadcrumb -->
   <nav class="breadcrumb-bar">
     <div class="container">
       <ol class="breadcrumb">
-        <li><a href="/">Home</a></li>
+        <li><a href="/">Startseite</a></li>
         <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></li>
-        <li><a href="/cart">Cart</a></li>
+        <li><a href="/cart">Warenkorb</a></li>
         <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></li>
-        <li><span class="breadcrumb-current">Checkout</span></li>
+        <li><span class="breadcrumb-current">Zur Kasse</span></li>
       </ol>
     </div>
   </nav>
@@ -23,13 +23,13 @@ import siteData from '../data/site.json';
     <div id="checkout-empty" style="display:none;">
       <div class="checkout-empty-inner">
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-dim)" stroke-width="1.2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-        <h2 class="font-display" style="font-size:1.2rem;font-weight:700;color:var(--color-text);margin-top:1rem;">Your cart is empty</h2>
-        <p style="color:var(--color-text-secondary);font-size:0.88rem;margin-top:0.35rem;">Add some items before checking out.</p>
-        <a href="/collections/shop" class="btn-primary" style="margin-top:1.25rem;padding:0.7rem 2rem;">Browse Products</a>
+        <h2 class="font-display" style="font-size:1.2rem;font-weight:700;color:var(--color-text);margin-top:1rem;">Dein Warenkorb ist leer</h2>
+        <p style="color:var(--color-text-secondary);font-size:0.88rem;margin-top:0.35rem;">Legen Sie zuerst Produkte in den Warenkorb.</p>
+        <a href="/collections/shop" class="btn-primary" style="margin-top:1.25rem;padding:0.7rem 2rem;">Produkte ansehen</a>
       </div>
     </div>
 
-    <!-- Checkout form -->
+    <!-- Zur Kasse form -->
     <div id="checkout-content" style="display:none;">
       <!-- Progress Steps -->
       <div class="checkout-steps">
@@ -40,35 +40,35 @@ import siteData from '../data/site.json';
         <div class="step-connector"></div>
         <div class="checkout-step" data-step="2">
           <span class="step-num">2</span>
-          <span class="step-label">Shipping</span>
+          <span class="step-label">Versand</span>
         </div>
         <div class="step-connector"></div>
         <div class="checkout-step" data-step="3">
           <span class="step-num">3</span>
-          <span class="step-label">Payment</span>
+          <span class="step-label">Zahlung</span>
         </div>
       </div>
 
       <div class="checkout-grid">
         <!-- Form Column -->
         <div class="checkout-form-col">
-          <!-- Step 1: Contact & Details -->
+          <!-- Step 1: Kontakt und Details -->
           <div id="step-1" class="checkout-step-content">
             <div class="checkout-section">
               <h2 class="font-display checkout-section-title">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                Contact Information (Guest Checkout)
+                Kontaktinformationen (Gastbestellung)
               </h2>
               <div class="form-row">
                 <label class="form-field">
-                  <span class="form-label">Email Address <span class="req">*</span></span>
-                  <input type="email" id="checkout-email" class="form-input" placeholder="your@email.com" required />
+                  <span class="form-label">E-Mail-Adresse <span class="req">*</span></span>
+                  <input type="email" id="checkout-email" class="form-input" placeholder="name@beispiel.de" required />
                 </label>
               </div>
               <div class="form-row">
                 <label class="form-field">
-                  <span class="form-label">Phone Number</span>
-                  <input type="tel" id="checkout-phone" class="form-input" placeholder="+61 400 000 000" />
+                  <span class="form-label">Telefonnummer</span>
+                  <input type="tel" id="checkout-phone" class="form-input" placeholder="+49 170 0000000" />
                 </label>
               </div>
             </div>
@@ -76,58 +76,66 @@ import siteData from '../data/site.json';
             <div class="checkout-section">
               <h2 class="font-display checkout-section-title">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                Shipping Address
+                Versandadresse
               </h2>
               <div class="form-row form-row-2">
                 <label class="form-field">
-                  <span class="form-label">First Name <span class="req">*</span></span>
-                  <input type="text" id="checkout-fname" class="form-input" placeholder="John" required />
+                  <span class="form-label">Vorname <span class="req">*</span></span>
+                  <input type="text" id="checkout-fname" class="form-input" placeholder="Max" required />
                 </label>
                 <label class="form-field">
-                  <span class="form-label">Last Name <span class="req">*</span></span>
-                  <input type="text" id="checkout-lname" class="form-input" placeholder="Doe" required />
-                </label>
-              </div>
-              <div class="form-row">
-                <label class="form-field">
-                  <span class="form-label">Street Address <span class="req">*</span></span>
-                  <input type="text" id="checkout-address" class="form-input" placeholder="123 Main Street" required />
+                  <span class="form-label">Nachname <span class="req">*</span></span>
+                  <input type="text" id="checkout-lname" class="form-input" placeholder="Mustermann" required />
                 </label>
               </div>
               <div class="form-row">
                 <label class="form-field">
-                  <span class="form-label">Apartment, suite, etc. (optional)</span>
-                  <input type="text" id="checkout-address2" class="form-input" placeholder="Apt 4B" />
+                  <span class="form-label">Straße <span class="req">*</span></span>
+                  <input type="text" id="checkout-address" class="form-input" placeholder="Musterstraße 12" required />
+                </label>
+              </div>
+              <div class="form-row">
+                <label class="form-field">
+                  <span class="form-label">Wohnung, Apartment usw. (optional)</span>
+                  <input type="text" id="checkout-address2" class="form-input" placeholder="Wohnung 4B" />
                 </label>
               </div>
               <div class="form-row form-row-3">
                 <label class="form-field">
-                  <span class="form-label">City <span class="req">*</span></span>
-                  <input type="text" id="checkout-city" class="form-input" placeholder="Melbourne" required />
+                  <span class="form-label">Stadt <span class="req">*</span></span>
+                  <input type="text" id="checkout-city" class="form-input" placeholder="Köln" required />
                 </label>
                 <label class="form-field">
-                  <span class="form-label">State <span class="req">*</span></span>
+                  <span class="form-label">Bundesland <span class="req">*</span></span>
                   <select id="checkout-state" class="form-input form-select" required>
-                    <option value="">Select</option>
-                    <option value="VIC">VIC</option>
-                    <option value="NSW">NSW</option>
-                    <option value="QLD">QLD</option>
-                    <option value="WA">WA</option>
-                    <option value="SA">SA</option>
-                    <option value="TAS">TAS</option>
-                    <option value="ACT">ACT</option>
-                    <option value="NT">NT</option>
+                    <option value="">Auswählen</option>
+                    <option value="NW">Nordrhein-Westfalen</option>
+                    <option value="BW">Baden-Württemberg</option>
+                    <option value="BY">Bayern</option>
+                    <option value="BE">Berlin</option>
+                    <option value="BB">Brandenburg</option>
+                    <option value="HB">Bremen</option>
+                    <option value="HH">Hamburg</option>
+                    <option value="HE">Hessen</option>
+                    <option value="MV">Mecklenburg-Vorpommern</option>
+                    <option value="NI">Niedersachsen</option>
+                    <option value="RP">Rheinland-Pfalz</option>
+                    <option value="SL">Saarland</option>
+                    <option value="SN">Sachsen</option>
+                    <option value="ST">Sachsen-Anhalt</option>
+                    <option value="SH">Schleswig-Holstein</option>
+                    <option value="TH">Thüringen</option>
                   </select>
                 </label>
                 <label class="form-field">
-                  <span class="form-label">Postcode <span class="req">*</span></span>
-                  <input type="text" id="checkout-postcode" class="form-input" placeholder="3000" maxlength="4" required />
+                  <span class="form-label">PLZ <span class="req">*</span></span>
+                  <input type="text" id="checkout-postcode" class="form-input" placeholder="50667" maxlength="5" required />
                 </label>
               </div>
               <div class="form-row">
                 <label class="form-field">
-                  <span class="form-label">Country</span>
-                  <input type="text" class="form-input" value="Australia" disabled style="background:var(--color-surface-alt);color:var(--color-text-muted);" />
+                  <span class="form-label">Land</span>
+                  <input type="text" class="form-input" value="Deutschland" disabled style="background:var(--color-surface-alt);color:var(--color-text-muted);" />
                 </label>
               </div>
             </div>
@@ -135,41 +143,41 @@ import siteData from '../data/site.json';
             <div class="form-actions">
               <a href="/cart" class="btn-secondary" style="padding:0.75rem 1.5rem;text-decoration:none;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
-                Back to Cart
+                Zurück zum Warenkorb
               </a>
               <button type="button" id="to-step-2" class="btn-primary" style="padding:0.75rem 2rem;">
-                Continue to Shipping
+                Weiter zum Versand
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
               </button>
             </div>
           </div>
 
-          <!-- Step 2: Shipping Method -->
+          <!-- Step 2: Versandart -->
           <div id="step-2" class="checkout-step-content" style="display:none;">
             <div class="checkout-section">
               <h2 class="font-display checkout-section-title">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><path d="m16 8 4 2v6H16"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-                Shipping Method
+                Versandart
               </h2>
               <div class="shipping-options">
                 <label class="shipping-option">
                   <input type="radio" name="shipping" value="standard" checked class="shipping-radio" />
                   <div class="shipping-option-content">
                     <div>
-                      <span class="shipping-name">Standard Shipping</span>
-                      <span class="shipping-time">5–10 business days</span>
+                      <span class="shipping-name">Standard-Versand</span>
+                      <span class="shipping-time">5–10 Werktage</span>
                     </div>
-                    <span class="shipping-price font-display">$9.95</span>
+                    <span class="shipping-price font-display">€9,95</span>
                   </div>
                 </label>
                 <label class="shipping-option">
                   <input type="radio" name="shipping" value="express" class="shipping-radio" />
                   <div class="shipping-option-content">
                     <div>
-                      <span class="shipping-name">Express Shipping</span>
-                      <span class="shipping-time">2–4 business days</span>
+                      <span class="shipping-name">Express-Versand</span>
+                      <span class="shipping-time">2–4 Werktage</span>
                     </div>
-                    <span class="shipping-price font-display">$14.95</span>
+                    <span class="shipping-price font-display">€14,95</span>
                   </div>
                 </label>
 
@@ -179,18 +187,18 @@ import siteData from '../data/site.json';
             <div class="checkout-section">
               <h2 class="font-display checkout-section-title">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                Order Notes (optional)
+                Anmerkungen zur Bestellung (optional)
               </h2>
-              <textarea id="checkout-notes" class="form-input form-textarea" placeholder="Any special instructions for your order..." rows="3"></textarea>
+              <textarea id="checkout-notes" class="form-input form-textarea" placeholder="Besondere Hinweise zu Ihrer Bestellung..." rows="3"></textarea>
             </div>
 
             <div class="form-actions">
               <button type="button" id="back-step-1" class="btn-secondary" style="padding:0.75rem 1.5rem;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
-                Back
+                Zurück
               </button>
               <button type="button" id="to-step-3" class="btn-primary" style="padding:0.75rem 2rem;">
-                Continue to Payment
+                Weiter zur Zahlung
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
               </button>
             </div>
@@ -201,34 +209,24 @@ import siteData from '../data/site.json';
             <div class="checkout-section">
               <h2 class="font-display checkout-section-title">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg>
-                Payment Method
+                Zahlungsmethode
               </h2>
 
               <div class="payment-info-box">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
                 <div>
-                  <p style="font-weight:600;color:var(--color-text);font-size:0.88rem;">Secure Payment</p>
-                  <p style="color:var(--color-text-secondary);font-size:0.82rem;margin-top:0.15rem;">Your order details will be sent to our team for processing. We accept bank transfer, PayID, and Bitcoin.</p>
+                  <p style="font-weight:600;color:var(--color-text);font-size:0.88rem;">Sichere Zahlung</p>
+                  <p style="color:var(--color-text-secondary);font-size:0.82rem;margin-top:0.15rem;">Deine Bestelldaten werden zur Bearbeitung an unser Team gesendet. Wir akzeptieren SEPA-Überweisung und Bitcoin.</p>
                 </div>
               </div>
 
               <div class="payment-methods">
                 <label class="payment-method-option">
-                  <input type="radio" name="payment" value="bank" checked class="shipping-radio" />
+                  <input type="radio" name="payment" value="sepa" checked class="shipping-radio" />
                   <div class="shipping-option-content">
                     <div>
-                      <span class="shipping-name">Bank Transfer</span>
-                      <span class="shipping-time">BSB & account details sent after order</span>
-                    </div>
-                    <svg width="32" height="32" viewBox="0 0 64 64" fill="none"><rect x="4" y="54" width="56" height="4" rx="1" fill="#4b5563"/><rect x="4" y="24" width="56" height="5" rx="1" fill="#6b7280"/><path d="M32 4L4 24h56L32 4z" fill="#6b7280"/><rect x="10" y="29" width="5" height="25" rx="1" fill="#9ca3af"/><rect x="22" y="29" width="5" height="25" rx="1" fill="#9ca3af"/><rect x="37" y="29" width="5" height="25" rx="1" fill="#9ca3af"/><rect x="49" y="29" width="5" height="25" rx="1" fill="#9ca3af"/></svg>
-                  </div>
-                </label>
-                <label class="payment-method-option">
-                  <input type="radio" name="payment" value="payid" class="shipping-radio" />
-                  <div class="shipping-option-content">
-                    <div>
-                      <span class="shipping-name">PayID</span>
-                      <span class="shipping-time">PayID details sent after order — instant bank transfer</span>
+                      <span class="shipping-name">SEPA-Überweisung</span>
+                      <span class="shipping-time">IBAN und Kontodaten nach der Bestellung</span>
                     </div>
                     <svg width="32" height="32" viewBox="0 0 64 64" fill="none"><rect width="64" height="64" rx="12" fill="#00B2A9" opacity="0.12"/><text x="32" y="40" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="24" fill="#00B2A9" text-anchor="middle" letter-spacing="-1">PAY</text><circle cx="50" cy="20" r="4" fill="#00B2A9"/><rect x="48" y="24" width="4" height="14" rx="2" fill="#00B2A9"/></svg>
                   </div>
@@ -238,7 +236,7 @@ import siteData from '../data/site.json';
                   <div class="shipping-option-content">
                     <div>
                       <span class="shipping-name">Bitcoin (BTC)</span>
-                      <span class="shipping-time">Pay via QR code — instant confirmation</span>
+                      <span class="shipping-time">Zahlung per QR-Code — schnelle Bestätigung</span>
                     </div>
                     <svg width="32" height="32" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="#F7931A"/><path d="M46.1 27.4c.6-4.2-2.6-6.5-7-8l1.4-5.7-3.5-.9-1.4 5.5c-.9-.2-1.9-.4-2.8-.7l1.4-5.5-3.5-.9-1.4 5.7c-.8-.2-1.5-.3-2.2-.5l0 0-4.8-1.2-1 3.7s2.6.6 2.5.6c1.4.4 1.7 1.3 1.6 2l-1.6 6.5c.1 0 .2.1.3.1l-.3-.1-2.3 9.1c-.2.4-.6 1.1-1.6.8 0 0-2.5-.6-2.5-.6l-1.7 4 4.5 1.1c.8.2 1.7.4 2.5.6l-1.5 5.8 3.5.9 1.4-5.7c1 .3 1.9.5 2.8.7l-1.4 5.7 3.5.9 1.5-5.8c5.8 1.1 10.2.7 12-4.6 1.5-4.2-.1-6.7-3.2-8.3 2.2-.5 3.9-2 4.4-5.1zM39.5 38.2c-1.1 4.2-8.2 1.9-10.5 1.4l1.9-7.5c2.3.6 9.7 1.7 8.6 6.1zm1-10.9c-1 3.9-6.9 1.9-8.8 1.4l1.7-6.8c2 .5 8.2 1.4 7.1 5.4z" fill="white"/></svg>
                   </div>
@@ -249,42 +247,42 @@ import siteData from '../data/site.json';
             <div class="checkout-section">
               <label class="checkout-agree">
                 <input type="checkbox" id="checkout-agree" class="agree-checkbox" />
-                <span class="agree-text">I confirm I am 18+ years of age and agree to the <a href="/pages/terms-conditions">Terms & Conditions</a> and <a href="/pages/privacy-policy">Privacy Policy</a>.</span>
+                <span class="agree-text">Ich bestätige, dass ich mindestens 18 Jahre alt bin und den <a href="/pages/terms-conditions">AGB</a> sowie der <a href="/pages/privacy-policy">Datenschutzerklärung</a> zustimme.</span>
               </label>
             </div>
 
             <div class="form-actions">
               <button type="button" id="back-step-2" class="btn-secondary" style="padding:0.75rem 1.5rem;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
-                Back
+                Zurück
               </button>
               <button type="button" id="place-order" class="btn-primary" style="padding:0.85rem 2.5rem;font-size:0.95rem;" disabled>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                Place Order
+                Bestellung aufgeben
               </button>
             </div>
           </div>
         </div>
 
-        <!-- Order Summary Sidebar -->
+        <!-- Bestellübersicht Sidebar -->
         <aside class="checkout-summary">
-          <h3 class="font-display checkout-summary-title">Order Summary</h3>
+          <h3 class="font-display checkout-summary-title">Bestellübersicht</h3>
           <div id="checkout-items" class="checkout-items"></div>
           <hr class="checkout-divider" />
           <div class="checkout-summary-row">
-            <span>Subtotal</span>
-            <span id="checkout-subtotal" class="font-display" style="font-weight:600;">$0.00</span>
+            <span>Zwischensumme</span>
+            <span id="checkout-subtotal" class="font-display" style="font-weight:600;">€0,00</span>
           </div>
           <div class="checkout-summary-row">
-            <span>Shipping</span>
-            <span id="checkout-shipping" class="font-display" style="font-weight:600;">$9.95</span>
+            <span>Versand</span>
+            <span id="checkout-shipping" class="font-display" style="font-weight:600;">€9,95</span>
           </div>
           <hr class="checkout-divider" />
           <div class="checkout-summary-row checkout-total-row">
-            <span>Total</span>
-            <span id="checkout-total" class="font-display">$0.00 AUD</span>
+            <span>Gesamt</span>
+            <span id="checkout-total" class="font-display">€0,00</span>
           </div>
-          <p class="checkout-tax-note">Inclusive of all applicable taxes</p>
+          <p class="checkout-tax-note">Inklusive aller anwendbaren Steuern</p>
         </aside>
       </div>
     </div>
@@ -481,7 +479,7 @@ import siteData from '../data/site.json';
       .form-actions .btn-secondary { width: 100%; justify-content: center; }
     }
 
-    /* ── Shipping Options ── */
+    /* ── Versandoptionen ── */
     .shipping-options, .payment-methods {
       display: flex;
       flex-direction: column;
@@ -572,7 +570,7 @@ import siteData from '../data/site.json';
     }
     .agree-text a:hover { text-decoration: underline; }
 
-    /* ── Order Summary Sidebar ── */
+    /* ── Bestellübersicht Sidebar ── */
     .checkout-summary {
       background: linear-gradient(180deg, var(--color-surface) 0%, #F0FDF4 100%);
       border: 1px solid var(--color-border);
@@ -672,15 +670,15 @@ import siteData from '../data/site.json';
 
   <script define:vars={{ contactEmail: siteData.contact_email, bankDetails: siteData.bank_details, bitcoinAddress: siteData.bitcoin_address }}>
     function getCart() {
-      try { return JSON.parse(localStorage.getItem('vapelink_cart') || '[]'); } catch { return []; }
+      try { return JSON.parse(localStorage.getItem('mrnicevape_cart') || '[]'); } catch { return []; }
     }
 
     function saveCart(cart) {
-      localStorage.setItem('vapelink_cart', JSON.stringify(cart));
+      localStorage.setItem('mrnicevape_cart', JSON.stringify(cart));
       window.dispatchEvent(new CustomEvent('cart-updated'));
     }
 
-    function getShippingPrice(method) {
+    function getVersandPreis(method) {
       return method === 'express' ? 14.95 : 9.95;
     }
     let currentStep = 1;
@@ -697,9 +695,9 @@ import siteData from '../data/site.json';
         return;
       }
 
-      // Enforce $300 minimum order at checkout
+      // Enforce €200 minimum order at checkout
       const subtotal = cart.reduce((sum, item) => sum + (parseFloat(item.price || '0') * (item.qty || 1)), 0);
-      if (subtotal < 300) {
+      if (subtotal < 200) {
         window.location.href = '/cart';
         return;
       }
@@ -720,27 +718,27 @@ import siteData from '../data/site.json';
 
       let subtotal = 0;
       itemsEl.innerHTML = cart.map(item => {
-        const lineTotal = parseFloat(item.price || '0') * (item.qty || 1);
-        subtotal += lineTotal;
+        const lineGesamt = parseFloat(item.price || '0') * (item.qty || 1);
+        subtotal += lineGesamt;
         return `
           <div class="checkout-item">
-            ${item.image ? `<img src="${item.image}" alt="${item.title || 'Checkout product image'}" class="checkout-item-img" onerror="this.style.display='none'" />` : ''}
+            ${item.image ? `<img src="${item.image}" alt="${item.title || 'Produktbild im Checkout'}" class="checkout-item-img" onerror="this.style.display='none'" />` : ''}
             <div class="checkout-item-info">
               <div class="checkout-item-title">${item.title}</div>
-              <div class="checkout-item-meta">Qty: ${item.qty || 1}</div>
+              <div class="checkout-item-meta">Menge: ${item.qty || 1}</div>
             </div>
-            <span class="checkout-item-price">$${lineTotal.toFixed(2)}</span>
+            <span class="checkout-item-price">€${lineGesamt.toFixed(2)}</span>
           </div>
         `;
       }).join('');
 
-      const selectedShipping = document.querySelector('input[name="shipping"]:checked');
-      const shippingKey = selectedShipping ? selectedShipping.value : 'standard';
-      const shippingCost = getShippingPrice(shippingKey);
+      const selectedVersand = document.querySelector('input[name="shipping"]:checked');
+      const shippingKey = selectedVersand ? selectedVersand.value : 'standard';
+      const shippingCost = getVersandPreis(shippingKey);
 
-      if (subtotalEl) subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
-      if (shippingEl) shippingEl.textContent = `$${shippingCost.toFixed(2)}`;
-      if (totalEl) totalEl.textContent = `$${(subtotal + shippingCost).toFixed(2)} AUD`;
+      if (subtotalEl) subtotalEl.textContent = `€${subtotal.toFixed(2)}`;
+      if (shippingEl) shippingEl.textContent = `€${shippingCost.toFixed(2)}`;
+      if (totalEl) totalEl.textContent = `€${(subtotal + shippingCost).toFixed(2)}`;
     }
 
     function goToStep(step) {
@@ -811,7 +809,7 @@ import siteData from '../data/site.json';
 
     document.getElementById('back-step-2')?.addEventListener('click', () => goToStep(2));
 
-    // Shipping radio changes
+    // shipping radio changes
     document.querySelectorAll('input[name="shipping"]').forEach(r => {
       r.addEventListener('change', renderSummary);
     });
@@ -823,19 +821,19 @@ import siteData from '../data/site.json';
       if (placeBtn) placeBtn.disabled = !agreeBox.checked;
     });
 
-    // Place order
+    // Bestellung aufgeben
     placeBtn?.addEventListener('click', async () => {
       if (!agreeBox?.checked) return;
 
       const cart = getCart();
       if (cart.length === 0) return;
 
-      const paymentMethod = document.querySelector('input[name="payment"]:checked')?.value || 'bank';
+      const paymentMethod = document.querySelector('input[name="payment"]:checked')?.value || 'sepa';
       const shippingMethod = document.querySelector('input[name="shipping"]:checked')?.value || 'standard';
       const subtotal = cart.reduce((sum, item) => sum + (parseFloat(item.price || '0') * (item.qty || 1)), 0);
-      const shipCost = getShippingPrice(shippingMethod);
+      const shipCost = getVersandPreis(shippingMethod);
 
-      // Gather order data
+      // Bestelldaten erfassen
       const orderData = {
         email: document.getElementById('checkout-email')?.value || '',
         phone: document.getElementById('checkout-phone')?.value || '',
@@ -856,19 +854,19 @@ import siteData from '../data/site.json';
         shippingCost: shipCost,
         total: subtotal + shipCost,
         status: paymentMethod === 'bitcoin' ? 'awaiting_payment' : 'pending',
-        bankDetails: (paymentMethod === 'bank' || paymentMethod === 'payid') ? bankDetails : null,
+        bankDetails: paymentMethod === 'sepa' ? bankDetails : null,
         bitcoinAddress: paymentMethod === 'bitcoin' ? bitcoinAddress : null,
         contactEmail: contactEmail
       };
 
       // Save order for confirmation page
-      localStorage.setItem('vapelink_last_order', JSON.stringify(orderData));
+      localStorage.setItem('mrnicevape_last_order', JSON.stringify(orderData));
 
       // Save order history by email (works for guest checkout too)
       try {
         const emailForHistory = (orderData.email || '').trim().toLowerCase();
         if (emailForHistory) {
-          const ordersKey = `vapelink_orders_${emailForHistory}`;
+          const ordersKey = `mrnicevape_orders_${emailForHistory}`;
           const orders = JSON.parse(localStorage.getItem(ordersKey) || '[]');
           orders.unshift(orderData);
           localStorage.setItem(ordersKey, JSON.stringify(orders));
@@ -889,31 +887,41 @@ import siteData from '../data/site.json';
         postcode: orderData.postcode,
         items: orderData.items,
         subtotal: orderData.subtotal.toFixed(2),
-        shippingMethod: shippingMethod === 'express' ? 'Express Shipping' : 'Standard Shipping',
+        shippingMethod: shippingMethod === 'express' ? 'Expressversand' : 'Standardversand',
         shippingCost: shipCost.toFixed(2),
         total: orderData.total.toFixed(2),
-        paymentMethod: paymentMethod === 'bitcoin' ? 'Bitcoin (BTC) — Awaiting Payment' : paymentMethod === 'bank' ? 'Bank Transfer' : 'PayID',
-        status: paymentMethod === 'bitcoin' ? 'New Order — Awaiting Bitcoin Payment' : 'New Order — Pending Payment',
+        paymentMethod: paymentMethod === 'bitcoin' ? 'Bitcoin (BTC) - Zahlung ausstehend' : 'SEPA-Überweisung',
+        status: paymentMethod === 'bitcoin' ? 'Neue Bestellung — Bitcoin-Zahlung ausstehend' : 'Neue Bestellung — Zahlung ausstehend',
         date: orderData.date,
         notes: orderData.notes
       };
 
-      // Send order emails via Resend API (await both before navigating)
+      // Send order emails via Resend API (await before navigating)
+      // For Bitcoin: defer admin notification until on-chain payment is confirmed
+      // (handled on /order-confirmation). For SEPA: notify admin immediately.
       try {
-        await Promise.allSettled([
-          fetch('/api/send-email', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ type: 'admin-order', data: emailPayload })
-          }).then(function(r) { return r.json(); })
-            .then(function(d) { if (d.error) console.error('Admin email error:', d.error); }),
+        const sends = [
           fetch('/api/send-email', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ type: 'customer-confirmation', data: emailPayload })
           }).then(function(r) { return r.json(); })
             .then(function(d) { if (d.error) console.error('Customer email error:', d.error); })
-        ]);
+        ];
+        if (paymentMethod !== 'bitcoin') {
+          sends.push(
+            fetch('/api/send-email', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ type: 'admin-order', data: emailPayload })
+            }).then(function(r) { return r.json(); })
+              .then(function(d) { if (d.error) console.error('Admin email error:', d.error); })
+          );
+        } else {
+          // Stash payload so the confirmation page can fire it once BTC payment is confirmed
+          try { localStorage.setItem('mrnicevape_pending_admin_email', JSON.stringify(emailPayload)); } catch {}
+        }
+        await Promise.allSettled(sends);
       } catch(e) { console.error('Email send error:', e); }
 
       // Clear cart

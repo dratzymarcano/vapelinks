@@ -29,7 +29,8 @@ valid_pages = set(p['handle'] for p in pages)
 # Collection handle mappings: old Shopify handle → best matching new collection
 COLLECTION_REDIRECTS = {
     'vapetasia': 'usa-premium-e-juices',
-    'e-juices-australia': 'australian-e-liquids-1',
+    'e-juices-australia': 'deutsche-e-liquids',
+    'australian-e-liquids-1': 'deutsche-e-liquids',
     'e-liquids': 'e-juices',
     'starter-kits-1': 'all-vape-kits',
     'starter-kits': 'all-vape-kits',
@@ -70,8 +71,8 @@ def fix_url(match):
     
     # Strip domain to get path
     path = url
-    if path.startswith(('https://vapelink.com.au', 'https://www.vapelink.com.au', 'http://vapelink.com.au', 'http://www.vapelink.com.au')):
-        path = re.sub(r'^https?://(www\.)?vapelink\.com\.au', '', path)
+    if path.startswith(('https://mrnicevape.com', 'https://www.mrnicevape.com', 'http://mrnicevape.com', 'http://www.mrnicevape.com')):
+        path = re.sub(r'^https?://(www\.)?mrnicevape\.com\.au', '', path)
         if not path:
             path = '/'
     elif not path.startswith('/'):
@@ -127,7 +128,7 @@ def fix_url(match):
         new_url = '/collections'
     
     # Pattern 7: Full domain URLs → relative paths (even if valid)
-    if not new_url and original_url.startswith(('https://vapelink.com.au', 'https://www.vapelink.com.au')):
+    if not new_url and original_url.startswith(('https://mrnicevape.com', 'https://www.mrnicevape.com')):
         new_url = path_clean
     
     if new_url and new_url != original_url:
