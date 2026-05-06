@@ -1,0 +1,136 @@
+<!doctype html>
+<!--
+  Mr. Nice Vape — contact + order forms
+  -------------------------------------
+  Both forms POST JSON to /api/form, which is handled by the
+  Cloudflare Worker `mrnicevape-form` (workers/form-handler/src/index.js).
+
+  Deploy this file as a static page (Cloudflare Pages, public/ dir, etc.)
+  on the same domain as the Worker route, so /api/form resolves.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mr. Nice Vape — Contact &amp; Order</title>
+    <style>
+      :root { --green: #16a34a; --bg: #f8fafc; --text: #0f172a; --muted: #64748b; }
+      * { box-sizing: border-box; }
+      body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+             background: var(--bg); color: var(--text); margin: 0; padding: 2rem 1rem; }
+      .wrap { max-width: 720px; margin: 0 auto; display: grid; gap: 2.5rem; }
+      h1 { margin: 0 0 .25rem; }
+      h2 { margin: 0 0 1rem; font-size: 1.25rem; }
+      form { background: #fff; padding: 1.5rem; border-radius: 12px;
+             box-shadow: 0 1px 3px rgba(0,0,0,.06); display: grid; gap: .75rem; }
+      label { display: grid; gap: .25rem; font-size: .9rem; color: var(--muted); }
+      input, textarea, select {
+        font: inherit; padding: .6rem .75rem; border: 1px solid #cbd5e1;
+        border-radius: 8px; background: #fff; color: var(--text);
+      }
+      textarea { min-height: 110px; resize: vertical; }
+      button { background: var(--green); color: #fff; border: 0; border-radius: 8px;
+               padding: .75rem 1rem; font-weight: 600; cursor: pointer; }
+      button:disabled { opacity: .6; cursor: not-allowed; }
+      .status { font-size: .9rem; min-height: 1.25rem; }
+      .status.ok { color: var(--green); }
+      .status.err { color: #dc2626; }
+      /* Honeypot — hidden from real users, visible to dumb bots */
+      .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>Mr. Nice Vape</h1>
+        <p style="color: var(--muted); margin: 0;">Get in touch or place an order.</p>
+      </header>
+
+      <!-- ============ CONTACT FORM ============ -->
+      <section>
+        <h2>Contact us</h2>
+        <form id="contact-form" novalidate>
+          <input type="hidden" name="type" value="contact" />
+          <label>Name <input type="text" name="name" required autocomplete="name" /></label>
+          <label>Email <input type="email" name="email" required autocomplete="email" /></label>
+          <label>Message <textarea name="message" required minlength="5"></textarea></label>
+          <!-- Honeypot -->
+          <div class="hp" aria-hidden="true">
+            <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+          </div>
+          <button type="submit">Send message</button>
+          <div class="status" data-status></div>
+        </form>
+      </section>
+
+      <!-- ============ ORDER FORM ============ -->
+      <section>
+        <h2>Place an order</h2>
+        <form id="order-form" novalidate>
+          <input type="hidden" name="type" value="order" />
+          <label>Name <input type="text" name="name" required autocomplete="name" /></label>
+          <label>Email <input type="email" name="email" required autocomplete="email" /></label>
+          <label>Product <input type="text" name="product" required /></label>
+          <label>Quantity <input type="number" name="quantity" min="1" value="1" required /></label>
+          <label>Shipping address <textarea name="address" required></textarea></label>
+          <label>Notes / message <textarea name="message" required minlength="5"></textarea></label>
+          <!-- Honeypot -->
+          <div class="hp" aria-hidden="true">
+            <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+          </div>
+          <button type="submit">Place order</button>
+          <div class="status" data-status></div>
+        </form>
+      </section>
+    </div>
+
+    <script>
+      // Vanilla JS — no libraries.
+      // Change this if your worker is mounted on a different path or origin.
+      const ENDPOINT = "/api/form";
+
+      function bind(formId) {
+        const form = document.getElementById(formId);
+        const status = form.querySelector("[data-status]");
+        const button = form.querySelector("button[type=submit]");
+
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault();
+          status.className = "status";
+          status.textContent = "";
+
+          const payload = Object.fromEntries(new FormData(form).entries());
+          button.disabled = true;
+          status.textContent = "Sending…";
+
+          try {
+            const res = await fetch(ENDPOINT, {
+              method: "POST",
+              headers: { "content-type": "application/json" },
+              body: JSON.stringify(payload),
+            });
+            const data = await res.json().catch(() => ({}));
+
+            if (res.ok && data.success) {
+              status.className = "status ok";
+              status.textContent = "✓ Thanks! We’ll be in touch shortly.";
+              form.reset();
+            } else {
+              status.className = "status err";
+              status.textContent =
+                "Something went wrong: " + (data.error || res.statusText);
+            }
+          } catch (err) {
+            status.className = "status err";
+            status.textContent = "Network error: " + err.message;
+          } finally {
+            button.disabled = false;
+          }
+        });
+      }
+
+      bind("contact-form");
+      bind("order-form");
+    </script>
+  </body>
+</html>

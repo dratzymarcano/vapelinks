@@ -225,8 +225,8 @@ const navCollections = collectionsData
     <div class="header-container">
 
       <!-- Logo -->
-      <a href="/" class="logo-link" aria-label="Mr. Nice Vape Deutschland — Startseite">
-        <img src="/images/logo.svg" alt="Mr. Nice Vape Deutschland" class="logo-img" loading="eager" />
+      <a href="/" class="logo-link" aria-label="Mr. Nice Vape — Startseite">
+        <span class="logo-text font-display">Mr. Nice Vape</span>
       </a>
 
       <!-- Desktop Nav -->
@@ -305,7 +305,7 @@ const navCollections = collectionsData
   <aside id="mobile-menu" class="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
     <div class="mobile-drawer-head">
       <a href="/" class="logo-link">
-        <img src="/images/logo.svg" alt="Mr. Nice Vape Deutschland" style="height:36px;" />
+        <span class="logo-text font-display" style="font-size:1.05rem;">Mr. Nice Vape</span>
       </a>
       <button id="mobile-close" class="hdr-btn" aria-label="Menü schließen">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
@@ -381,8 +381,8 @@ const navCollections = collectionsData
       <div id="drawer-min-order-banner" class="drawer-min-order-banner" style="display:none;">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
         <div>
-          <strong style="font-size:0.78rem;color:#92400E;">Mindestbestellung: €300,00 EUR</strong>
-          <p id="drawer-min-order-msg" style="font-size:0.72rem;color:#A16207;margin:0.1rem 0 0;">Lege noch <span id="drawer-min-remaining" style="font-weight:700;color:#92400E;">€300,00</span> in den Warenkorb.</p>
+          <strong style="font-size:0.78rem;color:#92400E;">Mindestbestellung: €200,00 EUR</strong>
+          <p id="drawer-min-order-msg" style="font-size:0.72rem;color:#A16207;margin:0.1rem 0 0;">Lege noch <span id="drawer-min-remaining" style="font-weight:700;color:#92400E;">€200,00</span> in den Warenkorb.</p>
         </div>
       </div>
       <!-- Min order progress -->
@@ -422,7 +422,7 @@ const navCollections = collectionsData
     <div class="container footer-inner">
       <div class="footer-grid">
         <div>
-          <img src="/images/logo.svg" alt="Mr. Nice Vape Deutschland" style="height:42px;margin-bottom:1rem;" />
+          <span class="logo-text font-display" style="display:inline-block;font-size:1.35rem;margin-bottom:1rem;color:var(--color-text);">Mr. Nice Vape</span>
           <p class="footer-desc">{siteData.description.substring(0, 180)}</p>
         </div>
         <div>
@@ -598,6 +598,17 @@ const navCollections = collectionsData
       height: 42px;
       width: auto;
       filter: saturate(1.1);
+    }
+    .logo-text {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      color: var(--color-text);
+      line-height: 1;
+      white-space: nowrap;
+    }
+    @media (min-width: 1024px) {
+      .logo-text { font-size: 1.35rem; }
     }
 
     /* ═══════════════════════════════════════
@@ -1608,8 +1619,8 @@ const navCollections = collectionsData
 
       if (cartGesamtEl) cartGesamtEl.textContent = `€${total.toFixed(2)}`;
 
-      // ── Mindestbestellwert von €300 prüfen (Drawer) ──
-      const DRAWER_MIN = 300;
+      // ── Mindestbestellwert von €200 prüfen (Drawer) ──
+      const DRAWER_MIN = 200;
       const drawerRemaining = DRAWER_MIN - total;
       const drawerBanner = document.getElementById('drawer-min-order-banner');
       const drawerRemEl = document.getElementById('drawer-min-remaining');

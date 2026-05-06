@@ -216,27 +216,17 @@ import siteData from '../data/site.json';
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
                 <div>
                   <p style="font-weight:600;color:var(--color-text);font-size:0.88rem;">Sichere Zahlung</p>
-                  <p style="color:var(--color-text-secondary);font-size:0.82rem;margin-top:0.15rem;">Deine Bestelldaten werden zur Bearbeitung an unser Team gesendet. Wir akzeptieren Banküberweisung, SEPA und Bitcoin.</p>
+                  <p style="color:var(--color-text-secondary);font-size:0.82rem;margin-top:0.15rem;">Deine Bestelldaten werden zur Bearbeitung an unser Team gesendet. Wir akzeptieren SEPA-Überweisung und Bitcoin.</p>
                 </div>
               </div>
 
               <div class="payment-methods">
                 <label class="payment-method-option">
-                  <input type="radio" name="payment" value="bank" checked class="shipping-radio" />
+                  <input type="radio" name="payment" value="sepa" checked class="shipping-radio" />
                   <div class="shipping-option-content">
                     <div>
-                      <span class="shipping-name">Banküberweisung</span>
+                      <span class="shipping-name">SEPA-Überweisung</span>
                       <span class="shipping-time">IBAN und Kontodaten nach der Bestellung</span>
-                    </div>
-                    <svg width="32" height="32" viewBox="0 0 64 64" fill="none"><rect x="4" y="54" width="56" height="4" rx="1" fill="#4b5563"/><rect x="4" y="24" width="56" height="5" rx="1" fill="#6b7280"/><path d="M32 4L4 24h56L32 4z" fill="#6b7280"/><rect x="10" y="29" width="5" height="25" rx="1" fill="#9ca3af"/><rect x="22" y="29" width="5" height="25" rx="1" fill="#9ca3af"/><rect x="37" y="29" width="5" height="25" rx="1" fill="#9ca3af"/><rect x="49" y="29" width="5" height="25" rx="1" fill="#9ca3af"/></svg>
-                  </div>
-                </label>
-                <label class="payment-method-option">
-                  <input type="radio" name="payment" value="sepa" class="shipping-radio" />
-                  <div class="shipping-option-content">
-                    <div>
-                      <span class="shipping-name">SEPA</span>
-                      <span class="shipping-time">SEPA-Daten nach der Bestellung</span>
                     </div>
                     <svg width="32" height="32" viewBox="0 0 64 64" fill="none"><rect width="64" height="64" rx="12" fill="#00B2A9" opacity="0.12"/><text x="32" y="40" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="24" fill="#00B2A9" text-anchor="middle" letter-spacing="-1">PAY</text><circle cx="50" cy="20" r="4" fill="#00B2A9"/><rect x="48" y="24" width="4" height="14" rx="2" fill="#00B2A9"/></svg>
                   </div>
@@ -705,9 +695,9 @@ import siteData from '../data/site.json';
         return;
       }
 
-      // Enforce €300 minimum order at checkout
+      // Enforce €200 minimum order at checkout
       const subtotal = cart.reduce((sum, item) => sum + (parseFloat(item.price || '0') * (item.qty || 1)), 0);
-      if (subtotal < 300) {
+      if (subtotal < 200) {
         window.location.href = '/cart';
         return;
       }
@@ -838,7 +828,7 @@ import siteData from '../data/site.json';
       const cart = getCart();
       if (cart.length === 0) return;
 
-      const paymentMethod = document.querySelector('input[name="payment"]:checked')?.value || 'bank';
+      const paymentMethod = document.querySelector('input[name="payment"]:checked')?.value || 'sepa';
       const shippingMethod = document.querySelector('input[name="shipping"]:checked')?.value || 'standard';
       const subtotal = cart.reduce((sum, item) => sum + (parseFloat(item.price || '0') * (item.qty || 1)), 0);
       const shipCost = getVersandPreis(shippingMethod);
@@ -864,7 +854,7 @@ import siteData from '../data/site.json';
         shippingCost: shipCost,
         total: subtotal + shipCost,
         status: paymentMethod === 'bitcoin' ? 'awaiting_payment' : 'pending',
-        bankDetails: (paymentMethod === 'bank' || paymentMethod === 'sepa') ? bankDetails : null,
+        bankDetails: paymentMethod === 'sepa' ? bankDetails : null,
         bitcoinAddress: paymentMethod === 'bitcoin' ? bitcoinAddress : null,
         contactEmail: contactEmail
       };
@@ -900,28 +890,38 @@ import siteData from '../data/site.json';
         shippingMethod: shippingMethod === 'express' ? 'Expressversand' : 'Standardversand',
         shippingCost: shipCost.toFixed(2),
         total: orderData.total.toFixed(2),
-        paymentMethod: paymentMethod === 'bitcoin' ? 'Bitcoin (BTC) - Zahlung ausstehend' : paymentMethod === 'bank' ? 'Banküberweisung' : 'SEPA-Überweisung',
+        paymentMethod: paymentMethod === 'bitcoin' ? 'Bitcoin (BTC) - Zahlung ausstehend' : 'SEPA-Überweisung',
         status: paymentMethod === 'bitcoin' ? 'Neue Bestellung — Bitcoin-Zahlung ausstehend' : 'Neue Bestellung — Zahlung ausstehend',
         date: orderData.date,
         notes: orderData.notes
       };
 
-      // Send order emails via Resend API (await both before navigating)
+      // Send order emails via Resend API (await before navigating)
+      // For Bitcoin: defer admin notification until on-chain payment is confirmed
+      // (handled on /order-confirmation). For SEPA: notify admin immediately.
       try {
-        await Promise.allSettled([
-          fetch('/api/send-email', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ type: 'admin-order', data: emailPayload })
-          }).then(function(r) { return r.json(); })
-            .then(function(d) { if (d.error) console.error('Admin email error:', d.error); }),
+        const sends = [
           fetch('/api/send-email', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ type: 'customer-confirmation', data: emailPayload })
           }).then(function(r) { return r.json(); })
             .then(function(d) { if (d.error) console.error('Customer email error:', d.error); })
-        ]);
+        ];
+        if (paymentMethod !== 'bitcoin') {
+          sends.push(
+            fetch('/api/send-email', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ type: 'admin-order', data: emailPayload })
+            }).then(function(r) { return r.json(); })
+              .then(function(d) { if (d.error) console.error('Admin email error:', d.error); })
+          );
+        } else {
+          // Stash payload so the confirmation page can fire it once BTC payment is confirmed
+          try { localStorage.setItem('mrnicevape_pending_admin_email', JSON.stringify(emailPayload)); } catch {}
+        }
+        await Promise.allSettled(sends);
       } catch(e) { console.error('Email send error:', e); }
 
       // Clear cart

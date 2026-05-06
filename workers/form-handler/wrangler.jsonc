@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mrnicevape-form",
+  "main": "src/index.js",
+  "compatibility_date": "2025-05-01",
+  "account_id": "6ec0ea1c77a409e45f69eebaeeeb04e8",
+  "observability": { "enabled": true },
+  "vars": {
+    "FROM_EMAIL": "info@mrnicevape.com",
+    "FROM_NAME": "Mr. Nice Vape",
+    "TO_EMAIL": "rannydonatello@gmail.com",
+    "TO_NAME": "Mr. Nice Vape Team"
+  }
+}

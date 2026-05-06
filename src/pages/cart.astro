@@ -66,19 +66,19 @@ import Layout from '../layouts/Layout.astro';
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
             </div>
             <div class="min-order-text">
-              <strong>Mindestbestellung: €300,00 EUR</strong>
-              <p id="min-order-msg">Lege noch <span id="min-order-remaining" class="min-order-amount">€300,00</span> in den Warenkorb, um zur Kasse zu gehen.</p>
+              <strong>Mindestbestellung: €200,00 EUR</strong>
+              <p id="min-order-msg">Lege noch <span id="min-order-remaining" class="min-order-amount">€200,00</span> in den Warenkorb, um zur Kasse zu gehen.</p>
             </div>
           </div>
 
-          <!-- Progress Bar to €300 -->
+          <!-- Progress Bar to €200 -->
           <div id="min-order-progress-wrap" class="min-order-progress-wrap" style="display:none;">
             <div class="min-order-progress-bar">
               <div id="min-order-progress-fill" class="min-order-progress-fill" style="width:0%;"></div>
             </div>
             <div class="min-order-progress-labels">
               <span id="min-order-current">€0,00</span>
-              <span>€300,00</span>
+              <span>€200,00</span>
             </div>
           </div>
 
@@ -159,8 +159,8 @@ import Layout from '../layouts/Layout.astro';
       if (subtotalEl) subtotalEl.textContent = `€${subtotal.toFixed(2)}`;
       if (totalEl) totalEl.textContent = `€${subtotal.toFixed(2)}`;
 
-      // ── Minimum €300 Order Enforcement ──
-      const MIN_ORDER = 300;
+      // ── Minimum €200 Order Enforcement ──
+      const MIN_ORDER = 200;
       const remaining = MIN_ORDER - subtotal;
       const minBanner = document.getElementById('min-order-banner');
       const minProgressWrap = document.getElementById('min-order-progress-wrap');

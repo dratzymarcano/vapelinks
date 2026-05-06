@@ -1534,6 +1534,28 @@ import siteData from '../data/site.json';
           }
         }
       } catch {}
+
+      // ── Bitcoin payment confirmed → notify admin now (deferred from checkout) ──
+      try {
+        const pendingStr = localStorage.getItem('mrnicevape_pending_admin_email');
+        if (pendingStr) {
+          const pending = JSON.parse(pendingStr);
+          // Mark as paid in the admin notification
+          pending.paymentMethod = 'Bitcoin (BTC) - Zahlung bestätigt';
+          pending.status = 'Neue Bestellung — Bitcoin-Zahlung bestätigt';
+          fetch('/api/send-email', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ type: 'admin-order', data: pending })
+          })
+            .then(function(r) { return r.json(); })
+            .then(function(d) {
+              if (d && d.error) console.error('Admin email error:', d.error);
+              else localStorage.removeItem('mrnicevape_pending_admin_email');
+            })
+            .catch(function(e) { console.error('Admin email send failed:', e); });
+        }
+      } catch (e) { console.error('Pending admin email dispatch error:', e); }
     }
 
     renderConfirmation();

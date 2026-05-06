@@ -1,18 +1,58 @@
 export const prerender = false;
 
 import type { APIRoute } from 'astro';
-import { Resend } from 'resend';
 
 function getEnv(locals: any, key: string) {
   return locals?.runtime?.env?.[key] || import.meta.env[key];
 }
 
-function getResendClient(locals: any) {
-  const apiKey = getEnv(locals, 'RESEND_API_KEY');
-  if (!apiKey) {
-    throw new Error('Missing RESEND_API_KEY');
-  }
-  return new Resend(apiKey);
+/* ─────────────────────────────────────────────────────────
+   Brevo transport — drop-in replacement for resend.emails.send()
+   Accepts { from, to[], subject, html, replyTo? } and returns
+   { data: { id }, error?: { message } } so the rest of the file
+   is unchanged.
+   ───────────────────────────────────────────────────────── */
+function parseAddress(input: string | { email: string; name?: string }) {
+  if (typeof input !== 'string') return { email: input.email, name: input.name };
+  const m = input.match(/^\s*"?([^"<]+?)"?\s*<\s*([^>]+)\s*>\s*$/);
+  if (m) return { name: m[1].trim(), email: m[2].trim() };
+  return { email: input.trim() };
+}
+
+function getBrevoClient(locals: any) {
+  const apiKey = getEnv(locals, 'BREVO_API_KEY');
+  if (!apiKey) throw new Error('Missing BREVO_API_KEY');
+
+  return {
+    emails: {
+      async send(opts: { from: string; to: string[]; subject: string; html: string; replyTo?: string }) {
+        const sender = parseAddress(opts.from);
+        const payload: Record<string, any> = {
+          sender,
+          to: opts.to.map((addr) => parseAddress(addr)),
+          subject: opts.subject,
+          htmlContent: opts.html,
+        };
+        if (opts.replyTo) payload.replyTo = parseAddress(opts.replyTo);
+
+        const res = await fetch('https://api.brevo.com/v3/smtp/email', {
+          method: 'POST',
+          headers: {
+            accept: 'application/json',
+            'content-type': 'application/json',
+            'api-key': apiKey,
+          },
+          body: JSON.stringify(payload),
+        });
+        if (!res.ok) {
+          const detail = await res.text().catch(() => '');
+          return { data: null, error: { message: `Brevo ${res.status}: ${detail}` } };
+        }
+        const data = await res.json().catch(() => ({}));
+        return { data: { id: data.messageId || null }, error: null };
+      },
+    },
+  };
 }
 
 /* ─────────────────────────────────────────────────────────
@@ -160,9 +200,9 @@ function badge(text: string, color: string) {
    ───────────────────────────────────────────────────────── */
 export const POST: APIRoute = async ({ request, locals }) => {
   try {
-    const resend = getResendClient(locals);
-    const FROM_EMAIL = getEnv(locals, 'RESEND_FROM_EMAIL') || 'Mr. Nice Vape Deutschland <info@mrnicevape.com>';
-    const ADMIN_EMAIL = getEnv(locals, 'RESEND_ADMIN_EMAIL') || 'info@mrnicevape.com';
+    const resend = getBrevoClient(locals);
+    const FROM_EMAIL = getEnv(locals, 'BREVO_FROM_EMAIL') || getEnv(locals, 'RESEND_FROM_EMAIL') || 'Mr. Nice Vape Deutschland <info@mrnicevape.com>';
+    const ADMIN_EMAIL = getEnv(locals, 'BREVO_ADMIN_EMAIL') || getEnv(locals, 'RESEND_ADMIN_EMAIL') || 'info@mrnicevape.com';
     const body = await request.json();
     const { type, data } = body;
 
@@ -455,7 +495,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
     }
 
     if (result?.error) {
-      console.error('[send-email] Resend API error:', JSON.stringify(result.error));
+      console.error('[send-email] Brevo API error:', JSON.stringify(result.error));
       return new Response(JSON.stringify({ error: result.error }), {
         status: 400,
         headers: { 'Content-Type': 'application/json' },

@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mrnicevape-email",
+  "main": "src/index.js",
+  "compatibility_date": "2025-05-01",
+  "account_id": "6ec0ea1c77a409e45f69eebaeeeb04e8",
+  "observability": { "enabled": true },
+  "vars": {
+    "FORWARD_TO": "rannydonatello@gmail.com",
+    "WEBHOOK_URL": "https://mrnicevape.com/api/inbound-email"
+  }
+}
