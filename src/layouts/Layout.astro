@@ -65,7 +65,10 @@ const navCollections = collectionsData
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{seoTitle}</title>
   <meta name="description" content={seoDescription} />
-  {noindex && <meta name="robots" content="noindex, nofollow" />}
+  {noindex
+    ? <meta name="robots" content="noindex, nofollow" />
+    : <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  }
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
