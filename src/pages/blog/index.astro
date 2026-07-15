@@ -30,7 +30,7 @@ const categories = [...new Set(blogPosts.map((p: any) => p.category))];
         "url": `https://mrnicevape.com/blog/${p.slug}`,
         "datePublished": p.date,
         "image": p.image.startsWith('http') ? p.image : `https://mrnicevape.com${p.image}`,
-        "author": { "@type": "Organization", "name": "Mr. Nice Vape Deutschland" }
+        "author": { "@type": "Person", "name": "Mr. Nice Vape Expert Team", "jobTitle": "Vaping Expert", "worksFor": { "@type": "Organization", "name": "Mr. Nice Vape Deutschland", "url": "https://mrnicevape.com" } }
       }))
     })} />
     <script type="application/ld+json" set:html={JSON.stringify({

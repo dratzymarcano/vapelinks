@@ -20,6 +20,172 @@ const relatedPosts = blogPosts
 const postPlainText = (post.content || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
 const wordCount = postPlainText.split(/\s+/).filter(Boolean).length;
 
+// FAQPage per post type
+const faqData: Record<string, {q: string, a: string}[]> = {
+  'how-to-choose-your-first-vape': [
+    { q: 'Was ist der Unterschied zwischen Pod-Systemen und klassischen Vape-Kits?',
+      a: 'Pod-Systeme sind kompakt, wartungsarm und ideal für Einsteiger. Klassische Vape-Kits (Box Mods) bieten mehr Leistung, Anpassungsmöglichkeiten und sind besser für erfahrene Dampfer geeignet.' },
+    { q: 'Welche Nikotinstärke sollte ich als Einsteiger wählen?',
+      a: 'Für Einsteiger empfehlen wir 6–12 mg/ml. Höhere Nikotinstärken (über 18 mg/ml) eignen sich für starke Raucher, die von Tabakzigaretten umsteigen möchten.' },
+    { q: 'Was bedeutet MTL und DTL beim Dampfen?',
+      a: 'MTL (Mouth-to-Lung) imitiert das Ziehen einer Zigarette und ist ideal für Einsteiger. DTL (Direct-to-Lung) bedeutet direktes Inhalieren in die Lunge und erzeugt mehr Dampf, erfordert aber mehr Erfahrung.' },
+    { q: 'Wie finde ich das passende E-Liquid-Verhältnis?',
+      a: 'Für MTL-Einsteiger empfehlen wir ein Verhältnis von 50/50 PG/VG. Für DTL und Sub-Ohm empfiehlt sich ein höherer VG-Anteil (70/30 oder 80/20) für mehr Dampf und weicheren Halskick.' },
+    { q: 'Brauche ich ein Starterset oder einzelne Komponenten?',
+      a: 'Einsteiger profitieren von einem Komplett-Set (Einsteiger-Kit), da alle Teile aufeinander abgestimmt sind. Erfahrene Dampfer stellen sich ihr Setup aus separaten Akkuträgern, Verdampfern und Tanks zusammen.' },
+  ],
+  'pod-systems-vs-box-mods': [
+    { q: 'Was ist besser für Einsteiger: Pod-System oder Box Mod?',
+      a: 'Pod-Systeme sind besser für Einsteiger geeignet. Sie sind kompakt, einfach zu bedienen, erfordern wenig Wartung und liefern sofort ein gutes Dampferlebnis ohne komplizierte Einstellungen.' },
+    { q: 'Welche Vorteile hat ein Box Mod gegenüber einem Pod-System?',
+      a: 'Box Mods bieten deutlich mehr Leistung (bis 200W+), vollständige Kontrolle über Watt, Temperatur und Volt, größere Akkukapazität und die Möglichkeit, verschiedene Verdampfer und Tanks zu verwenden.' },
+    { q: 'Sind Pod-Systeme teurer im Unterhalt als Box Mods?',
+      a: 'Pod-Systeme haben niedrigere Anschaffungskosten, aber etwas höhere laufende Kosten bei Coils und Pods. Box Mods haben höhere Erstinvestition, aber günstigere Verbrauchsmaterialien und längere Lebensdauer.' },
+    { q: 'Kann ich mit einem Pod-System auch DTL dampfen?',
+      a: 'Das hängt vom spezifischen Pod-System ab. Einige moderne Pod-Systeme mit offenen Pods und niedrigem Widerstand (0,4–0,8 Ohm) erlauben DTL-Dampfen. Für reines DTL ist ein Box Mod mit Sub-Ohm-Tank die bessere Wahl.' },
+    { q: 'Wie lange hält ein Pod-System mit einer Ladung?',
+      a: 'Die Akkulaufzeit variiert stark je nach Modell und Nutzung. Kompakte Pods mit 500–1500 mAh halten bei moderater Nutzung einen ganzen Tag. Box Mods mit 2000–5000 mAh halten bei gleicher Nutzung 2–3 Tage.' },
+  ],
+  'guide-to-vape-coils': [
+    { q: 'Wie erkenne ich, dass der Coil ausgetauscht werden muss?',
+      a: 'Typische Zeichen sind: verbrannter Geschmack trotz frischem Liquid, geringere Dampfproduktion, Änderung der Farbe des Coils (dunkel oder verkrustet) und Auslaufen des Tanks.' },
+    { q: 'Wie oft sollte ich den Coil wechseln?',
+      a: 'Die Lebensdauer eines Coils beträgt je nach Nutzung und Liquid-Typ 1–4 Wochen. Stark zuckerhaltige Liquids (z. B. Dessert-Aromen) verkürzen die Lebensdauer deutlich.' },
+    { q: 'Was ist Coil-Priming und warum ist es wichtig?',
+      a: 'Priming bedeutet, den neuen Coil vor dem ersten Gebrauch zu tränken, indem man ein paar Tropfen Liquid auf das Baumwollmaterial gibt. Dies verhindert einen verbrannten Geschmack und schädigt den Coil.' },
+    { q: 'Welchen Widerstand (Ohm) sollte ich wählen?',
+      a: 'Für MTL-Dampfen: 1,0–2,5 Ohm. Für DTL/Sub-Ohm: 0,15–0,5 Ohm. Niedrigere Ohm-Werte erzeugen mehr Dampf und Wärme, benötigen aber leistungsfähigere Akkus.' },
+    { q: 'Kann ich jeden Coil in jedem Verdampfer verwenden?',
+      a: 'Nein — jeder Verdampfer ist für bestimmte Coil-Widerstände und -Typen ausgelegt. Die Kompatibilitätsliste finden Sie in der Bedienungsanleitung oder auf der Website des Herstellers.' },
+  ],
+  'understanding-e-liquid-pg-vs-vg-ratios-explained': [
+    { q: 'Was ist PG (Propylenglykol) und welche Wirkung hat es?',
+      a: 'PG ist ein Trägerstoff, der den Geschmack verstärkt und für einen stärkeren Throat Hit (Halskratzen) sorgt. Es ist dünnflüssig und transportiert Aromen besonders gut.' },
+    { q: 'Was ist VG (pflanzliches Glycerin) und wofür wird es verwendet?',
+      a: 'VG erzeugt die Dampfproduktion und sorgt für einen sanfteren Halskick. Es ist dickflüssiger und süßer, weshalb es in höheren Konzentrationen die Coils stärker belasten kann.' },
+    { q: 'Welches Verhältnis ist am besten für Einsteiger geeignet?',
+      a: 'Ein 50/50-Verhältnis (PG/VG) ist ideal für Einsteiger. Es bietet guten Geschmack, akzeptablen Throat Hit und funktioniert mit den meisten Einsteiger-Geräten.' },
+    { q: 'Was bedeutet es, wenn ein Liquid mehr VG hat?',
+      a: 'Mehr VG (60–80%) bedeutet dichteren, wolkigeren Dampf und einen weicheren Halskick. Allerdings wird der Geschmack etwas weniger intensiv und das Liquid benötigt leistungsstärkere Coils.' },
+    { q: 'Welchen PG/VG-Anteil brauche ich für Sub-Ohm-Dampfen?',
+      a: 'Für Sub-Ohm und DTL empfehlen wir 70/30 oder 80/20 VG/PG. Das höhere VG erzeugt dichte Dampfwolken, während das geringere PG den starken Halskick reduziert.' },
+  ],
+  'vape-maintenance-tips': [
+    { q: 'Wie oft sollte ich meinen Verdampfer reinigen?',
+      a: 'Eine Grundreinigung alle 1–2 Wochen empfohlen. Bei Geschmacksveränderungen oder sichtbaren Ablagerungen sofort reinigen. Regelmäßige Pflege verlängert die Lebensdauer und verbessert den Geschmack.' },
+    { q: 'Kann ich meinen Tank mit Wasser reinigen?',
+      a: 'Ja, spülen Sie den Tank mit warmem (nicht heißem) Wasser durch. Verwenden Sie keine Seife oder Chemikalien, da diese Rückstände hinterlassen können. Lassen Sie alle Teile vollständig trocknen.' },
+    { q: 'Wie prime ich einen neuen Coil richtig?',
+      a: 'Träufeln Sie 3–5 Tropfen Liquid direkt auf die Baumwoll-Öffnungen des Coils, füllen Sie den Tank und warten Sie mindestens 5–10 Minuten, bevor Sie dampfen. Dies verhindert einen verbrannten Geschmack.' },
+    { q: 'Warum schmeckt mein Liquid plötzlich verbrannt?',
+      a: 'Meistens ist der Coil verbraucht und muss ersetzt werden. Prüfen Sie auch den Liquidstand — ein trockener Tank führt ebenfalls zu verbranntem Geschmack. Füllen Sie nach oder tauschen Sie den Coil.' },
+    { q: 'Wie lagere ich Liquids und Verdampfer am besten?',
+      a: 'Liquids kühl, dunkel und stehend lagern. Vermeiden Sie direktes Sonnenlicht und hohe Temperaturen. Verdampfer trocken und sauber aufbewahren, Coils in der Originalverpackung lassen.' },
+  ],
+  'sub-ohm-vaping-explained': [
+    { q: 'Was genau bedeutet Sub-Ohm-Dampfen?',
+      a: 'Sub-Ohm bedeutet, mit einem Coil-Widerstand unter 1,0 Ohm zu dampfen. Dies erzeugt deutlich mehr Dampf und Wärme, erfordert aber leistungsfähigere Akkus und mehr Erfahrung.' },
+    { q: 'Ist Sub-Ohm-Dampfen sicher für Anfänger?',
+      a: 'Sub-Ohm-Dampfen ist für erfahrene Dampfer geeignet, nicht für Einsteiger. Die hohe Leistung erzeugt starke Dampfmengen und intensiven Throat Hit, die für Neueinsteiger überwältigend sein können.' },
+    { q: 'Welche Akkus brauche ich für Sub-Ohm?',
+      a: 'Für Sub-Ohm mit hohen Wattzahlen (ab 80W) sind hochstromfähige Akkus (ab 20A Entladestrom) notwendig. Empfohlen: Markenakkus wie Sony VTC, Samsung 30Q oder LG HG2.' },
+    { q: 'Welche E-Liquids eignen sich für Sub-Ohm?',
+      a: 'Für Sub-Ohm empfehlen wir Liquids mit höherem VG-Anteil (70–80%) und niedrigerem Nikotingehalt (0–6 mg/ml). Zu viel Nikotin verursacht bei hoher Leistung einen unangenehmen Throat Hit.' },
+    { q: 'Was ist der Vorteil von Sub-Ohm gegenüber normalem Dampfen?',
+      a: 'Sub-Ohm erzeugt deutlich mehr Dampf (größere Wolken), intensiveren Geschmack und ein wärmeres Dampferlebnis. Der Nachteil ist höherer Liquid-Verbrauch und kürzere Akkulaufzeit.' },
+  ],
+  'how-to-clean-your-vape-tank': [
+    { q: 'Wie oft sollte ich meinen Tank reinigen?',
+      a: 'Reinigen Sie den Tank alle 1–2 Wochen oder bei Geschmacksveränderungen. Bei stark zuckerhaltigen Liquids (Dessert-Aromen) häufiger, da diese Rückstände hinterlassen.' },
+    { q: 'Kann ich den gesamten Verdampfer mit Wasser reinigen?',
+      a: 'Nur die Glas- und Metallteile. Die Coils (Automatoren) sind Einweg und sollten nicht mit Wasser in Kontakt kommen. Zerlegen Sie den Verdampfer und reinigen Sie jedes Teil einzeln.' },
+    { q: 'Welche Werkzeuge brauche ich für die Tankreinigung?',
+      a: 'Ein einfaches Reinigungsset genügt: warmes Wasser, ein sauberes Tuch, eine alte Zahnbürste für schwer zugängliche Stellen und ein Wattestäbchen. Keine Chemikalien oder Scheuermittel verwenden.' },
+    { q: 'Wie trockne ich den Tank nach dem Reinigen richtig?',
+      a: 'Lassen Sie alle Teile an der Luft vollständig trocknen (mindestens 30–60 Minuten) oder pusten Sie vorsichtig mit Pressluft nach. Restfeuchtigkeit kann den Geschmack und die Elektronik beeinträchtigen.' },
+    { q: 'Warum riecht mein Tank nach dem Reinigen noch nach altem Liquid?',
+      a: 'Hartnäckige Rückstände in kleinen Spalten und Dichtungsringen. Weichen Sie die Teile über Nacht in warmem Wasser ein oder verwenden Sie Isopropylalkohol (90%+), dann gründlich ausspülen.' },
+  ],
+  'battery-safety-essential-tips-for-vape-users': [
+    { q: 'Was sind die wichtigsten Sicherheitsregeln für Vape-Akkus?',
+      a: 'Verwenden Sie nur Akkus ohne Beschädigungen, sorgen Sie für Schutz vor Stößen und Kurzschlüssen, laden Sie nur mit dem mitgelieferten Ladegerät, und lagern Sie Akkus nie lose in Taschen mit Metallgegenständen.' },
+    { q: 'Wie erkenne ich einen beschädigten Akku?',
+      a: 'Beschädigte Akkus zeigen Dellen, Risse, eine aufgedunsene Hülle oder eine warme Oberfläche im unbenutzten Zustand. Bei任何一个 dieser Zeichen den Akku sofort nicht mehr verwenden.' },
+    { q: 'Kann ich meinen Akku über Nacht laden?',
+      a: 'Nein — laden Sie Akkus nur unter Aufsicht und trennen Sie sie vom Ladegerät, sobald sie voll sind. Überladen kann zu Überhitzung, Brand oder Explosion führen.' },
+    { q: 'Was ist der Unterschied zwischen geschützten und ungeschützten Akkus?',
+      a: 'Geschützte Akkus haben eine eingebaute Elektronik, die Kurzschlüsse, Tiefentladung und Überladung verhindert. Ungeschützte Akkus bieten mehr Leistung, erfordern aber mehr Vorsicht und ein kompatibles Ladegerät.' },
+    { q: 'Welche Akkus sind am besten für Box Mods geeignet?',
+      a: 'Beliebte Marken sind Sony VTC (VTC5A, VTC6), Samsung 30Q und LG HG2. Achten Sie auf ausreichend Entladestrom (mindestens 20A für die meisten Mods) und kaufen Sie nur bei vertrauenswürdigen Händlern.' },
+  ],
+  'mouth-to-lung-vs-direct-to-lung-vaping': [
+    { q: 'Was ist der Unterschied zwischen MTL und DTL?',
+      a: 'MTL (Mouth-to-Lung): erst in den Mund ziehen, dann in die Lunge inhalieren — wie bei einer Zigarette. DTL (Direct-to-Lung): direkt in die Lunge inhalieren — wie bei einer Shisha.' },
+    { q: 'Welche Zugtechnik ist besser für Einsteiger?',
+      a: 'MTL ist besser für Einsteiger geeignet, da es dem Raucherlebnis näherkommt und weniger Dampf produziert. Es ist einfacher zu kontrollieren und der niedrigere Liquidverbrauch schont das Budget.' },
+    { q: 'Kann ich mit einem MTL-Gerät DTL dampfen?',
+      a: 'Bei sehr offenem Zug und niedrigem Widerstand ist DTL mit einem MTL-Gerät eingeschränkt möglich. Für echtes DTL empfiehlt sich ein Gerät mit direktem Lungenzug und niederohmigen Coils.' },
+    { q: 'Welchen Nikotingehalt sollte ich für MTL und DTL wählen?',
+      a: 'MTL: 6–20 mg/ml (je nach Raucherhistorie). DTL: 0–6 mg/ml, da die hohe Dampfproduktion bei DTL den Nikotingehalt stark verstärkt.' },
+    { q: 'Was bedeutet "Zugwiderstand" und wie beeinflusst er das Erlebnis?',
+      a: 'Der Zugwiderstand beschreibt, wie leicht die Luft durch das Gerät strömt. Ein straffer Zug (MTL) fühlt sich enger an, ein offener Zug (DTL) fühlt sich luftiger und freier an. Der persönliche Geschmack bestimmt die Wahl.' },
+  ],
+  'beste-vape-aromen-deutschland-2026': [
+    { q: 'Was sind die beliebtesten Vape-Aromen in Deutschland 2026?',
+      a: 'Die Top-Favoriten sind: fruchtige Mischungen (Beeren, tropical, Zitrus), Dessert-Liquids (Vanille, Karamell, Kuchen), Minze/Menthol und klassische Tabak-Aromen.' },
+    { q: 'Welche Aromen sind am besten für Einsteiger geeignet?',
+      a: 'Für Einsteiger empfehlen wir fruchtige oder mentholhaltige Aromen, da sie mild und angenehm im Hals sind. Tabak-Aromen eignen sich besser für Umsteiger, die den Geschmack von Zigaretten bevorzugen.' },
+    { q: 'Sind "Dessert-Aromen" wie Kuchen oder Vanille gesundheitsschädlich?',
+      a: 'Die Aromen selbst sind für den legalen Gebrauch in E-Liquids zugelassen. Bei übermäßigem oder hochfrequentem Dampfen können bestimmte Aromen (z. B. Zimt) die Atemwege reizen. Im Zweifel mit einem Arzt sprechen.' },
+    { q: 'Wie wähle ich das richtige Aroma für mein Gerät?',
+      a: 'Für MTL-Geräte eignen sich alle Aromen gut. Für Sub-Ohm/DTL empfehlen sich Aromen mit höherem VG-Anteil (70%+), da dickflüssigere Liquids die leistungsstarken Coils nicht verstopfen.' },
+    { q: 'Kann ich Aromen selbst mischen?',
+      a: 'Ja, DIY-Mischen ist möglich und kann Kosten sparen. Verwenden Sie nur zugelassene Aroma-Konzentrate, basis-Liquids (PG/VG) und Nikotin-Shots in lebensmittelechten Behältern. Mischen Sie nach Gewicht, nicht nach Volumen.' },
+  ],
+  'disposable-vapes-vs-reusable-kits': [
+    { q: 'Was sind die Vor- und Nachteile von Einweg-Vapes?',
+      a: 'Vorteile: sofort einsatzbereit, keine Wartung, kompakt und diskret. Nachteile: teurer auf Dauer, mehr Abfall, begrenzte Aromen- und Nikotin-Optionen, nicht umweltfreundlich.' },
+    { q: 'Lohnen sich wiederverwendbare Sets langfristig?',
+      a: 'Ja, auf lange Sicht sind wiederverwendbare Sets deutlich günstiger. Nach der Anfangsinvestition (30–80 €) sind die laufenden Kosten für Liquids und Coils wesentlich niedriger als bei Einweg-Produkten.' },
+    { q: 'Sind Einweg-Vapes in Deutschland legal?',
+      a: 'Ja, Einweg-Vapes sind in Deutschland legal, sofern sie den gesetzlichen Bestimmungen (z. B. Nikotingehalt max. 20 mg/ml, 2 ml Tankvolumen) entsprechen. Seit 2024 gelten neue Regulierungen für Tabakalternativen.' },
+    { q: 'Was passiert mit den leeren Einweg-Vapes?',
+      a: 'Einweg-Vapes enthalten Lithium-Ionen-Akkus und Elektronikschrott und gehören nicht in den Hausmüll. Geben Sie sie bei Sammelstellen für Elektroschrott oder in der Apotheke ab. Recycling reduziert die Umweltbelastung.' },
+    { q: 'Kann ich einen Einweg-Vape aufladen und wiederbefüllen?',
+      a: 'Nein — Einweg-Vapes sind nicht zum Wiederbefüllen oder Aufladen konzipiert. Der Versuch kann zu Undichtigkeiten, Überhitzung oder Beschädigung führen. Entsorgen Sie den Vape nach Gebrauch ordnungsgemäß.' },
+  ],
+  'troubleshooting-common-vape-issues': [
+    { q: 'Warum habe ich keinen oder kaum Dampf?',
+      a: 'Häufige Ursachen: schwacher Akku, verstopfter oder trockener Coil, zu geringe Leistung (Watt), geschlossener Luftstrom oder falsches Liquid für Ihr Gerät. Prüfen Sie diese Punkte der Reihe nach.' },
+    { q: 'Mein Tank läuft aus — was kann ich tun?',
+      a: 'Prüfen Sie, ob die Dichtungsringe (O-Ringe) beschädigt oder lose sind. Stellen Sie sicher, dass der Tank fest verschlossen ist. Bei Rissen im Glas den Tank sofort ersetzen. Überfüllung vermeiden.' },
+    { q: 'Warum schmeckt mein Liquid verbrannt?',
+      a: 'Meist ist der Coil verbraucht und muss ersetzt werden. Auch ein zu hoher Watt-Wert, ein zu niedriger Liquidstand oder ein "Dry Hit" (trockener Zug) können die Ursache sein. Primen Sie den Coil oder tauschen Sie ihn aus.' },
+    { q: 'Der Akku meines Mods wird sehr warm — ist das normal?',
+      a: 'Leichte Erwärmung bei hoher Leistung ist normal. Extreme Hitze jedoch nicht. Prüfen Sie den Akku auf Beschädigungen, verwenden Sie nur Akkus mit ausreichend Entladestrom und lassen Sie das Gerät abkühlen.' },
+    { q: 'Ich bekomme regelmäßig einen Siff-Geschmack — was ist das?',
+      a: 'Ein "Siff"-Geschmack ( süßlich, chemisch) entsteht oft durch einen trockenen Hit, falsches Liquid für das Gerät oder einen defekten/verbrauchten Coil. Tauschen Sie den Coil und prüfen Sie das Liquid-Verhältnis.' },
+  ],
+};
+
+const faqs = faqData[post.slug as keyof typeof faqData] || [];
+const postUrl = `https://mrnicevape.com/blog/${post.slug}`;
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "name": post.title,
+  "description": post.excerpt,
+  "url": postUrl,
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.a
+    }
+  }))
+};
+
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
@@ -56,6 +222,7 @@ const breadcrumbData = {
 <Layout title={`${post.title} | Mr. Nice Vape Blog`} description={post.excerpt} image={post.image} type="article">
   <Fragment slot="head">
     <meta name="keywords" content={post.tags.join(', ') + ', vape guide, vaping tips, Mr. Nice Vape Deutschland'} />
+    {faqs.length > 0 && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbData)} />
   </Fragment>
