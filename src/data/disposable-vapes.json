@@ -1,878 +1,9 @@
 [
   {
-    "id": 9000000001,
-    "handle": "iget-bar-3500-strawberry-watermelon",
-    "title": "IGET Bar 3500 Puffs - Strawberry Watermelon",
-    "body_html": "<h2>IGET Bar 3500 Puffs - Strawberry Watermelon</h2>\n<p>IGET Bar 3500 Puffs - Strawberry Watermelon ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 14,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "IGET",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-09-15T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-09-15T10:00:00+11:00",
-    "tags": [
-      "Marke IGET",
-      "Disposable",
-      "Disposable Vapes",
-      "Fruity",
-      "3500 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000001,
-        "title": "Standardtitel",
-        "price": "8.95",
-        "compare_at_price": "11.95",
-        "sku": "DISP-IGET-BAR-001",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/products/iget-bar-disposable-vape-3500-puffs_0.jpg",
-        "alt": "IGET Bar 3500 Puffs Strawberry Watermelon Disposable Vape",
-        "local": "/images/products/disposable/iget-bar-3500-strawberry-watermelon.png"
-      }
-    ]
-  },
-  {
-    "id": 9000000002,
-    "handle": "iget-bar-3500-mango-bomb",
-    "title": "IGET Bar 3500 Puffs - Mango Bomb",
-    "body_html": "<h2>IGET Bar 3500 Puffs - Mango Bomb</h2>\n<p>IGET Bar 3500 Puffs - Mango Bomb ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 14,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "IGET",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-09-18T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-09-18T10:00:00+11:00",
-    "tags": [
-      "Marke IGET",
-      "Disposable",
-      "Disposable Vapes",
-      "Tropical",
-      "Fruity",
-      "3500 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000002,
-        "title": "Standardtitel",
-        "price": "8.95",
-        "compare_at_price": "11.95",
-        "sku": "DISP-IGET-BAR-002",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/products/iget-bar-disposable-vape-3500-puffs_0.jpg",
-        "alt": "IGET Bar 3500 Puffs Mango Bomb Disposable Vape",
-        "local": "/images/products/disposable/iget-bar-3500-mango-bomb.png"
-      }
-    ]
-  },
-  {
-    "id": 9000000003,
-    "handle": "iget-bar-3500-blue-razz",
-    "title": "IGET Bar 3500 Puffs - Blue Razz",
-    "body_html": "<h2>IGET Bar 3500 Puffs - Blue Razz</h2>\n<p>IGET Bar 3500 Puffs - Blue Razz ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 14,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "IGET",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-09-20T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-09-20T10:00:00+11:00",
-    "tags": [
-      "Marke IGET",
-      "Disposable",
-      "Disposable Vapes",
-      "Candy",
-      "Berry",
-      "3500 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000003,
-        "title": "Standardtitel",
-        "price": "8.95",
-        "compare_at_price": "11.95",
-        "sku": "DISP-IGET-BAR-003",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/products/iget-bar-disposable-vape-3500-puffs_0.jpg",
-        "alt": "IGET Bar 3500 Puffs Blue Razz Disposable Vape",
-        "local": "/images/products/disposable/iget-bar-3500-blue-razz.png"
-      }
-    ]
-  },
-  {
-    "id": 9000000004,
-    "handle": "iget-bar-3500-grape-ice",
-    "title": "IGET Bar 3500 Puffs - Grape Ice",
-    "body_html": "<h2>IGET Bar 3500 Puffs - Grape Ice</h2>\n<p>IGET Bar 3500 Puffs - Grape Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 14,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "IGET",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-09-22T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-09-22T10:00:00+11:00",
-    "tags": [
-      "Marke IGET",
-      "Disposable",
-      "Disposable Vapes",
-      "Fruity",
-      "Menthol",
-      "Ice",
-      "3500 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000004,
-        "title": "Standardtitel",
-        "price": "8.95",
-        "compare_at_price": "11.95",
-        "sku": "DISP-IGET-BAR-004",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/products/iget-bar-disposable-vape-3500-puffs_0.jpg",
-        "alt": "IGET Bar 3500 Puffs Grape Ice Disposable Vape",
-        "local": "/images/products/disposable/iget-bar-3500-grape-ice.png"
-      }
-    ]
-  },
-  {
-    "id": 9000000005,
-    "handle": "iget-bar-3500-lush-ice",
-    "title": "IGET Bar 3500 Puffs - Lush Ice",
-    "body_html": "<h2>IGET Bar 3500 Puffs - Lush Ice</h2>\n<p>IGET Bar 3500 Puffs - Lush Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 14,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "IGET",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-09-25T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-09-25T10:00:00+11:00",
-    "tags": [
-      "Marke IGET",
-      "Disposable",
-      "Disposable Vapes",
-      "Fruity",
-      "Menthol",
-      "Ice",
-      "3500 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000005,
-        "title": "Standardtitel",
-        "price": "8.95",
-        "compare_at_price": "11.95",
-        "sku": "DISP-IGET-BAR-005",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/products/iget-bar-disposable-vape-3500-puffs_0.jpg",
-        "alt": "IGET Bar 3500 Puffs Lush Ice Disposable Vape",
-        "local": "/images/products/disposable/iget-bar-3500-lush-ice.png"
-      }
-    ]
-  },
-  {
-    "id": 9000000006,
-    "handle": "iget-bar-3500-mixed-berry",
-    "title": "IGET Bar 3500 Puffs - Mixed Berry",
-    "body_html": "<h2>IGET Bar 3500 Puffs - Mixed Berry</h2>\n<p>IGET Bar 3500 Puffs - Mixed Berry ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 14,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "IGET",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-09-28T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-09-28T10:00:00+11:00",
-    "tags": [
-      "Marke IGET",
-      "Disposable",
-      "Disposable Vapes",
-      "Berry",
-      "Fruity",
-      "3500 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000006,
-        "title": "Standardtitel",
-        "price": "8.95",
-        "compare_at_price": "11.95",
-        "sku": "DISP-IGET-BAR-006",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/products/iget-bar-disposable-vape-3500-puffs_0.jpg",
-        "alt": "IGET Bar 3500 Puffs Mixed Berry Disposable Vape",
-        "local": "/images/products/disposable/iget-bar-3500-mixed-berry.png"
-      }
-    ]
-  },
-  {
-    "id": 9000000007,
-    "handle": "iget-legend-4000-cola-ice",
-    "title": "IGET Legend 4000 Puffs - Cola Ice",
-    "body_html": "<h2>IGET Legend 4000 Puffs - Cola Ice</h2>\n<p>IGET Legend 4000 Puffs - Cola Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 16,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "IGET",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-10-15T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-10-15T10:00:00+11:00",
-    "tags": [
-      "Marke IGET",
-      "Disposable",
-      "Disposable Vapes",
-      "Menthol",
-      "Ice",
-      "Drink",
-      "4000 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000007,
-        "title": "Standardtitel",
-        "price": "9.95",
-        "compare_at_price": "13.95",
-        "sku": "DISP-IGET-LEG-001",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/products/iget-legend-disposable-vape-4000-puffs_0.jpg",
-        "alt": "IGET Legend 4000 Puffs Cola Ice Disposable Vape",
-        "local": "/images/products/disposable/iget-legend-4000-cola-ice.png"
-      }
-    ]
-  },
-  {
-    "id": 9000000008,
-    "handle": "iget-legend-4000-blackberry-ice",
-    "title": "IGET Legend 4000 Puffs - Blackberry Ice",
-    "body_html": "<h2>IGET Legend 4000 Puffs - Blackberry Ice</h2>\n<p>IGET Legend 4000 Puffs - Blackberry Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 16,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "IGET",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-10-18T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-10-18T10:00:00+11:00",
-    "tags": [
-      "Marke IGET",
-      "Disposable",
-      "Disposable Vapes",
-      "Berry",
-      "Menthol",
-      "Ice",
-      "4000 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000008,
-        "title": "Standardtitel",
-        "price": "9.95",
-        "compare_at_price": "13.95",
-        "sku": "DISP-IGET-LEG-002",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/products/iget-legend-disposable-vape-4000-puffs_0.jpg",
-        "alt": "IGET Legend 4000 Puffs Blackberry Ice Disposable Vape",
-        "local": "/images/products/disposable/iget-legend-4000-blackberry-ice.png"
-      }
-    ]
-  },
-  {
-    "id": 9000000009,
-    "handle": "iget-legend-4000-passion-fruit-mango",
-    "title": "IGET Legend 4000 Puffs - Passion Fruit Mango",
-    "body_html": "<h2>IGET Legend 4000 Puffs - Passion Fruit Mango</h2>\n<p>IGET Legend 4000 Puffs - Passion Fruit Mango ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 16,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "IGET",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-10-20T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-10-20T10:00:00+11:00",
-    "tags": [
-      "Marke IGET",
-      "Disposable",
-      "Disposable Vapes",
-      "Tropical",
-      "Fruity",
-      "4000 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000009,
-        "title": "Standardtitel",
-        "price": "9.95",
-        "compare_at_price": "13.95",
-        "sku": "DISP-IGET-LEG-003",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/products/iget-legend-disposable-vape-4000-puffs_0.jpg",
-        "alt": "IGET Legend 4000 Puffs Passion Fruit Mango Disposable Vape",
-        "local": "/images/products/disposable/iget-legend-4000-passion-fruit-mango.png"
-      }
-    ]
-  },
-  {
-    "id": 9000000010,
-    "handle": "iget-legend-4000-peach-ice",
-    "title": "IGET Legend 4000 Puffs - Peach Ice",
-    "body_html": "<h2>IGET Legend 4000 Puffs - Peach Ice</h2>\n<p>IGET Legend 4000 Puffs - Peach Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 16,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "IGET",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-10-23T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-10-23T10:00:00+11:00",
-    "tags": [
-      "Marke IGET",
-      "Disposable",
-      "Disposable Vapes",
-      "Fruity",
-      "Menthol",
-      "Ice",
-      "4000 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000010,
-        "title": "Standardtitel",
-        "price": "9.95",
-        "compare_at_price": "13.95",
-        "sku": "DISP-IGET-LEG-004",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/products/iget-legend-disposable-vape-4000-puffs_0.jpg",
-        "alt": "IGET Legend 4000 Puffs Peach Ice Disposable Vape",
-        "local": "/images/products/disposable/iget-legend-4000-peach-ice.png"
-      }
-    ]
-  },
-  {
-    "id": 9000000011,
-    "handle": "iget-legend-4000-strawberry-kiwi",
-    "title": "IGET Legend 4000 Puffs - Strawberry Kiwi",
-    "body_html": "<h2>IGET Legend 4000 Puffs - Strawberry Kiwi</h2>\n<p>IGET Legend 4000 Puffs - Strawberry Kiwi ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 16,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "IGET",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-10-26T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-10-26T10:00:00+11:00",
-    "tags": [
-      "Marke IGET",
-      "Disposable",
-      "Disposable Vapes",
-      "Fruity",
-      "4000 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000011,
-        "title": "Standardtitel",
-        "price": "9.95",
-        "compare_at_price": "13.95",
-        "sku": "DISP-IGET-LEG-005",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/products/iget-legend-disposable-vape-4000-puffs_0.jpg",
-        "alt": "IGET Legend 4000 Puffs Strawberry Kiwi Disposable Vape",
-        "local": "/images/products/disposable/iget-legend-4000-strawberry-kiwi.png"
-      }
-    ]
-  },
-  {
-    "id": 9000000012,
-    "handle": "iget-legend-4000-watermelon-lemon",
-    "title": "IGET Legend 4000 Puffs - Watermelon Lemon",
-    "body_html": "<h2>IGET Legend 4000 Puffs - Watermelon Lemon</h2>\n<p>IGET Legend 4000 Puffs - Watermelon Lemon ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 16,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> IGET</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "IGET",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-10-30T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-10-30T10:00:00+11:00",
-    "tags": [
-      "Marke IGET",
-      "Disposable",
-      "Disposable Vapes",
-      "Fruity",
-      "Citrus",
-      "4000 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000012,
-        "title": "Standardtitel",
-        "price": "9.95",
-        "compare_at_price": "13.95",
-        "sku": "DISP-IGET-LEG-006",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/products/iget-legend-disposable-vape-4000-puffs_0.jpg",
-        "alt": "IGET Legend 4000 Puffs Watermelon Lemon Disposable Vape",
-        "local": "/images/products/disposable/iget-legend-4000-watermelon-lemon.png"
-      }
-    ]
-  },
-  {
-    "id": 9000000013,
-    "handle": "gunnpod-2000-banana-ice",
-    "title": "GunnPod 2000 Puffs - Banana Ice",
-    "body_html": "<h2>GunnPod 2000 Puffs - Banana Ice</h2>\n<p>GunnPod 2000 Puffs - Banana Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 12,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> GunnPod</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "GunnPod",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-11-15T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-11-15T10:00:00+11:00",
-    "tags": [
-      "Marke GunnPod",
-      "Disposable",
-      "Disposable Vapes",
-      "Fruity",
-      "Menthol",
-      "Ice",
-      "2000 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000013,
-        "title": "Standardtitel",
-        "price": "7.95",
-        "compare_at_price": "9.95",
-        "sku": "DISP-GUNN-2000-001",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/placeholder-collection.svg",
-        "alt": "GunnPod 2000 Puffs Banana Ice Disposable Vape",
-        "local": "/images/products/disposable/gunnpod-2000-banana-ice.png"
-      }
-    ]
-  },
-  {
-    "id": 9000000014,
-    "handle": "gunnpod-2000-blue-razz-lemonade",
-    "title": "GunnPod 2000 Puffs - Blue Razz Lemonade",
-    "body_html": "<h2>GunnPod 2000 Puffs - Blue Razz Lemonade</h2>\n<p>GunnPod 2000 Puffs - Blue Razz Lemonade ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 12,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> GunnPod</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "GunnPod",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-11-18T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-11-18T10:00:00+11:00",
-    "tags": [
-      "Marke GunnPod",
-      "Disposable",
-      "Disposable Vapes",
-      "Candy",
-      "Citrus",
-      "2000 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000014,
-        "title": "Standardtitel",
-        "price": "7.95",
-        "compare_at_price": "9.95",
-        "sku": "DISP-GUNN-2000-002",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/placeholder-collection.svg",
-        "alt": "GunnPod 2000 Puffs Blue Razz Lemonade Disposable Vape",
-        "local": "/images/products/disposable/gunnpod-2000-blue-razz-lemonade.png"
-      }
-    ]
-  },
-  {
-    "id": 9000000015,
-    "handle": "gunnpod-2000-guava-ice",
-    "title": "GunnPod 2000 Puffs - Guava Ice",
-    "body_html": "<h2>GunnPod 2000 Puffs - Guava Ice</h2>\n<p>GunnPod 2000 Puffs - Guava Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 12,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> GunnPod</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "GunnPod",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-11-20T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-11-20T10:00:00+11:00",
-    "tags": [
-      "Marke GunnPod",
-      "Disposable",
-      "Disposable Vapes",
-      "Tropical",
-      "Menthol",
-      "Ice",
-      "2000 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000015,
-        "title": "Standardtitel",
-        "price": "7.95",
-        "compare_at_price": "9.95",
-        "sku": "DISP-GUNN-2000-003",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/placeholder-collection.svg",
-        "alt": "GunnPod 2000 Puffs Guava Ice Disposable Vape",
-        "local": "/images/products/disposable/gunnpod-2000-guava-ice.png"
-      }
-    ]
-  },
-  {
-    "id": 9000000016,
-    "handle": "gunnpod-2000-mango-peach",
-    "title": "GunnPod 2000 Puffs - Mango Peach",
-    "body_html": "<h2>GunnPod 2000 Puffs - Mango Peach</h2>\n<p>GunnPod 2000 Puffs - Mango Peach ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 12,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> GunnPod</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "GunnPod",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-11-23T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-11-23T10:00:00+11:00",
-    "tags": [
-      "Marke GunnPod",
-      "Disposable",
-      "Disposable Vapes",
-      "Tropical",
-      "Fruity",
-      "2000 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000016,
-        "title": "Standardtitel",
-        "price": "7.95",
-        "compare_at_price": "9.95",
-        "sku": "DISP-GUNN-2000-004",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/placeholder-collection.svg",
-        "alt": "GunnPod 2000 Puffs Mango Peach Disposable Vape",
-        "local": "/images/products/disposable/gunnpod-2000-mango-peach.png"
-      }
-    ]
-  },
-  {
-    "id": 9000000017,
-    "handle": "gunnpod-2000-strawberry-banana",
-    "title": "GunnPod 2000 Puffs - Strawberry Banana",
-    "body_html": "<h2>GunnPod 2000 Puffs - Strawberry Banana</h2>\n<p>GunnPod 2000 Puffs - Strawberry Banana ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 12,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> GunnPod</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "GunnPod",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-11-26T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-11-26T10:00:00+11:00",
-    "tags": [
-      "Marke GunnPod",
-      "Disposable",
-      "Disposable Vapes",
-      "Fruity",
-      "2000 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000017,
-        "title": "Standardtitel",
-        "price": "7.95",
-        "compare_at_price": "9.95",
-        "sku": "DISP-GUNN-2000-005",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/placeholder-collection.svg",
-        "alt": "GunnPod 2000 Puffs Strawberry Banana Disposable Vape",
-        "local": "/images/products/disposable/gunnpod-2000-strawberry-banana.png"
-      }
-    ]
-  },
-  {
-    "id": 9000000018,
-    "handle": "gunnpod-2000-watermelon-ice",
-    "title": "GunnPod 2000 Puffs - Watermelon Ice",
-    "body_html": "<h2>GunnPod 2000 Puffs - Watermelon Ice</h2>\n<p>GunnPod 2000 Puffs - Watermelon Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 12,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> GunnPod</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
-    "vendor": "GunnPod",
-    "product_type": "Einweg-Vape",
-    "created_at": "2025-11-30T10:00:00+11:00",
-    "updated_at": "2026-02-10T10:00:00+11:00",
-    "published_at": "2025-11-30T10:00:00+11:00",
-    "tags": [
-      "Marke GunnPod",
-      "Disposable",
-      "Disposable Vapes",
-      "Fruity",
-      "Menthol",
-      "Ice",
-      "2000 Puffs"
-    ],
-    "variants": [
-      {
-        "id": 90000018,
-        "title": "Standardtitel",
-        "price": "7.95",
-        "compare_at_price": "9.95",
-        "sku": "DISP-GUNN-2000-006",
-        "option1": "Standardtitel",
-        "option2": null,
-        "option3": null,
-        "available": true
-      }
-    ],
-    "options": [
-      {
-        "name": "Titel",
-        "position": 1,
-        "values": [
-          "Standardtitel"
-        ]
-      }
-    ],
-    "images": [
-      {
-        "src": "/images/placeholder-collection.svg",
-        "alt": "GunnPod 2000 Puffs Watermelon Ice Disposable Vape",
-        "local": "/images/products/disposable/gunnpod-2000-watermelon-ice.png"
-      }
-    ]
-  },
-  {
     "id": 9000000019,
     "handle": "hqd-cuvie-plus-1200-blueberry-lemonade",
     "title": "HQD Cuvie Plus 1200 Puffs - Blueberry Lemonade",
-    "body_html": "<h2>HQD Cuvie Plus 1200 Puffs - Blueberry Lemonade</h2>\n<p>HQD Cuvie Plus 1200 Puffs - Blueberry Lemonade ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 9,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>HQD Cuvie Plus 1200 Puffs - Blueberry Lemonade</strong> von <strong>HQD</strong> ist ein vorbefülltes System (bis zu 1200 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 1200 Züge</li><li><strong>Preis:</strong> ab 5,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "HQD",
     "product_type": "Einweg-Vape",
     "created_at": "2025-12-15T10:00:00+11:00",
@@ -920,7 +51,7 @@
     "id": 9000000020,
     "handle": "hqd-cuvie-plus-1200-grapey",
     "title": "HQD Cuvie Plus 1200 Puffs - Grapey",
-    "body_html": "<h2>HQD Cuvie Plus 1200 Puffs - Grapey</h2>\n<p>HQD Cuvie Plus 1200 Puffs - Grapey ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 9,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>HQD Cuvie Plus 1200 Puffs - Grapey</strong> von <strong>HQD</strong> ist ein vorbefülltes System (bis zu 1200 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 1200 Züge</li><li><strong>Preis:</strong> ab 5,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "HQD",
     "product_type": "Einweg-Vape",
     "created_at": "2025-12-18T10:00:00+11:00",
@@ -968,7 +99,7 @@
     "id": 9000000021,
     "handle": "hqd-cuvie-plus-1200-mango-ice",
     "title": "HQD Cuvie Plus 1200 Puffs - Mango Ice",
-    "body_html": "<h2>HQD Cuvie Plus 1200 Puffs - Mango Ice</h2>\n<p>HQD Cuvie Plus 1200 Puffs - Mango Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 9,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>HQD Cuvie Plus 1200 Puffs - Mango Ice</strong> von <strong>HQD</strong> ist ein vorbefülltes System (bis zu 1200 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 1200 Züge</li><li><strong>Preis:</strong> ab 5,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "HQD",
     "product_type": "Einweg-Vape",
     "created_at": "2025-12-20T10:00:00+11:00",
@@ -1017,7 +148,7 @@
     "id": 9000000022,
     "handle": "hqd-cuvie-plus-1200-strawberry-banana",
     "title": "HQD Cuvie Plus 1200 Puffs - Strawberry Banana",
-    "body_html": "<h2>HQD Cuvie Plus 1200 Puffs - Strawberry Banana</h2>\n<p>HQD Cuvie Plus 1200 Puffs - Strawberry Banana ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 9,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>HQD Cuvie Plus 1200 Puffs - Strawberry Banana</strong> von <strong>HQD</strong> ist ein vorbefülltes System (bis zu 1200 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 1200 Züge</li><li><strong>Preis:</strong> ab 5,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "HQD",
     "product_type": "Einweg-Vape",
     "created_at": "2025-12-23T10:00:00+11:00",
@@ -1064,7 +195,7 @@
     "id": 9000000023,
     "handle": "hqd-cuvie-plus-1200-mix-berries",
     "title": "HQD Cuvie Plus 1200 Puffs - Mix Berries",
-    "body_html": "<h2>HQD Cuvie Plus 1200 Puffs - Mix Berries</h2>\n<p>HQD Cuvie Plus 1200 Puffs - Mix Berries ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 9,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>HQD Cuvie Plus 1200 Puffs - Mix Berries</strong> von <strong>HQD</strong> ist ein vorbefülltes System (bis zu 1200 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 1200 Züge</li><li><strong>Preis:</strong> ab 5,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "HQD",
     "product_type": "Einweg-Vape",
     "created_at": "2025-12-27T10:00:00+11:00",
@@ -1112,7 +243,7 @@
     "id": 9000000024,
     "handle": "hqd-cuvie-plus-1200-peach-ice",
     "title": "HQD Cuvie Plus 1200 Puffs - Peach Ice",
-    "body_html": "<h2>HQD Cuvie Plus 1200 Puffs - Peach Ice</h2>\n<p>HQD Cuvie Plus 1200 Puffs - Peach Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 9,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>HQD Cuvie Plus 1200 Puffs - Peach Ice</strong> von <strong>HQD</strong> ist ein vorbefülltes System (bis zu 1200 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> HQD</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 1200 Züge</li><li><strong>Preis:</strong> ab 5,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "HQD",
     "product_type": "Einweg-Vape",
     "created_at": "2025-12-30T10:00:00+11:00",
@@ -1161,7 +292,7 @@
     "id": 9000000025,
     "handle": "elux-firerose-nova-600-apple-peach-pear",
     "title": "Elux Firerose Nova 600 Puffs - Apple Peach Pear",
-    "body_html": "<h2>Elux Firerose Nova 600 Puffs - Apple Peach Pear</h2>\n<p>Elux Firerose Nova 600 Puffs - Apple Peach Pear ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 7,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>Elux Firerose Nova 600 Puffs - Apple Peach Pear</strong> von <strong>Elux</strong> ist ein vorbefülltes System (bis zu 600 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 600 Züge</li><li><strong>Preis:</strong> ab 4,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "Elux",
     "product_type": "Einweg-Vape",
     "created_at": "2026-01-05T10:00:00+11:00",
@@ -1208,7 +339,7 @@
     "id": 9000000026,
     "handle": "elux-firerose-nova-600-blue-razz-cherry",
     "title": "Elux Firerose Nova 600 Puffs - Blue Razz Cherry",
-    "body_html": "<h2>Elux Firerose Nova 600 Puffs - Blue Razz Cherry</h2>\n<p>Elux Firerose Nova 600 Puffs - Blue Razz Cherry ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 7,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>Elux Firerose Nova 600 Puffs - Blue Razz Cherry</strong> von <strong>Elux</strong> ist ein vorbefülltes System (bis zu 600 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 600 Züge</li><li><strong>Preis:</strong> ab 4,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "Elux",
     "product_type": "Einweg-Vape",
     "created_at": "2026-01-07T10:00:00+11:00",
@@ -1256,7 +387,7 @@
     "id": 9000000027,
     "handle": "elux-firerose-nova-600-cotton-candy",
     "title": "Elux Firerose Nova 600 Puffs - Cotton Candy",
-    "body_html": "<h2>Elux Firerose Nova 600 Puffs - Cotton Candy</h2>\n<p>Elux Firerose Nova 600 Puffs - Cotton Candy ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 7,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>Elux Firerose Nova 600 Puffs - Cotton Candy</strong> von <strong>Elux</strong> ist ein vorbefülltes System (bis zu 600 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 600 Züge</li><li><strong>Preis:</strong> ab 4,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "Elux",
     "product_type": "Einweg-Vape",
     "created_at": "2026-01-09T10:00:00+11:00",
@@ -1304,7 +435,7 @@
     "id": 9000000028,
     "handle": "elux-firerose-nova-600-grape",
     "title": "Elux Firerose Nova 600 Puffs - Grape",
-    "body_html": "<h2>Elux Firerose Nova 600 Puffs - Grape</h2>\n<p>Elux Firerose Nova 600 Puffs - Grape ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 7,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>Elux Firerose Nova 600 Puffs - Grape</strong> von <strong>Elux</strong> ist ein vorbefülltes System (bis zu 600 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 600 Züge</li><li><strong>Preis:</strong> ab 4,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "Elux",
     "product_type": "Einweg-Vape",
     "created_at": "2026-01-11T10:00:00+11:00",
@@ -1351,7 +482,7 @@
     "id": 9000000029,
     "handle": "elux-firerose-nova-600-mr-blue",
     "title": "Elux Firerose Nova 600 Puffs - Mr Blue",
-    "body_html": "<h2>Elux Firerose Nova 600 Puffs - Mr Blue</h2>\n<p>Elux Firerose Nova 600 Puffs - Mr Blue ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 7,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>Elux Firerose Nova 600 Puffs - Mr Blue</strong> von <strong>Elux</strong> ist ein vorbefülltes System (bis zu 600 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 600 Züge</li><li><strong>Preis:</strong> ab 4,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "Elux",
     "product_type": "Einweg-Vape",
     "created_at": "2026-01-13T10:00:00+11:00",
@@ -1399,7 +530,7 @@
     "id": 9000000030,
     "handle": "elux-firerose-nova-600-watermelon",
     "title": "Elux Firerose Nova 600 Puffs - Watermelon",
-    "body_html": "<h2>Elux Firerose Nova 600 Puffs - Watermelon</h2>\n<p>Elux Firerose Nova 600 Puffs - Watermelon ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 7,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>Elux Firerose Nova 600 Puffs - Watermelon</strong> von <strong>Elux</strong> ist ein vorbefülltes System (bis zu 600 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> Elux</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 600 Züge</li><li><strong>Preis:</strong> ab 4,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "Elux",
     "product_type": "Einweg-Vape",
     "created_at": "2026-01-15T10:00:00+11:00",
@@ -1446,7 +577,7 @@
     "id": 9000000031,
     "handle": "lost-mary-bm6000-triple-mango",
     "title": "Lost Mary BM6000 6000 Puffs - Triple Mango",
-    "body_html": "<h2>Lost Mary BM6000 6000 Puffs - Triple Mango</h2>\n<p>Lost Mary BM6000 6000 Puffs - Triple Mango ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 19,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>Lost Mary BM6000 6000 Puffs - Triple Mango</strong> von <strong>Lost Mary</strong> ist ein vorbefülltes System (bis zu 6000 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 6000 Züge</li><li><strong>Preis:</strong> ab 11,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "Lost Mary",
     "product_type": "Einweg-Vape",
     "created_at": "2026-01-20T10:00:00+11:00",
@@ -1494,7 +625,7 @@
     "id": 9000000032,
     "handle": "lost-mary-bm6000-blueberry-ice",
     "title": "Lost Mary BM6000 6000 Puffs - Blueberry Ice",
-    "body_html": "<h2>Lost Mary BM6000 6000 Puffs - Blueberry Ice</h2>\n<p>Lost Mary BM6000 6000 Puffs - Blueberry Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 19,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>Lost Mary BM6000 6000 Puffs - Blueberry Ice</strong> von <strong>Lost Mary</strong> ist ein vorbefülltes System (bis zu 6000 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 6000 Züge</li><li><strong>Preis:</strong> ab 11,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "Lost Mary",
     "product_type": "Einweg-Vape",
     "created_at": "2026-01-22T10:00:00+11:00",
@@ -1543,7 +674,7 @@
     "id": 9000000033,
     "handle": "lost-mary-bm6000-strawberry-ice",
     "title": "Lost Mary BM6000 6000 Puffs - Strawberry Ice",
-    "body_html": "<h2>Lost Mary BM6000 6000 Puffs - Strawberry Ice</h2>\n<p>Lost Mary BM6000 6000 Puffs - Strawberry Ice ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 19,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>Lost Mary BM6000 6000 Puffs - Strawberry Ice</strong> von <strong>Lost Mary</strong> ist ein vorbefülltes System (bis zu 6000 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 6000 Züge</li><li><strong>Preis:</strong> ab 11,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "Lost Mary",
     "product_type": "Einweg-Vape",
     "created_at": "2026-01-25T10:00:00+11:00",
@@ -1592,7 +723,7 @@
     "id": 9000000034,
     "handle": "lost-mary-bm6000-grape-jelly",
     "title": "Lost Mary BM6000 6000 Puffs - Grape Jelly",
-    "body_html": "<h2>Lost Mary BM6000 6000 Puffs - Grape Jelly</h2>\n<p>Lost Mary BM6000 6000 Puffs - Grape Jelly ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 19,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>Lost Mary BM6000 6000 Puffs - Grape Jelly</strong> von <strong>Lost Mary</strong> ist ein vorbefülltes System (bis zu 6000 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 6000 Züge</li><li><strong>Preis:</strong> ab 11,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "Lost Mary",
     "product_type": "Einweg-Vape",
     "created_at": "2026-01-27T10:00:00+11:00",
@@ -1640,7 +771,7 @@
     "id": 9000000035,
     "handle": "lost-mary-bm6000-watermelon",
     "title": "Lost Mary BM6000 6000 Puffs - Watermelon",
-    "body_html": "<h2>Lost Mary BM6000 6000 Puffs - Watermelon</h2>\n<p>Lost Mary BM6000 6000 Puffs - Watermelon ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 19,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>Lost Mary BM6000 6000 Puffs - Watermelon</strong> von <strong>Lost Mary</strong> ist ein vorbefülltes System (bis zu 6000 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 6000 Züge</li><li><strong>Preis:</strong> ab 11,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "Lost Mary",
     "product_type": "Einweg-Vape",
     "created_at": "2026-01-30T10:00:00+11:00",
@@ -1687,7 +818,7 @@
     "id": 9000000036,
     "handle": "lost-mary-bm6000-cherry-peach-lemonade",
     "title": "Lost Mary BM6000 6000 Puffs - Cherry Peach Lemonade",
-    "body_html": "<h2>Lost Mary BM6000 6000 Puffs - Cherry Peach Lemonade</h2>\n<p>Lost Mary BM6000 6000 Puffs - Cherry Peach Lemonade ist ein praktischer Einweg-Vape für alle, die ein unkompliziertes Gerät mit konstantem Geschmack suchen. Das Gerät ist sofort einsatzbereit und eignet sich besonders für Nutzerinnen und Nutzer, die Wert auf einfache Bedienung legen.</p>\n<p>Bei Mr. Nice Vape Deutschland kaufen Sie originale Vape-Produkte ab 19,95 € mit schnellem Versand aus Köln in alle Bundesländer. Die Produktangaben, Varianten und Verfügbarkeiten werden regelmäßig gepflegt, damit Sie passende Geräte, Liquids, Coils, Pods und Zubehör leichter vergleichen können.</p>\n<ul><li><strong>Marke:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Versand:</strong> Standard- und Expressversand deutschlandweit</li><li><strong>Hinweis:</strong> Verkauf ausschließlich an volljährige Personen ab 18 Jahren.</li></ul>",
+    "body_html": "<p><strong>Lost Mary BM6000 6000 Puffs - Cherry Peach Lemonade</strong> von <strong>Lost Mary</strong> ist ein vorbefülltes System (bis zu 6000 Züge) mit integrierter Zugautomatik und Mesh-Coil-Verdampferkopf. Es sind keine Einstellungen oder Nachfüllschritte nötig.</p><h3>Technische Daten &amp; Bestellhinweise</h3><ul><li><strong>Hersteller:</strong> Lost Mary</li><li><strong>Kategorie:</strong> Einweg-Vape</li><li><strong>Zuganzahl:</strong> bis zu 6000 Züge</li><li><strong>Preis:</strong> ab 11,95 € (inkl. MwSt., zzgl. Versand)</li><li><strong>Versand ab Lager Köln:</strong> Standardversand (9,95 €) oder Expressversand (14,95 €) innerhalb Deutschlands &amp; DACH</li><li><strong>Altersfreigabe:</strong> Abgabe ausschließlich an volljährige Personen ab 18 Jahren (JuSchG / TPD2)</li></ul>",
     "vendor": "Lost Mary",
     "product_type": "Einweg-Vape",
     "created_at": "2026-02-01T10:00:00+11:00",

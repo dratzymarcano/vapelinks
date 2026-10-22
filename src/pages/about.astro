@@ -2,41 +2,39 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Über uns — Mr. Nice Vape Deutschland | Vape-Shop aus Köln" description="Erfahren Sie mehr über Mr. Nice Vape Deutschland: ein Online-Vape-Shop aus Köln mit Originalprodukten, ehrlicher Beratung und Versand in ganz Deutschland.">
+<Layout title="Über uns – Mr. Nice Vape Deutschland | Vape-Shop aus Köln" description="Erfahren Sie mehr über Mr. Nice Vape Deutschland: Online-Fachhandel aus Köln für originale E-Zigaretten, Pod-Systeme, E-Liquids, Ersatz-Coils und Akkuzellen.">
   <Fragment slot="head">
-    <meta name="keywords" content="über mrnicevape, vape shop köln, online vape shop deutschland, vapes online kaufen, mrnicevape deutschland" />
+    <meta name="keywords" content="über mrnicevape, vape shop köln, online vape shop deutschland, e-zigarette kaufen köln, mrnicevape deutschland" />
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "AboutPage",
       "name": "Über Mr. Nice Vape Deutschland",
-      "description": "Erfahren Sie mehr über Mr. Nice Vape Deutschland — einen Online-Vape-Shop aus Köln, NRW.",
+      "description": "Online-Fachhandel für E-Zigaretten, E-Liquids und Zubehör aus Köln, Nordrhein-Westfalen.",
       "url": "https://mrnicevape.com/about",
       "isPartOf": { "@type": "WebSite", "@id": "https://mrnicevape.com/#website" },
       "about": {
-        "@type": "Store",
+        "@type": "OnlineStore",
         "name": "Mr. Nice Vape Deutschland",
         "url": "https://mrnicevape.com",
         "logo": "https://mrnicevape.com/images/logo.svg",
         "image": "https://mrnicevape.com/images/logo.svg",
-        "description": "Online-Vape-Shop aus Köln für Vape-Kits, Einweg-Vapes, E-Liquids, Coils, Pods und Zubehör führender Marken.",
+        "description": "Online-Vape-Shop aus Köln für Vape-Kits, Pod-Systeme, Einweg-Vapes, E-Liquids, Coils und Zubehör führender Marken.",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Musterstraße 12",
           "addressLocality": "Köln",
           "addressRegion": "NRW",
           "postalCode": "50667",
           "addressCountry": "DE"
         },
-        "telephone": "+492211234567",
         "email": "info@mrnicevape.com",
         "foundingDate": "2019",
-        "priceRange": "$$",
+        "priceRange": "€€",
         "currenciesAccepted": "EUR",
-        "paymentAccepted": "Banküberweisung, SEPA, Bitcoin",
+        "paymentAccepted": "SEPA-Überweisung, Kryptowährungen (BTC, ETH, USDT, USDC, SOL, XMR)",
         "openingHoursSpecification": [
           { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:30", "closes": "19:30" },
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Samstag", "opens": "10:30", "closes": "18:00" },
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sonntag", "opens": "10:30", "closes": "16:00" }
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:30", "closes": "18:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:30", "closes": "16:00" }
         ]
       },
       "breadcrumb": {
@@ -64,16 +62,12 @@ import Layout from '../layouts/Layout.astro';
   <section class="about-hero">
     <div class="about-hero-pattern"></div>
     <div class="container about-hero-inner">
-      <div class="about-hero-badge">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-        Köln, NRW — seit 2019
-      </div>
-      <h1 class="font-display about-hero-title">Wir sind <span class="about-hero-accent">Mr. Nice Vape</span>.</h1>
-      <p class="about-hero-desc">Ein Vape-Shop aus Köln, aufgebaut für Menschen, die Qualität, klare Beratung und eine gute Produktauswahl schätzen. Seit 2019 helfen wir Kundinnen und Kunden in Deutschland, das passende Setup zu finden.</p>
+      <h1 class="font-display about-hero-title">Über <span class="about-hero-accent">Mr. Nice Vape</span> Deutschland</h1>
+      <p class="about-hero-desc">Von unserem Versandlager in Köln (Nordrhein-Westfalen) beliefern wir seit 2019 volljährige Dampferinnen und Dampfer in Deutschland und Österreich mit originaler Hardware, E-Liquids, Coils und Akkuzellen.</p>
       <div class="about-hero-pills">
-        <span class="about-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> 100% Originalprodukte</span>
-        <span class="about-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> Deutschlandweite Lieferung</span>
-        <span class="about-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Vertrauenswürdig seit 2019</span>
+        <span class="about-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg> Geprüfte Originalware</span>
+        <span class="about-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> Versand ab Köln</span>
+        <span class="about-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Fachhandel seit 2019</span>
       </div>
     </div>
   </section>
@@ -88,18 +82,18 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="about-stat-divider"></div>
         <div class="about-stat">
-          <span class="about-stat-number font-display">1,500+</span>
-          <span class="about-stat-label">Produkte</span>
+          <span class="about-stat-number font-display">960+</span>
+          <span class="about-stat-label">Lagerartikel</span>
         </div>
         <div class="about-stat-divider"></div>
         <div class="about-stat">
-          <span class="about-stat-number font-display">50+</span>
-          <span class="about-stat-label">Top-Marken</span>
+          <span class="about-stat-number font-display">85+</span>
+          <span class="about-stat-label">Hersteller</span>
         </div>
         <div class="about-stat-divider"></div>
         <div class="about-stat">
-          <span class="about-stat-number font-display">24/7</span>
-          <span class="about-stat-label">Online-Shop</span>
+          <span class="about-stat-number font-display">18+</span>
+          <span class="about-stat-label">Altersprüfung</span>
         </div>
       </div>
     </div>
@@ -110,32 +104,31 @@ import Layout from '../layouts/Layout.astro';
     <div class="container">
       <div class="about-story-grid">
         <div class="about-story-content">
-          <span class="about-section-label">Unsere Geschichte</span>
-          <h2 class="font-display about-story-title">Mehr als nur ein Vape-Shop</h2>
-          <p class="about-story-text">Wir haben Mr. Nice Vape 2019 mit einer einfachen Idee gestartet: ein Vape-Shop, der Kundinnen und Kunden so berät, wie wir selbst beraten werden möchten. Deshalb setzen wir auf <strong>originale Qualitätsprodukte</strong>, ehrliche Empfehlungen und verständliche Informationen.</p>
-          <p class="about-story-text">Heute beliefern wir Kundinnen und Kunden in ganz Deutschland — mit einem kuratierten Sortiment, zuverlässigem Versand und einem Online-Shop, der rund um die Uhr erreichbar ist.</p>
+          <h2 class="font-display about-story-title">Fachsortiment statt unübersichtlicher Massenware</h2>
+          <p class="about-story-text">Wir haben Mr. Nice Vape 2019 in Köln gegründet, weil viele Online-Shops zwar Einsteigergeräte verkaufen, aber bei passenden Ersatz-Coils, Bubble-Gläsern, Selbstwickler-Decks und geprüften 18650/21700-Akkuzellen Lücken lassen.</p>
+          <p class="about-story-text">Unser Katalog konzentriert sich gezielt auf Marken, die im deutschsprachigen Raum gefragt sind: von Uwell Caliburn, Vaporesso und GeekVape Aegis bis zu Steam Crave, Vandy Vape, Dinner Lady, Dr Frost und Monster Vape Labs.</p>
         </div>
         <div class="about-story-visual">
           <div class="about-story-card-stack">
             <div class="about-story-mini-card">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
               <div>
-                <strong>Köln, NRW</strong>
-                <span>Musterstraße 12, 50667</span>
+                <strong>Logistikstandort Köln</strong>
+                <span>50667 Köln, Nordrhein-Westfalen</span>
               </div>
             </div>
             <div class="about-story-mini-card">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
               <div>
-                <strong>Online rund um die Uhr</strong>
-                <span>Beratung an Werktagen</span>
+                <strong>Persönlicher Support</strong>
+                <span>Antwort werktags unter 24 Std.</span>
               </div>
             </div>
             <div class="about-story-mini-card">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
               <div>
-                <strong>100% Originalware</strong>
-                <span>Jedes Produkt ist original</span>
+                <strong>Hersteller-Verifikation</strong>
+                <span>Originalware mit Echtheitscode</span>
               </div>
             </div>
           </div>
@@ -148,56 +141,51 @@ import Layout from '../layouts/Layout.astro';
   <section class="about-features">
     <div class="container">
       <div class="about-features-header">
-        <span class="about-section-label">Warum Mr. Nice Vape</span>
-        <h2 class="font-display about-features-title">Was uns auszeichnet</h2>
+        <h2 class="font-display about-features-title">Worauf Sie sich verlassen können</h2>
       </div>
       <div class="about-grid">
         <div class="about-card">
-          <div class="about-card-number font-display">01</div>
           <div class="about-card-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
-          <h3 class="font-display about-card-title">Besuche unseren Shop</h3>
-          <p class="about-card-text">Unser Team sitzt in <strong>Köln</strong> und betreut Bestellungen aus ganz Deutschland. Der Online-Shop ist rund um die Uhr erreichbar, damit Sie bestellen können, wann es passt.</p>
+          <h3 class="font-display about-card-title">Lager &amp; Versand in Köln</h3>
+          <p class="about-card-text">Unser Team kommissioniert Bestellungen direkt in <strong>Köln (NRW)</strong>. Dadurch verkürzen sich Laufzeiten für Lieferungen innerhalb Deutschlands und nach Österreich.</p>
           <div class="about-card-footer">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Musterstraße 12, 50667 Köln</span>
+            <span>50667 Köln, Nordrhein-Westfalen</span>
           </div>
         </div>
 
         <div class="about-card">
-          <div class="about-card-number font-display">02</div>
           <div class="about-card-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
           </div>
-          <h3 class="font-display about-card-title">100% Originalprodukte</h3>
-          <p class="about-card-text">Unsere Produkte stammen aus <strong>geprüften Bezugsquellen</strong>. Keine zweifelhaften Importe, keine unklare Herkunft: Bei Mr. Nice Vape wissen Sie, was Sie kaufen.</p>
+          <h3 class="font-display about-card-title">Geprüfte Originalprodukte</h3>
+          <p class="about-card-text">Alle Geräte, Verdampferköpfe und Liquids stammen von <strong>autorisierten Fachgroßhändlern</strong> und tragen den offiziellen Sicherheits- und Echtheitscode des Herstellers.</p>
           <div class="about-card-footer">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-            <span>SMOK, Vaporesso, GeekVape, Voopoo, Uwell &amp; mehr</span>
+            <span>Vaporesso, GeekVape, Uwell, SMOK, Aspire &amp; mehr</span>
           </div>
         </div>
 
         <div class="about-card">
-          <div class="about-card-number font-display">03</div>
           <div class="about-card-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
           </div>
-          <h3 class="font-display about-card-title">Deutschlandweit Versand</h3>
-          <p class="about-card-text">Wir liefern in alle Bundesländer. Wählen Sie an der Kasse <strong>Standardversand (5–10 Werktage)</strong> oder <strong>Expressversand (2–4 Werktage)</strong> — zuverlässig und nachverfolgbar.</p>
+          <h3 class="font-display about-card-title">Versand mit Sendungsverfolgung</h3>
+          <p class="about-card-text">Wählen Sie an der Kasse zwischen <strong>Standardversand (5–10 Werktage, 9,95 €)</strong> und <strong>Expressversand (2–4 Werktage, 14,95 €)</strong> inklusive Tracking-Link per E-Mail.</p>
           <div class="about-card-footer">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            <span>Standard- und Expressoptionen verfügbar</span>
+            <span>Neutrale, bruchsichere Versandverpackung</span>
           </div>
         </div>
 
         <div class="about-card">
-          <div class="about-card-number font-display">04</div>
           <div class="about-card-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h3 class="font-display about-card-title">Echte Beratung</h3>
-          <p class="about-card-text">Fragen zur Kompatibilität, zur passenden Nikotinstärke oder zum nächsten Upgrade? <strong>Schreiben Sie uns.</strong> Unser Team hilft mit klaren Empfehlungen statt Standardantworten.</p>
+          <h3 class="font-display about-card-title">Technische Fachberatung</h3>
+          <p class="about-card-text">Unsicher bei Widerstand (Ohm), PG/VG-Viskosität oder kompatiblen Ersatzgläsern? <strong>Schreiben Sie uns</strong> und erhalten Sie eine konkrete, technisch fundierte Antwort.</p>
           <div class="about-card-footer">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             <span>info@mrnicevape.com</span>

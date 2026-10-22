@@ -29,17 +29,17 @@ const vendors = [...new Set(productsData.map((p: any) => p.vendor).filter(Boolea
 ---
 
 <Layout
-  title="Mr. Nice Vape — Deutschlands Online-Vape-Shop | Vapes in Köln kaufen"
-  description="Mr. Nice Vape ist ein Online-Vape-Shop aus Köln für Vape-Kits, Einweg-Vapes, E-Liquids, Coils, Pods und Zubehör von SMOK, Vaporesso, GeekVape und mehr. Schneller Versand deutschlandweit."
+  title="Mr. Nice Vape – Online-Vape-Shop für E-Zigaretten & Liquids aus Köln"
+  description="Originale E-Zigaretten, Pod-Systeme, Box Mods, E-Liquids, Ersatz-Coils und 18650/21700 Akkus von Vaporesso, GeekVape, Uwell und SMOK. Versand ab Lager Köln."
 >
 
-  <!-- Structured Data: Organization + WebSite + SearchAction -->
+  <!-- Structured Data: Organization + WebSite + BreadcrumbList -->
   <Fragment slot="head">
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "Organization",
+          "@type": "OnlineStore",
           "@id": "https://mrnicevape.com/#organization",
           "name": "Mr. Nice Vape Deutschland",
           "alternateName": "Mr. Nice Vape",
@@ -50,45 +50,10 @@ const vendors = [...new Set(productsData.map((p: any) => p.vendor).filter(Boolea
             "width": 200,
             "height": 60
           },
-          "description": "Online-Vape-Shop aus Köln für Vape-Kits, Einweg-Vapes, E-Liquids, Coils und Zubehör mit Versand deutschlandweit.",
+          "description": "Online-Fachhandel aus Köln für E-Zigaretten, Pod-Systeme, Box Mods, E-Liquids, Ersatz-Coils und Akkuzellen mit Versand nach Deutschland und Österreich.",
           "email": "info@mrnicevape.com",
           "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Köln",
-            "addressRegion": "NRW",
-            "addressCountry": "DE"
-          },
-          "areaServed": {
-            "@type": "Country",
-            "name": "Deutschland"
-          }
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://mrnicevape.com/#website",
-          "url": "https://mrnicevape.com",
-          "name": "Mr. Nice Vape Deutschland",
-          "description": "Online-Vape-Shop aus Köln, Deutschland",
-          "publisher": { "@id": "https://mrnicevape.com/#organization" },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": {
-              "@type": "EntryPoint",
-              "urlTemplate": "https://mrnicevape.com/search?q={search_term_string}"
-            },
-            "query-input": "required name=search_term_string"
-          }
-        },
-        {
-          "@type": "Store",
-          "@id": "https://mrnicevape.com/#store",
-          "name": "Mr. Nice Vape Vape Shop",
-          "image": "https://mrnicevape.com/images/logo.svg",
-          "url": "https://mrnicevape.com",
-          "email": "info@mrnicevape.com",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Köln",
             "addressLocality": "Köln",
             "addressRegion": "NRW",
             "postalCode": "50667",
@@ -99,10 +64,22 @@ const vendors = [...new Set(productsData.map((p: any) => p.vendor).filter(Boolea
             "latitude": 50.9375,
             "longitude": 6.9603
           },
-          "priceRange": "$$",
+          "priceRange": "€€",
           "currenciesAccepted": "EUR",
-          "paymentAccepted": "Banküberweisung, SEPA, Bitcoin",
-          "areaServed": "Deutschland"
+          "paymentAccepted": "SEPA-Überweisung, Bitcoin (BTC)",
+          "areaServed": [
+            { "@type": "Country", "name": "DE" },
+            { "@type": "Country", "name": "AT" }
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://mrnicevape.com/#website",
+          "url": "https://mrnicevape.com",
+          "name": "Mr. Nice Vape Deutschland",
+          "description": "Online-Vape-Shop aus Köln, Deutschland",
+          "publisher": { "@id": "https://mrnicevape.com/#organization" },
+          "inLanguage": "de-DE"
         },
         {
           "@type": "BreadcrumbList",
@@ -120,20 +97,16 @@ const vendors = [...new Set(productsData.map((p: any) => p.vendor).filter(Boolea
   <!-- ═══ HERO ═══ -->
   <section class="hero">
     <div class="hero-bg">
-      <img src="/images/hero-bg.jpg" alt="Mr. Nice Vape Deutschland — Premium-Vape-Produkte" loading="eager" fetchpriority="high" />
+      <img src="/images/hero-bg.jpg" alt="Mr. Nice Vape Deutschland – E-Zigaretten, Pod-Systeme und E-Liquids" loading="eager" fetchpriority="high" />
     </div>
     <div class="hero-overlay"></div>
     <div class="container hero-content">
-      <div class="hero-badge">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-        Aus Köln · Versand deutschlandweit · Online rund um die Uhr
-      </div>
       <h1 class="font-display hero-title">
-        Deutschlands #1<br/>
-        <span class="hero-accent">Online-Vape-Shop</span>
+        E-Zigaretten, Liquids &amp; Zubehör<br/>
+        <span class="hero-accent">direkt ab Lager Köln</span>
       </h1>
       <p class="hero-desc">
-        {productsData.length.toLocaleString()}+ Produkte: Vape-Kits, Einweg-Vapes, E-Liquids, Coils und Zubehör von SMOK, Vaporesso, GeekVape und mehr. Schneller Standard- und Expressversand deutschlandweit.
+        {productsData.length.toLocaleString('de-DE')} vorrätige Originalprodukte: Pod-Systeme, Box Mods, Selbstwickler, Shortfill E-Liquids, Ersatz-Coils und Hochstromakkus von Vaporesso, GeekVape, Uwell, SMOK und Aspire.
       </p>
       <div class="hero-actions">
         <a href="/collections/shop" class="btn-primary" style="padding:0.9rem 2.25rem;font-size:0.95rem;border-radius:var(--radius-md);">
@@ -145,13 +118,13 @@ const vendors = [...new Set(productsData.map((p: any) => p.vendor).filter(Boolea
         </a>
       </div>
       <div class="hero-brands">
-        <span class="hero-brands-label">Vertrauenswürdige Marken</span>
+        <span class="hero-brands-label">Geführte Hersteller</span>
         <div class="hero-brands-list">
-          <span>SMOK</span>
           <span>Vaporesso</span>
           <span>GeekVape</span>
-          <span>Voopoo</span>
           <span>Uwell</span>
+          <span>SMOK</span>
+          <span>VOOPOO</span>
           <span>Aspire</span>
         </div>
       </div>
@@ -254,11 +227,10 @@ const vendors = [...new Set(productsData.map((p: any) => p.vendor).filter(Boolea
     <div class="container">
       <div class="section-header">
         <div>
-          <span class="section-label">Kategorien</span>
           <h2 class="font-display section-title">Nach Kategorie einkaufen</h2>
         </div>
         <a href="/collections" class="section-link">
-          Alle ansehen
+          Alle Kategorien
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
       </div>
@@ -275,8 +247,7 @@ const vendors = [...new Set(productsData.map((p: any) => p.vendor).filter(Boolea
     <div class="container">
       <div class="section-header">
         <div>
-          <span class="section-label">Empfohlene Produkte</span>
-          <h2 class="font-display section-title">Neu eingetroffen</h2>
+          <h2 class="font-display section-title">Beliebte Produkte &amp; Neuheiten</h2>
         </div>
         <a href="/collections/shop" class="section-link">
           Alle Produkte
@@ -299,12 +270,11 @@ const vendors = [...new Set(productsData.map((p: any) => p.vendor).filter(Boolea
           <div style="display:flex;align-items:center;gap:0.75rem;">
             <span class="badge-sale" style="font-size:0.72rem;padding:0.3rem 0.75rem;">SALE</span>
             <div>
-              <span class="section-label">Sale</span>
-              <h2 class="font-display section-title">Reduzierte Produkte</h2>
+              <h2 class="font-display section-title">Reduzierte Artikel</h2>
             </div>
           </div>
           <a href="/collections/all-clearance" class="section-link">
-            Sale ansehen
+            Alle Angebote
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </a>
         </div>
@@ -320,8 +290,7 @@ const vendors = [...new Set(productsData.map((p: any) => p.vendor).filter(Boolea
   <!-- ═══ CATEGORIES / TAGS ═══ -->
   <section class="section section-alt">
     <div class="container" style="text-align:center;">
-      <span class="section-label">Stöbern</span>
-      <h2 class="font-display section-title" style="margin-bottom:1.75rem;">Produkttypen</h2>
+      <h2 class="font-display section-title" style="margin-bottom:1.75rem;">Sortiment nach Produktbereich</h2>
       <div class="tags-cloud">
         {productTypes.sort().map((type: string) => (
           <a href="/collections/shop" class="tag-pill">{type}</a>
@@ -335,63 +304,63 @@ const vendors = [...new Set(productsData.map((p: any) => p.vendor).filter(Boolea
     <div class="container">
       <div class="cta-card">
         <div class="cta-inner">
-          <span class="section-label">Über Mr. Nice Vape</span>
-          <h2 class="font-display" style="font-size:1.65rem;font-weight:700;color:var(--color-text);margin:0.5rem 0 0.75rem;">Über Mr. Nice Vape</h2>
-          <p style="color:var(--color-text-secondary);line-height:1.8;max-width:560px;margin:0 auto 1rem;font-size:0.92rem;">
-            Mr. Nice Vape ist ein Vape-Shop aus Köln und seit 2019 auf hochwertige E-Zigaretten, E-Liquids und Zubehör spezialisiert. Wir führen {productsData.length.toLocaleString()}+ Produkte von {vendors.length}+ Marken, von Starter-Kits und Einweg-Vapes bis zu Coils, Pods und Zubehör.
+          <h2 class="font-display" style="font-size:1.65rem;font-weight:700;color:var(--color-text);margin:0 0 0.75rem;">Fachhandel für E-Zigaretten &amp; Liquids seit 2019</h2>
+          <p style="color:var(--color-text-secondary);line-height:1.8;max-width:580px;margin:0 auto 1rem;font-size:0.92rem;">
+            Mr. Nice Vape Deutschland versendet ab Lager Köln {productsData.length.toLocaleString('de-DE')} vorrätige Produkte von {vendors.length} Herstellern: vom kompakten MTL-Pod-System über geregelte 200-Watt-Box-Mods und Selbstwickelverdampfer (RTA/RDA) bis zu Shortfill-Liquids, Mesh-Coils und 18650/21700-Akkuzellen.
           </p>
-          <p style="color:var(--color-text-secondary);line-height:1.8;max-width:560px;margin:0 auto 1.75rem;font-size:0.92rem;">
-            Bestellen Sie bequem online: Wir liefern deutschlandweit mit Standard- und Expressoptionen. Wenn Sie unsicher sind, welches Produkt passt, hilft unser Team gern mit ehrlicher Empfehlung weiter.
+          <p style="color:var(--color-text-secondary);line-height:1.8;max-width:580px;margin:0 auto 1.75rem;font-size:0.92rem;">
+            Sie suchen passende Ersatzcoils, den richtigen Widerstand (Ohm) oder ein bestimmtes VG/PG-Mischverhältnis? Schreiben Sie uns direkt.
           </p>
           <a href={`mailto:${siteData.contact_email}`} class="btn-primary" style="padding:0.75rem 2rem;">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            Kontakt aufnehmen
+            Beratung per E-Mail
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ SEO CONTENT: Why Choose Mr. Nice Vape ═══ -->
+  <!-- ═══ SEO & GEO CONTENT: Citable Store & Product Facts ═══ -->
   <section class="section section-alt">
     <div class="container">
       <div class="seo-content">
-        <h2 class="font-display" style="font-size:1.5rem;font-weight:700;color:var(--color-text);margin-bottom:1.5rem;text-align:center;">Warum bei uns kaufen?</h2>
+        <h2 class="font-display" style="font-size:1.5rem;font-weight:700;color:var(--color-text);margin-bottom:1.5rem;text-align:center;">E-Zigaretten, Pods &amp; Liquids online bestellen: Wichtige Eckdaten</h2>
         <div class="seo-grid">
           <div class="seo-block">
-            <h3 class="font-display" style="font-size:1rem;font-weight:600;color:var(--color-text);margin-bottom:0.5rem;">Riesige Auswahl — {productsData.length.toLocaleString()}+ Produkte</h3>
-            <p>Unser Sortiment umfasst <a href="/collections/shop">Vape-Produkte</a>, <a href="/collections/all-vape-kits">Starter-Kits</a>, <a href="/pages/disposable-vapes-deutschland">Einweg-Vapes</a>, E-Liquids, Coils, Pods und Mods. {vendors.length}+ Marken sind an einem Ort verfügbar.</p>
+            <h3 class="font-display" style="font-size:1rem;font-weight:600;color:var(--color-text);margin-bottom:0.5rem;">{productsData.length.toLocaleString('de-DE')} vorrätige Originalartikel</h3>
+            <p>Unser Katalog umfasst <a href="/collections/all-pod-kits">Pod-Systeme</a> (z. B. Uwell Caliburn G2/X, Vaporesso Luxe), <a href="/collections/all-vape-kits">Sub-Ohm-Kits &amp; Box Mods</a> (GeekVape Aegis L200, Vaporesso Armour Max, SMOK Morph 2), <a href="/collections/disposable-vapes">Einweg-Vapes</a> (Lost Mary BM6000, HQD Cuvie Plus) sowie <a href="/collections/all-coils">Ersatz-Coils</a>.</p>
           </div>
           <div class="seo-block">
-            <h3 class="font-display" style="font-size:1rem;font-weight:600;color:var(--color-text);margin-bottom:0.5rem;">Versand in alle Bundesländer</h3>
-            <p>Wir versenden aus Köln in ganz Deutschland. Standardversand dauert in der Regel 5–10 Werktage (€9,95), Expressversand 2–4 Werktage (€14,95). Weitere Details finden Sie auf unserer <a href="/pages/shipping-policy">Versandseite</a>.</p>
+            <h3 class="font-display" style="font-size:1rem;font-weight:600;color:var(--color-text);margin-bottom:0.5rem;">Versand ab Köln nach Deutschland &amp; Österreich</h3>
+            <p>Alle Bestellungen werden aus unserem Lager in Köln (NRW) mit Sendungsverfolgung verschickt. Standardversand kostet 9,95 € (5–10 Werktage), Expressversand 14,95 € (2–4 Werktage). Der Mindestbestellwert liegt bei 220,00 €. Details finden Sie in unseren <a href="/pages/shipping-policy">Versandbedingungen</a>.</p>
           </div>
           <div class="seo-block">
-            <h3 class="font-display" style="font-size:1rem;font-weight:600;color:var(--color-text);margin-bottom:0.5rem;">Nur originale Ware</h3>
-            <p>Wir setzen auf Originalware von geprüften Bezugsquellen. SMOK, Vaporesso, GeekVape, Voopoo, Uwell, Aspire, Innokin, FreeMax und viele weitere Marken sind sauber sortiert und transparent beschrieben.</p>
+            <h3 class="font-display" style="font-size:1rem;font-weight:600;color:var(--color-text);margin-bottom:0.5rem;">Geprüfte Markenhersteller &amp; TPD2-Konformität</h3>
+            <p>Wir führen ausschließlich Originalware mit Echtheitszertifikat von Herstellern wie <a href="/collections/vaporesso-collection">Vaporesso</a>, <a href="/collections/geekvape-collection">GeekVape</a>, <a href="/collections/uwell-collection">Uwell</a>, <a href="/collections/smok-collection">SMOK</a>, <a href="/collections/aspire-collection">Aspire</a>, <a href="/collections/dinner-lady-vape-juice">Dinner Lady</a> und <a href="/collections/monster-vape-labs">Monster Vape Labs</a>. Abgabe nur an Personen ab 18 Jahren.</p>
           </div>
           <div class="seo-block">
-            <h3 class="font-display" style="font-size:1rem;font-weight:600;color:var(--color-text);margin-bottom:0.5rem;">Beratung von Menschen mit Produkterfahrung</h3>
-            <p>Fragen zu Kompatibilität, Nikotinstärke oder passenden Ersatzteilen? Unser Team kennt das Sortiment und hilft Ihnen gern mit einer klaren Empfehlung. <a href="/contact">Kontakt aufnehmen</a>.</p>
+            <h3 class="font-display" style="font-size:1rem;font-weight:600;color:var(--color-text);margin-bottom:0.5rem;">Sichere Zahlung per SEPA &amp; Krypto</h3>
+            <p>Bezahlen Sie Ihre Bestellung per SEPA-Banküberweisung oder sicher per Kryptowährung (BTC, ETH, USDT, USDC, SOL, XMR). Kreditkartenzahlungen befinden sich derzeit in planmäßiger Systemwartung. Bei Fragen zu Widerständen, PG/VG-Verhältnissen oder Akkuzellen hilft unser Support über die <a href="/contact">Kontaktseite</a>.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ SEO: Location Pages ═══ -->
+  <!-- ═══ Direct Category Links ═══ -->
   <section class="section">
     <div class="container" style="text-align:center;">
-      <span class="section-label">Wir liefern deutschlandweit</span>
-      <h2 class="font-display section-title" style="margin-bottom:1.75rem;">Vape-Lieferung in ganz Deutschland</h2>
+      <h2 class="font-display section-title" style="margin-bottom:1.75rem;">Schnellzugriff auf beliebte Bereiche</h2>
       <div class="tags-cloud">
-        <a href="/about" class="tag-pill">Köln Vape Shop</a>
-        <a href="/collections/shop" class="tag-pill">Vapes online kaufen</a>
-        <a href="/collections/all-vape-kits" class="tag-pill">Vape-Kits kaufen</a>
-        <a href="/pages/disposable-vapes-deutschland" class="tag-pill">Einweg-Vapes Deutschland</a>
-        <a href="/collections/all-e-liquid" class="tag-pill">E-Liquids online</a>
-        <a href="/collections/all-coils" class="tag-pill">Coils & Ersatzteile</a>
+        <a href="/pages/vape-shop-koeln" class="tag-pill">Vape-Shop Köln</a>
+        <a href="/collections/shop" class="tag-pill">Alle Produkte</a>
+        <a href="/collections/all-vape-kits" class="tag-pill">Vape-Kits &amp; Box Mods</a>
         <a href="/collections/all-pod-kits" class="tag-pill">Pod-Systeme</a>
+        <a href="/collections/all-e-liquid" class="tag-pill">E-Liquids &amp; Shortfills</a>
+        <a href="/collections/all-coils" class="tag-pill">Ersatz-Coils &amp; Pods</a>
+        <a href="/collections/disposable-vapes" class="tag-pill">Einweg-Vapes</a>
+        <a href="/collections/18650-batteries" class="tag-pill">18650 &amp; 21700 Akkus</a>
+        <a href="/blog" class="tag-pill">Vape-Ratgeber</a>
       </div>
     </div>
   </section>

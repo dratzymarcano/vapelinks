@@ -146,13 +146,27 @@ import siteData from '../data/site.json';
 
             <!-- Bitcoin Address -->
             <div class="btc-address-box">
-              <span class="btc-address-label">Bitcoin Adresse</span>
+              <span class="btc-address-label" id="crypto-addr-label">Bitcoin Adresse</span>
               <div class="btc-address-row">
                 <code id="btc-address" class="btc-address-text">—</code>
                 <button id="btc-copy-btn" class="btc-copy-btn" title="In Zwischenablage kopieren">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                   <span id="btc-copy-text">Kopieren</span>
                 </button>
+              </div>
+            </div>
+
+            <!-- TXID Proof Box (when customer submitted TXID at checkout) -->
+            <div id="crypto-txid-box" style="display:none;margin-top:1rem;background:#F0FDF4;border:1.5px solid #BBF7D0;border-radius:10px;padding:14px 16px;">
+              <div style="display:flex;align-items:center;gap:6px;font-size:0.75rem;text-transform:uppercase;font-weight:800;color:#15803D;letter-spacing:0.5px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#15803D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Erfasster Zahlungsnachweis (TXID / Hash)
+              </div>
+              <div style="font-family:monospace;font-size:0.82rem;word-break:break-all;color:#0B0F0D;margin-top:6px;background:#fff;border:1px solid #BBF7D0;padding:8px 10px;border-radius:6px;">
+                <a id="crypto-txid-link" href="#" target="_blank" style="color:#15803D;font-weight:700;text-decoration:none;">—</a>
+              </div>
+              <div style="font-size:0.78rem;color:#047857;margin-top:6px;line-height:1.4;">
+                &check; Ihre Transaktions-ID wurde übermittelt und wird im Blockchain-Netzwerk abgeglichen. Nach Verifikation wird Ihre Sendung aus unserem Lager in Köln versendet.
               </div>
             </div>
 
@@ -1209,7 +1223,7 @@ import siteData from '../data/site.json';
   </style>
 
   <script>
-    declare var Tawk_API: any;
+
 
     const shippingLabels: Record<string, string> = {
       standard: 'Standardversand (5–10 Werktage)',
@@ -1319,9 +1333,19 @@ import siteData from '../data/site.json';
       // ═══ Payment-specific rendering ═══
       if (order.payment === 'bank' || order.payment === 'sepa') {
         renderBankPayment(order, grandGesamt);
-      } else if (order.payment === 'bitcoin') {
-        renderBitcoinPayment(order, grandGesamt);
+      } else if (order.payment === 'bitcoin' || order.payment === 'crypto') {
+        renderCryptoPayment(order, grandGesamt);
       }
+    }
+
+    function getExplorerUrl(network: string, txId: string): string {
+      const n = (network || '').toLowerCase();
+      const id = encodeURIComponent(String(txId || '').trim());
+      if (n.includes('tron') || n.includes('trc')) return `https://tronscan.org/#/transaction/${id}`;
+      if (n.includes('eth') || n.includes('erc')) return `https://etherscan.io/tx/${id}`;
+      if (n.includes('sol')) return `https://solscan.io/tx/${id}`;
+      if (n.includes('xmr') || n.includes('monero')) return `https://xmrchain.net/search?value=${id}`;
+      return `https://mempool.space/tx/${id}`;
     }
 
     function renderBankPayment(order: any, Gesamt: number) {
@@ -1348,16 +1372,29 @@ import siteData from '../data/site.json';
       if (bankSteps) bankSteps.style.display = 'block';
     }
 
-    function renderBitcoinPayment(order: any, Gesamt: number) {
+    function renderCryptoPayment(order: any, Gesamt: number) {
+      const cryptoInfo = order.crypto || {};
+      const coinName = cryptoInfo.name || 'Bitcoin';
+      const coinSymbol = cryptoInfo.symbol || 'BTC';
+      const network = cryptoInfo.network || 'Bitcoin';
+      const targetAddr = cryptoInfo.address || order.bitcoinAddress || 'bc1qw7kkuwpu4tlvcn29wdfflsckk0j5xenjlcnm2u';
+      const txId = order.txId || '';
+
       // Update header
       const headerIcon = document.getElementById('conf-header-icon');
       const titleEl = document.getElementById('conf-title');
       const subtitleEl = document.getElementById('conf-subtitle');
-      if (headerIcon) headerIcon.classList.add('btc-waiting');
-      if (titleEl) titleEl.textContent = 'Bitcoin-Zahlung ausstehend';
-      if (subtitleEl) subtitleEl.textContent = 'Bitte sende den genauen Betrag an die unten angezeigte Bitcoin-Adresse. Deine Bestellung wird bestätigt, sobald die Zahlung erkannt wurde.';
+      
+      if (txId) {
+        if (titleEl) titleEl.textContent = 'Bestellung & Krypto-Zahlung erfasst!';
+        if (subtitleEl) subtitleEl.textContent = `Vielen Dank! Ihre ${coinName}-Zahlung mit TXID wurde im System gespeichert. Ihre Bestellung wird nach Bestätigung sofort ab Lager Köln verschickt.`;
+      } else {
+        if (headerIcon) headerIcon.classList.add('btc-waiting');
+        if (titleEl) titleEl.textContent = `${coinName}-Zahlung ausstehend`;
+        if (subtitleEl) subtitleEl.textContent = `Bitte senden Sie den Betrag an die unten angezeigte ${coinName}-Adresse.`;
+      }
 
-      // Show bitcoin section
+      // Show crypto section
       const btcSection = document.getElementById('bitcoin-payment-section');
       if (btcSection) btcSection.style.display = 'block';
 
@@ -1365,29 +1402,38 @@ import siteData from '../data/site.json';
       const eurEl = document.getElementById('btc-eur-amount');
       if (eurEl) eurEl.textContent = `€${Gesamt.toFixed(2)}`;
 
-      // Bitcoin address
-      const btcAddr = order.bitcoinAddress || '';
+      // Coin address label & address
+      const addrLabel = document.getElementById('crypto-addr-label');
+      if (addrLabel) addrLabel.textContent = `${coinName} (${coinSymbol}) Zieladresse [${network}]`;
       const addrEl = document.getElementById('btc-address');
-      if (addrEl) addrEl.textContent = btcAddr;
+      if (addrEl) addrEl.textContent = targetAddr;
 
-      // Generate QR code (using a simple QR code via an external API)
-      const qrEl = document.getElementById('btc-qr-code');
-      if (qrEl && btcAddr) {
-        const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=176x176&data=bitcoin:${encodeURIComponent(btcAddr)}&format=svg`;
-        qrEl.innerHTML = `<img src="${qrUrl}" alt="Bitcoin QR Code" width="176" height="176" style="border-radius:4px;" />`;
+      // TXID proof box
+      const txidBox = document.getElementById('crypto-txid-box');
+      const txidLink = document.getElementById('crypto-txid-link');
+      if (txId && txidBox && txidLink) {
+        txidBox.style.display = 'block';
+        txidLink.textContent = txId;
+        txidLink.setAttribute('href', getExplorerUrl(network, txId));
       }
 
-      // Kopieren button
+      // Generate QR code
+      const qrEl = document.getElementById('btc-qr-code');
+      if (qrEl && targetAddr) {
+        const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=176x176&data=${encodeURIComponent(targetAddr)}&format=svg`;
+        qrEl.innerHTML = `<img src="${qrUrl}" alt="${coinName} QR Code" width="176" height="176" style="border-radius:4px;" />`;
+      }
+
+      // Copy button
       const copyBtn = document.getElementById('btc-copy-btn');
       const copyText = document.getElementById('btc-copy-text');
       copyBtn?.addEventListener('click', () => {
-        navigator.clipboard.writeText(btcAddr).then(() => {
+        navigator.clipboard.writeText(targetAddr).then(() => {
           if (copyText) copyText.textContent = 'Kopiert!';
           setTimeout(() => { if (copyText) copyText.textContent = 'Kopieren'; }, 2000);
         }).catch(() => {
-          // Fallback
           const ta = document.createElement('textarea');
-          ta.value = btcAddr;
+          ta.value = targetAddr;
           document.body.appendChild(ta);
           ta.select();
           document.execCommand('copy');
@@ -1397,10 +1443,19 @@ import siteData from '../data/site.json';
         });
       });
 
-      // Start payment timer (30 minutes)
-      startBtcTimer(order);
+      // Update timer & status box
+      const timerBox = document.getElementById('btc-timer-box');
+      const statusEl = document.getElementById('btc-status');
+      if (txId) {
+        if (timerBox) timerBox.style.display = 'none';
+        if (statusEl) {
+          statusEl.innerHTML = '<span class="btc-status-dot confirmed"></span> Zahlung erfasst (TXID vorhanden)';
+        }
+      } else {
+        startBtcTimer(order);
+      }
 
-      // Show bitcoin next steps
+      // Show next steps
       const btcSteps = document.getElementById('next-steps-bitcoin');
       if (btcSteps) btcSteps.style.display = 'block';
     }
@@ -1560,12 +1615,15 @@ import siteData from '../data/site.json';
 
     renderConfirmation();
 
-    // Live chat button — opens Tawk.to widget
+    // Live chat button — opens Zoho SalesIQ widget
     const livechatBtn = document.getElementById('open-livechat');
     if (livechatBtn) {
       livechatBtn.addEventListener('click', () => {
-        if (typeof Tawk_API !== 'undefined' && Tawk_API.maximize) {
-          Tawk_API.maximize();
+        if (typeof (window as any).$zoho !== 'undefined' && (window as any).$zoho.salesiq) {
+          try {
+            (window as any).$zoho.salesiq.chat?.start?.();
+            (window as any).$zoho.salesiq.floatwindow?.visible?.('show');
+          } catch {}
         }
       });
     }

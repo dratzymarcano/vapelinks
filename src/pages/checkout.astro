@@ -1,115 +1,155 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import siteData from '../data/site.json';
+
+const minOrder = siteData.min_order || 220.00;
+const cryptos = siteData.crypto_currencies || [];
 ---
 
 <Layout title="Zur Kasse – Mr. Nice Vape Deutschland" description="Schließen Sie Ihre Bestellung sicher bei Mr. Nice Vape Deutschland ab." noindex={true}>
 
   <!-- Breadcrumb -->
-  <nav class="breadcrumb-bar">
+  <nav class="breadcrumb-bar" aria-label="Breadcrumb">
     <div class="container">
       <ol class="breadcrumb">
         <li><a href="/">Startseite</a></li>
         <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></li>
         <li><a href="/cart">Warenkorb</a></li>
         <li><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg></li>
-        <li><span class="breadcrumb-current">Zur Kasse</span></li>
+        <li><span class="breadcrumb-current">Kasse (3-Schritte-Bestellprozess)</span></li>
       </ol>
     </div>
   </nav>
 
   <section class="container checkout-page">
-    <!-- Empty redirect -->
+    <!-- Empty Cart Notice -->
     <div id="checkout-empty" style="display:none;">
       <div class="checkout-empty-inner">
         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-dim)" stroke-width="1.2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-        <h2 class="font-display" style="font-size:1.2rem;font-weight:700;color:var(--color-text);margin-top:1rem;">Dein Warenkorb ist leer</h2>
-        <p style="color:var(--color-text-secondary);font-size:0.88rem;margin-top:0.35rem;">Legen Sie zuerst Produkte in den Warenkorb.</p>
-        <a href="/collections/shop" class="btn-primary" style="margin-top:1.25rem;padding:0.7rem 2rem;">Produkte ansehen</a>
+        <h2 class="font-display" style="font-size:1.3rem;font-weight:700;color:var(--color-text);margin-top:1rem;">Ihr Warenkorb ist leer</h2>
+        <p style="color:var(--color-text-secondary);font-size:0.9rem;margin-top:0.35rem;">Legen Sie zuerst Artikel in den Warenkorb (Mindestbestellwert: 220,00 €).</p>
+        <a href="/collections/shop" class="btn-primary" style="margin-top:1.25rem;padding:0.75rem 2rem;">Produkte ansehen</a>
       </div>
     </div>
 
-    <!-- Zur Kasse form -->
+    <!-- Below Minimum Order Notice -->
+    <div id="checkout-min-alert" style="display:none;" class="checkout-min-alert">
+      <div class="checkout-min-alert-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      </div>
+      <div>
+        <h3 class="font-display" style="font-size:1rem;font-weight:700;color:#B45309;margin-bottom:0.25rem;">Mindestbestellwert nicht erreicht</h3>
+        <p style="font-size:0.88rem;color:#78350F;margin:0;">Der Mindestbestellwert beträgt <strong>220,00 €</strong>. Ihr aktueller Warenwert reicht noch nicht aus. Bitte fügen Sie weitere Artikel im Warenkorb hinzu.</p>
+        <a href="/cart" class="btn-secondary" style="margin-top:0.75rem;display:inline-flex;padding:0.5rem 1.25rem;font-size:0.85rem;">Zurück zum Warenkorb</a>
+      </div>
+    </div>
+
+    <!-- Checkout Main Interface -->
     <div id="checkout-content" style="display:none;">
-      <!-- Progress Steps -->
-      <div class="checkout-steps">
+      <!-- Progressive 3-Step Wizard Progress Bar -->
+      <div class="checkout-steps" role="navigation" aria-label="Bestellschritte">
         <div class="checkout-step active" data-step="1">
           <span class="step-num">1</span>
-          <span class="step-label">Details</span>
+          <div class="step-text">
+            <span class="step-label">Schritt 1</span>
+            <span class="step-name">Kundeninformationen</span>
+          </div>
         </div>
         <div class="step-connector"></div>
         <div class="checkout-step" data-step="2">
           <span class="step-num">2</span>
-          <span class="step-label">Versand</span>
+          <div class="step-text">
+            <span class="step-label">Schritt 2</span>
+            <span class="step-name">Versand &amp; Lieferung</span>
+          </div>
         </div>
         <div class="step-connector"></div>
         <div class="checkout-step" data-step="3">
           <span class="step-num">3</span>
-          <span class="step-label">Zahlung</span>
+          <div class="step-text">
+            <span class="step-label">Schritt 3</span>
+            <span class="step-name">Zahlungsinformationen</span>
+          </div>
         </div>
       </div>
 
       <div class="checkout-grid">
         <!-- Form Column -->
         <div class="checkout-form-col">
-          <!-- Step 1: Kontakt und Details -->
+
+          <!-- ═══════════════════════════════════════════════════════
+               SCHRITT 1: Kundeninformationen & Lieferanschrift
+               ═══════════════════════════════════════════════════════ -->
           <div id="step-1" class="checkout-step-content">
+            <!-- Kontaktinformationen -->
             <div class="checkout-section">
               <h2 class="font-display checkout-section-title">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                Kontaktinformationen (Gastbestellung)
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                1. Kontaktinformationen (Gastbestellung)
               </h2>
+              <p class="section-desc">Keine Registrierung erforderlich. Ihre Daten werden verschlüsselt übertragen und ausschließlich zur Bestellabwicklung genutzt.</p>
+              
               <div class="form-row">
                 <label class="form-field">
                   <span class="form-label">E-Mail-Adresse <span class="req">*</span></span>
-                  <input type="email" id="checkout-email" class="form-input" placeholder="name@beispiel.de" required />
+                  <input type="email" id="checkout-email" class="form-input" placeholder="beispiel@domain.de" required autocomplete="email" />
+                  <span class="field-hint">Bestellbestätigung, Zahlungsanweisung &amp; Sendungsnummer werden hierhin gesendet.</span>
                 </label>
               </div>
+
               <div class="form-row">
                 <label class="form-field">
-                  <span class="form-label">Telefonnummer</span>
-                  <input type="tel" id="checkout-phone" class="form-input" placeholder="+49 170 0000000" />
+                  <span class="form-label">Telefonnummer <span class="field-optional">(optional für Versandbenachrichtigungen)</span></span>
+                  <input type="tel" id="checkout-phone" class="form-input" placeholder="+49 170 1234567" autocomplete="tel" />
                 </label>
               </div>
             </div>
 
+            <!-- Lieferadresse -->
             <div class="checkout-section">
               <h2 class="font-display checkout-section-title">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                Versandadresse
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                Lieferadresse (Deutschland)
               </h2>
+
               <div class="form-row form-row-2">
                 <label class="form-field">
                   <span class="form-label">Vorname <span class="req">*</span></span>
-                  <input type="text" id="checkout-fname" class="form-input" placeholder="Max" required />
+                  <input type="text" id="checkout-fname" class="form-input" placeholder="Max" required autocomplete="given-name" />
                 </label>
                 <label class="form-field">
                   <span class="form-label">Nachname <span class="req">*</span></span>
-                  <input type="text" id="checkout-lname" class="form-input" placeholder="Mustermann" required />
+                  <input type="text" id="checkout-lname" class="form-input" placeholder="Mustermann" required autocomplete="family-name" />
                 </label>
               </div>
+
               <div class="form-row">
                 <label class="form-field">
-                  <span class="form-label">Straße <span class="req">*</span></span>
-                  <input type="text" id="checkout-address" class="form-input" placeholder="Musterstraße 12" required />
+                  <span class="form-label">Straße und Hausnummer <span class="req">*</span></span>
+                  <input type="text" id="checkout-address" class="form-input" placeholder="Hauptstraße 42" required autocomplete="street-address" />
                 </label>
               </div>
+
               <div class="form-row">
                 <label class="form-field">
-                  <span class="form-label">Wohnung, Apartment usw. (optional)</span>
-                  <input type="text" id="checkout-address2" class="form-input" placeholder="Wohnung 4B" />
+                  <span class="form-label">Adresszusatz / Wohnung / Packstation <span class="field-optional">(optional)</span></span>
+                  <input type="text" id="checkout-address2" class="form-input" placeholder="Hinterhaus, 2. OG oder Postnummer" />
                 </label>
               </div>
+
               <div class="form-row form-row-3">
                 <label class="form-field">
-                  <span class="form-label">Stadt <span class="req">*</span></span>
-                  <input type="text" id="checkout-city" class="form-input" placeholder="Köln" required />
+                  <span class="form-label">PLZ <span class="req">*</span></span>
+                  <input type="text" id="checkout-postcode" class="form-input" placeholder="50667" maxlength="5" pattern="[0-9]{5}" required autocomplete="postal-code" />
                 </label>
-                <label class="form-field">
+                <label class="form-field" style="grid-column: span 1;">
+                  <span class="form-label">Stadt <span class="req">*</span></span>
+                  <input type="text" id="checkout-city" class="form-input" placeholder="Köln" required autocomplete="address-level2" />
+                </label>
+                <label class="form-field" style="grid-column: span 1;">
                   <span class="form-label">Bundesland <span class="req">*</span></span>
-                  <select id="checkout-state" class="form-input form-select" required>
-                    <option value="">Auswählen</option>
-                    <option value="NW">Nordrhein-Westfalen</option>
+                  <select id="checkout-state" class="form-input form-select" required autocomplete="address-level1">
+                    <option value="">Bitte wählen...</option>
                     <option value="BW">Baden-Württemberg</option>
                     <option value="BY">Bayern</option>
                     <option value="BE">Berlin</option>
@@ -119,6 +159,7 @@ import siteData from '../data/site.json';
                     <option value="HE">Hessen</option>
                     <option value="MV">Mecklenburg-Vorpommern</option>
                     <option value="NI">Niedersachsen</option>
+                    <option value="NW" selected>Nordrhein-Westfalen</option>
                     <option value="RP">Rheinland-Pfalz</option>
                     <option value="SL">Saarland</option>
                     <option value="SN">Sachsen</option>
@@ -127,162 +168,366 @@ import siteData from '../data/site.json';
                     <option value="TH">Thüringen</option>
                   </select>
                 </label>
-                <label class="form-field">
-                  <span class="form-label">PLZ <span class="req">*</span></span>
-                  <input type="text" id="checkout-postcode" class="form-input" placeholder="50667" maxlength="5" required />
-                </label>
               </div>
+
               <div class="form-row">
                 <label class="form-field">
                   <span class="form-label">Land</span>
-                  <input type="text" class="form-input" value="Deutschland" disabled style="background:var(--color-surface-alt);color:var(--color-text-muted);" />
+                  <input type="text" class="form-input" value="Deutschland" disabled style="background:var(--color-surface-alt);color:var(--color-text-muted);cursor:not-allowed;" />
                 </label>
               </div>
             </div>
 
+            <!-- Actions Step 1 -->
             <div class="form-actions">
               <a href="/cart" class="btn-secondary" style="padding:0.75rem 1.5rem;text-decoration:none;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
-                Zurück zum Warenkorb
+                Warenkorb bearbeiten
               </a>
               <button type="button" id="to-step-2" class="btn-primary" style="padding:0.75rem 2rem;">
-                Weiter zum Versand
+                Weiter zu Schritt 2: Versand &amp; Lieferung
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
               </button>
             </div>
           </div>
 
-          <!-- Step 2: Versandart -->
+          <!-- ═══════════════════════════════════════════════════════
+               SCHRITT 2: Versand & Lieferung
+               ═══════════════════════════════════════════════════════ -->
           <div id="step-2" class="checkout-step-content" style="display:none;">
             <div class="checkout-section">
               <h2 class="font-display checkout-section-title">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><path d="m16 8 4 2v6H16"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-                Versandart
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><path d="m16 8 4 2v6H16"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                2. Versandart auswählen
               </h2>
+              <p class="section-desc">Alle Pakete werden ab unserem Kölner Lager bruchsicher verpackt und neutral mit Sendungsverfolgung versendet.</p>
+
               <div class="shipping-options">
                 <label class="shipping-option">
                   <input type="radio" name="shipping" value="standard" checked class="shipping-radio" />
                   <div class="shipping-option-content">
-                    <div>
-                      <span class="shipping-name">Standard-Versand</span>
-                      <span class="shipping-time">5–10 Werktage</span>
+                    <div class="shipping-radio-custom"></div>
+                    <div style="flex:1;">
+                      <div class="shipping-header-row">
+                        <span class="shipping-name">Standardversand (DHL / Deutsche Post)</span>
+                        <span class="shipping-badge">Beliebt</span>
+                      </div>
+                      <span class="shipping-time">Laufzeit 5–10 Werktage &middot; Inkl. Sendungsverfolgung &amp; Versicherung</span>
                     </div>
-                    <span class="shipping-price font-display">€9,95</span>
+                    <span class="shipping-price font-display">9,95&nbsp;€</span>
                   </div>
                 </label>
+
                 <label class="shipping-option">
                   <input type="radio" name="shipping" value="express" class="shipping-radio" />
                   <div class="shipping-option-content">
-                    <div>
-                      <span class="shipping-name">Express-Versand</span>
-                      <span class="shipping-time">2–4 Werktage</span>
+                    <div class="shipping-radio-custom"></div>
+                    <div style="flex:1;">
+                      <div class="shipping-header-row">
+                        <span class="shipping-name">Expressversand (Priorisierte Bearbeitung)</span>
+                        <span class="shipping-badge express">Schnell</span>
+                      </div>
+                      <span class="shipping-time">Laufzeit 2–4 Werktage &middot; Bevorzugte Kommissionierung &amp; Prio-Tracking</span>
                     </div>
-                    <span class="shipping-price font-display">€14,95</span>
+                    <span class="shipping-price font-display">14,95&nbsp;€</span>
                   </div>
                 </label>
-
               </div>
             </div>
 
+            <!-- Anmerkungen zur Bestellung -->
             <div class="checkout-section">
               <h2 class="font-display checkout-section-title">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                Anmerkungen zur Bestellung (optional)
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                Lieferhinweise &amp; Anmerkungen <span class="field-optional">(optional)</span>
               </h2>
-              <textarea id="checkout-notes" class="form-input form-textarea" placeholder="Besondere Hinweise zu Ihrer Bestellung..." rows="3"></textarea>
+              <textarea id="checkout-notes" class="form-input form-textarea" placeholder="z. B. Bitte beim Nachbarn abgeben oder Wunschanlieferung..." rows="3"></textarea>
             </div>
 
+            <!-- Mandatory Age Verification Check -->
+            <div class="checkout-section" style="background:#FFFDF7;border-color:#FDE68A;">
+              <label class="checkout-agree" style="margin:0;">
+                <input type="checkbox" id="checkout-age-confirm" class="agree-checkbox" />
+                <span class="agree-text">
+                  <strong style="color:#B45309;">Gesetzliche Altersprüfung (18+):</strong> Ich bestätige verbindlich, dass ich mindestens 18 Jahre alt bin. Die Auslieferung erfolgt ausschließlich an volljährige Personen gemäß § 10 Jugendschutzgesetz (JuSchG) mit Alterssichtprüfung bei Zustellung. <span class="req">*</span>
+                </span>
+              </label>
+              <div id="age-confirm-error" style="display:none;color:#DC2626;font-size:0.8rem;margin-top:0.5rem;font-weight:600;">
+                Bitte bestätigen Sie Ihr Mindestalter von 18 Jahren, um fortzufahren.
+              </div>
+            </div>
+
+            <!-- Actions Step 2 -->
             <div class="form-actions">
               <button type="button" id="back-step-1" class="btn-secondary" style="padding:0.75rem 1.5rem;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
-                Zurück
+                Zurück zu Kundeninformationen
               </button>
               <button type="button" id="to-step-3" class="btn-primary" style="padding:0.75rem 2rem;">
-                Weiter zur Zahlung
+                Weiter zu Schritt 3: Zahlungsmethode
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
               </button>
             </div>
           </div>
 
-          <!-- Step 3: Payment -->
+          <!-- ═══════════════════════════════════════════════════════
+               SCHRITT 3: Zahlungsinformationen
+               ═══════════════════════════════════════════════════════ -->
           <div id="step-3" class="checkout-step-content" style="display:none;">
             <div class="checkout-section">
               <h2 class="font-display checkout-section-title">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg>
-                Zahlungsmethode
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg>
+                3. Zahlungsmethode wählen
               </h2>
+              <p class="section-desc">Wählen Sie Ihre bevorzugte Zahlungsart. Für Kryptozahlungen führen Sie bitte die Transaktion durch und geben Sie die Transaktions-ID an.</p>
 
-              <div class="payment-info-box">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-                <div>
-                  <p style="font-weight:600;color:var(--color-text);font-size:0.88rem;">Sichere Zahlung</p>
-                  <p style="color:var(--color-text-secondary);font-size:0.82rem;margin-top:0.15rem;">Deine Bestelldaten werden zur Bearbeitung an unser Team gesendet. Wir akzeptieren SEPA-Überweisung und Bitcoin.</p>
+              <!-- Payment Method Selection Grid -->
+              <div class="payment-methods-grid">
+                
+                <!-- Option A: Credit Card (UNDER MAINTENANCE) -->
+                <div class="payment-card payment-disabled" id="method-card-cc">
+                  <div class="payment-card-header">
+                    <div class="payment-card-title-wrap">
+                      <span class="payment-card-title">Kreditkarte (Visa, Mastercard, AMEX)</span>
+                      <span class="badge-maintenance">In Wartungsarbeiten</span>
+                    </div>
+                    <div class="payment-icons-row">
+                      <span class="pay-icon-tag">VISA</span>
+                      <span class="pay-icon-tag">Mastercard</span>
+                      <span class="pay-icon-tag">AMEX</span>
+                    </div>
+                  </div>
+                  <div class="payment-maintenance-notice">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    <div>
+                      <strong>Karten-Terminal vorübergehend in Wartung</strong>
+                      <p style="margin-top:0.2rem;font-size:0.8rem;color:#78350F;line-height:1.45;">Unser Kreditkarten-Zahlungsgateway wird derzeit sicherheitstechnisch aktualisiert. Bitte wählen Sie nachfolgend <strong>SEPA-Überweisung</strong> oder <strong>Kryptowährung</strong>.</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
 
-              <div class="payment-methods">
-                <label class="payment-method-option">
-                  <input type="radio" name="payment" value="sepa" checked class="shipping-radio" />
-                  <div class="shipping-option-content">
-                    <div>
-                      <span class="shipping-name">SEPA-Überweisung</span>
-                      <span class="shipping-time">IBAN und Kontodaten nach der Bestellung</span>
+                <!-- Option B: SEPA Banküberweisung -->
+                <label class="payment-card payment-selectable" id="method-card-sepa">
+                  <input type="radio" name="payment" value="sepa" checked class="payment-radio" />
+                  <div class="payment-card-body">
+                    <div class="payment-card-header">
+                      <div class="payment-card-title-wrap">
+                        <div class="payment-radio-custom"></div>
+                        <span class="payment-card-title">SEPA-Banküberweisung</span>
+                        <span class="badge-recommended">Klassisch &amp; Sicher</span>
+                      </div>
+                      <span class="pay-icon-tag font-display" style="background:#00B2A9;color:#fff;font-weight:800;border:none;">SEPA</span>
                     </div>
-                    <svg width="32" height="32" viewBox="0 0 64 64" fill="none"><rect width="64" height="64" rx="12" fill="#00B2A9" opacity="0.12"/><text x="32" y="40" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="24" fill="#00B2A9" text-anchor="middle" letter-spacing="-1">PAY</text><circle cx="50" cy="20" r="4" fill="#00B2A9"/><rect x="48" y="24" width="4" height="14" rx="2" fill="#00B2A9"/></svg>
+                    <p class="payment-card-desc">Überweisung auf unser deutsches Firmenkonto bei der Deutschen Bank. Auslieferung erfolgt nach Gutschrift.</p>
+
+                    <!-- SEPA Details Panel (shown when checked) -->
+                    <div id="sepa-details-panel" class="payment-subpanel">
+                      <div class="bank-details-box">
+                        <div class="bank-details-title">Bankverbindung für Ihre Überweisung:</div>
+                        <div class="bank-row">
+                          <span class="bank-k">Empfänger:</span>
+                          <span class="bank-v">{siteData.bank_details.account_name}</span>
+                        </div>
+                        <div class="bank-row">
+                          <span class="bank-k">Kreditinstitut:</span>
+                          <span class="bank-v">{siteData.bank_details.bank_name}</span>
+                        </div>
+                        <div class="bank-row">
+                          <span class="bank-k">IBAN:</span>
+                          <span class="bank-v font-display" style="letter-spacing:1px;font-weight:700;">{siteData.bank_details.iban}</span>
+                        </div>
+                        <div class="bank-row">
+                          <span class="bank-k">BIC:</span>
+                          <span class="bank-v font-display">{siteData.bank_details.bic}</span>
+                        </div>
+                        <div class="bank-row">
+                          <span class="bank-k">Verwendungszweck:</span>
+                          <span class="bank-v" style="color:#B45309;font-weight:700;">Ihre Bestellnummer (wird gleich generiert)</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </label>
-                <label class="payment-method-option">
-                  <input type="radio" name="payment" value="bitcoin" class="shipping-radio" />
-                  <div class="shipping-option-content">
-                    <div>
-                      <span class="shipping-name">Bitcoin (BTC)</span>
-                      <span class="shipping-time">Zahlung per QR-Code — schnelle Bestätigung</span>
+
+                <!-- Option C: Multi-Cryptocurrency Payment -->
+                <label class="payment-card payment-selectable" id="method-card-crypto">
+                  <input type="radio" name="payment" value="crypto" class="payment-radio" />
+                  <div class="payment-card-body">
+                    <div class="payment-card-header">
+                      <div class="payment-card-title-wrap">
+                        <div class="payment-radio-custom"></div>
+                        <span class="payment-card-title">Kryptowährung (Sofortbearbeitung)</span>
+                        <span class="badge-fast">Schnell &amp; Diskret</span>
+                      </div>
+                      <div class="crypto-coin-pills">
+                        <span class="coin-pill btc">BTC</span>
+                        <span class="coin-pill eth">ETH</span>
+                        <span class="coin-pill usdt">USDT</span>
+                        <span class="coin-pill sol">SOL</span>
+                        <span class="coin-pill xmr">XMR</span>
+                      </div>
                     </div>
-                    <svg width="32" height="32" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="32" fill="#F7931A"/><path d="M46.1 27.4c.6-4.2-2.6-6.5-7-8l1.4-5.7-3.5-.9-1.4 5.5c-.9-.2-1.9-.4-2.8-.7l1.4-5.5-3.5-.9-1.4 5.7c-.8-.2-1.5-.3-2.2-.5l0 0-4.8-1.2-1 3.7s2.6.6 2.5.6c1.4.4 1.7 1.3 1.6 2l-1.6 6.5c.1 0 .2.1.3.1l-.3-.1-2.3 9.1c-.2.4-.6 1.1-1.6.8 0 0-2.5-.6-2.5-.6l-1.7 4 4.5 1.1c.8.2 1.7.4 2.5.6l-1.5 5.8 3.5.9 1.4-5.7c1 .3 1.9.5 2.8.7l-1.4 5.7 3.5.9 1.5-5.8c5.8 1.1 10.2.7 12-4.6 1.5-4.2-.1-6.7-3.2-8.3 2.2-.5 3.9-2 4.4-5.1zM39.5 38.2c-1.1 4.2-8.2 1.9-10.5 1.4l1.9-7.5c2.3.6 9.7 1.7 8.6 6.1zm1-10.9c-1 3.9-6.9 1.9-8.8 1.4l1.7-6.8c2 .5 8.2 1.4 7.1 5.4z" fill="white"/></svg>
+                    <p class="payment-card-desc">Unterstützt Bitcoin, Ethereum, USDT (TRC-20 / ERC-20), USDC, Solana und Monero. Schnelle Freigabe und priorisierte Bearbeitung.</p>
+
+                    <!-- Crypto Details & Payment Verification Panel -->
+                    <div id="crypto-details-panel" class="payment-subpanel" style="display:none;">
+                      
+                      <!-- Coin Selector Tabs/Select -->
+                      <div class="crypto-selector-wrap">
+                        <label class="form-label" style="margin-bottom:0.4rem;display:block;">Wählen Sie Ihre Kryptowährung:</label>
+                        <select id="crypto-currency-select" class="form-input form-select" style="font-weight:600;font-size:0.92rem;">
+                          {cryptos.map((coin: any) => (
+                            <option value={coin.id} data-symbol={coin.symbol} data-name={coin.name} data-network={coin.network} data-address={coin.address} data-time={coin.time}>
+                              {coin.name} ({coin.symbol}) &middot; Netzwerk: {coin.network} [ca. {coin.time}]
+                            </option>
+                          ))}
+                        </select>
+                      </div>
+
+                      <!-- Active Coin Display Card -->
+                      <div class="crypto-active-card">
+                        <div class="crypto-active-meta">
+                          <div>
+                            <span id="crypto-active-name" class="font-display" style="font-size:1.05rem;font-weight:700;color:var(--color-text);">Bitcoin (BTC)</span>
+                            <div class="crypto-active-badges">
+                              <span id="crypto-active-network" class="crypto-meta-pill">Netzwerk: Bitcoin</span>
+                              <span id="crypto-active-time" class="crypto-meta-pill">Dauer: 10–30 Min.</span>
+                            </div>
+                          </div>
+                          <div class="crypto-qr-wrap">
+                            <img id="crypto-qr-img" src={`https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${encodeURIComponent(cryptos[0]?.address || '')}`} alt="Krypto QR-Code" width="96" height="96" class="crypto-qr-img" />
+                          </div>
+                        </div>
+
+                        <!-- Address copy box -->
+                        <div class="crypto-address-container">
+                          <span class="form-label">Ziel-Wallet-Adresse für Ihre Einzahlung:</span>
+                          <div class="crypto-address-row">
+                            <input type="text" id="crypto-active-address" class="crypto-address-input" readonly value={cryptos[0]?.address || ''} />
+                            <button type="button" id="crypto-copy-btn" class="crypto-copy-btn" title="Adresse kopieren">
+                              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                              <span id="crypto-copy-text">Kopieren</span>
+                            </button>
+                          </div>
+                        </div>
+
+                        <!-- Amount hint -->
+                        <div class="crypto-amount-notice">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                          <span>Überweisen Sie den exakten Gegenwert von <strong id="crypto-due-eur">€0,00</strong> an die oben angegebene Wallet.</span>
+                        </div>
+                      </div>
+
+                      <!-- ⚡ CRITICAL RULE: USER MUST PAY AND SUBMIT TXID BEFORE ORDER IS RECEIVED -->
+                      <div class="crypto-payment-proof-box">
+                        <div class="proof-box-header">
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#047857" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                          <strong>Zahlungsnachweis (Erforderlich vor Bestellabschluss)</strong>
+                        </div>
+                        <p class="proof-box-desc">
+                          Bitte überweisen Sie die Transaktion in Ihrer Wallet. Fügen Sie anschließend die <strong>Transaktions-ID (TXID / Hash)</strong> hier ein, damit unser System Ihre Einzahlung sofort zuordnen und Ihre Bestellung unverzüglich an das Kölner Lager zur Verpackung übermitteln kann:
+                        </p>
+
+                        <div class="form-row" style="margin-bottom:0.75rem;">
+                          <label class="form-field">
+                            <span class="form-label">Transaktions-ID / TXID / Hash <span class="req">*</span></span>
+                            <input type="text" id="crypto-txid-input" class="form-input" placeholder="z. B. 4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b" style="font-family:monospace;font-size:0.85rem;" />
+                            <span class="field-hint">Kopieren Sie den Transaktions-Hash direkt aus Ihrer Wallet oder Börse (Binance, Bitpanda, Kraken, Phantom, etc.).</span>
+                          </label>
+                        </div>
+
+                        <label class="checkout-agree" style="margin-top:0.75rem;">
+                          <input type="checkbox" id="crypto-paid-confirm" class="agree-checkbox" />
+                          <span class="agree-text" style="font-size:0.82rem;font-weight:600;color:var(--color-text);">
+                            Ich habe die Kryptozahlung soeben an die oben genannte Adresse gesendet und bestätige die Richtigkeit der angegebenen Transaktions-ID. <span class="req">*</span>
+                          </span>
+                        </label>
+                        <div id="crypto-proof-error" style="display:none;color:#DC2626;font-size:0.8rem;margin-top:0.4rem;font-weight:600;">
+                          Bitte tragen Sie Ihre Transaktions-ID ein und bestätigen Sie die Überweisung.
+                        </div>
+                      </div>
+
+                    </div>
                   </div>
                 </label>
+
               </div>
             </div>
 
+            <!-- Legal terms agreement -->
             <div class="checkout-section">
               <label class="checkout-agree">
                 <input type="checkbox" id="checkout-agree" class="agree-checkbox" />
-                <span class="agree-text">Ich bestätige, dass ich mindestens 18 Jahre alt bin und den <a href="/pages/terms-conditions">AGB</a> sowie der <a href="/pages/privacy-policy">Datenschutzerklärung</a> zustimme.</span>
+                <span class="agree-text">
+                  Ich habe die <a href="/pages/terms-conditions" target="_blank">Allgemeinen Geschäftsbedingungen (AGB)</a>, die <a href="/pages/refund-policy" target="_blank">Widerrufsbelehrung</a> sowie die <a href="/pages/privacy-policy" target="_blank">Datenschutzerklärung</a> gelesen und stimme ihnen ausdrücklich zu. <span class="req">*</span>
+                </span>
               </label>
             </div>
 
+            <!-- Actions Step 3 -->
             <div class="form-actions">
               <button type="button" id="back-step-2" class="btn-secondary" style="padding:0.75rem 1.5rem;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
-                Zurück
+                Zurück zu Versand
               </button>
-              <button type="button" id="place-order" class="btn-primary" style="padding:0.85rem 2.5rem;font-size:0.95rem;" disabled>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                Bestellung aufgeben
+              <button type="button" id="place-order" class="btn-primary" style="padding:0.9rem 2.5rem;font-size:1rem;" disabled>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span id="place-order-text">Zahlungspflichtig bestellen</span>
               </button>
             </div>
+            <div id="order-submit-status" style="display:none;margin-top:1rem;text-align:center;font-size:0.9rem;font-weight:600;color:var(--color-accent);"></div>
           </div>
+
         </div>
 
-        <!-- Bestellübersicht Sidebar -->
-        <aside class="checkout-summary">
+        <!-- ═══════════════════════════════════════════════════════
+             Bestellübersicht Sidebar (Sticky)
+             ═══════════════════════════════════════════════════════ -->
+        <aside class="checkout-summary" aria-label="Bestellübersicht">
           <h3 class="font-display checkout-summary-title">Bestellübersicht</h3>
+          
           <div id="checkout-items" class="checkout-items"></div>
+          
           <hr class="checkout-divider" />
+          
+          <div class="checkout-summary-row">
+            <span>Warenwert (netto)</span>
+            <span id="checkout-netto" class="font-display">0,00&nbsp;€</span>
+          </div>
+          <div class="checkout-summary-row">
+            <span>Inkl. 19% MwSt.</span>
+            <span id="checkout-mwst" class="font-display">0,00&nbsp;€</span>
+          </div>
           <div class="checkout-summary-row">
             <span>Zwischensumme</span>
-            <span id="checkout-subtotal" class="font-display" style="font-weight:600;">€0,00</span>
+            <span id="checkout-subtotal" class="font-display" style="font-weight:700;color:var(--color-text);">0,00&nbsp;€</span>
           </div>
           <div class="checkout-summary-row">
-            <span>Versand</span>
-            <span id="checkout-shipping" class="font-display" style="font-weight:600;">€9,95</span>
+            <span>Versandkosten</span>
+            <span id="checkout-shipping" class="font-display" style="font-weight:600;">9,95&nbsp;€</span>
           </div>
+          
           <hr class="checkout-divider" />
+          
           <div class="checkout-summary-row checkout-total-row">
-            <span>Gesamt</span>
-            <span id="checkout-total" class="font-display">€0,00</span>
+            <span>Gesamtbetrag</span>
+            <span id="checkout-total" class="font-display">0,00&nbsp;€</span>
           </div>
-          <p class="checkout-tax-note">Inklusive aller anwendbaren Steuern</p>
+
+          <div class="checkout-guarantees">
+            <div class="guarantee-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Mindestbestellwert ab 220,00 €</span>
+            </div>
+            <div class="guarantee-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Originale Markenware aus Lager Köln</span>
+            </div>
+            <div class="guarantee-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16A34A" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Neutrale &amp; versicherte Verpackung</span>
+            </div>
+          </div>
         </aside>
       </div>
     </div>
@@ -292,26 +537,39 @@ import siteData from '../data/site.json';
     .checkout-page {
       padding-top: var(--space-xl);
       padding-bottom: var(--space-3xl);
-      min-height: 60vh;
+      min-height: 65vh;
     }
 
-    /* ── Empty State ── */
+    /* ── Empty State & Alerts ── */
     .checkout-empty-inner {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       padding: 4rem 1rem;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
     }
+    .checkout-min-alert {
+      display: flex;
+      gap: 1.25rem;
+      background: #FFFBEB;
+      border: 1.5px solid #FDE68A;
+      border-radius: var(--radius-xl);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      align-items: flex-start;
+    }
+    .checkout-min-alert-icon { flex-shrink: 0; margin-top: 0.15rem; }
 
-    /* ── Progress Steps ── */
+    /* ── Progressive 3-Step Wizard ── */
     .checkout-steps {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 0;
+      justify-content: space-between;
       margin-bottom: 2.5rem;
-      padding: 1.5rem 2rem;
+      padding: 1.25rem 2rem;
       background: var(--color-surface);
       border: 1px solid var(--color-border);
       border-radius: var(--radius-xl);
@@ -320,23 +578,23 @@ import siteData from '../data/site.json';
     .checkout-step {
       display: flex;
       align-items: center;
-      gap: 0.55rem;
-      opacity: 0.38;
-      transition: opacity 0.25s ease;
+      gap: 0.75rem;
+      opacity: 0.45;
+      transition: all 0.25s ease;
     }
     .checkout-step.active { opacity: 1; }
-    .checkout-step.completed { opacity: 0.75; }
+    .checkout-step.completed { opacity: 0.85; }
     .step-num {
-      width: 32px;
-      height: 32px;
+      width: 36px;
+      height: 36px;
       border-radius: 50%;
       background: var(--color-surface-alt);
       border: 1.5px solid var(--color-border);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.78rem;
-      font-weight: 700;
+      font-size: 0.85rem;
+      font-weight: 800;
       font-family: var(--font-display);
       color: var(--color-text-secondary);
       transition: all 0.25s ease;
@@ -345,30 +603,47 @@ import siteData from '../data/site.json';
       background: var(--color-accent);
       border-color: var(--color-accent);
       color: #fff;
-      box-shadow: 0 0 0 4px rgba(22,163,74,0.15);
+      box-shadow: 0 0 0 4px rgba(22,163,74,0.18);
     }
     .checkout-step.completed .step-num {
       background: var(--color-accent-soft);
       border-color: var(--color-accent);
       color: var(--color-accent);
     }
-    .step-label {
-      font-size: 0.84rem;
-      font-weight: 700;
-      color: var(--color-text-secondary);
-      font-family: var(--font-display);
-      letter-spacing: -0.01em;
+    .step-text {
+      display: flex;
+      flex-direction: column;
     }
-    .checkout-step.active .step-label { color: var(--color-text); }
+    .step-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+      color: var(--color-text-muted);
+    }
+    .step-name {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--color-text);
+      font-family: var(--font-display);
+    }
     .step-connector {
       flex: 1;
-      height: 1.5px;
+      height: 2px;
       background: var(--color-border);
-      margin: 0 1rem;
-      min-width: 32px;
+      margin: 0 1.25rem;
+      min-width: 24px;
+    }
+    @media (max-width: 768px) {
+      .checkout-steps {
+        padding: 1rem;
+        gap: 0.5rem;
+      }
+      .step-text { display: none; }
+      .step-connector { margin: 0 0.5rem; }
     }
 
-    /* ── Grid ── */
+    /* ── Grid Layout ── */
     .checkout-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -376,7 +651,7 @@ import siteData from '../data/site.json';
     }
     @media (min-width: 1024px) {
       .checkout-grid {
-        grid-template-columns: 1fr 380px;
+        grid-template-columns: 1fr 400px;
         gap: 2.5rem;
         align-items: start;
       }
@@ -395,27 +670,29 @@ import siteData from '../data/site.json';
       display: flex;
       align-items: center;
       gap: 0.65rem;
-      font-size: 1rem;
+      font-size: 1.05rem;
       font-weight: 700;
       color: var(--color-text);
+      margin-bottom: 0.5rem;
+    }
+    .section-desc {
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
       margin-bottom: 1.25rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid var(--color-border);
+      line-height: 1.5;
     }
 
     /* ── Forms ── */
-    .form-row {
-      margin-bottom: 0.85rem;
-    }
+    .form-row { margin-bottom: 0.9rem; }
     .form-row-2 {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 0.85rem;
+      gap: 0.9rem;
     }
     .form-row-3 {
       display: grid;
-      grid-template-columns: 1fr 100px 100px;
-      gap: 0.85rem;
+      grid-template-columns: 110px 1fr 1fr;
+      gap: 0.9rem;
     }
     @media (max-width: 640px) {
       .form-row-2, .form-row-3 { grid-template-columns: 1fr; }
@@ -423,15 +700,24 @@ import siteData from '../data/site.json';
     .form-field {
       display: flex;
       flex-direction: column;
-      gap: 0.3rem;
+      gap: 0.35rem;
     }
     .form-label {
       font-size: 0.78rem;
-      font-weight: 600;
+      font-weight: 700;
       color: var(--color-text-secondary);
       font-family: var(--font-display);
     }
-    .req { color: var(--color-sale); }
+    .field-optional {
+      font-weight: 400;
+      color: var(--color-text-muted);
+    }
+    .field-hint {
+      font-size: 0.72rem;
+      color: var(--color-text-muted);
+      margin-top: 0.2rem;
+    }
+    .req { color: var(--color-sale); font-weight: 800; }
     .form-input {
       padding: 0.75rem 1rem;
       border: 1.5px solid var(--color-border);
@@ -441,8 +727,9 @@ import siteData from '../data/site.json';
       background: var(--color-bg);
       outline: none;
       font-family: var(--font-body);
-      transition: border-color 0.18s ease, box-shadow 0.18s ease;
+      transition: all 0.18s ease;
       width: 100%;
+      box-sizing: border-box;
     }
     .form-input:focus {
       border-color: var(--color-accent);
@@ -452,114 +739,401 @@ import siteData from '../data/site.json';
     .form-input::placeholder { color: var(--color-text-muted); }
     .form-select {
       appearance: none;
-      background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
-      background-position: right 0.75rem center;
-      padding-right: 2rem;
+      background-position: right 0.85rem center;
+      padding-right: 2.2rem;
+      cursor: pointer;
     }
-    .form-textarea {
-      resize: vertical;
-      min-height: 80px;
-    }
+    .form-textarea { resize: vertical; min-height: 75px; }
 
     .form-actions {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 2rem;
+      margin-top: 1.75rem;
       padding-top: 1.5rem;
       border-top: 1px solid var(--color-border);
       gap: 1rem;
     }
-    @media (max-width: 480px) {
-      .form-actions {
-        flex-direction: column;
-      }
-      .form-actions .btn-primary,
-      .form-actions .btn-secondary { width: 100%; justify-content: center; }
+    @media (max-width: 600px) {
+      .form-actions { flex-direction: column-reverse; }
+      .form-actions button, .form-actions a { width: 100%; justify-content: center; text-align: center; }
     }
 
-    /* ── Versandoptionen ── */
-    .shipping-options, .payment-methods {
+    /* ── Shipping Options ── */
+    .shipping-options {
       display: flex;
       flex-direction: column;
-      gap: 0.65rem;
+      gap: 0.75rem;
     }
-    .shipping-option, .payment-method-option {
-      cursor: pointer;
-    }
-    .shipping-radio {
-      display: none;
-    }
+    .shipping-option { cursor: pointer; display: block; }
+    .shipping-radio { display: none; }
     .shipping-option-content {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 1rem 1.25rem;
+      gap: 1rem;
+      padding: 1.15rem 1.25rem;
       border: 1.5px solid var(--color-border);
       border-radius: var(--radius-lg);
       background: var(--color-bg);
-      transition: all 0.18s ease;
+      transition: all 0.2s ease;
     }
-    .shipping-option-content:hover {
+    .shipping-option:hover .shipping-option-content {
       border-color: rgba(22,163,74,0.4);
-      box-shadow: 0 2px 8px rgba(22,163,74,0.07);
     }
     .shipping-radio:checked + .shipping-option-content {
       border-color: var(--color-accent);
-      background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);
-      box-shadow: 0 2px 12px rgba(22,163,74,0.12);
+      background: #F0FDF4;
+      box-shadow: 0 2px 10px rgba(22,163,74,0.08);
+    }
+    .shipping-radio-custom {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid var(--color-border);
+      background: #fff;
+      flex-shrink: 0;
+      position: relative;
+    }
+    .shipping-radio:checked + .shipping-option-content .shipping-radio-custom {
+      border-color: var(--color-accent);
+    }
+    .shipping-radio:checked + .shipping-option-content .shipping-radio-custom::after {
+      content: '';
+      position: absolute;
+      top: 4px; left: 4px;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--color-accent);
+    }
+    .shipping-header-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
     .shipping-name {
-      display: block;
-      font-size: 0.88rem;
-      font-weight: 600;
-      color: var(--color-text);
-    }
-    .shipping-time {
-      display: block;
-      font-size: 0.75rem;
-      color: var(--color-text-muted);
-      margin-top: 0.15rem;
-    }
-    .shipping-price {
       font-size: 0.92rem;
       font-weight: 700;
       color: var(--color-text);
     }
+    .shipping-badge {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: #E8EAE2;
+      color: #4B5547;
+    }
+    .shipping-badge.express { background: #FEF3C7; color: #B45309; }
+    .shipping-time {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+      margin-top: 0.2rem;
+    }
+    .shipping-price {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-text);
+      flex-shrink: 0;
+    }
 
-    /* ── Payment Info ── */
-    .payment-info-box {
+    /* ── Payment Grid & Methods ── */
+    .payment-methods-grid {
       display: flex;
-      gap: 0.85rem;
-      padding: 1rem 1.15rem;
-      background: var(--color-accent-soft);
-      border: 1px solid var(--color-accent);
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .payment-card {
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      background: var(--color-bg);
+      overflow: hidden;
+      transition: all 0.2s ease;
+    }
+    .payment-card.payment-selectable { cursor: pointer; display: block; }
+    .payment-radio { display: none; }
+    .payment-card-body { padding: 1.25rem 1.5rem; }
+
+    .payment-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .payment-card-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+    }
+    .payment-radio-custom {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid var(--color-border);
+      background: #fff;
+      flex-shrink: 0;
+      position: relative;
+    }
+    .payment-radio:checked ~ .payment-card-body .payment-radio-custom {
+      border-color: var(--color-accent);
+    }
+    .payment-radio:checked ~ .payment-card-body .payment-radio-custom::after {
+      content: '';
+      position: absolute;
+      top: 4px; left: 4px;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--color-accent);
+    }
+    .payment-radio:checked ~ .payment-card-body {
+      background: #FAFCF8;
+    }
+    .payment-card.payment-selectable:has(.payment-radio:checked) {
+      border-color: var(--color-accent);
+      box-shadow: 0 2px 12px rgba(22,163,74,0.08);
+    }
+
+    .payment-card-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+    .badge-maintenance {
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      background: #FEF3C7;
+      color: #92400E;
+      border: 1px solid #FDE68A;
+      padding: 2px 8px;
+      border-radius: 4px;
+      letter-spacing: 0.4px;
+    }
+    .badge-recommended {
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      background: #DCFCE7;
+      color: #15803D;
+      border: 1px solid #BBF7D0;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .badge-fast {
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      background: #E0E7FF;
+      color: #4338CA;
+      border: 1px solid #C7D2FE;
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .payment-card-desc {
+      font-size: 0.82rem;
+      color: var(--color-text-secondary);
+      margin-top: 0.5rem;
+      line-height: 1.5;
+    }
+    .payment-icons-row { display: flex; gap: 0.4rem; }
+    .pay-icon-tag {
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      color: var(--color-text-secondary);
+    }
+
+    /* Credit Card Disabled state */
+    .payment-disabled {
+      opacity: 0.82;
+      background: #F9FAF7;
+      padding: 1.25rem 1.5rem;
+      cursor: not-allowed;
+    }
+    .payment-maintenance-notice {
+      display: flex;
+      gap: 0.75rem;
+      background: #FFFBEB;
+      border: 1px solid #FDE68A;
       border-radius: var(--radius-md);
-      margin-bottom: 1.25rem;
+      padding: 0.85rem 1rem;
+      margin-top: 0.85rem;
       align-items: flex-start;
     }
-    .payment-info-box svg {
+
+    /* Subpanels (SEPA & Crypto) */
+    .payment-subpanel {
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--color-border);
+    }
+    .bank-details-box {
+      background: #FFFFFF;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 1.15rem 1.25rem;
+      font-size: 0.85rem;
+    }
+    .bank-details-title {
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 0.75rem;
+      font-size: 0.88rem;
+    }
+    .bank-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.3rem 0;
+      border-bottom: 1px dashed var(--color-border);
+    }
+    .bank-row:last-child { border-bottom: none; }
+    .bank-k { color: var(--color-text-muted); }
+    .bank-v { font-weight: 600; color: var(--color-text); }
+
+    /* Crypto Elements */
+    .crypto-coin-pills { display: flex; gap: 0.35rem; }
+    .coin-pill {
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .coin-pill.btc { background: #FEF3C7; color: #B45309; }
+    .coin-pill.eth { background: #EDE9FE; color: #6D28D9; }
+    .coin-pill.usdt { background: #DCFCE7; color: #047857; }
+    .coin-pill.sol { background: #E0E7FF; color: #4338CA; }
+    .coin-pill.xmr { background: #FFEDD5; color: #C2410C; }
+
+    .crypto-active-card {
+      background: #FFFFFF;
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      margin-top: 1rem;
+    }
+    .crypto-active-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .crypto-active-badges {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.35rem;
+      flex-wrap: wrap;
+    }
+    .crypto-meta-pill {
+      font-size: 0.72rem;
+      font-weight: 600;
+      background: var(--color-surface-alt);
+      padding: 2px 8px;
+      border-radius: 4px;
+      color: var(--color-text-secondary);
+    }
+    .crypto-qr-wrap {
       flex-shrink: 0;
-      margin-top: 0.1rem;
+      background: #fff;
+      padding: 4px;
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+    }
+    .crypto-qr-img { display: block; border-radius: 4px; }
+
+    .crypto-address-container { margin-bottom: 1rem; }
+    .crypto-address-row {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.35rem;
+    }
+    .crypto-address-input {
+      flex: 1;
+      padding: 0.65rem 0.85rem;
+      background: var(--color-surface-alt);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      font-family: monospace;
+      font-size: 0.82rem;
+      color: var(--color-text);
+      outline: none;
+    }
+    .crypto-copy-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0 1rem;
+      background: var(--color-surface);
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-md);
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--color-text);
+      cursor: pointer;
+      transition: all 0.18s ease;
+    }
+    .crypto-copy-btn:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
     }
 
-    /* ── Agree Checkbox ── */
+    .crypto-amount-notice {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--color-text-secondary);
+      background: #F4F6F0;
+      padding: 0.65rem 0.85rem;
+      border-radius: var(--radius-md);
+    }
+
+    .crypto-payment-proof-box {
+      margin-top: 1.25rem;
+      background: #ECFDF5;
+      border: 1.5px solid #A7F3D0;
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+    }
+    .proof-box-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.92rem;
+      color: #065F46;
+      margin-bottom: 0.5rem;
+    }
+    .proof-box-desc {
+      font-size: 0.82rem;
+      color: #064E3B;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+
+    /* ── Checkboxes & Agree ── */
     .checkout-agree {
       display: flex;
       align-items: flex-start;
-      gap: 0.65rem;
+      gap: 0.75rem;
       cursor: pointer;
     }
     .agree-checkbox {
-      width: 18px;
-      height: 18px;
-      margin-top: 0.1rem;
+      width: 19px;
+      height: 19px;
+      margin-top: 0.15rem;
       accent-color: var(--color-accent);
       flex-shrink: 0;
+      cursor: pointer;
     }
     .agree-text {
-      font-size: 0.82rem;
+      font-size: 0.84rem;
       color: var(--color-text-secondary);
       line-height: 1.5;
     }
@@ -570,31 +1144,31 @@ import siteData from '../data/site.json';
     }
     .agree-text a:hover { text-decoration: underline; }
 
-    /* ── Bestellübersicht Sidebar ── */
+    /* ── Sidebar Summary ── */
     .checkout-summary {
-      background: linear-gradient(180deg, var(--color-surface) 0%, #F0FDF4 100%);
+      background: linear-gradient(180deg, var(--color-surface) 0%, #FAFCF8 100%);
       border: 1px solid var(--color-border);
       border-radius: var(--radius-xl);
-      padding: 2rem;
+      padding: 1.75rem;
       position: sticky;
       top: 100px;
-      height: fit-content;
       box-shadow: var(--shadow-md);
     }
     .checkout-summary-title {
-      font-size: 1rem;
+      font-size: 1.05rem;
       font-weight: 700;
       color: var(--color-text);
       margin-bottom: 1.25rem;
-      padding-bottom: 0.85rem;
+      padding-bottom: 0.75rem;
       border-bottom: 1px solid var(--color-border);
     }
     .checkout-items {
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
-      max-height: 320px;
+      max-height: 280px;
       overflow-y: auto;
+      padding-right: 0.25rem;
     }
     .checkout-item {
       display: flex;
@@ -602,26 +1176,22 @@ import siteData from '../data/site.json';
       align-items: center;
     }
     .checkout-item-img {
-      width: 52px;
-      height: 52px;
+      width: 48px;
+      height: 48px;
       object-fit: contain;
       border-radius: var(--radius-sm);
       border: 1px solid var(--color-border);
       background: var(--color-surface);
       flex-shrink: 0;
     }
-    .checkout-item-info {
-      flex: 1;
-      min-width: 0;
-    }
+    .checkout-item-info { flex: 1; min-width: 0; }
     .checkout-item-title {
-      font-size: 0.78rem;
+      font-size: 0.8rem;
       font-weight: 600;
       color: var(--color-text);
-      display: -webkit-box;
-      -webkit-line-clamp: 1;
-      -webkit-box-orient: vertical;
+      white-space: nowrap;
       overflow: hidden;
+      text-overflow: ellipsis;
     }
     .checkout-item-meta {
       font-size: 0.72rem;
@@ -630,15 +1200,15 @@ import siteData from '../data/site.json';
     }
     .checkout-item-price {
       font-family: var(--font-display);
-      font-size: 0.82rem;
-      font-weight: 600;
+      font-size: 0.85rem;
+      font-weight: 700;
       color: var(--color-text);
       flex-shrink: 0;
     }
     .checkout-divider {
       border: none;
       border-top: 1px solid var(--color-border);
-      margin: 0.85rem 0;
+      margin: 1rem 0;
     }
     .checkout-summary-row {
       display: flex;
@@ -648,31 +1218,42 @@ import siteData from '../data/site.json';
       font-size: 0.85rem;
       color: var(--color-text-secondary);
     }
-    .checkout-total-row {
-      padding-top: 0.5rem;
-    }
+    .checkout-total-row { padding-top: 0.5rem; }
     .checkout-total-row span:first-child {
       font-size: 1rem;
       font-weight: 700;
       color: var(--color-text);
     }
     .checkout-total-row span:last-child {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--color-text);
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #15803D;
     }
-    .checkout-tax-note {
-      font-size: 0.72rem;
-      color: var(--color-text-muted);
-      margin-top: 0.5rem;
+
+    .checkout-guarantees {
+      margin-top: 1.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--color-border);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .guarantee-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.78rem;
+      color: var(--color-text-secondary);
     }
   </style>
 
-  <script define:vars={{ contactEmail: siteData.contact_email, bankDetails: siteData.bank_details, bitcoinAddress: siteData.bitcoin_address }}>
+  <script define:vars={{ minOrder, siteData, cryptos }}>
+    /* ─────────────────────────────────────────────────────────
+       State & Cart Helpers
+       ───────────────────────────────────────────────────────── */
     function getCart() {
       try { return JSON.parse(localStorage.getItem('mrnicevape_cart') || '[]'); } catch { return []; }
     }
-
     function saveCart(cart) {
       localStorage.setItem('mrnicevape_cart', JSON.stringify(cart));
       window.dispatchEvent(new CustomEvent('cart-updated'));
@@ -681,71 +1262,101 @@ import siteData from '../data/site.json';
     function getVersandPreis(method) {
       return method === 'express' ? 14.95 : 9.95;
     }
+
     let currentStep = 1;
 
+    function fmt(val) {
+      return Number(val || 0).toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
+    }
+
+    /* ─────────────────────────────────────────────────────────
+       Initial Checkout Validation & Minimum Order Enforcement
+       ───────────────────────────────────────────────────────── */
     function initCheckout() {
       const cart = getCart();
       const emptyEl = document.getElementById('checkout-empty');
+      const minAlertEl = document.getElementById('checkout-min-alert');
       const contentEl = document.getElementById('checkout-content');
-      if (!emptyEl || !contentEl) return;
+      if (!emptyEl || !contentEl || !minAlertEl) return;
 
       if (cart.length === 0) {
         emptyEl.style.display = 'block';
+        minAlertEl.style.display = 'none';
         contentEl.style.display = 'none';
         return;
       }
 
-      // Enforce €200 minimum order at checkout
       const subtotal = cart.reduce((sum, item) => sum + (parseFloat(item.price || '0') * (item.qty || 1)), 0);
-      if (subtotal < 200) {
-        window.location.href = '/cart';
+      if (subtotal < minOrder) {
+        emptyEl.style.display = 'none';
+        minAlertEl.style.display = 'flex';
+        contentEl.style.display = 'none';
         return;
       }
 
       emptyEl.style.display = 'none';
+      minAlertEl.style.display = 'none';
       contentEl.style.display = 'block';
 
       renderSummary();
+      updateCryptoSelection();
     }
 
+    /* ─────────────────────────────────────────────────────────
+       Sidebar Summary Rendering
+       ───────────────────────────────────────────────────────── */
     function renderSummary() {
       const cart = getCart();
       const itemsEl = document.getElementById('checkout-items');
       const subtotalEl = document.getElementById('checkout-subtotal');
       const shippingEl = document.getElementById('checkout-shipping');
       const totalEl = document.getElementById('checkout-total');
+      const nettoEl = document.getElementById('checkout-netto');
+      const mwstEl = document.getElementById('checkout-mwst');
+      const cryptoDueEl = document.getElementById('crypto-due-eur');
+
       if (!itemsEl) return;
 
       let subtotal = 0;
       itemsEl.innerHTML = cart.map(item => {
-        const lineGesamt = parseFloat(item.price || '0') * (item.qty || 1);
-        subtotal += lineGesamt;
+        const line = parseFloat(item.price || '0') * (item.qty || 1);
+        subtotal += line;
         return `
           <div class="checkout-item">
-            ${item.image ? `<img src="${item.image}" alt="${item.title || 'Produktbild im Checkout'}" class="checkout-item-img" onerror="this.style.display='none'" />` : ''}
+            ${item.image ? `<img src="${item.image}" alt="${item.title || 'Produkt'}" class="checkout-item-img" onerror="this.style.display='none'" />` : ''}
             <div class="checkout-item-info">
               <div class="checkout-item-title">${item.title}</div>
-              <div class="checkout-item-meta">Menge: ${item.qty || 1}</div>
+              <div class="checkout-item-meta">Menge: ${item.qty || 1} &times; ${fmt(item.price)}</div>
             </div>
-            <span class="checkout-item-price">€${lineGesamt.toFixed(2)}</span>
+            <span class="checkout-item-price">${fmt(line)}</span>
           </div>
         `;
       }).join('');
 
-      const selectedVersand = document.querySelector('input[name="shipping"]:checked');
-      const shippingKey = selectedVersand ? selectedVersand.value : 'standard';
-      const shippingCost = getVersandPreis(shippingKey);
+      const shipRadio = document.querySelector('input[name="shipping"]:checked');
+      const shipCost = getVersandPreis(shipRadio ? shipRadio.value : 'standard');
+      const total = subtotal + shipCost;
 
-      if (subtotalEl) subtotalEl.textContent = `€${subtotal.toFixed(2)}`;
-      if (shippingEl) shippingEl.textContent = `€${shippingCost.toFixed(2)}`;
-      if (totalEl) totalEl.textContent = `€${(subtotal + shippingCost).toFixed(2)}`;
+      // 19% German VAT calculation
+      const netto = total / 1.19;
+      const mwst = total - netto;
+
+      if (nettoEl) nettoEl.textContent = fmt(netto);
+      if (mwstEl) mwstEl.textContent = fmt(mwst);
+      if (subtotalEl) subtotalEl.textContent = fmt(subtotal);
+      if (shippingEl) shippingEl.textContent = fmt(shipCost);
+      if (totalEl) totalEl.textContent = fmt(total);
+      if (cryptoDueEl) cryptoDueEl.textContent = fmt(total);
     }
 
+    /* ─────────────────────────────────────────────────────────
+       Wizard Step Navigation
+       ───────────────────────────────────────────────────────── */
     function goToStep(step) {
       currentStep = step;
       for (let i = 1; i <= 3; i++) {
         const el = document.getElementById(`step-${i}`);
-        if (el) el.style.display = i === step ? 'block' : 'none';
+        if (el) el.style.display = (i === step) ? 'block' : 'none';
       }
       document.querySelectorAll('.checkout-step[data-step]').forEach(el => {
         const s = parseInt(el.getAttribute('data-step') || '0');
@@ -756,6 +1367,9 @@ import siteData from '../data/site.json';
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
+    /* ─────────────────────────────────────────────────────────
+       Validation Step 1: User Info
+       ───────────────────────────────────────────────────────── */
     function validateStep1() {
       const email = document.getElementById('checkout-email');
       const fname = document.getElementById('checkout-fname');
@@ -765,10 +1379,10 @@ import siteData from '../data/site.json';
       const state = document.getElementById('checkout-state');
       const postcode = document.getElementById('checkout-postcode');
 
-      const fields = [email, fname, lname, address, city, state, postcode];
+      const requiredFields = [fname, lname, address, postcode, city, state, email];
       let valid = true;
 
-      fields.forEach(f => {
+      requiredFields.forEach(f => {
         if (!f) return;
         f.style.borderColor = '';
         if (!f.value.trim()) {
@@ -777,105 +1391,258 @@ import siteData from '../data/site.json';
         }
       });
 
-      if (email && !email.value.includes('@')) {
+      if (email && (!email.value.includes('@') || !email.value.includes('.'))) {
         email.style.borderColor = 'var(--color-sale)';
         valid = false;
       }
 
+      if (postcode && !/^[0-9]{5}$/.test(postcode.value.trim())) {
+        postcode.style.borderColor = 'var(--color-sale)';
+        valid = false;
+      }
+
       if (!valid) {
-        const first = fields.find(f => f && f.style.borderColor !== '');
-        if (first) first.focus();
+        const first = requiredFields.find(f => f && f.style.borderColor !== '');
+        if (first) {
+          first.focus();
+          first.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
       }
 
       return valid;
     }
 
-    // Init
+    /* ─────────────────────────────────────────────────────────
+       Validation Step 2: Shipping & Age Verification
+       ───────────────────────────────────────────────────────── */
+    function validateStep2() {
+      const ageBox = document.getElementById('checkout-age-confirm');
+      const errEl = document.getElementById('age-confirm-error');
+      if (!ageBox?.checked) {
+        if (errEl) errEl.style.display = 'block';
+        ageBox?.focus();
+        return false;
+      }
+      if (errEl) errEl.style.display = 'none';
+      return true;
+    }
+
+    /* ─────────────────────────────────────────────────────────
+       Crypto Currency Selector Logic
+       ───────────────────────────────────────────────────────── */
+    function updateCryptoSelection() {
+      const select = document.getElementById('crypto-currency-select');
+      if (!select) return;
+
+      const opt = select.options[select.selectedIndex];
+      if (!opt) return;
+
+      const symbol = opt.getAttribute('data-symbol') || '';
+      const name = opt.getAttribute('data-name') || '';
+      const network = opt.getAttribute('data-network') || '';
+      const address = opt.getAttribute('data-address') || '';
+      const time = opt.getAttribute('data-time') || '';
+
+      const nameEl = document.getElementById('crypto-active-name');
+      const netEl = document.getElementById('crypto-active-network');
+      const timeEl = document.getElementById('crypto-active-time');
+      const addrEl = document.getElementById('crypto-active-address');
+      const qrEl = document.getElementById('crypto-qr-img');
+
+      if (nameEl) nameEl.textContent = `${name} (${symbol})`;
+      if (netEl) netEl.textContent = `Netzwerk: ${network}`;
+      if (timeEl) timeEl.textContent = `Dauer: ca. ${time}`;
+      if (addrEl) addrEl.value = address;
+      if (qrEl) qrEl.src = `https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=${encodeURIComponent(address)}`;
+    }
+
+    /* ─────────────────────────────────────────────────────────
+       Event Listeners & Initialization
+       ───────────────────────────────────────────────────────── */
     initCheckout();
 
     // Step navigation
     document.getElementById('to-step-2')?.addEventListener('click', () => {
-      if (validateStep1()) {
-        goToStep(2);
-      }
+      if (validateStep1()) goToStep(2);
     });
-
     document.getElementById('back-step-1')?.addEventListener('click', () => goToStep(1));
 
     document.getElementById('to-step-3')?.addEventListener('click', () => {
-      renderSummary();
-      goToStep(3);
+      if (validateStep2()) {
+        renderSummary();
+        goToStep(3);
+      }
     });
-
     document.getElementById('back-step-2')?.addEventListener('click', () => goToStep(2));
 
-    // shipping radio changes
+    // Shipping change
     document.querySelectorAll('input[name="shipping"]').forEach(r => {
       r.addEventListener('change', renderSummary);
     });
 
-    // Agreement checkbox enables place order
-    const agreeBox = document.getElementById('checkout-agree');
-    const placeBtn = document.getElementById('place-order');
-    agreeBox?.addEventListener('change', () => {
-      if (placeBtn) placeBtn.disabled = !agreeBox.checked;
+    // Payment method switcher
+    const sepaPanel = document.getElementById('sepa-details-panel');
+    const cryptoPanel = document.getElementById('crypto-details-panel');
+
+    function refreshPaymentPanels() {
+      const selected = document.querySelector('input[name="payment"]:checked')?.value;
+      if (sepaPanel) sepaPanel.style.display = (selected === 'sepa') ? 'block' : 'none';
+      if (cryptoPanel) cryptoPanel.style.display = (selected === 'crypto') ? 'block' : 'none';
+      validateStep3Form();
+    }
+
+    document.querySelectorAll('input[name="payment"]').forEach(r => {
+      r.addEventListener('change', refreshPaymentPanels);
     });
 
-    // Bestellung aufgeben
-    placeBtn?.addEventListener('click', async () => {
-      if (!agreeBox?.checked) return;
+    // Crypto dropdown change
+    document.getElementById('crypto-currency-select')?.addEventListener('change', updateCryptoSelection);
 
+    // Crypto address copy button
+    const copyBtn = document.getElementById('crypto-copy-btn');
+    const copyText = document.getElementById('crypto-copy-text');
+    copyBtn?.addEventListener('click', () => {
+      const addrInput = document.getElementById('crypto-active-address');
+      if (!addrInput) return;
+      navigator.clipboard.writeText(addrInput.value).then(() => {
+        if (copyText) copyText.textContent = 'Kopiert! ✓';
+        setTimeout(() => { if (copyText) copyText.textContent = 'Kopieren'; }, 2500);
+      }).catch(() => {
+        addrInput.select();
+        document.execCommand('copy');
+        if (copyText) copyText.textContent = 'Kopiert! ✓';
+        setTimeout(() => { if (copyText) copyText.textContent = 'Kopieren'; }, 2500);
+      });
+    });
+
+    // Final Validation & Enabling "Place Order" button
+    const agreeBox = document.getElementById('checkout-agree');
+    const placeBtn = document.getElementById('place-order');
+    const txIdInput = document.getElementById('crypto-txid-input');
+    const cryptoConfirmBox = document.getElementById('crypto-paid-confirm');
+    const cryptoErr = document.getElementById('crypto-proof-error');
+
+    function validateStep3Form() {
+      if (!placeBtn) return;
+      const termsAccepted = !!agreeBox?.checked;
+      const paymentMethod = document.querySelector('input[name="payment"]:checked')?.value;
+
+      if (!termsAccepted) {
+        placeBtn.disabled = true;
+        return;
+      }
+
+      if (paymentMethod === 'crypto') {
+        const txIdVal = (txIdInput?.value || '').trim();
+        const paidConfirmed = !!cryptoConfirmBox?.checked;
+        if (!txIdVal || txIdVal.length < 8 || !paidConfirmed) {
+          placeBtn.disabled = true;
+          return;
+        }
+      }
+
+      placeBtn.disabled = false;
+    }
+
+    agreeBox?.addEventListener('change', validateStep3Form);
+    txIdInput?.addEventListener('input', validateStep3Form);
+    cryptoConfirmBox?.addEventListener('change', validateStep3Form);
+
+    /* ─────────────────────────────────────────────────────────
+       Order Placement & API Dispatch
+       ───────────────────────────────────────────────────────── */
+    placeBtn?.addEventListener('click', async () => {
       const cart = getCart();
       if (cart.length === 0) return;
 
+      const subtotal = cart.reduce((sum, item) => sum + (parseFloat(item.price || '0') * (item.qty || 1)), 0);
+      if (subtotal < minOrder) {
+        alert('Der Mindestbestellwert von 220,00 € wurde noch nicht erreicht.');
+        return;
+      }
+
       const paymentMethod = document.querySelector('input[name="payment"]:checked')?.value || 'sepa';
       const shippingMethod = document.querySelector('input[name="shipping"]:checked')?.value || 'standard';
-      const subtotal = cart.reduce((sum, item) => sum + (parseFloat(item.price || '0') * (item.qty || 1)), 0);
       const shipCost = getVersandPreis(shippingMethod);
 
-      // Bestelldaten erfassen
+      // Verify crypto proof requirements
+      let selectedCrypto = null;
+      let txId = '';
+      if (paymentMethod === 'crypto') {
+        const select = document.getElementById('crypto-currency-select');
+        const opt = select?.options[select.selectedIndex];
+        txId = (txIdInput?.value || '').trim();
+        const paidConfirmed = !!cryptoConfirmBox?.checked;
+
+        if (!txId || txId.length < 8 || !paidConfirmed) {
+          if (cryptoErr) cryptoErr.style.display = 'block';
+          txIdInput?.focus();
+          return;
+        }
+        if (cryptoErr) cryptoErr.style.display = 'none';
+
+        selectedCrypto = {
+          id: select?.value,
+          name: opt?.getAttribute('data-name'),
+          symbol: opt?.getAttribute('data-symbol'),
+          network: opt?.getAttribute('data-network'),
+          address: opt?.getAttribute('data-address'),
+          txId: txId
+        };
+      }
+
+      // Lock button and display progress
+      placeBtn.disabled = true;
+      const placeText = document.getElementById('place-order-text');
+      const statusEl = document.getElementById('order-submit-status');
+      if (placeText) placeText.textContent = 'Bestellung wird verarbeitet...';
+      if (statusEl) {
+        statusEl.style.display = 'block';
+        statusEl.textContent = 'Ihre Bestelldaten werden verschlüsselt übertragen...';
+      }
+
+      const orderNumber = 'VL-' + Date.now().toString(36).toUpperCase();
+      const orderDate = new Date().toISOString();
+
       const orderData = {
-        email: document.getElementById('checkout-email')?.value || '',
-        phone: document.getElementById('checkout-phone')?.value || '',
-        firstName: document.getElementById('checkout-fname')?.value || '',
-        lastName: document.getElementById('checkout-lname')?.value || '',
-        address: document.getElementById('checkout-address')?.value || '',
-        address2: document.getElementById('checkout-address2')?.value || '',
-        city: document.getElementById('checkout-city')?.value || '',
-        state: document.getElementById('checkout-state')?.value || '',
-        postcode: document.getElementById('checkout-postcode')?.value || '',
+        orderNumber,
+        date: orderDate,
+        email: (document.getElementById('checkout-email')?.value || '').trim(),
+        phone: (document.getElementById('checkout-phone')?.value || '').trim(),
+        firstName: (document.getElementById('checkout-fname')?.value || '').trim(),
+        lastName: (document.getElementById('checkout-lname')?.value || '').trim(),
+        address: (document.getElementById('checkout-address')?.value || '').trim(),
+        address2: (document.getElementById('checkout-address2')?.value || '').trim(),
+        city: (document.getElementById('checkout-city')?.value || '').trim(),
+        state: (document.getElementById('checkout-state')?.value || '').trim(),
+        postcode: (document.getElementById('checkout-postcode')?.value || '').trim(),
         shipping: shippingMethod,
-        payment: paymentMethod,
-        notes: document.getElementById('checkout-notes')?.value || '',
-        items: cart,
-        orderNumber: 'VL-' + Date.now().toString(36).toUpperCase(),
-        date: new Date().toISOString(),
-        subtotal: subtotal,
         shippingCost: shipCost,
+        payment: paymentMethod,
+        crypto: selectedCrypto,
+        txId: txId,
+        notes: (document.getElementById('checkout-notes')?.value || '').trim(),
+        items: cart,
+        subtotal: subtotal,
         total: subtotal + shipCost,
-        status: paymentMethod === 'bitcoin' ? 'awaiting_payment' : 'pending',
-        bankDetails: paymentMethod === 'sepa' ? bankDetails : null,
-        bitcoinAddress: paymentMethod === 'bitcoin' ? bitcoinAddress : null,
-        contactEmail: contactEmail
+        status: paymentMethod === 'crypto' ? 'crypto_paid_pending_verification' : 'sepa_pending'
       };
 
-      // Save order for confirmation page
+      // Store in localStorage for confirmation screen
       localStorage.setItem('mrnicevape_last_order', JSON.stringify(orderData));
 
-      // Save order history by email (works for guest checkout too)
+      // Append to guest order history by email
       try {
-        const emailForHistory = (orderData.email || '').trim().toLowerCase();
-        if (emailForHistory) {
-          const ordersKey = `mrnicevape_orders_${emailForHistory}`;
-          const orders = JSON.parse(localStorage.getItem(ordersKey) || '[]');
-          orders.unshift(orderData);
-          localStorage.setItem(ordersKey, JSON.stringify(orders));
-        }
+        const histKey = `mrnicevape_orders_${orderData.email.toLowerCase()}`;
+        const orders = JSON.parse(localStorage.getItem(histKey) || '[]');
+        orders.unshift(orderData);
+        localStorage.setItem(histKey, JSON.stringify(orders));
       } catch {}
 
-      // Send order emails via Resend API
+      // Formulate payload for Resend email API
       const emailPayload = {
         orderNumber: orderData.orderNumber,
+        date: orderData.date,
         firstName: orderData.firstName,
         lastName: orderData.lastName,
         email: orderData.email,
@@ -887,47 +1654,51 @@ import siteData from '../data/site.json';
         postcode: orderData.postcode,
         items: orderData.items,
         subtotal: orderData.subtotal.toFixed(2),
-        shippingMethod: shippingMethod === 'express' ? 'Expressversand' : 'Standardversand',
+        shippingMethod: shippingMethod === 'express' ? 'Expressversand (2–4 Werktage)' : 'Standardversand (5–10 Werktage)',
         shippingCost: shipCost.toFixed(2),
         total: orderData.total.toFixed(2),
-        paymentMethod: paymentMethod === 'bitcoin' ? 'Bitcoin (BTC) - Zahlung ausstehend' : 'SEPA-Überweisung',
-        status: paymentMethod === 'bitcoin' ? 'Neue Bestellung — Bitcoin-Zahlung ausstehend' : 'Neue Bestellung — Zahlung ausstehend',
-        date: orderData.date,
-        notes: orderData.notes
+        paymentMethod: paymentMethod === 'crypto'
+          ? `Kryptowährung: ${selectedCrypto?.name} (${selectedCrypto?.symbol}) [Netzwerk: ${selectedCrypto?.network}]`
+          : 'SEPA-Banküberweisung (Deutsche Bank)',
+        status: paymentMethod === 'crypto'
+          ? 'Krypto-Zahlung überwiesen (TXID beigefügt)'
+          : 'SEPA-Überweisung ausstehend',
+        notes: orderData.notes,
+        cryptoCoin: selectedCrypto?.name,
+        cryptoSymbol: selectedCrypto?.symbol,
+        cryptoNetwork: selectedCrypto?.network,
+        cryptoAddress: selectedCrypto?.address,
+        txId: txId
       };
 
-      // Send order emails via Resend API (await before navigating)
-      // For Bitcoin: defer admin notification until on-chain payment is confirmed
-      // (handled on /order-confirmation). For SEPA: notify admin immediately.
+      // Dispatch order emails via Resend API
       try {
-        const sends = [
+        const timeoutPromise = new Promise(resolve => setTimeout(resolve, 6000));
+        const emailSends = [
+          // 1. Customer order confirmation
           fetch('/api/send-email', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ type: 'customer-confirmation', data: emailPayload })
-          }).then(function(r) { return r.json(); })
-            .then(function(d) { if (d.error) console.error('Customer email error:', d.error); })
-        ];
-        if (paymentMethod !== 'bitcoin') {
-          sends.push(
-            fetch('/api/send-email', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({ type: 'admin-order', data: emailPayload })
-            }).then(function(r) { return r.json(); })
-              .then(function(d) { if (d.error) console.error('Admin email error:', d.error); })
-          );
-        } else {
-          // Stash payload so the confirmation page can fire it once BTC payment is confirmed
-          try { localStorage.setItem('mrnicevape_pending_admin_email', JSON.stringify(emailPayload)); } catch {}
-        }
-        await Promise.allSettled(sends);
-      } catch(e) { console.error('Email send error:', e); }
+          }).catch(e => console.error('Customer email error:', e)),
 
-      // Clear cart
+          // 2. Admin notification to info@mrnicevape.com
+          fetch('/api/send-email', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ type: 'admin-order', data: emailPayload })
+          }).catch(e => console.error('Admin email error:', e))
+        ];
+
+        await Promise.race([Promise.allSettled(emailSends), timeoutPromise]);
+      } catch (err) {
+        console.error('Email dispatch error:', err);
+      }
+
+      // Empty shopping cart
       saveCart([]);
 
-      // Redirect to confirmation
+      // Redirect to confirmation page
       window.location.href = '/order-confirmation';
     });
   </script>

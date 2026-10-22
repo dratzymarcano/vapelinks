@@ -1,51 +1,14 @@
 import type { APIRoute } from 'astro';
 import productsRaw from '../data/products.json';
 import disposableVapes from '../data/disposable-vapes.json';
-import collectionsData from '../data/collections.json';
-import blogPosts from '../data/blog-posts.json';
+import collections from '../data/collections.json';
 import pagesData from '../data/pages.json';
+import blogPosts from '../data/blog-posts.json';
 
 export const prerender = true;
 
 const SITE = 'https://mrnicevape.com';
-
-function normalizePath(pathname: string) {
-  if (!pathname) return '/';
-  if (!pathname.startsWith('/')) return `/${pathname}`;
-  return pathname;
-}
-
-function hasLowQualitySlug(pathname: string) {
-  const lower = pathname.toLowerCase();
-  return (
-    lower.includes('/copy-of-') ||
-    lower.includes('healthcabinhealthcabin') ||
-    lower.includes('/products/copy-of-') ||
-    lower.length > 180
-  );
-}
-
-function isIndexablePath(pathname: string) {
-  if (!pathname) return false;
-  if (hasLowQualitySlug(pathname)) return false;
-  return true;
-}
-
-const INDEXABLE_PAGE_HANDLES = new Set([
-  'about-us',
-  'battery-info',
-  'brands',
-  'vape-brands',
-  'vape-shop-koeln',
-  'disposable-vapes-deutschland',
-  'e-liquid-online-shop-deutschland',
-  'nikotin-vape-juice-deutschland',
-  'terms-conditions',
-  'privacy-policy',
-  'refund-policy',
-  'shipping-policy',
-  'cookies-policy',
-]);
+const BUILD_DATE = '2026-10-20';
 
 function escapeXml(value: string) {
   return value
@@ -57,9 +20,10 @@ function escapeXml(value: string) {
 }
 
 export const GET: APIRoute = () => {
-  const today = new Date().toISOString().split('T')[0];
+  const urls: { loc: string; lastmod: string }[] = [];
 
-  const staticRoutes = [
+  // Core static pages (canonical, 200 OK, indexable)
+  const staticPaths = [
     '/',
     '/about',
     '/contact',
@@ -68,52 +32,47 @@ export const GET: APIRoute = () => {
     '/collections',
     '/collections/shop',
   ];
+  for (const p of staticPaths) {
+    urls.push({ loc: `${SITE}${p}`, lastmod: BUILD_DATE });
+  }
 
-  const collectionRoutes = (collectionsData as any[])
-    .map((collection) => collection?.handle)
-    .filter(Boolean)
-    .map((handle) => `/collections/${handle}`);
+  // Indexable informational & legal pages
+  for (const page of pagesData as any[]) {
+    if (!page?.handle) continue;
+    const lastmod = page.updated_at ? page.updated_at.split('T')[0] : BUILD_DATE;
+    urls.push({ loc: `${SITE}/pages/${page.handle}`, lastmod });
+  }
 
-  const productRoutes = [...(productsRaw as any[]), ...(disposableVapes as any[])]
-    .map((product) => product?.handle)
-    .filter(Boolean)
-    .map((handle) => `/products/${handle}`);
+  // Non-empty collections
+  for (const col of collections as any[]) {
+    if (!col?.handle || (col.products_count ?? 0) <= 0) continue;
+    urls.push({ loc: `${SITE}/collections/${col.handle}`, lastmod: BUILD_DATE });
+  }
 
-  const blogRoutes = (blogPosts as any[])
-    .map((post) => post?.slug)
-    .filter(Boolean)
-    .map((slug) => `/blog/${slug}`);
+  // Blog posts
+  for (const post of blogPosts as any[]) {
+    if (!post?.slug) continue;
+    urls.push({ loc: `${SITE}/blog/${post.slug}`, lastmod: post.date || BUILD_DATE });
+  }
 
-  const pageRoutes = (pagesData as any[])
-    .map((page) => page?.handle)
-    .filter((handle) => handle && INDEXABLE_PAGE_HANDLES.has(handle))
-    .map((handle) => `/pages/${handle}`);
+  // Products & Disposables
+  const allProducts = [...(productsRaw as any[]), ...(disposableVapes as any[])];
+  for (const prod of allProducts) {
+    if (!prod?.handle) continue;
+    urls.push({ loc: `${SITE}/products/${prod.handle}`, lastmod: BUILD_DATE });
+  }
 
-  const excluded = new Set(['/cart', '/checkout', '/order-confirmation', '/search', '/404']);
-
-  const uniquePaths = [
-    ...new Set([
-      ...staticRoutes,
-      ...collectionRoutes,
-      ...productRoutes,
-      ...blogRoutes,
-      ...pageRoutes,
-    ]),
-  ]
-    .map(normalizePath)
-    .filter((path) => !excluded.has(path))
-    .filter(isIndexablePath);
-
-  const urls = uniquePaths
-    .map((path) => {
-      const loc = path === '/' ? SITE : `${SITE}${path}`;
-      return `  <url>\n    <loc>${escapeXml(loc)}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${path.startsWith('/products/') ? 'weekly' : 'daily'}</changefreq>\n    <priority>${
-        path === '/' ? '1.0' : path.startsWith('/collections/') ? '0.8' : path.startsWith('/products/') ? '0.6' : '0.5'
-      }</priority>\n  </url>`;
-    })
-    .join('\n');
-
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`;
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls
+  .map(
+    (u) => `  <url>
+    <loc>${escapeXml(u.loc)}</loc>
+    <lastmod>${escapeXml(u.lastmod)}</lastmod>
+  </url>`
+  )
+  .join('\n')}
+</urlset>`;
 
   return new Response(xml, {
     headers: {

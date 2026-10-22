@@ -1,37 +1,71 @@
-# Mr. Nice Vape Deutschland — robots.txt
-# https://mrnicevape.com
+# Mr. Nice Vape Deutschland — https://mrnicevape.com
+# Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: *
 Allow: /
-
-# Transactional — noindex in HTML, allow crawl to see directive
+Disallow: /api/
 Disallow: /cart
 Disallow: /checkout
 Disallow: /order-confirmation
 Disallow: /search
 Disallow: /account
-Disallow: /api/
 Disallow: /404
 
-Sitemap: https://mrnicevape.com/sitemap.xml
-Host: mrnicevape.com
+# Search Engine Crawlers (Full Access)
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /cart
+Disallow: /checkout
+Disallow: /order-confirmation
 
-# ─── AI / Answer Engine Crawlers ───────────────────────────────────────────────
+User-agent: Googlebot-Image
+Allow: /
 
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /cart
+Disallow: /checkout
+Disallow: /order-confirmation
+
+User-agent: Applebot
+Allow: /
+Disallow: /api/
+
+# AI Search & Citation Crawlers (Allowed for GEO / AI Overviews / Answer Engines)
 User-agent: GPTBot
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /api/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /api/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /api/
 
 User-agent: ClaudeBot
 Allow: /
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /api/
+
+User-agent: Claude-User
+Allow: /
+Disallow: /api/
 
 User-agent: Claude-Web
 Allow: /
@@ -45,47 +79,11 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-User-agent: CCBot
+User-agent: DuckAssistBot
 Allow: /
+Disallow: /api/
 
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: AdsBot-Google
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: Googlebot-Image
-Allow: /
-
-User-agent: Googlebot-Video
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-User-agent: facebot
-Allow: /
-
-User-agent: ia_archiver
-Allow: /
-
-# ─── Explicitly block bad bots ───────────────────────────────────────────────
-
+# Explicitly block aggressive scrapers
 User-agent: Bytespider
 Disallow: /
 
@@ -94,3 +92,7 @@ Disallow: /
 
 User-agent: meta-externalagent
 Disallow: /
+
+# Sitemaps & Feeds
+Sitemap: https://mrnicevape.com/sitemap.xml
+Host: mrnicevape.com

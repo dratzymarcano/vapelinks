@@ -199,18 +199,18 @@ function getProductKeywords(prod: any): string {
 
   // 3. Match flavour profiles (for e-liquids)
   if (matchedType === 'EJUICE' || typeLower.includes('juice') || typeLower.includes('liquid') || typeLower === 'add-on') {
-    for (const [flavour, flavourKws] of Object.entries(SEO_KEYWORDS.productPatterns.flavourProfiles)) {
+    for (const [flavour, flavourKws] of Object.entries((SEO_KEYWORDS as any).productPatterns?.flavourProfiles || {})) {
       if (titleLower.includes(flavour)) {
-        kw.push(...flavourKws);
+        kw.push(...(flavourKws as string[]));
         break; // Only match first flavour
       }
     }
   }
 
   // 4. Match device type patterns
-  for (const [devicePattern, deviceKws] of Object.entries(SEO_KEYWORDS.productPatterns.deviceTypes)) {
+  for (const [devicePattern, deviceKws] of Object.entries((SEO_KEYWORDS as any).productPatterns?.deviceTypes || {})) {
     if (titleLower.includes(devicePattern)) {
-      kw.push(...deviceKws);
+      kw.push(...(deviceKws as string[]));
       break;
     }
   }

@@ -8,23 +8,23 @@ const faqCategories = [
     questions: [
       {
         q: "Welche Zahlungsmethoden akzeptieren Sie?",
-        a: "Wir akzeptieren <strong>Banküberweisung</strong>, <strong>SEPA</strong> und <strong>Bitcoin (BTC)</strong>. Alle Preise werden in EUR angegeben."
+        a: "Wir akzeptieren <strong>SEPA-Banküberweisung</strong> sowie <strong>Kryptowährungen (Bitcoin BTC, Ethereum ETH, Tether USDT TRC20/ERC20, USD Coin USDC, Solana SOL und Monero XMR)</strong>. Kreditkartenzahlungen befinden sich derzeit in Systemwartung. Alle Preise werden in EUR angegeben."
       },
       {
         q: "Muss ich mindestens 18 Jahre alt sein, um zu bestellen?",
-        a: "Ja. Der Verkauf richtet sich ausschließlich an volljährige Personen ab 18 Jahren. Wir prüfen das Alter beim Checkout und können bei Bedarf einen Altersnachweis anfordern."
+        a: "Ja. Der Verkauf richtet sich ausschließlich an volljährige Personen ab 18 Jahren. Wir prüfen das Alter beim Checkout und die Zustellung erfolgt mit Alterssichtprüfung gemäß § 10 Jugendschutzgesetz (JuSchG)."
       },
       {
         q: "Kann ich meine Bestellung ändern oder stornieren?",
-        a: "Schreiben Sie uns so schnell wie möglich an <a href='mailto:info@mrnicevape.com'>info@mrnicevape.com</a>. Solange die Bestellung noch nicht versendet wurde, prüfen wir gern eine Änderung oder Stornierung."
+        a: "Schreiben Sie uns so schnell wie möglich an <a href='mailto:info@mrnicevape.com'>info@mrnicevape.com</a>. Solange die Bestellung noch nicht im Kölner Lager verpackt wurde, prüfen wir gern eine Änderung oder Stornierung."
       },
       {
         q: "Gibt es einen Mindestbestellwert?",
-        a: "Ja, der Mindestbestellwert für Online-Bestellungen beträgt <strong>200 €</strong>."
+        a: "Ja, der Mindestbestellwert für Online-Bestellungen beträgt <strong>220,00 €</strong>."
       },
       {
-        q: "Wie bezahle ich mit Bitcoin?",
-        a: "Wählen Sie Bitcoin im Checkout aus. Anschließend sehen Sie die BTC-Adresse und den exakten Betrag. Sobald die Transaktion bestätigt ist, bearbeiten wir Ihre Bestellung."
+        q: "Wie bezahle ich mit Kryptowährungen?",
+        a: "Wählen Sie im Checkout Schritt 3 'Kryptowährung' und suchen Sie Ihren gewünschten Coin aus (BTC, ETH, USDT, USDC, SOL oder XMR). Nach Ausführung der Überweisung tragen Sie Ihre Transaktions-ID (TXID) ein und schließen die Bestellung ab. Sobald die Bestätigung im Netzwerk registriert ist, wird Ihr Paket verschickt."
       }
     ]
   },
@@ -108,33 +108,20 @@ const faqCategories = [
       },
       {
         q: "Wie erreiche ich Sie?",
-        a: "Schreiben Sie uns an <a href='mailto:info@mrnicevape.com'>info@mrnicevape.com</a> oder rufen Sie <a href='tel:+492211234567'>+49 221 1234567</a> an. Wir antworten an Werktagen meist innerhalb von 24 Stunden."
+        a: "Schreiben Sie uns an <a href='mailto:info@mrnicevape.com'>info@mrnicevape.com</a> oder nutzen Sie unser <a href='/contact'>Kontaktformular</a>. Wir antworten an Werktagen innerhalb von 24 Stunden."
       }
     ]
   }
 ];
 
-// Build FAQ schema
-const allPairs = faqCategories.flatMap(cat => cat.questions.map(q => ({
-  question: q.q,
-  answer: q.a.replace(/<[^>]*>/g, '')
-})));
-
-const faqSchema = {
+const faqPageSchema = {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "name": "Häufige Fragen — Mr. Nice Vape Deutschland",
+  "@type": "WebPage",
+  "name": "Häufige Fragen (FAQ) – Mr. Nice Vape Deutschland",
   "description": "Antworten auf häufige Fragen zu Bestellung, Versand, Produkten, Rückgaben und Zahlung bei Mr. Nice Vape Deutschland.",
   "url": "https://mrnicevape.com/faq",
+  "inLanguage": "de-DE",
   "isPartOf": { "@type": "WebSite", "@id": "https://mrnicevape.com/#website" },
-  "mainEntity": allPairs.map(faq => ({
-    "@type": "Question",
-    "name": faq.question,
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": faq.answer
-    }
-  })),
   "breadcrumb": {
     "@type": "BreadcrumbList",
     "itemListElement": [
@@ -145,10 +132,10 @@ const faqSchema = {
 };
 ---
 
-<Layout title="FAQ — Häufige Fragen | Mr. Nice Vape Deutschland" description="Antworten auf häufige Fragen zu Bestellung, Versand, Zahlung, Produkten und Rückgaben bei Mr. Nice Vape Deutschland.">
+<Layout title="FAQ – Häufige Fragen zu Versand, Zahlung & Produkten | Mr. Nice Vape" description="Antworten auf häufige Fragen zu Bestellung, SEPA- und Bitcoin-Zahlung, Versand ab Köln, Originalprodukten und Rückgaben bei Mr. Nice Vape Deutschland.">
   <Fragment slot="head">
-    <meta name="keywords" content="mrnicevape faq, vape shop questions, shipping deutschland vape, returns vape, payment methods vape, mrnicevape help" />
-    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+    <meta name="keywords" content="mrnicevape faq, vape bestellen fragen, e-zigarette versand deutschland, vape mit bitcoin bezahlen, mrnicevape hilfe" />
+    <script type="application/ld+json" set:html={JSON.stringify(faqPageSchema)} />
   </Fragment>
 
   <!-- Breadcrumb -->
@@ -165,9 +152,8 @@ const faqSchema = {
   <!-- Hero -->
   <section class="faq-hero">
     <div class="container">
-      <span class="section-label">Hilfe</span>
-      <h1 class="font-display faq-hero-title">Häufige Fragen</h1>
-      <p class="faq-hero-desc">Sie haben Fragen? Hier finden Sie schnelle Antworten nach Themen sortiert.</p>
+      <h1 class="font-display faq-hero-title">Häufig gestellte Fragen</h1>
+      <p class="faq-hero-desc">Alle wichtigen Informationen zu Mindestbestellwert, Zahlung, Lieferzeiten und Produktsortiment auf einen Blick.</p>
     </div>
   </section>
 

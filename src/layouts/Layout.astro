@@ -20,7 +20,8 @@ const {
 } = Astro.props;
 
 const siteTitle = title.includes('Mr. Nice Vape') ? title : `${title} – Mr. Nice Vape Deutschland`;
-const currentUrl = canonicalUrl || Astro.url.href;
+const cleanPath = Astro.url.pathname.replace(/\/+$/, '') || '/';
+const currentUrl = canonicalUrl || (cleanPath === '/' ? 'https://mrnicevape.com/' : `https://mrnicevape.com${cleanPath}`);
 
 function cleanMetaText(value: string) {
   return String(value || '')
@@ -91,7 +92,10 @@ const navCollections = collectionsData
 
   <link rel="canonical" href={currentUrl} />
   <link rel="alternate" hreflang="de-DE" href={currentUrl} />
+  <link rel="alternate" hreflang="de-AT" href={currentUrl} />
+  <link rel="alternate" hreflang="de-CH" href={currentUrl} />
   <link rel="alternate" hreflang="x-default" href={currentUrl} />
+  <link rel="alternate" type="text/plain" href="https://mrnicevape.com/llms.txt" title="LLM Context" />
   <meta name="generator" content={Astro.generator} />
 
   <!-- Geo & Locale -->
@@ -107,7 +111,7 @@ const navCollections = collectionsData
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
+        "@type": "OnlineStore",
         "@id": "https://mrnicevape.com/#organization",
         "name": "Mr. Nice Vape Deutschland",
         "url": "https://mrnicevape.com",
@@ -119,16 +123,19 @@ const navCollections = collectionsData
           "@type": "ContactPoint",
           "email": "info@mrnicevape.com",
           "contactType": "customer service",
-          "areaServed": "DE",
-          "availableLanguage": "German"
+          "areaServed": ["DE", "AT"],
+          "availableLanguage": ["de"]
         },
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Köln",
           "addressRegion": "NRW",
+          "postalCode": "50667",
           "addressCountry": "DE"
         },
-        "sameAs": []
+        "priceRange": "€€",
+        "currenciesAccepted": "EUR",
+        "paymentAccepted": "SEPA Bank Transfer, Cryptocurrencies (BTC, ETH, USDT, USDC, SOL, XMR)"
       },
       {
         "@type": "WebSite",
@@ -136,15 +143,7 @@ const navCollections = collectionsData
         "url": "https://mrnicevape.com",
         "name": "Mr. Nice Vape Deutschland",
         "publisher": { "@id": "https://mrnicevape.com/#organization" },
-        "inLanguage": "de-DE",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": {
-            "@type": "EntryPoint",
-            "urlTemplate": "https://mrnicevape.com/search?q={search_term_string}"
-          },
-          "query-input": "required name=search_term_string"
-        }
+        "inLanguage": "de-DE"
       }
     ]
   })} />
@@ -181,42 +180,42 @@ const navCollections = collectionsData
       <div class="announcement-inner" id="announcement-inner">
         <span class="announcement-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          Standard- & Expressversand deutschlandweit
+          Standard- & Expressversand ab Lager Köln
         </span>
         <span class="announcement-sep">·</span>
         <span class="announcement-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          Nur 18+ — Altersprüfung erforderlich
+          Verkauf ab 18 Jahren (JuSchG)
         </span>
         <span class="announcement-sep">·</span>
         <span class="announcement-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          Köln, NRW — Versand deutschlandweit
+          Versand nach Deutschland & Österreich
         </span>
         <span class="announcement-sep">·</span>
         <span class="announcement-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-          Deutschlands beliebter Vape-Shop
+          Geprüfte Originalware führender Hersteller
         </span>
         <span class="announcement-sep">·</span>
         <span class="announcement-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          Standard- & Expressversand deutschlandweit
+          Standard- & Expressversand ab Lager Köln
         </span>
         <span class="announcement-sep">·</span>
         <span class="announcement-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          Nur 18+ — Altersprüfung erforderlich
+          Verkauf ab 18 Jahren (JuSchG)
         </span>
         <span class="announcement-sep">·</span>
         <span class="announcement-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          Köln, NRW — Versand deutschlandweit
+          Versand nach Deutschland & Österreich
         </span>
         <span class="announcement-sep">·</span>
         <span class="announcement-item">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-          Deutschlands beliebter Vape-Shop
+          Geprüfte Originalware führender Hersteller
         </span>
         <span class="announcement-sep">·</span>
       </div>
@@ -228,7 +227,7 @@ const navCollections = collectionsData
     <div class="header-container">
 
       <!-- Logo -->
-      <a href="/" class="logo-link" aria-label="Mr. Nice Vape — Startseite">
+      <a href="/" class="logo-link" aria-label="Mr. Nice Vape Startseite">
         <span class="logo-text font-display">Mr. Nice Vape</span>
       </a>
 
@@ -384,8 +383,8 @@ const navCollections = collectionsData
       <div id="drawer-min-order-banner" class="drawer-min-order-banner" style="display:none;">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
         <div>
-          <strong style="font-size:0.78rem;color:#92400E;">Mindestbestellung: €200,00 EUR</strong>
-          <p id="drawer-min-order-msg" style="font-size:0.72rem;color:#A16207;margin:0.1rem 0 0;">Lege noch <span id="drawer-min-remaining" style="font-weight:700;color:#92400E;">€200,00</span> in den Warenkorb.</p>
+          <strong style="font-size:0.78rem;color:#92400E;">Mindestbestellung: €220,00 EUR</strong>
+          <p id="drawer-min-order-msg" style="font-size:0.72rem;color:#A16207;margin:0.1rem 0 0;">Lege noch <span id="drawer-min-remaining" style="font-weight:700;color:#92400E;">€220,00</span> in den Warenkorb.</p>
         </div>
       </div>
       <!-- Min order progress -->
@@ -1622,8 +1621,8 @@ const navCollections = collectionsData
 
       if (cartGesamtEl) cartGesamtEl.textContent = `€${total.toFixed(2)}`;
 
-      // ── Mindestbestellwert von €200 prüfen (Drawer) ──
-      const DRAWER_MIN = 200;
+      // ── Mindestbestellwert von €220 prüfen (Drawer) ──
+      const DRAWER_MIN = 220;
       const drawerRemaining = DRAWER_MIN - total;
       const drawerBanner = document.getElementById('drawer-min-order-banner');
       const drawerRemEl = document.getElementById('drawer-min-remaining');
@@ -1744,24 +1743,8 @@ const navCollections = collectionsData
       }
     });
   </script>
-  <!--Start of Tawk.to Script-->
-  <script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    Tawk_API.customStyle = {
-      visibility: {
-        desktop: { position: 'bl', xOffset: 15, yOffset: 15 },
-        mobile:  { position: 'bl', xOffset: 5,  yOffset: 5 }
-      }
-    };
-    (function() {
-      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-      s1.async = true;
-      s1.src = 'https://embed.tawk.to/699c74679f81c11c340d9ac3/1ji5ide0f';
-      s1.charset = 'UTF-8';
-      s1.setAttribute('crossorigin', '*');
-      s0.parentNode.insertBefore(s1, s0);
-    })();
-  </script>
-  <!--End of Tawk.to Script-->
+  <!-- Zoho SalesIQ Live Chat -->
+  <script type="text/javascript">window.$zoho=window.$zoho||{};$zoho.salesiq=$zoho.salesiq||{ready:function(){}};</script>
+  <script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siqe42b798a524681e48e42aa4ffb2d35d1904e93cf43670b9cb4fe2648e83fe1b8" defer></script>
 </body>
 </html>

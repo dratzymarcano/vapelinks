@@ -3,30 +3,28 @@ import Layout from '../layouts/Layout.astro';
 import siteData from '../data/site.json';
 ---
 
-<Layout title="Kontakt — Mr. Nice Vape Deutschland | Vape-Shop Köln" description="Kontaktieren Sie Mr. Nice Vape Deutschland: Produktberatung, Fragen zur Bestellung und Support per E-Mail oder Telefon aus Köln.">
+<Layout title="Kontakt – Mr. Nice Vape Deutschland | Kundenservice Köln" description="Kontaktieren Sie Mr. Nice Vape Deutschland: Produktberatung, Fragen zu Bestellungen, Ersatzteilen und Versand direkt aus Köln per E-Mail oder Kontaktformular.">
   <Fragment slot="head">
-    <meta name="keywords" content="mrnicevape kontakt, vape shop köln, mrnicevape telefon, mrnicevape email, vape beratung deutschland" />
+    <meta name="keywords" content="mrnicevape kontakt, vape shop köln kontakt, e-zigarette beratung deutschland, mrnicevape kundenservice" />
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "ContactPage",
       "name": "Kontakt Mr. Nice Vape Deutschland",
-      "description": "Kontaktieren Sie Mr. Nice Vape Deutschland per E-Mail oder Telefon.",
+      "description": "Kontaktieren Sie Mr. Nice Vape Deutschland per E-Mail oder Kontaktformular.",
       "url": "https://mrnicevape.com/contact",
       "isPartOf": { "@type": "WebSite", "@id": "https://mrnicevape.com/#website" },
       "about": {
-        "@type": "Store",
+        "@type": "OnlineStore",
         "name": "Mr. Nice Vape Deutschland",
         "url": "https://mrnicevape.com",
         "logo": "https://mrnicevape.com/images/logo.svg",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Musterstraße 12",
           "addressLocality": "Köln",
           "addressRegion": "NRW",
           "postalCode": "50667",
           "addressCountry": "DE"
         },
-        "telephone": "+492211234567",
         "email": "info@mrnicevape.com",
         "openingHoursSpecification": [
           { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:30", "closes": "19:30" },
@@ -59,12 +57,8 @@ import siteData from '../data/site.json';
   <section class="contact-hero">
     <div class="contact-hero-pattern"></div>
     <div class="container contact-hero-inner">
-      <div class="contact-hero-badge">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-        Antwort in der Regel innerhalb von 24 Stunden
-      </div>
-      <h1 class="font-display contact-hero-title">Wir helfen <span class="contact-hero-accent">gern weiter</span></h1>
-      <p class="contact-hero-desc">Fragen zu Produkten, Versand oder Ihrer Bestellung? Unser Team antwortet persönlich, verständlich und ohne Umwege.</p>
+      <h1 class="font-display contact-hero-title">Kundenservice &amp; <span class="contact-hero-accent">Fachberatung</span></h1>
+      <p class="contact-hero-desc">Fragen zu Geräten, passenden Ersatz-Coils, Versandlaufzeiten oder einer bestehenden Bestellung? Unser Team in Köln antwortet werktags innerhalb von 24 Stunden.</p>
     </div>
   </section>
 
@@ -79,16 +73,16 @@ import siteData from '../data/site.json';
             <div class="contact-card-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
-            <h2 class="font-display contact-card-title">Standort in Köln</h2>
-            <p class="contact-card-text">Persönliche Beratung, klare Empfehlungen und Support für Bestellungen in Deutschland.</p>
+            <h2 class="font-display contact-card-title">Logistik &amp; Versand Köln</h2>
+            <p class="contact-card-text">Zentraler Versandstandort für Lieferungen innerhalb Deutschlands und nach Österreich.</p>
             <div class="contact-card-info">
-              <strong>Musterstraße 12</strong><br />
-              50667 Köln, NRW<br />
+              <strong>50667 Köln</strong><br />
+              Nordrhein-Westfalen<br />
               Deutschland
             </div>
-            <a href="https://maps.google.com/?q=Musterstra%C3%9Fe+12+50667+K%C3%B6ln+Deutschland" target="_blank" rel="noopener noreferrer" class="contact-card-action">
+            <a href="https://maps.google.com/?q=50667+K%C3%B6ln+Deutschland" target="_blank" rel="noopener noreferrer" class="contact-card-action">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
-              Route anzeigen
+              Auf Karte ansehen
             </a>
           </div>
         </div>
@@ -100,33 +94,34 @@ import siteData from '../data/site.json';
             <div class="contact-card-icon">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             </div>
-            <h2 class="font-display contact-card-title">E-Mail</h2>
-            <p class="contact-card-text">Bestellungen, Produkte, Rückgaben — wir antworten an Werktagen meist innerhalb von 24 Stunden.</p>
+            <h2 class="font-display contact-card-title">E-Mail-Support</h2>
+            <p class="contact-card-text">Für Bestellstatus, Zahlungsbelege, Reklamationen und technische Produktfragen.</p>
             <div class="contact-card-info">
               <a href="mailto:info@mrnicevape.com" class="contact-email-link">info@mrnicevape.com</a>
             </div>
             <a href="mailto:info@mrnicevape.com" class="contact-card-action">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              E-Mail senden
+              E-Mail schreiben
             </a>
           </div>
         </div>
 
-        <!-- Phone -->
+        <!-- Live Chat / Form -->
         <div class="contact-card">
           <div class="contact-card-accent phone"></div>
           <div class="contact-card-body">
             <div class="contact-card-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             </div>
-            <h2 class="font-display contact-card-title">Telefon</h2>
-            <p class="contact-card-text">Sie brauchen schnell eine Antwort? Rufen Sie uns während der Servicezeiten an.</p>
+            <h2 class="font-display contact-card-title">Direktformular &amp; Live-Chat</h2>
+            <p class="contact-card-text">Nutzen Sie das Formular unten oder den Live-Chat rechts unten für schnelle Rückfragen.</p>
             <div class="contact-card-info">
-              <a href="tel:+492211234567" class="contact-email-link">+49 221 1234567</a>
+              <strong>Mo–Fr:</strong> 10:30 – 19:30 Uhr<br />
+              <strong>Sa–So:</strong> ab 10:30 Uhr
             </div>
-            <a href="tel:+492211234567" class="contact-card-action">
+            <a href="#contact-form" class="contact-card-action">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              Jetzt anrufen
+              Zum Formular
             </a>
           </div>
         </div>
@@ -146,7 +141,7 @@ import siteData from '../data/site.json';
             </div>
             <div>
               <h2 class="font-display contact-hours-title">Servicezeiten</h2>
-              <p class="contact-hours-subtitle">Unser Team in Köln</p>
+              <p class="contact-hours-subtitle">Kundenbetreuung in Köln</p>
             </div>
           </div>
           <div class="contact-hours-table">
@@ -157,16 +152,16 @@ import siteData from '../data/site.json';
           </div>
           <p class="contact-hours-note">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-            Der Online-Shop ist rund um die Uhr geöffnet.
+            Bestellungen im Online-Shop sind rund um die Uhr möglich.
           </p>
         </div>
 
         <!-- Map -->
         <div class="contact-map-card">
-          <h2 class="font-display contact-map-title">Standort</h2>
+          <h2 class="font-display contact-map-title">Versandstandort Köln</h2>
           <div class="contact-map-wrap">
             <iframe
-              src="https://www.google.com/maps?q=K%C3%B6ln%2C%20Deutschland&output=embed"
+              src="https://www.google.com/maps?q=50667%20K%C3%B6ln%2C%20Deutschland&output=embed"
               width="100%"
               height="280"
               style="border:0;border-radius:var(--radius-lg);"
@@ -178,7 +173,7 @@ import siteData from '../data/site.json';
           </div>
           <div class="contact-map-address">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Musterstraße 12, 50667 Köln</span>
+            <span>50667 Köln, Nordrhein-Westfalen</span>
           </div>
         </div>
       </div>
@@ -190,9 +185,8 @@ import siteData from '../data/site.json';
     <div class="container">
       <div class="contact-form-wrapper">
         <div class="contact-form-header">
-          <span class="contact-section-label">Kontakt aufnehmen</span>
           <h2 class="font-display contact-form-title">Nachricht senden</h2>
-          <p class="contact-form-desc">Füllen Sie das Formular aus. Wir melden uns so schnell wie möglich zurück.</p>
+          <p class="contact-form-desc">Füllen Sie das Formular aus. Sie erhalten umgehend eine Eingangsbestätigung per E-Mail.</p>
         </div>
         <form id="contact-form" class="contact-form" novalidate>
           <div class="contact-form-row">

@@ -1,596 +1,100 @@
 [
   {
-    "id": 80416440386,
+    "id": 1001,
     "handle": "about-us",
-    "title": "Über Mr. Nice Vape",
-    "body_html": "<h1>Über Mr. Nice Vape Deutschland</h1><p>Mr. Nice Vape ist ein Online-Vape-Shop aus Köln für hochwertige Vape-Produkte, E-Liquids, Pods, Coils und Zubehör. Seit 2019 setzen wir auf ehrliche Beratung, Originalware und zuverlässigen Versand in Deutschland.</p>",
-    "created_at": "2021-09-06T12:56:36+10:00",
-    "updated_at": "2023-08-24T19:20:38+10:00",
-    "published_at": "2023-04-29T11:49:28+10:00"
+    "title": "Über Mr. Nice Vape Deutschland",
+    "updated_at": "2026-10-15T10:00:00+02:00",
+    "body_html": "<p><strong>Mr. Nice Vape Deutschland</strong> mit Sitz in Köln (Nordrhein-Westfalen) beliefert volljährige Dampferinnen und Dampfer in Deutschland, Österreich und der Europäischen Union mit originaler E-Zigaretten-Hardware, E-Liquids, Ersatz-Coils und Akkuzubehör.</p>\n      <h2>Unser Sortiment im Überblick</h2>\n      <p>Wir führen ausschließlich geprüfte Originalware direkter Markenhersteller und autorisierter Fachgroßhändler. Dazu gehören:</p>\n      <ul>\n        <li><strong>Pod-Systeme &amp; Starter-Kits:</strong> Uwell Caliburn Serie, Vaporesso XROS &amp; Luxe Serie, GeekVape Wenax &amp; Sonder, VOOPOO Argus &amp; Drag, OXVA und Aspire.</li>\n        <li><strong>Box Mods &amp; Sub-Ohm-Kits:</strong> GeekVape Aegis Legend 2 (L200) &amp; Max100, Vaporesso Armour Max &amp; Gen 200, SMOK Morph &amp; Rigel, Lost Vape Centaurus &amp; Thelema.</li>\n        <li><strong>Selbstwickler (RTA, RDA, RDTA):</strong> Steam Crave Aromamizer Serie, Vandy Vape, Hellvape Dead Rabbit, Wotofo Profile, Vapefly und ThunderHead Creations Tauren.</li>\n        <li><strong>E-Liquids &amp; Shortfills:</strong> Dinner Lady, Vampire Vape (Koncept), Nasty Juice, Dr Frost, Monster Vape Labs (Jam Monster, Fruit Monster, Custard Monster), Riot Squad, Doozy Vape Co. und Black Note.</li>\n        <li><strong>Akkuzellen &amp; Ladetechnik:</strong> Sony/Murata VTC5A &amp; VTC6, Samsung 30Q &amp; 40T, Golisi, Efest und Nitecore Ladegeräte.</li>\n      </ul>\n      <h2>Jugendschutz &amp; Produktsicherheit (18+)</h2>\n      <p>Der Verkauf unseres gesamten Sortiments erfolgt strikt an Personen ab 18 Jahren gemäß deutschem Jugendschutzgesetz (JuSchG) und den Vorgaben des Tabakerzeugnisgesetzes (TabakerzG / TPD2). Jede Bestellung enthält eine Echtheitsgarantie über die Seriennummer (Scratch-and-Check) des jeweiligen Herstellers.</p>\n      <p>Fragen zu Kompatibilität oder laufenden Bestellungen beantwortet unser Kölner Support-Team werktags unter <a href=\"mailto:info@mrnicevape.com\">info@mrnicevape.com</a> oder über das <a href=\"/contact\">Kontaktformular</a>.</p>"
   },
   {
-    "id": 80238084162,
+    "id": 1002,
     "handle": "battery-info",
-    "title": "Akku-Informationen",
-    "body_html": "<h1>Akku-Informationen</h1><p>Viele Vape-Kits und Mods werden ohne externe Akkus geliefert. Bitte prüfen Sie die Produktbeschreibung sorgfältig und kaufen Sie passende Akkus bei Bedarf separat.</p>",
-    "created_at": "2021-08-04T17:22:07+10:00",
-    "updated_at": "2021-08-04T17:32:51+10:00",
-    "published_at": "2021-08-04T17:32:51+10:00"
+    "title": "Akkusicherheit & Hinweise zu 18650 / 21700 Akkuzellen",
+    "updated_at": "2026-10-15T10:00:00+02:00",
+    "body_html": "<p>Viele leistungsstarke Box Mods und Akkuträger ab 80 Watt werden ab Werk <strong>ohne externe Lithium-Ionen-Akkuzellen</strong> ausgeliefert. Prüfen Sie vor dem Kauf in der jeweiligen Produktbeschreibung, ob ein fest verbauter Akku integriert ist oder ob Sie separate Rundzellen vom Typ <strong>18650</strong> oder <strong>21700</strong> benötigen.</p>\n      <h2>Wichtige Sicherheitsregeln für E-Zigaretten-Akkus</h2>\n      <ul>\n        <li><strong>Schutzfolie (Battery Wrap) prüfen:</strong> Nutzen Sie niemals eine Akkuzelle, deren Kunststoffummantelung Risse, Kerben oder blanke Metallstellen aufweist. Beschädigte Wraps müssen sofort durch neue Schrumpfschläuche (<a href=\"/collections/battery-storage-covers-wraps\">Battery Wraps</a>) ersetzt werden.</li>\n        <li><strong>Kein loser Transport:</strong> Transportieren Sie 18650- oder 21700-Zellen niemals lose in Hosen- oder Jackentaschen zusammen mit Schlüsseln oder Münzen. Nutzen Sie stets isolierte Kunststoff-Akkuboxen.</li>\n        <li><strong>Passende Dauerentladestromstärke (CDR):</strong> Achten Sie beim Sub-Ohm-Dampfen auf Hochstromzellen bekannter Marken wie <a href=\"/collections/sony-collection\">Sony / Murata VTC5A (25A–30A)</a>, VTC6, Samsung 25R/30Q oder <a href=\"/collections/efest-collection\">Efest</a>.</li>\n        <li><strong>Verheiratete Akkus (Married Batteries):</strong> In Akkuträgern mit zwei oder mehr Zellen sollten Sie immer baugleiche Akkus gleichen Alters und Ladezustands paarweise verwenden und gemeinsam in einem externen Ladegerät (z. B. Nitecore oder Golisi) aufladen.</li>\n        <li><strong>Fachgerechte Entsorgung:</strong> Defekte oder tiefentladene Lithium-Ionen-Akkus gehören nicht in den Hausmüll. Kleben Sie die Pole ab und geben Sie die Zellen kostenlos bei kommunalen Sammelstellen oder im Handel zurück (BattG).</li>\n      </ul>"
   },
   {
-    "id": 80311124034,
+    "id": 1003,
     "handle": "brands",
-    "title": "Marken",
-    "body_html": "<h1>Vape-Marken bei Mr. Nice Vape</h1><p>Entdecken Sie bekannte Vape-Marken wie SMOK, Vaporesso, GeekVape, Voopoo, Uwell, Aspire und viele weitere. Unsere Markenseiten helfen beim schnellen Einstieg in passende Geräte, Liquids und Ersatzteile.</p>",
-    "created_at": "2021-08-17T11:04:36+10:00",
-    "updated_at": "2021-08-17T11:04:36+10:00",
-    "published_at": "2021-08-17T11:04:36+10:00"
+    "title": "Vape-Marken & Hersteller im Überblick",
+    "updated_at": "2026-10-15T10:00:00+02:00",
+    "body_html": "<p>Bei Mr. Nice Vape Deutschland führen wir Hardware, Verdampfer, E-Liquids und Zubehör führender Hersteller, die im deutschsprachigen Raum (Deutschland, Österreich, Schweiz) für zuverlässige Ersatzteilversorgung und geprüfte Qualität bekannt sind.</p>\n      <h2>Hardware- &amp; Gerätehersteller</h2>\n      <ul>\n        <li><a href=\"/collections/vaporesso-collection\"><strong>Vaporesso:</strong></a> Bekannt für den AXON-Chipsatz, die COREX-Heiztechnologie sowie die Modellreihen Gen 200, Armour Max, Target 200, Luxe und GTX Coils.</li>\n        <li><a href=\"/collections/geekvape-collection\"><strong>GeekVape:</strong></a> IP68-zertifizierte Outdoor-Akkuträger (Aegis Legend 2 L200, Max100, M100, B60), auslaufsichere Z (Zeus) Sub-Ohm-Tanks mit Top-to-Bottom-Airflow und Wenax Pod-Kits.</li>\n        <li><a href=\"/collections/uwell-collection\"><strong>Uwell:</strong></a> Marktführer im Bereich nachfüllbarer MTL- und RDL-Pod-Systeme (Caliburn G, G2, G3, X) sowie geschmacksstarker Crown Sub-Ohm-Verdampfer mit Pro-FOCS-Technologie.</li>\n        <li><a href=\"/collections/smok-collection\"><strong>SMOK:</strong></a> Leistungsstarke Dual-Battery-Mods (Morph 2, Rigel), Nord- und RPM-Pod-Systeme sowie TFV-Tanks.</li>\n        <li><a href=\"/collections/aspire-collection\"><strong>Aspire:</strong></a> Klassiker für das Backendampfen (MTL) mit der Nautilus-Tankserie (Nautilus GT, Nautilus 3, BVC Mesh Coils) und Zelos-Kits.</li>\n        <li><a href=\"/collections/lost-vape-collection\"><strong>Lost Vape:</strong></a> Hochwertige Akkuträger mit Quest- und DNA-Chipsätzen (Centaurus, Thelema, Grus) und Ursa-Pods.</li>\n        <li><a href=\"/collections/vandy-vape-collection\"><strong>Vandy Vape</strong></a> &amp; <a href=\"/collections/vapefly-collection\"><strong>Vapefly:</strong></a> Spezialisten für Selbstwickelverdampfer (RTA, RDA, RDTA, Mesh-Decks), die besonders in der deutschen Dampfer-Community geschätzt werden.</li>\n      </ul>\n      <h2>Beliebte E-Liquid-Marken</h2>\n      <ul>\n        <li><a href=\"/collections/dinner-lady-vape-juice\"><strong>Dinner Lady (UK):</strong></a> Bekannt für Lemon Tart, Berry Tart, Blackberry Crumble und fruchtige Ice-Mischungen.</li>\n        <li><a href=\"/collections/dr-frost-e-liquids\"><strong>Dr Frost (UK):</strong></a> Intensive Frucht-Menthol-Kombinationen (Watermelon Ice, Strawberry Ice, Grape Ice).</li>\n        <li><a href=\"/collections/nasty-juice-vape-juice\"><strong>Nasty Juice:</strong></a> Fruchtsorten mit dezenter Frische wie Slow Blow, Cush Man und ASAP Grape.</li>\n        <li><a href=\"/collections/monster-vape-labs\"><strong>Monster Vape Labs:</strong></a> Hersteller von Jam Monster, Fruit Monster, Frozen Fruit Monster, Custard Monster und Lemonade Monster.</li>\n        <li><a href=\"/collections/black-note-e-liquids\"><strong>Black Note:</strong></a> Natürlich extrahierte Tabak-Liquids (NET) aus echten Virginia-, Kentucky- und Burley-Tabakblättern ohne künstliche Süßstoffe.</li>\n      </ul>"
   },
   {
-    "id": 80922181698,
-    "handle": "broadmeadows-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-24T14:04:51+11:00",
-    "updated_at": "2021-11-24T14:18:27+11:00",
-    "published_at": "2021-11-24T14:04:51+11:00"
-  },
-  {
-    "id": 80416768066,
-    "handle": "buy-e-liquids-vape-kits-and-vape-accessories-in-bayswater",
-    "title": "E-liquids, Vape-Kits and Vape Zubehör in Bayswater",
-    "body_html": "<h1>E-liquids, Vape-Kits and Vape Zubehör in Bayswater</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-06T15:48:02+10:00",
-    "updated_at": "2021-09-06T15:49:19+10:00",
-    "published_at": "2021-09-06T15:48:02+10:00"
-  },
-  {
-    "id": 80416636994,
-    "handle": "buy-e-liquids-vape-kits-and-vape-accessories-in-boronia",
-    "title": "E-liquids, Vape-Kits and Vape Zubehör in Boronia",
-    "body_html": "<h1>E-liquids, Vape-Kits and Vape Zubehör in Boronia</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-06T15:10:24+10:00",
-    "updated_at": "2021-09-06T15:13:08+10:00",
-    "published_at": "2021-09-06T15:10:24+10:00"
-  },
-  {
-    "id": 80416997442,
-    "handle": "buy-e-liquids-vape-kits-and-vape-accessories-in-box-hill",
-    "title": "E-liquids, Vape-Kits and Vape Zubehör in Box Hill",
-    "body_html": "<h1>E-liquids, Vape-Kits and Vape Zubehör in Box Hill</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-06T16:12:35+10:00",
-    "updated_at": "2021-09-06T16:16:11+10:00",
-    "published_at": "2021-09-06T16:12:35+10:00"
-  },
-  {
-    "id": 80416538690,
-    "handle": "buy-e-liquids-vape-kits-and-vape-accessories-in-bulleen",
-    "title": "E-liquids, Vape-Kits and Vape Zubehör in Bulleen",
-    "body_html": "<h1>E-liquids, Vape-Kits and Vape Zubehör in Bulleen</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-06T13:21:33+10:00",
-    "updated_at": "2021-09-06T15:09:21+10:00",
-    "published_at": "2021-09-06T14:57:23+10:00"
-  },
-  {
-    "id": 80417062978,
-    "handle": "buy-e-liquids-vape-kits-and-vape-accessories-in-chadstone",
-    "title": "E-liquids, Vape-Kits and Vape Zubehör in Chadstone",
-    "body_html": "<h1>E-liquids, Vape-Kits and Vape Zubehör in Chadstone</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-06T16:20:54+10:00",
-    "updated_at": "2021-09-06T16:22:49+10:00",
-    "published_at": "2021-09-06T16:20:54+10:00"
-  },
-  {
-    "id": 80417030210,
-    "handle": "buy-e-liquids-vape-kits-and-vape-accessories-in-clayton",
-    "title": "E-liquids, Vape-Kits and Vape Zubehör in Clayton",
-    "body_html": "<h1>E-liquids, Vape-Kits and Vape Zubehör in Clayton</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-06T16:18:34+10:00",
-    "updated_at": "2021-09-06T16:19:44+10:00",
-    "published_at": "2021-09-06T16:18:34+10:00"
-  },
-  {
-    "id": 80417095746,
-    "handle": "buy-e-liquids-vape-kits-and-vape-accessories-in-dandenong",
-    "title": "E-liquids, Vape-Kits and Vape Zubehör in Dandenong",
-    "body_html": "<h1>E-liquids, Vape-Kits and Vape Zubehör in Dandenong</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-06T16:24:14+10:00",
-    "updated_at": "2021-11-23T16:30:05+11:00",
-    "published_at": "2021-09-06T16:24:14+10:00"
-  },
-  {
-    "id": 80416931906,
-    "handle": "buy-e-liquids-vape-kits-and-vape-accessories-in-epping",
-    "title": "E-liquids, Vape-Kits and Vape Zubehör in Epping",
-    "body_html": "<h1>E-liquids, Vape-Kits and Vape Zubehör in Epping</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-06T16:07:54+10:00",
-    "updated_at": "2021-09-06T16:09:32+10:00",
-    "published_at": "2021-09-06T16:07:54+10:00"
-  },
-  {
-    "id": 80416735298,
-    "handle": "buy-e-liquids-vape-kits-and-vape-accessories-in-ferntree-gully",
-    "title": "E-liquids, Vape-Kits and Vape Zubehör in Ferntree Gully",
-    "body_html": "<h1>E-liquids, Vape-Kits and Vape Zubehör in Ferntree Gully</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-06T15:43:07+10:00",
-    "updated_at": "2021-09-06T15:44:25+10:00",
-    "published_at": "2021-09-06T15:43:07+10:00"
-  },
-  {
-    "id": 80417128514,
-    "handle": "buy-e-liquids-vape-kits-and-vape-accessories-in-footscray",
-    "title": "E-liquids, Vape-Kits and Vape Zubehör in Footscray",
-    "body_html": "<h1>E-liquids, Vape-Kits and Vape Zubehör in Footscray</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-06T16:26:22+10:00",
-    "updated_at": "2021-11-23T16:28:20+11:00",
-    "published_at": "2021-09-06T16:26:22+10:00"
-  },
-  {
-    "id": 80416899138,
-    "handle": "buy-e-liquids-vape-kits-and-vape-accessories-in-knox-city",
-    "title": "E-liquids, Vape-Kits and Vape Zubehör in Knox Stadt",
-    "body_html": "<h1>E-liquids, Vape-Kits and Vape Zubehör in Knox Stadt</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-06T16:06:00+10:00",
-    "updated_at": "2021-09-06T16:07:00+10:00",
-    "published_at": "2021-09-06T16:06:00+10:00"
-  },
-  {
-    "id": 80420798530,
-    "handle": "buy-e-liquids-vape-kits-and-vape-accessories-in-laverton",
-    "title": "E-liquids, Vape-Kits and Vape Zubehör in Laverton",
-    "body_html": "<h1>E-liquids, Vape-Kits and Vape Zubehör in Laverton</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-07T11:24:24+10:00",
-    "updated_at": "2021-11-23T16:25:14+11:00",
-    "published_at": "2021-09-07T11:24:24+10:00"
-  },
-  {
-    "id": 80416866370,
-    "handle": "vape-shop-koeln",
-    "title": "E-liquids, Vape-Kits and Vape Zubehör in Köln",
-    "body_html": "<h1>E-liquids, Vape-Kits and Vape Zubehör in Köln</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-06T16:01:35+10:00",
-    "updated_at": "2021-09-06T16:02:22+10:00",
-    "published_at": "2021-09-06T16:01:35+10:00"
-  },
-  {
-    "id": 80416833602,
-    "handle": "buy-e-liquids-vape-kits-and-vape-accessories-in-nunawading",
-    "title": "E-liquids, Vape-Kits and Vape Zubehör in Nunawading",
-    "body_html": "<h1>E-liquids, Vape-Kits and Vape Zubehör in Nunawading</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-06T15:56:48+10:00",
-    "updated_at": "2021-09-06T15:58:34+10:00",
-    "published_at": "2021-09-06T15:56:48+10:00"
-  },
-  {
-    "id": 80416964674,
-    "handle": "buy-e-liquids-vape-kits-and-vape-accessories-in-oakleigh",
-    "title": "E-liquids, Vape-Kits and Vape Zubehör in Oakleigh",
-    "body_html": "<h1>E-liquids, Vape-Kits and Vape Zubehör in Oakleigh</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-06T16:10:41+10:00",
-    "updated_at": "2021-09-06T16:11:47+10:00",
-    "published_at": "2021-09-06T16:10:41+10:00"
-  },
-  {
-    "id": 80416800834,
-    "handle": "buy-e-liquids-vape-kits-and-vape-accessories-in-ringwood",
-    "title": "E-liquids, Vape-Kits and Vape Zubehör in Ringwood",
-    "body_html": "<h1>E-liquids, Vape-Kits and Vape Zubehör in Ringwood</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-06T15:53:45+10:00",
-    "updated_at": "2021-09-06T15:55:02+10:00",
-    "published_at": "2021-09-06T15:53:45+10:00"
-  },
-  {
-    "id": 23462412354,
-    "handle": "contact-us",
-    "title": "Kontakt Us",
-    "body_html": "<h1>Kontakt Us</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2019-03-08T15:54:29+11:00",
-    "updated_at": "2024-05-28T18:26:01+10:00",
-    "published_at": "2020-08-09T23:00:00+10:00"
-  },
-  {
-    "id": 80921755714,
-    "handle": "craigieburn-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-24T12:00:49+11:00",
-    "updated_at": "2021-11-24T12:12:41+11:00",
-    "published_at": "2021-11-24T12:00:49+11:00"
-  },
-  {
-    "id": 81924980802,
-    "handle": "disposable-vapes-deutschland",
-    "title": "Einweg-Vapes Deutschland",
-    "body_html": "<h1>Einweg-Vapes Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2022-06-02T10:25:27+10:00",
-    "updated_at": "2022-06-02T12:52:06+10:00",
-    "published_at": "2022-06-02T10:25:27+10:00"
-  },
-  {
-    "id": 80928866370,
-    "handle": "doreen-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-25T12:58:38+11:00",
-    "updated_at": "2021-11-25T13:05:57+11:00",
-    "published_at": "2021-11-25T12:58:38+11:00"
-  },
-  {
-    "id": 52157644866,
-    "handle": "e-liquid-online-shop-deutschland",
-    "title": "E Juice in Deutschland",
-    "body_html": "<h1>E Juice in Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2020-07-23T20:50:57+10:00",
-    "updated_at": "2020-07-27T15:26:58+10:00",
-    "published_at": "2020-07-23T20:50:57+10:00"
-  },
-  {
-    "id": 80921788482,
-    "handle": "fawkner-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-24T12:18:03+11:00",
-    "updated_at": "2021-11-24T12:35:22+11:00",
-    "published_at": "2021-11-24T12:18:03+11:00"
-  },
-  {
-    "id": 80481091650,
-    "handle": "frankston-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-15T16:33:35+10:00",
-    "updated_at": "2021-11-23T16:22:02+11:00",
-    "published_at": "2021-09-15T16:34:56+10:00"
-  },
-  {
-    "id": 80493084738,
-    "handle": "glenroy-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-16T11:12:13+10:00",
-    "updated_at": "2021-11-23T16:20:09+11:00",
-    "published_at": "2021-09-16T11:12:13+10:00"
-  },
-  {
-    "id": 80914415682,
-    "handle": "gold-coast-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-23T17:28:11+11:00",
-    "updated_at": "2021-11-23T17:34:48+11:00",
-    "published_at": "2021-11-23T17:28:11+11:00"
-  },
-  {
-    "id": 80929325122,
-    "handle": "greenvale-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-25T15:09:05+11:00",
-    "updated_at": "2021-11-25T15:11:51+11:00",
-    "published_at": "2021-11-25T15:09:05+11:00"
-  },
-  {
-    "id": 80921854018,
-    "handle": "hadfield-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-24T12:52:32+11:00",
-    "updated_at": "2021-11-24T12:58:00+11:00",
-    "published_at": "2021-11-24T12:52:32+11:00"
-  },
-  {
-    "id": 81701699650,
-    "handle": "job-opportunity",
-    "title": "Job Opportunity",
-    "body_html": "<h1>Job Opportunity</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2022-04-21T13:29:39+10:00",
-    "updated_at": "2022-04-21T13:59:24+10:00",
-    "published_at": "2022-04-21T13:29:39+10:00"
-  },
-  {
-    "id": 80922509378,
-    "handle": "meadow-heights-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-24T18:02:15+11:00",
-    "updated_at": "2021-11-24T18:07:36+11:00",
-    "published_at": "2021-11-24T18:02:15+11:00"
-  },
-  {
-    "id": 80929161282,
-    "handle": "mernda-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-25T14:22:14+11:00",
-    "updated_at": "2021-11-25T14:40:52+11:00",
-    "published_at": "2021-11-25T14:22:14+11:00"
-  },
-  {
-    "id": 80914972738,
-    "handle": "newcastle-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-23T18:18:03+11:00",
-    "updated_at": "2021-11-23T18:36:18+11:00",
-    "published_at": "2021-11-23T18:18:03+11:00"
-  },
-  {
-    "id": 80804511810,
-    "handle": "nicotine-calculator",
-    "title": "Nicotine Calculator",
-    "body_html": "<h1>Nicotine Calculator</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-08T11:54:42+11:00",
-    "updated_at": "2024-01-11T15:25:03+11:00",
-    "published_at": "2021-11-08T11:54:42+11:00"
-  },
-  {
-    "id": 28034596930,
-    "handle": "nicotine-ejuice",
-    "title": "Nicotine Ejuice",
-    "body_html": "<h1>Nicotine Ejuice</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2019-06-27T22:18:13+10:00",
-    "updated_at": "2019-06-27T22:18:13+10:00",
-    "published_at": "2019-06-27T22:18:13+10:00"
-  },
-  {
-    "id": 52176191554,
-    "handle": "nikotin-vape-juice-deutschland",
-    "title": "Nicotine Vape Juice in Deutschland",
-    "body_html": "<h1>Nicotine Vape Juice in Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2020-07-24T20:28:47+10:00",
-    "updated_at": "2022-01-19T15:55:07+11:00",
-    "published_at": "2020-07-24T20:28:47+10:00"
-  },
-  {
-    "id": 80928800834,
-    "handle": "northcote-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-25T12:37:33+11:00",
-    "updated_at": "2021-11-25T12:46:22+11:00",
-    "published_at": "2021-11-25T12:37:33+11:00"
-  },
-  {
-    "id": 80922443842,
-    "handle": "oak-park-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-24T17:48:15+11:00",
-    "updated_at": "2021-11-24T18:02:55+11:00",
-    "published_at": "2021-11-24T17:48:15+11:00"
-  },
-  {
-    "id": 80928997442,
-    "handle": "pakenham-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-25T14:04:00+11:00",
-    "updated_at": "2021-11-25T14:06:35+11:00",
-    "published_at": "2021-11-25T14:04:00+11:00"
-  },
-  {
-    "id": 80922411074,
-    "handle": "pascoe-vale-south-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-24T17:25:23+11:00",
-    "updated_at": "2021-11-24T17:28:45+11:00",
-    "published_at": "2021-11-24T17:25:23+11:00"
-  },
-  {
-    "id": 80921919554,
-    "handle": "pascoe-vale-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-24T13:00:51+11:00",
-    "updated_at": "2021-11-24T13:13:24+11:00",
-    "published_at": "2021-11-24T13:00:51+11:00"
-  },
-  {
-    "id": 80921821250,
-    "handle": "preston-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-24T12:37:53+11:00",
-    "updated_at": "2021-11-24T12:49:25+11:00",
-    "published_at": "2021-11-24T12:37:53+11:00"
-  },
-  {
-    "id": 25956909122,
-    "handle": "recently-viewed-products",
-    "title": "recently viewed Produkte",
-    "body_html": "<h1>recently viewed Produkte</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2019-05-22T17:09:50+10:00",
-    "updated_at": "2019-05-22T17:09:50+10:00",
-    "published_at": "2019-05-22T17:09:50+10:00"
-  },
-  {
-    "id": 80494133314,
-    "handle": "reservoir-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-09-16T16:17:26+10:00",
-    "updated_at": "2021-11-23T16:19:50+11:00",
-    "published_at": "2021-09-16T16:17:26+10:00"
-  },
-  {
-    "id": 80929095746,
-    "handle": "roxburgh-park-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-25T14:15:38+11:00",
-    "updated_at": "2021-11-25T14:20:35+11:00",
-    "published_at": "2021-11-25T14:15:38+11:00"
-  },
-  {
-    "id": 85502197826,
-    "handle": "savings-calculator",
-    "title": "SAVINGS CALCULATOR",
-    "body_html": "<h1>SAVINGS CALCULATOR</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2023-08-06T00:58:24+10:00",
-    "updated_at": "2023-08-29T11:04:50+10:00",
-    "published_at": "2023-08-28T16:04:49+10:00"
-  },
-  {
-    "id": 85275639874,
-    "handle": "Suche-results-page",
-    "title": "Search Results",
-    "body_html": "<h1>Search Results</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2023-06-23T17:04:15+10:00",
-    "updated_at": "2023-06-23T17:04:15+10:00",
-    "published_at": "2023-06-23T17:04:15+10:00"
-  },
-  {
-    "id": 93668048962,
-    "handle": "Versand-restriction",
-    "title": "Shipping Restriction",
-    "body_html": "<h1>Shipping Restriction</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2024-06-13T18:04:49+10:00",
-    "updated_at": "2024-06-13T18:29:16+10:00",
-    "published_at": "2024-06-13T18:04:49+10:00"
-  },
-  {
-    "id": 80928964674,
-    "handle": "south-morang-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-25T13:57:18+11:00",
-    "updated_at": "2021-11-25T14:02:01+11:00",
-    "published_at": "2021-11-25T13:57:18+11:00"
-  },
-  {
-    "id": 23679959106,
-    "handle": "terms-conditions",
-    "title": "Allgemeine Geschäftsbedingungen",
-    "body_html": "<h1>Allgemeine Geschäftsbedingungen</h1><p>Diese Bedingungen regeln die Nutzung von Mr. Nice Vape Deutschland und den Kauf von Produkten über unseren Online-Shop. Der Verkauf erfolgt ausschließlich an volljährige Personen ab 18 Jahren.</p>",
-    "created_at": "2019-03-14T23:44:43+11:00",
-    "updated_at": "2020-08-19T14:09:35+10:00",
-    "published_at": "2020-07-22T11:30:00+10:00"
-  },
-  {
-    "id": 51395231810,
-    "handle": "thank-you",
-    "title": "Thank You",
-    "body_html": "<h1>Thank You</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2020-06-01T15:37:19+10:00",
-    "updated_at": "2020-06-01T15:37:19+10:00",
-    "published_at": "2020-06-01T15:37:19+10:00"
-  },
-  {
-    "id": 89226379330,
-    "handle": "the4-compare",
-    "title": "Compare",
-    "body_html": "<h1>Compare</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2023-11-02T16:07:39+11:00",
-    "updated_at": "2023-11-02T16:07:39+11:00",
-    "published_at": "2023-11-02T16:07:39+11:00"
-  },
-  {
-    "id": 89226346562,
-    "handle": "the4-wishlist",
-    "title": "Wishlist",
-    "body_html": "<h1>Wishlist</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2023-11-02T16:07:37+11:00",
-    "updated_at": "2023-11-02T16:07:37+11:00",
-    "published_at": "2023-11-02T16:07:37+11:00"
-  },
-  {
-    "id": 80922312770,
-    "handle": "thomastown-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-24T17:06:06+11:00",
-    "updated_at": "2021-11-24T17:17:53+11:00",
-    "published_at": "2021-11-24T17:06:06+11:00"
-  },
-  {
-    "id": 80914808898,
-    "handle": "tweed-heads-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-23T18:05:33+11:00",
-    "updated_at": "2021-11-23T18:14:01+11:00",
-    "published_at": "2021-11-23T18:05:33+11:00"
-  },
-  {
-    "id": 79793520706,
+    "id": 1004,
     "handle": "vape-brands",
-    "title": "Alle Marken",
-    "body_html": "<h1>Alle Marken</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-05-21T16:41:11+10:00",
-    "updated_at": "2021-08-17T10:54:33+10:00",
-    "published_at": "2021-05-21T16:41:11+10:00"
+    "title": "Alle Hersteller & Marken im Mr. Nice Vape Shop",
+    "updated_at": "2026-10-15T10:00:00+02:00",
+    "body_html": "<p>Unser Markenverzeichnis hilft Ihnen dabei, direkt zu den passenden Geräten, Verdampferköpfen (Coils), Ersatzgläsern und E-Liquids Ihres bevorzugten Herstellers zu navigieren.</p>\n      <h2>Wichtige Marken nach Produktbereich</h2>\n      <ul>\n        <li><strong>Pod-Systeme &amp; MTL-Geräte:</strong> <a href=\"/collections/uwell-collection\">Uwell</a>, <a href=\"/collections/vaporesso-collection\">Vaporesso</a>, <a href=\"/collections/aspire-collection\">Aspire</a>, <a href=\"/collections/innokin-kits\">Innokin</a>, <a href=\"/collections/zq\">ZQ Vapor</a>.</li>\n        <li><strong>Sub-Ohm-Mods &amp; Fertigcoil-Tanks:</strong> <a href=\"/collections/geekvape-collection\">GeekVape</a>, <a href=\"/collections/smok-collection\">SMOK</a>, <a href=\"/collections/freemax-collection\">Freemax</a>, <a href=\"/collections/lost-vape-collection\">Lost Vape</a>, <a href=\"/collections/eleaf-collection\">Eleaf</a>.</li>\n        <li><strong>Selbstwickler &amp; DIY-Zubehör:</strong> <a href=\"/collections/vandy-vape-collection\">Vandy Vape</a>, <a href=\"/collections/vapefly-collection\">Vapefly</a>, Steam Crave, Hellvape, Wotofo, ThunderHead Creations, BP Mods, Coil Master.</li>\n        <li><strong>Kräuter-Vaporizer (Dry Herb):</strong> Storz &amp; Bickel, Arizer, Boundless, XMAX / XVAPE (Top Green), Utillian, Yocan.</li>\n        <li><strong>E-Liquids &amp; Shortfills:</strong> <a href=\"/collections/all-e-liquid\">Alle E-Liquids ansehen</a> (Dinner Lady, Dr Frost, Nasty Juice, Vampire Vape, Monster Vape Labs, Candy King, Cloud Nurdz, Sadboy, Charlies Chalk Dust, Black Note).</li>\n      </ul>\n      <p><a href=\"/collections/shop\">Zum gesamten Produktkatalog</a></p>"
   },
   {
-    "id": 80929259586,
-    "handle": "wallan-vape-shop",
-    "title": "Vape-Shop Deutschland",
-    "body_html": "<h1>Vape-Shop Deutschland</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2021-11-25T14:41:11+11:00",
-    "updated_at": "2021-11-25T14:51:51+11:00",
-    "published_at": "2021-11-25T14:41:11+11:00"
+    "id": 1005,
+    "handle": "vape-shop-koeln",
+    "title": "Vape-Shop Köln – E-Zigaretten, Liquids & Zubehör aus NRW",
+    "updated_at": "2026-10-15T10:00:00+02:00",
+    "body_html": "<p><strong>Mr. Nice Vape Deutschland</strong> betreibt seinen zentralen Logistik- und Versandstandort in <strong>Köln (Nordrhein-Westfalen)</strong>. Von hier aus versenden wir E-Zigaretten, Pod-Systeme, E-Liquids, Ersatz-Coils und Akkuzellen direkt nach Köln, Düsseldorf, Bonn, Leverkusen, ins Ruhrgebiet sowie in alle 16 deutschen Bundesländer und nach Österreich.</p>\n      <h2>Warum Dampfer in Köln &amp; NRW bei Mr. Nice Vape bestellen</h2>\n      <ul>\n        <li><strong>Große Hardware-Tiefe vor Ort:</strong> Über 950 vorrätige Artikel von GeekVape, Vaporesso, Uwell, SMOK, Aspire, Lost Vape, Steam Crave und Vandy Vape.</li>\n        <li><strong>Ersatzteile &amp; Coils ohne langes Suchen:</strong> Passende Mesh-Coils (z. B. GeekVape Z Series, Vaporesso GTX &amp; GTi, Uwell Caliburn G/G2, Aspire Nautilus BVC), Leerpods und Bubble-Ersatzgläser.</li>\n        <li><strong>Schneller Versand ab Köln:</strong> Standardversand (9,95 €) und priorisierter Expressversand (14,95 €, Zustellung innerhalb von 2 bis 4 Werktagen) mit Sendungsverfolgung per E-Mail.</li>\n        <li><strong>Geprüfte Originalware (18+):</strong> Alle Produkte stammen aus autorisierten Lieferketten mit Verifikationscode auf der Originalverpackung.</li>\n      </ul>\n      <p>Stöbern Sie jetzt in unseren <a href=\"/collections/all-vape-kits\">Vape-Kits</a>, <a href=\"/collections/all-e-liquid\">E-Liquids</a> und <a href=\"/collections/all-coils\">Ersatz-Coils</a>.</p>"
   },
   {
-    "id": 24933400642,
-    "handle": "wishlist",
-    "title": "Wishlist",
-    "body_html": "<h1>Wishlist</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2019-04-24T22:00:52+10:00",
-    "updated_at": "2021-04-21T17:55:03+10:00",
-    "published_at": "2019-04-24T22:00:00+10:00"
+    "id": 1006,
+    "handle": "disposable-vapes-deutschland",
+    "title": "Einweg-Vapes (Disposables) in Deutschland bestellen",
+    "updated_at": "2026-10-15T10:00:00+02:00",
+    "body_html": "<p>Einweg-E-Zigaretten (Disposables) und vorbefüllte Hybrid-Systeme sind sofort einsatzbereit: Auspacken, anziehen und dampfen – ohne Knöpfe, ohne Coilwechsel und ohne separates Nachfüllen. Bei Mr. Nice Vape Deutschland führen wir gezielt Marken, die im europäischen Markt gefragt sind, darunter <strong>HQD Cuvie Plus</strong>, <strong>Elux Firerose Nova</strong> und <strong>Lost Mary BM6000</strong>.</p>\n      <h2>Wann lohnt sich ein Einweg-Vape und wann ein Mehrweg-Pod-System?</h2>\n      <ul>\n        <li><strong>Für unterwegs, Reisen oder den schnellen Einstieg:</strong> Einweg-Vapes mit integrierter Zugautomatik und Mesh-Coil bieten konstanten Geschmack von der ersten bis zur letzten Nutzung.</li>\n        <li><strong>Für regelmäßige Nutzung im Alltag:</strong> Wer täglich dampft, spart mit einem nachfüllbaren Pod-System wie dem <a href=\"/collections/uwell-collection\">Uwell Caliburn G2 / X</a> oder <a href=\"/collections/vaporesso-collection\">Vaporesso Luxe</a> bis zu 70 % der laufenden Kosten und reduziert gleichzeitig Batterieabfall.</li>\n      </ul>\n      <h2>Hinweis zur Entsorgung (ElektroG / BattG)</h2>\n      <p>Einweg-E-Zigaretten enthalten eine Lithium-Ionen-Zelle und elektronische Bauteile. Entsorgen Sie aufgebrauchte Geräte bitte niemals im normalen Hausmüll, sondern geben Sie diese kostenfrei bei kommunalen Wertstoffhöfen oder Rücknahmestellen für Elektrokleingeräte und Batterien ab.</p>\n      <p><a href=\"/collections/disposable-vapes\">Alle verfügbaren Einweg-Vapes ansehen</a></p>"
   },
   {
-    "id": 23679991874,
-    "handle": "zippay-buy-now-pay-later",
-    "title": "Zippay - Now, Pay Later",
-    "body_html": "<h1>Zippay - Now, Pay Later</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2019-03-14T23:47:43+11:00",
-    "updated_at": "2023-06-21T12:30:08+10:00",
-    "published_at": "2019-03-14T23:47:00+11:00"
+    "id": 1007,
+    "handle": "e-liquid-online-shop-deutschland",
+    "title": "E-Liquid Online-Shop Deutschland – Shortfills & Aromenvielfalt",
+    "updated_at": "2026-10-15T10:00:00+02:00",
+    "body_html": "<p>Im E-Liquid-Sortiment von Mr. Nice Vape Deutschland finden Sie über 400 verschiedene Geschmacksrichtungen in unterschiedlichen Flaschengrößen (50 ml, 60 ml, 100 ml und 120 ml Shortfills) sowie abgestimmte VG/PG-Mischverhältnisse für jedes Gerät.</p>\n      <h2>Das richtige Mischverhältnis (VG / PG) wählen</h2>\n      <ul>\n        <li><strong>70 VG / 30 PG (High-VG Shortfills):</strong> Dickflüssiger, dichter Dampf und weicher Zug. Ideal für Sub-Ohm-Tanks, Box-Mod-Kits und Selbstwickler ab 30 Watt (z. B. GeekVape Z Tank, Vaporesso iTank 2, SMOK TFV18).</li>\n        <li><strong>50 VG / 50 PG (Ausgewogen):</strong> Klarer Geschmackstransport, spürbarer Throat Hit und schneller Nachfluss. Optimal für Pod-Systeme und MTL-Verdampfer zwischen 10 und 22 Watt (z. B. Uwell Caliburn, Aspire Nautilus, ZQ Xtal).</li>\n      </ul>\n      <h2>Unsere beliebtesten Geschmacksrichtungen</h2>\n      <ul>\n        <li><a href=\"/collections/fruit-flavours\"><strong>Frucht-Liquids:</strong></a> Beerenmix, Mango, Wassermelone, Pfirsich, Zitrus und exotische Früchte.</li>\n        <li><a href=\"/collections/menthol-e-liquids\"><strong>Menthol &amp; Ice:</strong></a> Kühle Frucht-Ice-Mischungen und reines Menthol von Dr Frost, Frozen Fruit Monster und Nasty Juice.</li>\n        <li><a href=\"/collections/dessert-flavours\"><strong>Dessert &amp; Gebäck:</strong></a> Vanillepudding (Custard), Zitronentarte (Dinner Lady Lemon Tart), Donuts und Milchreis-Noten.</li>\n        <li><a href=\"/collections/tobacco-e-liquids\"><strong>Tabak-Liquids:</strong></a> Klassischer Virginia-, Burley- und Kentucky-Tabak (u. a. natürlich extrahiert von Black Note) für Umsteiger.</li>\n      </ul>\n      <p><a href=\"/collections/all-e-liquid\">Jetzt alle E-Liquids entdecken</a></p>"
   },
   {
-    "id": 100000001,
+    "id": 1008,
+    "handle": "nikotin-vape-juice-deutschland",
+    "title": "Nikotinstärken, Shortfills & E-Liquids in Deutschland – Ratgeber",
+    "updated_at": "2026-10-15T10:00:00+02:00",
+    "body_html": "<p>Wer von der herkömmlichen Tabakzigarette auf eine E-Zigarette umsteigt, stellt sich meist zuerst die Frage nach der passenden Nikotinstärke und dem Unterschied zwischen klassischem Freebase-Nikotin, Nikotinsalz und 0-mg-Shortfills.</p>\n      <h2>Gesetzliche Rahmenbedingungen in Deutschland &amp; der EU (TPD2)</h2>\n      <p>Nach dem deutschen Tabakerzeugnisgesetz (TabakerzG) und der europäischen Tabakproduktrichtlinie (TPD2) dürfen nikotinhaltige Fertigliquids und Nikotinshots maximal <strong>20 mg/ml Nikotin</strong> in Gebinden bis höchstens <strong>10 ml</strong> enthalten. Größere Flaschen mit 50 ml, 60 ml, 100 ml oder 120 ml Inhalt (sogenannte <strong>Shortfills</strong>) werden nikotinfrei (0 mg) ausgeliefert und bieten im oberen Flaschenbereich Platz zum Auffüllen mit separaten Nikotinshots oder Base.</p>\n      <h2>Welche Nikotinstärke passt zu Ihrem Rauchverhalten?</h2>\n      <ul>\n        <li><strong>0 mg/ml (Nikotinfrei):</strong> Für reinen Geschmacksgenuss ohne Nikotin.</li>\n        <li><strong>3 mg/ml bis 6 mg/ml:</strong> Standardstärke für Sub-Ohm-Geräte (DTL) mit hoher Dampfmenge sowie für Gelegenheitsraucher (unter 10 Zigaretten pro Tag).</li>\n        <li><strong>10 mg/ml bis 12 mg/ml:</strong> Mittlere Stärke für das Backendampfen (MTL) in Pod-Systemen bei moderatem Bedarf.</li>\n        <li><strong>18 mg/ml bis 20 mg/ml (oft als Nikotinsalz):</strong> Für starke Raucherinnen und Raucher beim Umstieg mit kompakten MTL-Pod-Geräten bei niedriger Leistung (9–15 Watt).</li>\n      </ul>\n      <p><a href=\"/collections/all-e-liquid\">Zu unserem E-Liquid-Sortiment</a></p>"
+  },
+  {
+    "id": 1009,
+    "handle": "terms-conditions",
+    "title": "Allgemeine Geschäftsbedingungen (AGB)",
+    "updated_at": "2026-10-15T10:00:00+02:00",
+    "body_html": "<h2>1. Geltungsbereich und Anbieter</h2>\n      <p>Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Bestellungen, die über den Online-Shop <strong>Mr. Nice Vape Deutschland</strong> (abrufbar unter <a href=\"https://mrnicevape.com\">https://mrnicevape.com</a>, Kontakt: <a href=\"mailto:info@mrnicevape.com\">info@mrnicevape.com</a>, Standort Köln, Nordrhein-Westfalen) abgeschlossen werden.</p>\n      <h2>2. Jugendschutz &amp; Altersbeschränkung (Verkauf nur ab 18 Jahren)</h2>\n      <p>Gemäß § 10 des deutschen Jugendschutzgesetzes (JuSchG) dürfen E-Zigaretten, Verdampfer, Nachfüllbehälter (E-Liquids) und zugehörige Produkte weder an Kinder noch an Jugendliche unter 18 Jahren abgegeben werden. Mit dem Absenden einer Bestellung bestätigen Sie verbindlich, dass Sie das 18. Lebensjahr vollendet haben.</p>\n      <h2>3. Vertragsschluss und Mindestbestellwert</h2>\n      <p>Die Darstellung der Produkte im Online-Shop stellt kein rechtlich bindendes Angebot, sondern eine Aufforderung zur Abgabe einer Bestellung dar. Der Mindestbestellwert im Online-Shop beträgt <strong>220,00 €</strong> (Warenwert ohne Versandkosten). Nach Absenden der Bestellung an der Kasse erhalten Sie eine automatische Eingangs- und Bestellbestätigung per E-Mail.</p>\n      <h2>4. Preise, Steuern und Versandkosten</h2>\n      <p>Alle auf den Produktseiten genannten Preise verstehen sich in Euro (€) inklusive der gesetzlichen Mehrwertsteuer zuzüglich der im Checkout ausgewiesenen Versandkosten (Standardversand 9,95 €, Expressversand 14,95 €).</p>\n      <h2>5. Zahlungsarten</h2>\n      <p>Wir akzeptieren Zahlungen per <strong>SEPA-Banküberweisung</strong> sowie per <strong>Kryptowährungen (BTC, ETH, USDT TRC20/ERC20, USDC, SOL, XMR)</strong>. Kreditkartenzahlungen befinden sich derzeit in Systemwartung. Die Auslieferung der Ware erfolgt nach bestätigtem Zahlungseingang bzw. Verifikation der Transaktions-ID.</p>\n      <h2>6. Gewährleistung und Haftung</h2>\n      <p>Es gelten die gesetzlichen Mängelhaftungsrechte. Verschleißteile wie Verdampferköpfe (Coils), Pods, Watte und Akkuzellen unterliegen einer nutzungsabhängigen Lebensdauer; für Transportschäden oder werkseitige Defekte (DOA) leisten wir nach Prüfung umgehend Ersatz.</p>"
+  },
+  {
+    "id": 1010,
     "handle": "privacy-policy",
-    "title": "Datenschutzerklärung",
-    "body_html": "<h1>Datenschutzerklärung</h1><p>Wir verarbeiten personenbezogene Daten ausschließlich zur Bearbeitung von Bestellungen, Supportanfragen und zur Bereitstellung unseres Online-Shops. Weitere Details erhalten Sie auf Anfrage über info@mrnicevape.com.</p>",
-    "created_at": "2026-02-11T00:00:00+11:00",
-    "updated_at": "2026-02-11T00:00:00+11:00",
-    "published_at": "2026-02-11T00:00:00+11:00"
+    "title": "Datenschutzerklärung (DSGVO)",
+    "updated_at": "2026-10-15T10:00:00+02:00",
+    "body_html": "<h2>1. Verantwortliche Stelle</h2>\n      <p>Verantwortlich für die Datenverarbeitung auf <strong>mrnicevape.com</strong> im Sinne der Datenschutz-Grundverordnung (DSGVO) ist Mr. Nice Vape Deutschland, Köln, E-Mail: <a href=\"mailto:info@mrnicevape.com\">info@mrnicevape.com</a>.</p>\n      <h2>2. Welche Daten wir bei Bestellungen und Anfragen verarbeiten</h2>\n      <p>Wenn Sie über unseren Online-Shop bestellen oder uns über das Kontaktformular kontaktieren, erheben wir ausschließlich diejenigen personenbezogenen Daten, die für die Vertragsabwicklung, den Versand und die Kundenbetreuung erforderlich sind (Art. 6 Abs. 1 lit. b DSGVO):</p>\n      <ul>\n        <li>Vor- und Nachname sowie Lieferanschrift (Straße, PLZ, Ort, Bundesland)</li>\n        <li>E-Mail-Adresse und optional Telefonnummer für Versandbenachrichtigungen</li>\n        <li>Bestellte Positionen, Zahlungsart (SEPA oder Bitcoin-Transaktionsreferenz) und Bestellnummer</li>\n      </ul>\n      <h2>3. Transaktions-E-Mails und Versanddienstleister</h2>\n      <p>Für den sicheren Versand von Bestellbestätigungen und Support-Antworten nutzen wir den E-Mail-Dienstleister Resend. Zur Zustellung Ihrer Pakete geben wir Ihre Adressdaten an den beauftragten Versanddienstleister weiter.</p>\n      <h2>4. Lokale Speicherung im Browser (LocalStorage)</h2>\n      <p>Ihr Warenkorb (<code>mrnicevape_cart</code>) sowie die Bestätigung der Altersprüfung (18+) werden lokal in Ihrem Browser gespeichert, damit Ihre Auswahl während des Einkaufs erhalten bleibt.</p>\n      <h2>5. Ihre Rechte nach DSGVO</h2>\n      <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten sowie auf Berichtigung, Einschränkung der Verarbeitung, Datenübertragbarkeit oder Löschung (Art. 15–21 DSGVO). Wenden Sie sich hierzu formlos an <a href=\"mailto:info@mrnicevape.com\">info@mrnicevape.com</a>.</p>"
   },
   {
-    "id": 100000002,
+    "id": 1011,
     "handle": "refund-policy",
-    "title": "Rückgabe und Erstattung",
-    "body_html": "<h1>Rückgabe und Erstattung</h1><p>Unbenutzte und ungeöffnete Produkte können innerhalb von 14 Tagen gemäß unseren Rückgabebedingungen zurückgegeben werden. Kontaktieren Sie uns vor einer Rücksendung bitte mit Bestellnummer und kurzer Beschreibung.</p>",
-    "created_at": "2026-02-11T00:00:00+11:00",
-    "updated_at": "2026-02-11T00:00:00+11:00",
-    "published_at": "2026-02-11T00:00:00+11:00"
+    "title": "Widerrufsbelehrung, Rückgabe & Erstattung",
+    "updated_at": "2026-10-15T10:00:00+02:00",
+    "body_html": "<h2>14-tägiges Rückgaberecht für unbenutzte Originalware</h2>\n      <p>Sie können unbenutzte, originalverpackte und ungeöffnete Artikel innerhalb von <strong>14 Tagen nach Erhalt der Lieferung</strong> an uns zurückgeben. Bitte schreiben Sie uns vor dem Rückversand eine kurze E-Mail mit Ihrer Bestellnummer an <a href=\"mailto:info@mrnicevape.com\">info@mrnicevape.com</a>, damit wir Ihre Rücksendung zuordnen können.</p>\n      <h2>Hygieneartikel &amp; versiegelte Produkte (§ 312g Abs. 2 Nr. 3 BGB)</h2>\n      <p>Aus Gründen des Gesundheitsschutzes und der Hygiene erlischt das Rückgaberecht bei folgenden Produkten, sobald deren Versiegelung nach der Lieferung geöffnet oder entfernt wurde:</p>\n      <ul>\n        <li>E-Liquids, Shortfills, Aromen und Basen (geöffnete Flaschen)</li>\n        <li>Einweg-E-Zigaretten (Disposables) mit geöffneter Schutzverpackung</li>\n        <li>Bereits befüllte oder benutzte Tanks, Mundstücke (Drip Tips), Pods und Verdampferköpfe (Coils)</li>\n      </ul>\n      <h2>Reklamation bei Defekt oder Falschlieferung</h2>\n      <p>Sollte ein elektrisches Gerät bei Erhalt einen technischen Defekt aufweisen (Dead on Arrival) oder ein falscher Artikel geliefert worden sein, übernehmen wir selbstverständlich die Kosten der Rücksendung und sorgen wahlweise für kostenlosen Ersatz oder eine vollständige Rückerstattung des Kaufpreises.</p>"
   },
   {
-    "id": 100000003,
+    "id": 1012,
     "handle": "shipping-policy",
-    "title": "Versandbedingungen",
-    "body_html": "<h1>Versandbedingungen</h1><p>Mr. Nice Vape Deutschland versendet Vape-Produkte aus Köln innerhalb Deutschlands. Standardversand dauert in der Regel 5–10 Werktage, Expressversand 2–4 Werktage.</p><p>Alle Bestellungen werden ausschließlich an volljährige Personen ab 18 Jahren geliefert. Bei Bedarf kann ein Altersnachweis angefordert werden.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2026-02-11T00:00:00+11:00",
-    "updated_at": "2026-02-11T00:00:00+11:00",
-    "published_at": "2026-02-11T00:00:00+11:00"
+    "title": "Versandbedingungen & Lieferzeiten",
+    "updated_at": "2026-10-15T10:00:00+02:00",
+    "body_html": "<p>Alle Bestellungen bei <strong>Mr. Nice Vape Deutschland</strong> werden aus unserem Lager in Köln sorgfältig kommissioniert, bruchsicher verpackt und in neutralen Versandkartons verschickt.</p>\n      <h2>Versandarten &amp; Kosten</h2>\n      <ul>\n        <li><strong>Standardversand (9,95 €):</strong> Versicherter Paketversand inklusive Sendungsverfolgung. Voraussichtliche Lieferzeit: 5–10 Werktage nach Zahlungseingang.</li>\n        <li><strong>Expressversand (14,95 €):</strong> Priorisierte Bearbeitung und beschleunigter Versand inklusive Sendungsverfolgung. Voraussichtliche Lieferzeit: 2–4 Werktage nach Zahlungseingang.</li>\n      </ul>\n      <h2>Mindestbestellwert &amp; Sendungsverfolgung</h2>\n      <p>Der Mindestbestellwert beträgt <strong>220,00 €</strong>. Sobald Ihr Paket unser Lager verlässt, erhalten Sie automatisch eine Versandbestätigung mit Ihrer Tracking-Nummer per E-Mail.</p>\n      <h2>Altersprüfung bei Zustellung (18+)</h2>\n      <p>Da wir ausschließlich Produkte für volljährige Personen ab 18 Jahren versenden, erfolgt die Übergabe nur an volljährige Empfängerinnen und Empfänger.</p>"
   },
   {
-    "id": 100000004,
-    "handle": "faq",
-    "title": "Frequently Asked Questions (FAQ)",
-    "body_html": "<h1>Frequently Asked Questions (FAQ)</h1><p>Mr. Nice Vape Deutschland ist Ihr Online-Vape-Shop aus Köln. Auf dieser Seite finden Sie kuratierte Informationen zu Produkten, Marken und Bestellmöglichkeiten für den deutschen Markt.</p><p>Stöbern Sie in unserem Sortiment an Vape-Kits, E-Liquids, Coils, Pods, Einweg-Vapes und Zubehör. Wir liefern deutschlandweit mit Standard- und Expressversand.</p><p><a href=\"/collections/shop\">Jetzt Produkte ansehen</a></p>",
-    "created_at": "2026-02-11T00:00:00+11:00",
-    "updated_at": "2026-02-11T00:00:00+11:00",
-    "published_at": "2026-02-11T00:00:00+11:00"
-  },
-  {
-    "id": 100000005,
+    "id": 1013,
     "handle": "cookies-policy",
     "title": "Cookie-Richtlinie",
-    "body_html": "<h1>Cookie-Richtlinie</h1><p>Wir verwenden Cookies, um den Warenkorb bereitzustellen, die Website zu verbessern und grundlegende Analysefunktionen zu ermöglichen. Sie können Cookies in Ihrem Browser verwalten.</p>",
-    "created_at": "2026-02-11T00:00:00+11:00",
-    "updated_at": "2026-02-11T00:00:00+11:00",
-    "published_at": "2026-02-11T00:00:00+11:00"
+    "updated_at": "2026-10-15T10:00:00+02:00",
+    "body_html": "<h2>Technisch notwendige Speicherung</h2>\n      <p>Unsere Website verwendet vorrangig technisch notwendige Speichermechanismen (LocalStorage und SessionStorage Ihres Browsers), um grundlegende Shop-Funktionen bereitzustellen:</p>\n      <ul>\n        <li><strong><code>mrnicevape_cart</code>:</strong> Speichert die von Ihnen in den Warenkorb gelegten Artikel, Mengen und Varianten.</li>\n        <li><strong><code>mrnicevape_age_verified</code>:</strong> Speichert Ihre Bestätigung, dass Sie mindestens 18 Jahre alt sind, damit das Altersfenster nicht bei jedem Seitenwechsel erneut erscheint.</li>\n        <li><strong><code>mrnicevape_last_order</code>:</strong> Ermöglicht die Anzeige Ihrer Bestellübersicht unmittelbar nach Abschluss des Checkouts auf der Bestätigungsseite.</li>\n      </ul>\n      <h2>Verwaltung in Ihrem Browser</h2>\n      <p>Sie können gespeicherte Website-Daten und Cookies jederzeit in den Datenschutzeinstellungen Ihres Browsers löschen oder blockieren. Bitte beachten Sie, dass der Warenkorb ohne aktivierten LocalStorage keine Artikel zwischen Seitenaufrufen speichern kann.</p>"
+  },
+  {
+    "id": 1014,
+    "handle": "faq",
+    "title": "Häufig gestellte Fragen (FAQ)",
+    "updated_at": "2026-10-15T10:00:00+02:00",
+    "body_html": "<h4>Wie hoch ist der Mindestbestellwert bei Mr. Nice Vape Deutschland?</h4>\n      <p>Der Mindestbestellwert in unserem Online-Shop liegt bei 220,00 € Warenwert (zuzüglich Versandkosten).</p>\n      <h4>Welche Zahlungsmethoden werden akzeptiert?</h4>\n      <p>Sie können im Checkout zwischen SEPA-Banküberweisung und Kryptowährungen (BTC, ETH, USDT, USDC, SOL, XMR) wählen. Kreditkartenzahlungen befinden sich derzeit in Wartungsarbeiten.</p>\n      <h4>Wie lange dauert der Versand innerhalb Deutschlands?</h4>\n      <p>Der Standardversand (9,95 €) dauert in der Regel 5–10 Werktage, der Expressversand (14,95 €) 2–4 Werktage nach bestätigtem Zahlungseingang. Sie erhalten eine Tracking-Nummer per E-Mail.</p>\n      <h4>Sind alle E-Zigaretten und E-Liquids originale Markenware?</h4>\n      <p>Ja. Wir beziehen alle Geräte, Coils und E-Liquids von autorisierten Distributoren und Markenherstellern wie Vaporesso, GeekVape, Uwell, SMOK, Aspire, Dinner Lady und Monster Vape Labs.</p>\n      <h4>Werden Akkuzellen bei Box Mods mitgeliefert?</h4>\n      <p>Pod-Systeme besitzen meist einen fest verbauten Akku. Größere Box Mods für 18650- oder 21700-Zellen werden ab Werk meist ohne Akkuzelle geliefert. Passende Sony-, Samsung-, Efest- und Golisi-Akkus finden Sie in unserer Akku-Kategorie.</p>"
   }
 ]

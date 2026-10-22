@@ -1,12 +1,11 @@
+# Mr. Nice Vape Deutschland - https://mrnicevape.com
+# Content-Signal: search=yes, ai-input=yes, ai-train=no
+
 User-agent: *
 Allow: /
+Disallow: /api/
 Disallow: /cart
 Disallow: /checkout
 Disallow: /order-confirmation
-Disallow: /search
-Disallow: /account
-Disallow: /api/
-Disallow: /404
 
 Sitemap: https://mrnicevape.com/sitemap.xml
-Host: mrnicevape.com

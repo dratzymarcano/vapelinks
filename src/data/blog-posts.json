@@ -1,200 +1,206 @@
 [
   {
     "slug": "how-to-choose-your-first-vape",
-    "title": "Die erste Vape wählen: Ein kompletter Einsteiger-Ratgeber",
-    "excerpt": "Ein klarer Leitfaden für Einsteiger: Gerätetypen, Nikotinstärken, Liquid-Verhältnisse und Budget einfach erklärt.",
-    "author": "Mr. Nice Vape Team",
-    "date": "2026-02-10",
+    "title": "Die erste E-Zigarette wählen: Einsteiger-Ratgeber für 2026",
+    "excerpt": "MTL oder DTL, Pod-System oder Box Mod, und welche Nikotinstärke passt zum Umstieg? Alle wichtigen Kaufkriterien im klaren Überblick.",
+    "author": "Mr. Nice Vape Redaktion",
+    "date": "2026-09-18",
     "category": "Ratgeber",
     "image": "/images/blog/first-vape-guide.svg",
-    "readTime": "8 Min. Lesezeit",
+    "readTime": "6 Min. Lesezeit",
     "tags": [
       "Einsteiger",
-      "Ratgeber",
-      "vape kits"
+      "Pod-Systeme",
+      "Kaufberatung",
+      "MTL"
     ],
-    "content": "<h2>Die erste Vape wählen: Ein kompletter Einsteiger-Ratgeber</h2><p>Ein klarer Leitfaden für Einsteiger: Gerätetypen, Nikotinstärken, Liquid-Verhältnisse und Budget einfach erklärt.</p><p>Dieser Ratgeber von Mr. Nice Vape Deutschland erklärt die wichtigsten Punkte verständlich und praxisnah. Ziel ist eine sichere, informierte Produktauswahl: vom passenden Gerät über kompatible Coils und Pods bis hin zu E-Liquids, Pflege und Versand.</p><h2>Worauf Sie achten sollten</h2><ul><li>Prüfen Sie Kompatibilität, Leistungsbereich und empfohlene Nutzungshinweise.</li><li>Wählen Sie Produkte passend zu Erfahrung, Zugverhalten und gewünschter Dampfentwicklung.</li><li>Beachten Sie Altersvorgaben und gesetzliche Hinweise für den deutschen Markt.</li></ul><p>Bei Fragen hilft Ihnen unser Team gern weiter. Entdecken Sie passende Produkte im <a href=\"/collections/shop\">Mr. Nice Vape Shop</a> oder kontaktieren Sie uns direkt.</p>"
+    "content": "<p>Beim Umstieg auf die E-Zigarette entscheidet vor allem das Zusammenspiel aus Zugverhalten, Geräteleistung und Liquid-Viskosität darüber, ob Sie im Alltag zufrieden sind. Wer zuvor klassische Tabakzigaretten geraucht hat, sucht zu Beginn meist einen straffen Zugwiderstand, der dem gewohnten Ziehen an einer Zigarette entspricht.</p>\n      <h2>1. Zugtechnik verstehen: MTL vs. RDL vs. DTL</h2>\n      <ul>\n        <li><strong>MTL (Mouth-to-Lung / Backendampfen):</strong> Der Dampf wird zuerst in den Mundraum gezogen und anschließend inhaliert. Typische Leistung: 9 bis 18 Watt bei Widerständen von 0,8 Ω bis 1,2 Ω.</li>\n        <li><strong>RDL (Restricted Direct Lung):</strong> Ein offenerer Mittelweg zwischen Backendampfen und direktem Lungenzug, meist zwischen 18 und 30 Watt (0,6 Ω bis 0,8 Ω).</li>\n        <li><strong>DTL (Direct-to-Lung / Sub-Ohm):</strong> Der Dampf wird direkt und tief in die Lunge gezogen, ähnlich wie bei einer Shisha. Typische Leistung: 40 bis 120+ Watt bei Widerständen von 0,15 Ω bis 0,4 Ω.</li>\n      </ul>\n      <h2>2. Welcher Gerätetyp eignet sich für den Start?</h2>\n      <p>Für 90 % aller Einsteigerinnen und Einsteiger ist ein <strong>nachfüllbares Pod-System</strong> die sinnvollste Wahl. Modelle wie das <a href=\"/collections/uwell-collection\">Uwell Caliburn G2 oder Caliburn X</a>, das <a href=\"/collections/vaporesso-collection\">Vaporesso Luxe PM40</a> oder das <a href=\"/collections/geekvape-collection\">GeekVape Wenax Stylus</a> wiegen unter 70 Gramm, verfügen über einen integrierten Akku (690 bis 1.800 mAh) mit USB-C-Anschluss und lassen sich oft per Zugautomatik ganz ohne Feuertaster bedienen.</p>\n      <h2>3. Das passende E-Liquid zum Einstieg</h2>\n      <p>Verwenden Sie in kompakten Pod-Systemen bevorzugt E-Liquids mit einem ausgeglichenen Verhältnis von <strong>50 % VG / 50 % PG</strong>. Dickflüssige 70/30-Shortfills sind dagegen auf große Sub-Ohm-Tanks ausgelegt. Lassen Sie jeden neuen Pod nach dem ersten Befüllen mindestens 5 bis 10 Minuten ruhen, damit sich die Baumwollwatte im Inneren vollständig mit Liquid vollsaugt.</p>\n      <p>Entdecken Sie passende Einsteigergeräte in unserer Kategorie <a href=\"/collections/all-pod-kits\">Pod-Systeme</a> oder lassen Sie sich von unserem Team über die <a href=\"/contact\">Kontaktseite</a> beraten.</p>"
   },
   {
     "slug": "pod-systems-vs-box-mods",
-    "title": "Pod-Systeme vs. Box Mods: Was passt besser zu Ihnen?",
-    "excerpt": "Pod-Systeme sind kompakt und einfach, Box Mods bieten mehr Leistung und Kontrolle. Dieser Vergleich hilft bei der Entscheidung.",
-    "author": "Mr. Nice Vape Team",
-    "date": "2026-02-03",
+    "title": "Pod-Systeme vs. Box Mods: Technischer Vergleich für den Alltag",
+    "excerpt": "Kompaktes Pod-Kit mit integriertem Akku oder geregelter 200-Watt-Akkuträger mit 18650-Zellen? Wir vergleichen Leistung, Laufzeit und Folgekosten.",
+    "author": "Mr. Nice Vape Redaktion",
+    "date": "2026-09-05",
     "category": "Vergleiche",
     "image": "/images/blog/pod-vs-box-mod.svg",
-    "readTime": "7 Min. Lesezeit",
+    "readTime": "6 Min. Lesezeit",
     "tags": [
-      "pod systems",
-      "box mods",
+      "Pod-Systeme",
+      "Box Mods",
+      "Hardware",
       "Vergleich"
     ],
-    "content": "<h2>Pod-Systeme vs. Box Mods: Was passt besser zu Ihnen?</h2><p>Pod-Systeme sind kompakt und einfach, Box Mods bieten mehr Leistung und Kontrolle. Dieser Vergleich hilft bei der Entscheidung.</p><p>Dieser Ratgeber von Mr. Nice Vape Deutschland erklärt die wichtigsten Punkte verständlich und praxisnah. Ziel ist eine sichere, informierte Produktauswahl: vom passenden Gerät über kompatible Coils und Pods bis hin zu E-Liquids, Pflege und Versand.</p><h2>Worauf Sie achten sollten</h2><ul><li>Prüfen Sie Kompatibilität, Leistungsbereich und empfohlene Nutzungshinweise.</li><li>Wählen Sie Produkte passend zu Erfahrung, Zugverhalten und gewünschter Dampfentwicklung.</li><li>Beachten Sie Altersvorgaben und gesetzliche Hinweise für den deutschen Markt.</li></ul><p>Bei Fragen hilft Ihnen unser Team gern weiter. Entdecken Sie passende Produkte im <a href=\"/collections/shop\">Mr. Nice Vape Shop</a> oder kontaktieren Sie uns direkt.</p>"
+    "content": "<p>Die zwei wichtigsten Gerätekategorien auf dem deutschen Vape-Markt sind kompakte <strong>Pod-Systeme</strong> und geregelte <strong>Box Mods (Akkuträger) mit 510er-Gewinde</strong>. Beide Bauformen haben klare technische Stärken.</p>\n      <h2>Wann ein Pod-System die bessere Wahl ist</h2>\n      <p>Ein Pod-System kombiniert einen kompakten Akku mit einer aufsteckbaren Kunststoff-Kartusche (Pod), in der Tank und Verdampferkopf sitzen. Aktuelle Geräte wie das <a href=\"/collections/uwell-collection\">Uwell Caliburn X</a> oder <a href=\"/collections/zq\">ZQ Xtal Pro</a> arbeiten zwischen 10 und 30 Watt.</p>\n      <ul>\n        <li><strong>Vorteile:</strong> Passt in jede Hosentasche, geringer Liquidverbrauch (ca. 2–4 ml pro Tag), sofort einsatzbereit ohne externe Akkuzellen, ideal für 50/50-Liquids und Nikotinsalze.</li>\n        <li><strong>Einschränkungen:</strong> Begrenzte Akkukapazität (meist 700–1.200 mAh) und weniger Dampfvolumen als ein Sub-Ohm-Tank.</li>\n      </ul>\n      <h2>Wann ein Box Mod mit Sub-Ohm-Tank überzeugt</h2>\n      <p>Geregelte Box Mods wie das <a href=\"/collections/geekvape-collection\">GeekVape Aegis Legend 2 (L200)</a>, das <a href=\"/collections/vaporesso-collection\">Vaporesso Gen 200</a> oder das <a href=\"/collections/smok-collection\">SMOK Morph 2</a> nutzen eine oder zwei wechselbare 18650- bzw. 21700-Akkuzellen und leisten bis zu 100 bzw. 220 Watt.</p>\n      <ul>\n        <li><strong>Vorteile:</strong> Enorme Akkulaufzeit (bis zu 6.000 mAh mit zwei 18650-Zellen), freie Wahl des Verdampfers dank standardisiertem 510er-Anschluss, dichter und warmer Geschmack mit 70VG/30PG-Shortfills.</li>\n        <li><strong>Einschränkungen:</strong> Höheres Gewicht (200–320 g inkl. Akkus), höherer Liquidverbrauch und separate Anschaffung von <a href=\"/collections/18650-batteries\">18650/21700 Akkuzellen</a> empfohlen.</li>\n      </ul>\n      <p>Vergleichen Sie alle aktuellen Modelle direkt unter <a href=\"/collections/all-vape-kits\">Vape-Kits &amp; Box Mods</a>.</p>"
   },
   {
     "slug": "guide-to-vape-coils",
-    "title": "Vape-Coils: Wann und wie Sie Coils wechseln",
-    "excerpt": "Erkennen Sie verschlissene Coils, vermeiden Sie verbrannten Geschmack und halten Sie Ihr Gerät zuverlässig in Form.",
-    "author": "Mr. Nice Vape Team",
-    "date": "2026-01-27",
+    "title": "Vape-Coils wechseln: Widerstand (Ohm), Lebensdauer & Priming erklärt",
+    "excerpt": "Woran erkennen Sie einen verbrauchten Verdampferkopf, was bedeuten 0,2 Ohm vs. 1,0 Ohm und wie verhindern Sie Dry Hits beim Einsetzen neuer Coils?",
+    "author": "Mr. Nice Vape Redaktion",
+    "date": "2026-08-22",
     "category": "Ratgeber",
     "image": "/images/blog/vape-coils-guide.svg",
-    "readTime": "6 Min. Lesezeit",
+    "readTime": "5 Min. Lesezeit",
     "tags": [
-      "coils",
-      "Pflege",
+      "Coils",
+      "Widerstand",
+      "Wartung",
       "Ratgeber"
     ],
-    "content": "<h2>Vape-Coils: Wann und wie Sie Coils wechseln</h2><p>Erkennen Sie verschlissene Coils, vermeiden Sie verbrannten Geschmack und halten Sie Ihr Gerät zuverlässig in Form.</p><p>Dieser Ratgeber von Mr. Nice Vape Deutschland erklärt die wichtigsten Punkte verständlich und praxisnah. Ziel ist eine sichere, informierte Produktauswahl: vom passenden Gerät über kompatible Coils und Pods bis hin zu E-Liquids, Pflege und Versand.</p><h2>Worauf Sie achten sollten</h2><ul><li>Prüfen Sie Kompatibilität, Leistungsbereich und empfohlene Nutzungshinweise.</li><li>Wählen Sie Produkte passend zu Erfahrung, Zugverhalten und gewünschter Dampfentwicklung.</li><li>Beachten Sie Altersvorgaben und gesetzliche Hinweise für den deutschen Markt.</li></ul><p>Bei Fragen hilft Ihnen unser Team gern weiter. Entdecken Sie passende Produkte im <a href=\"/collections/shop\">Mr. Nice Vape Shop</a> oder kontaktieren Sie uns direkt.</p>"
+    "content": "<p>Der Verdampferkopf (englisch <strong>Coil</strong>) ist das Herzstück jeder E-Zigarette. Im Inneren befindet sich ein Heizdraht oder ein feines Metallgitter (Mesh), das von organischer Baumwollwatte umschlossen ist. Da diese Watte und der Heizdraht bei jedem Zug stark erhitzt werden, ist jede Coil ein klassisches Verschleißteil.</p>\n      <h2>Wie lange hält eine Coil im Durchschnitt?</h2>\n      <p>Je nach Liquid und Zugfrequenz hält ein moderner Mesh-Verdampferkopf zwischen <strong>1 und 3 Wochen</strong> (bzw. etwa 30 bis 60 ml verdampftes E-Liquid). Stark gesüßte Dessert- oder Candy-Liquids sowie sehr dunkle Aromen lassen auf der Heizoberfläche schneller Karamellrückstände entstehen als klare Frucht- oder Menthol-Liquids.</p>\n      <h2>4 sichere Anzeichen, dass die Coil gewechselt werden muss</h2>\n      <ol>\n        <li><strong>Kokeliger oder verbrannter Nachgeschmack:</strong> Die Watte ist an einer Stelle verbrannt und kann den Geschmack nicht mehr regenerieren.</li>\n        <li><strong>Flacher, gedämpfter Geschmack:</strong> Das Liquid schmeckt kaum noch nach den gewohnten Aromen.</li>\n        <li><strong>Blubbern oder Auslaufen (Siffen):</strong> Gesättigte, zusammengefallene Watte hält das Liquid nicht mehr zuverlässig zurück.</li>\n        <li><strong>Dunkle Verfärbung des Liquids im Tank:</strong> Abgelöste Rückstände von der Heizwendel färben frisches Liquid bräunlich.</li>\n      </ol>\n      <h2>Richtiges Priming: So verbrennt keine neue Coil</h2>\n      <p>Geben Sie vor dem Einbau 2 bis 3 Tropfen E-Liquid direkt auf die sichtbaren Watteöffnungen der neuen Coil. Setzen Sie den Kopf ein, befüllen Sie den Tank und <strong>warten Sie mindestens 5 bis 10 Minuten</strong>. Starten Sie danach am unteren Ende des auf der Coil aufgedruckten Wattbereichs (z. B. bei 45 W statt direkt bei 65 W) und steigern Sie die Leistung schrittweise.</p>\n      <p>Passende Ersatzköpfe finden Sie in unserer Übersicht <a href=\"/collections/all-coils\">Ersatz-Coils &amp; Pods</a>.</p>"
   },
   {
     "slug": "understanding-e-liquid-pg-vs-vg-ratios-explained",
-    "title": "E-Liquid verstehen: PG/VG-Verhältnisse einfach erklärt",
-    "excerpt": "Was PG und VG bedeuten, wie sie Geschmack und Dampf beeinflussen und welches Verhältnis zu welchem Gerät passt.",
-    "author": "Mr. Nice Vape Team",
-    "date": "2026-01-20",
+    "title": "PG und VG im E-Liquid: Mischverhältnisse (50/50 vs. 70/30) im Vergleich",
+    "excerpt": "Propylenglykol (PG) ist der Geschmacksträger, pflanzliches Glyzerin (VG) sorgt für dichten Dampf. So wählen Sie das richtige Verhältnis für Ihren Verdampfer.",
+    "author": "Mr. Nice Vape Redaktion",
+    "date": "2026-08-08",
     "category": "Ratgeber",
     "image": "/images/blog/pg-vs-vg.svg",
-    "readTime": "7 Min. Lesezeit",
+    "readTime": "6 Min. Lesezeit",
     "tags": [
-      "e-liquid",
-      "PG",
-      "VG",
+      "E-Liquid",
+      "PG/VG",
+      "Base",
       "Ratgeber"
     ],
-    "content": "<h2>E-Liquid verstehen: PG/VG-Verhältnisse einfach erklärt</h2><p>Was PG und VG bedeuten, wie sie Geschmack und Dampf beeinflussen und welches Verhältnis zu welchem Gerät passt.</p><p>Dieser Ratgeber von Mr. Nice Vape Deutschland erklärt die wichtigsten Punkte verständlich und praxisnah. Ziel ist eine sichere, informierte Produktauswahl: vom passenden Gerät über kompatible Coils und Pods bis hin zu E-Liquids, Pflege und Versand.</p><h2>Worauf Sie achten sollten</h2><ul><li>Prüfen Sie Kompatibilität, Leistungsbereich und empfohlene Nutzungshinweise.</li><li>Wählen Sie Produkte passend zu Erfahrung, Zugverhalten und gewünschter Dampfentwicklung.</li><li>Beachten Sie Altersvorgaben und gesetzliche Hinweise für den deutschen Markt.</li></ul><p>Bei Fragen hilft Ihnen unser Team gern weiter. Entdecken Sie passende Produkte im <a href=\"/collections/shop\">Mr. Nice Vape Shop</a> oder kontaktieren Sie uns direkt.</p>"
+    "content": "<p>Jedes E-Liquid besteht neben Lebensmittelaromen und optionalem Nikotin aus zwei Trägerflüssigkeiten in Arzneibuchqualität (USP / Ph. Eur.): <strong>Propylenglykol (PG)</strong> und <strong>pflanzliches Glyzerin (VG – Vegetable Glycerin)</strong>. Das Verhältnis dieser beiden Komponenten bestimmt sowohl die Fließeigenschaft als auch das Dampfverhalten.</p>\n      <h2>Propylenglykol (PG): Der Geschmacksträger</h2>\n      <p>PG ist dünnflüssig, geschmacksneutral und bindet Aromamoleküle besonders effektiv. Zudem sorgt ein höherer PG-Anteil für einen deutlicheren <em>Throat Hit</em> (das gewohnte Kribbeln im Hals beim Inhalieren).</p>\n      <h2>Pflanzliches Glyzerin (VG): Für dichten, weichen Dampf</h2>\n      <p>VG ist deutlich zähflüssiger (viskoser) und besitzt eine leicht natürliche Eigensüße. Beim Erhitzen erzeugt VG dichte, weiche Dampfwolken und reduziert das Kratzen im Hals spürbar.</p>\n      <h2>Welches Verhältnis gehört in welches Gerät?</h2>\n      <ul>\n        <li><strong>50 VG / 50 PG:</strong> Dünnflüssig genug für feine Nachflussöffnungen. Ideal für alle MTL-Pod-Systeme und Backendampfer mit Widerständen ab 0,8 Ohm (10–20 Watt).</li>\n        <li><strong>70 VG / 30 PG:</strong> Der Standard bei fast allen 60-ml- und 100-ml-Shortfills (z. B. <a href=\"/collections/dinner-lady-vape-juice\">Dinner Lady</a>, <a href=\"/collections/monster-vape-labs\">Jam Monster</a>, <a href=\"/collections/candy-king\">Candy King</a>). Konzipiert für Sub-Ohm-Verdampfer und Selbstwickler mit großen Liquidkanälen (0,15 bis 0,4 Ohm ab 35 Watt).</li>\n        <li><strong>80 VG / 20 PG oder Max VG:</strong> Für Tröpfler (RDAs) und hohe Leistungen über 70 Watt; für kleine Pod-Kits zu dickflüssig.</li>\n      </ul>\n      <p>Stöbern Sie durch unsere <a href=\"/collections/all-e-liquid\">E-Liquid-Kategorie</a> oder finden Sie reine <a href=\"/collections/all-accessories\">USP/EP PG- und VG-Basen</a> zum Selbstmischen.</p>"
   },
   {
     "slug": "vape-maintenance-tips",
-    "title": "5 Pflegetipps für eine längere Lebensdauer Ihrer Vape",
-    "excerpt": "Regelmäßige Reinigung, korrektes Priming und gute Lagerung helfen, Geschmack und Leistung zu erhalten.",
-    "author": "Mr. Nice Vape Team",
-    "date": "2026-01-14",
+    "title": "5 Pflegetipps für E-Zigaretten: Mehr Geschmack und längere Gerätelebensdauer",
+    "excerpt": "Kondenswasser entfernen, 510er-Kontakte säubern, Dichtungsringe prüfen und den Akku schonen: Mit diesen 5 Handgriffen bleibt Ihr Setup zuverlässig.",
+    "author": "Mr. Nice Vape Redaktion",
+    "date": "2026-07-24",
     "category": "Tipps",
     "image": "/images/blog/vape-maintenance.svg",
     "readTime": "5 Min. Lesezeit",
     "tags": [
       "Pflege",
+      "Wartung",
       "Tipps",
-      "device care"
+      "Hardware"
     ],
-    "content": "<h2>5 Pflegetipps für eine längere Lebensdauer Ihrer Vape</h2><p>Regelmäßige Reinigung, korrektes Priming und gute Lagerung helfen, Geschmack und Leistung zu erhalten.</p><p>Dieser Ratgeber von Mr. Nice Vape Deutschland erklärt die wichtigsten Punkte verständlich und praxisnah. Ziel ist eine sichere, informierte Produktauswahl: vom passenden Gerät über kompatible Coils und Pods bis hin zu E-Liquids, Pflege und Versand.</p><h2>Worauf Sie achten sollten</h2><ul><li>Prüfen Sie Kompatibilität, Leistungsbereich und empfohlene Nutzungshinweise.</li><li>Wählen Sie Produkte passend zu Erfahrung, Zugverhalten und gewünschter Dampfentwicklung.</li><li>Beachten Sie Altersvorgaben und gesetzliche Hinweise für den deutschen Markt.</li></ul><p>Bei Fragen hilft Ihnen unser Team gern weiter. Entdecken Sie passende Produkte im <a href=\"/collections/shop\">Mr. Nice Vape Shop</a> oder kontaktieren Sie uns direkt.</p>"
+    "content": "<p>Viele vermeintliche Gerätedefekte – etwa schwankende Widerstandswerte, auslaufende Pods oder eine nachlassende Zugautomatik – lassen sich durch fünf Minuten regelmäßige Pflege komplett vermeiden.</p>\n      <h2>1. Kondenswasser unter dem Pod täglich abtupfen</h2>\n      <p>Unter jedem Magnet-Pod bildet sich im Alltag etwas Kondensfeuchtigkeit. Nehmen Sie den Pod beim Nachfüllen kurz ab und wischen Sie die vergoldeten Kontaktstifte sowie den Sensor der Zugautomatik mit einem trockenen Papiertuch ab.</p>\n      <h2>2. Den Tank nicht bis zum letzten Tropfen leer dampfen</h2>\n      <p>Sobald der Liquidstand unter die seitlichen Watteöffnungen der Coil sinkt, läuft die Watte trocken. Füllen Sie spätestens nach, wenn der Tank noch zu etwa 20 % gefüllt ist.</p>\n      <h2>3. 510er-Gewinde und Akkukontakte sauber halten</h2>\n      <p>Bei Box Mods können kleinste Liquidreste im 510er-Anschluss den Übergangswiderstand erhöhen. Ein Wattestäbchen mit etwas Isopropanol sorgt für sauberen Kontakt zwischen Akkuträger und Verdampfer.</p>\n      <h2>4. O-Ringe und Dichtungen beim Coilwechsel prüfen</h2>\n      <p>Wenn ein Sub-Ohm-Tank über die Airflow ausläuft, sitzt meist ein Silikon-Dichtungsring (O-Ring) schief oder ist spröde.jedem Original-Tank liegt in der Verpackung ein Ersatzset passender Dichtringe bei.</p>\n      <h2>5. E-Liquids kühl und lichtgeschützt lagern</h2>\n      <p>Direkte Sonneneinstrahlung und hohe Sommertemperaturen im Auto machen E-Liquids dünnflüssig und lassen Nikotin oxidieren. Bewahren Sie geöffnete Flaschen dunkel bei 15 bis 22 °C auf.</p>"
   },
   {
     "slug": "sub-ohm-vaping-explained",
-    "title": "Sub-Ohm-Vaping erklärt: Was Sie wissen sollten",
-    "excerpt": "Mehr Dampf, intensiver Geschmack und höhere Leistung: So funktioniert Sub-Ohm-Vaping sicher und sinnvoll.",
-    "author": "Mr. Nice Vape Team",
-    "date": "2026-01-07",
+    "title": "Sub-Ohm-Dampfen (DTL) erklärt: Leistung, Airflow und passende Hardware",
+    "excerpt": "Was bedeutet Sub-Ohm technisch, welche Wattzahlen passen zu 0,15- bis 0,4-Ohm-Mesh-Coils und worauf müssen Sie bei Akkus und Nikotinstärke achten?",
+    "author": "Mr. Nice Vape Redaktion",
+    "date": "2026-07-10",
     "category": "Ratgeber",
     "image": "/images/blog/sub-ohm-vaping.svg",
-    "readTime": "7 Min. Lesezeit",
+    "readTime": "6 Min. Lesezeit",
     "tags": [
-      "sub-ohm",
-      "advanced",
+      "Sub-Ohm",
+      "DTL",
+      "Mesh-Coils",
       "Ratgeber"
     ],
-    "content": "<h2>Sub-Ohm-Vaping erklärt: Was Sie wissen sollten</h2><p>Mehr Dampf, intensiver Geschmack und höhere Leistung: So funktioniert Sub-Ohm-Vaping sicher und sinnvoll.</p><p>Dieser Ratgeber von Mr. Nice Vape Deutschland erklärt die wichtigsten Punkte verständlich und praxisnah. Ziel ist eine sichere, informierte Produktauswahl: vom passenden Gerät über kompatible Coils und Pods bis hin zu E-Liquids, Pflege und Versand.</p><h2>Worauf Sie achten sollten</h2><ul><li>Prüfen Sie Kompatibilität, Leistungsbereich und empfohlene Nutzungshinweise.</li><li>Wählen Sie Produkte passend zu Erfahrung, Zugverhalten und gewünschter Dampfentwicklung.</li><li>Beachten Sie Altersvorgaben und gesetzliche Hinweise für den deutschen Markt.</li></ul><p>Bei Fragen hilft Ihnen unser Team gern weiter. Entdecken Sie passende Produkte im <a href=\"/collections/shop\">Mr. Nice Vape Shop</a> oder kontaktieren Sie uns direkt.</p>"
+    "content": "<p>Als <strong>Sub-Ohm-Dampfen</strong> bezeichnet man das Dampfen mit einem elektrischen Verdampferwiderstand von <strong>unter 1,0 Ohm (Ω)</strong> – in der Praxis meist zwischen 0,15 Ω und 0,4 Ω. Durch den geringeren Widerstand und die größere Oberfläche moderner Mesh-Siebe verdampft pro Zug deutlich mehr E-Liquid als in einem klassischen Einsteigergerät.</p>\n      <h2>Typische Leistungsbereiche bei Sub-Ohm-Coils</h2>\n      <ul>\n        <li><strong>0,15 Ω Dual/Triple Mesh:</strong> 65 bis 85 Watt – maximaler Dampf und warmer Zug.</li>\n        <li><strong>0,2 Ω Mesh:</strong> 50 bis 70 Watt – der beliebteste Allround-Bereich für Tanks wie den <a href=\"/collections/geekvape-collection\">GeekVape Z Sub-Ohm Tank</a> oder <a href=\"/collections/vaporesso-collection\">Vaporesso iTank 2</a>.</li>\n        <li><strong>0,4 Ω Mesh:</strong> 35 bis 50 Watt – akkuschonender Betrieb bei vollem Geschmack.</li>\n      </ul>\n      <h2>Wichtig beim Umstieg auf Sub-Ohm: Nikotinstärke reduzieren!</h2>\n      <p>Da ein Sub-Ohm-Verdampfer bei 60 Watt das Drei- bis Vierfache an Dampfmenge pro Zug erzeugt wie ein 12-Watt-Pod-System, wirkt auch das enthaltene Nikotin entsprechend stärker. Verwenden Sie im Sub-Ohm-Tank niemals 20-mg-Liquids, sondern beschränken Sie sich auf <strong>0 mg bis maximal 3 mg oder 6 mg/ml</strong> bei einem Mischverhältnis von 70 VG / 30 PG.</p>\n      <p>Bewährte Sub-Ohm-Kombinationen finden Sie unter <a href=\"/collections/direct-lung-kits\">Direct-Lung-Kits</a> und <a href=\"/collections/dl-tanks\">DL-Tanks</a>.</p>"
   },
   {
     "slug": "how-to-clean-your-vape-tank",
-    "title": "Vape-Tank reinigen: Schritt-für-Schritt-Anleitung",
-    "excerpt": "Ein sauberer Tank verbessert Geschmack und Coil-Lebensdauer. So reinigen Sie Ihr Setup richtig.",
-    "author": "Mr. Nice Vape Team",
-    "date": "2025-12-30",
+    "title": "Verdampfer und Vape-Tank richtig reinigen: Schritt-für-Schritt-Anleitung",
+    "excerpt": "Geistergeschmack von altem Menthol- oder Kaffeeliquid im Tank? So zerlegen, spülen und trocknen Sie Ihren Clearomizer oder Selbstwickler rückstandsfrei.",
+    "author": "Mr. Nice Vape Redaktion",
+    "date": "2026-06-25",
     "category": "Tipps",
     "image": "/images/blog/clean-vape-tank.svg",
     "readTime": "5 Min. Lesezeit",
     "tags": [
-      "cleaning",
-      "tank",
+      "Reinigung",
+      "Vape-Tank",
       "Pflege",
-      "how-to"
+      "Anleitung"
     ],
-    "content": "<h2>Vape-Tank reinigen: Schritt-für-Schritt-Anleitung</h2><p>Ein sauberer Tank verbessert Geschmack und Coil-Lebensdauer. So reinigen Sie Ihr Setup richtig.</p><p>Dieser Ratgeber von Mr. Nice Vape Deutschland erklärt die wichtigsten Punkte verständlich und praxisnah. Ziel ist eine sichere, informierte Produktauswahl: vom passenden Gerät über kompatible Coils und Pods bis hin zu E-Liquids, Pflege und Versand.</p><h2>Worauf Sie achten sollten</h2><ul><li>Prüfen Sie Kompatibilität, Leistungsbereich und empfohlene Nutzungshinweise.</li><li>Wählen Sie Produkte passend zu Erfahrung, Zugverhalten und gewünschter Dampfentwicklung.</li><li>Beachten Sie Altersvorgaben und gesetzliche Hinweise für den deutschen Markt.</li></ul><p>Bei Fragen hilft Ihnen unser Team gern weiter. Entdecken Sie passende Produkte im <a href=\"/collections/shop\">Mr. Nice Vape Shop</a> oder kontaktieren Sie uns direkt.</p>"
+    "content": "<p>Spätestens beim Wechsel von einem kräftigen Menthol-, Tabak- oder Kaffeeliquid auf ein feines Fruchtaroma sollte der Verdampfer gründlich gereinigt werden. Eine regelmäßige Tankwäsche bei jedem zweiten Coilwechsel verhindert außerdem Ablagerungen im Kamin und im Mundstück (Drip Tip).</p>\n      <h2>Schritt-für-Schritt: Standard-Reinigung mit warmem Wasser</h2>\n      <ol>\n        <li><strong>Vom Akkuträger abschrauben:</strong> Trennen Sie den Tank immer zuerst vom Mod, damit kein Wasser in die Elektronik gelangt.</li>\n        <li><strong>Komplett zerlegen und Coil entnehmen:</strong> Schrauben Sie Base, Top-Cap, Glasröhrchen und Drip Tip auseinander. <strong>Wichtig:</strong> Fertigcoils mit Watte dürfen nicht mit Wasser ausgespült werden – legen Sie eine noch nutzbare Coil trocken zur Seite oder entsorgen Sie eine verbrauchte Coil.</li>\n        <li><strong>Unter warmem Wasser abspülen:</strong> Spülen Sie alle Metall- und Glasteile unter fließendem, handwarmem Wasser ab. Verzichten Sie auf parfümiertes Spülmittel, da Seifenrückstände den Liquidgeschmack verfälschen.</li>\n        <li><strong>Bei hartnäckigen Aromen:</strong> Legen Sie Glas und Edelstahlteile für 15 Minuten in eine Schale mit warmem Wasser und einem Schuss geschmacksneutralem Alkohol (z. B. Wodka oder Isopropanol) oder nutzen Sie ein Ultraschallbad, und spülen Sie danach mit klarem Wasser nach.</li>\n        <li><strong>Vollständig trocknen lassen:</strong> Tupfen Sie alle Teile mit einem fusselfreien Papiertuch trocken und lassen Sie die Bauteile 15 Minuten an der Luft nachtrocknen, bevor Sie eine neue Coil einsetzen.</li>\n      </ol>\n      <p>Sollte Ihnen beim Zerlegen einmal das Tankglas brechen, finden Sie passende Bubble- und Ersatzgläser in unserer Kategorie <a href=\"/collections/all-accessories\">Ersatzgläser &amp; Zubehör</a>.</p>"
   },
   {
     "slug": "battery-safety-essential-tips-for-vape-users",
-    "title": "Akkusicherheit: Wichtige Tipps für Vape-Nutzer",
-    "excerpt": "Sichere Nutzung, Lagerung und Pflege von Vape-Akkus kompakt zusammengefasst.",
-    "author": "Mr. Nice Vape Team",
-    "date": "2025-12-22",
-    "category": "Safety",
+    "title": "Akkusicherheit beim Dampfen: 18650 & 21700 Zellen sicher nutzen und laden",
+    "excerpt": "Warum ein intakter Schrumpfschlauch (Battery Wrap) unverzichtbar ist, welche Entladeströme (Ampere) Sie benötigen und warum externes Laden die Lebensdauer erhöht.",
+    "author": "Mr. Nice Vape Redaktion",
+    "date": "2026-06-12",
+    "category": "Sicherheit",
     "image": "/images/blog/battery-safety.svg",
     "readTime": "6 Min. Lesezeit",
     "tags": [
-      "battery",
-      "safety",
-      "Tipps"
+      "Akkusicherheit",
+      "18650",
+      "21700",
+      "Ladegeräte"
     ],
-    "content": "<h2>Akkusicherheit: Wichtige Tipps für Vape-Nutzer</h2><p>Sichere Nutzung, Lagerung und Pflege von Vape-Akkus kompakt zusammengefasst.</p><p>Dieser Ratgeber von Mr. Nice Vape Deutschland erklärt die wichtigsten Punkte verständlich und praxisnah. Ziel ist eine sichere, informierte Produktauswahl: vom passenden Gerät über kompatible Coils und Pods bis hin zu E-Liquids, Pflege und Versand.</p><h2>Worauf Sie achten sollten</h2><ul><li>Prüfen Sie Kompatibilität, Leistungsbereich und empfohlene Nutzungshinweise.</li><li>Wählen Sie Produkte passend zu Erfahrung, Zugverhalten und gewünschter Dampfentwicklung.</li><li>Beachten Sie Altersvorgaben und gesetzliche Hinweise für den deutschen Markt.</li></ul><p>Bei Fragen hilft Ihnen unser Team gern weiter. Entdecken Sie passende Produkte im <a href=\"/collections/shop\">Mr. Nice Vape Shop</a> oder kontaktieren Sie uns direkt.</p>"
+    "content": "<p>Lithium-Ionen-Hochstromzellen der Baugrößen <strong>18650</strong> und <strong>21700</strong> liefern hohe Energiemengen auf kleinstem Raum. Bei sachgemäßem Umgang in geregelten Akkuträgern sind sie äußerst zuverlässig – vorausgesetzt, einige grundlegende Sicherheitsregeln werden beachtet.</p>\n      <h2>1. Die gesamte Außenhülle der Zelle ist der Minuspol!</h2>\n      <p>Bei einer 18650- oder 21700-Rundzelle ist nur der kleine obere Kontakt der Pluspol. Der gesamte restliche Metallbecher – bis hoch zum oberen Rand unter dem Isolatorring – bildet den Minuspol. Ist der farbige Kunststoff-Schrumpfschlauch (<strong>Battery Wrap</strong>) am oberen Rand eingerissen, kann ein metallischer Kontakt gleichzeitig Plus- und Minuspol berühren und einen Kurzschluss auslösen. Nutzen Sie beschädigte Zellen niemals weiter, sondern erneuern Sie den Wrap in wenigen Sekunden mit einem Föhn und passenden <a href=\"/collections/battery-storage-covers-wraps\">18650/21700 Battery Wraps</a>.</p>\n      <h2>2. Transport ausschließlich in einer Schutzbox</h2>\n      <p>Tragen Sie Ersatzakkus niemals lose in der Hosen-, Jacken- oder Handtasche. Eine stabile Kunststoffhülle oder Silikonschutzhülle kostet nur wenige Euro und schließt versehentliche Kurzschlüsse durch Schlüssel oder Münzen zuverlässig aus.</p>\n      <h2>3. Externes Ladegerät statt Dauerladen über USB</h2>\n      <p>Obwohl moderne Mods über einen USB-C-Port verfügen, schont ein dediziertes Ladegerät von <a href=\"/collections/all-accessories\">Nitecore, Golisi oder Efest</a> die Zellen durch präzises Einzel-Schacht-Balancing und entlastet die Ladeelektronik Ihres Akkuträgers.</p>\n      <p>Geprüfte Originalzellen von Sony/Murata, Samsung, Golisi und Efest finden Sie unter <a href=\"/collections/18650-batteries\">18650 &amp; 21700 Akkus</a>.</p>"
   },
   {
     "slug": "mouth-to-lung-vs-direct-to-lung-vaping",
-    "title": "Mouth-to-Lung vs Direct-to-Lung Vaping: Key Differences",
-    "excerpt": "MTL and DTL are two fundamentally different ways to vape. Understanding the difference will help you choose the right device and e-liquid.",
-    "author": "Mr. Nice Vape Team",
-    "date": "2025-12-15",
+    "title": "MTL vs. DTL Dampfen: Der Unterschied zwischen Backendampfen und Lungenzug",
+    "excerpt": "Zugwiderstand, Luftführung (Airflow), Ohm-Werte und Liquidverbrauch im direkten Vergleich: Welche Dampftechnik passt zu Ihren Gewohnheiten?",
+    "author": "Mr. Nice Vape Redaktion",
+    "date": "2026-05-28",
     "category": "Ratgeber",
     "image": "/images/blog/mtl-vs-dtl.svg",
     "readTime": "6 Min. Lesezeit",
     "tags": [
       "MTL",
       "DTL",
-      "vaping styles",
+      "Zugtechnik",
       "Ratgeber"
     ],
-    "content": "<h2>Mouth-to-Lung vs Direct-to-Lung Vaping: Key Differences</h2><p>MTL and DTL are two fundamentally different ways to vape. Understanding the difference will help you choose the right device and e-liquid.</p><p>Dieser Ratgeber von Mr. Nice Vape Deutschland erklärt die wichtigsten Punkte verständlich und praxisnah. Ziel ist eine sichere, informierte Produktauswahl: vom passenden Gerät über kompatible Coils und Pods bis hin zu E-Liquids, Pflege und Versand.</p><h2>Worauf Sie achten sollten</h2><ul><li>Prüfen Sie Kompatibilität, Leistungsbereich und empfohlene Nutzungshinweise.</li><li>Wählen Sie Produkte passend zu Erfahrung, Zugverhalten und gewünschter Dampfentwicklung.</li><li>Beachten Sie Altersvorgaben und gesetzliche Hinweise für den deutschen Markt.</li></ul><p>Bei Fragen hilft Ihnen unser Team gern weiter. Entdecken Sie passende Produkte im <a href=\"/collections/shop\">Mr. Nice Vape Shop</a> oder kontaktieren Sie uns direkt.</p>"
+    "content": "<p>In Produktbeschreibungen von Verdampfern und Coils begegnen Ihnen fast immer die Kürzel <strong>MTL</strong> und <strong>DTL (bzw. DL)</strong>. Dahinter stehen zwei grundlegend verschiedene Zugtechniken, die jeweils eigene Anforderungen an Gerät, Coil und E-Liquid stellen.</p>\n      <h2>MTL (Mouth-to-Lung / Backendampfen)</h2>\n      <p>Beim MTL-Dampfen ziehen Sie den Dampf mit leicht geschlossener Airflow langsam in den Mundraum und atmen ihn erst danach in die Lunge ein – exakt wie bei einer herkömmlichen Tabakzigarette.</p>\n      <ul>\n        <li><strong>Typischer Widerstand:</strong> 0,8 Ω bis 1,8 Ω</li>\n        <li><strong>Leistung:</strong> 9 bis 18 Watt</li>\n        <li><strong>Empfohlenes Liquid:</strong> 50 VG / 50 PG (6 mg bis 20 mg Nikotin oder Nikotinsalz)</li>\n        <li><strong>Referenz-Hardware:</strong> <a href=\"/collections/aspire-collection\">Aspire Nautilus GT / Nautilus 3</a>, <a href=\"/collections/uwell-collection\">Uwell Caliburn Serie</a>, <a href=\"/collections/vapefly-collection\">Vapefly MTL Selbstwickler</a>.</li>\n      </ul>\n      <h2>DTL (Direct-to-Lung / Direkter Lungenzug)</h2>\n      <p>Beim DTL-Dampfen ist die Luftzufuhr (Airflow) weit geöffnet. Sie atmen den Dampf durch ein breites 810er-Mundstück direkt und zügig in die Lunge ein. Der kräftige Luftstrom kühlt die leistungsstarke Sub-Ohm-Coil während des Zugs.</p>\n      <ul>\n        <li><strong>Typischer Widerstand:</strong> 0,15 Ω bis 0,4 Ω</li>\n        <li><strong>Leistung:</strong> 40 bis 100+ Watt</li>\n        <li><strong>Empfohlenes Liquid:</strong> 70 VG / 30 PG Shortfills (0 mg bis 3 mg Nikotin)</li>\n        <li><strong>Referenz-Hardware:</strong> <a href=\"/collections/geekvape-collection\">GeekVape Z Sub-Ohm Tank</a>, <a href=\"/collections/vaporesso-collection\">Vaporesso iTank 2</a>, <a href=\"/collections/freemax-collection\">Freemax Fireluke &amp; Maxus</a>.</li>\n      </ul>"
   },
   {
     "slug": "beste-vape-aromen-deutschland-2026",
-    "title": "Best Vape Flavours in Deutschland: Our Top Picks for 2026",
-    "excerpt": "From fruity blends to classic tobacco, here are the most popular e-liquid flavours deutsch vapers are loving in 2026.",
-    "author": "Mr. Nice Vape Team",
-    "date": "2025-12-08",
+    "title": "Die beliebtesten E-Liquid-Aromen in Deutschland 2026: Unsere Top-Favoriten",
+    "excerpt": "Von kühlen Beeren- und Mango-Mischungen über klassische Zitronentarte bis zu echtem Tabakextrakt: Welche Geschmacksprofile deutsche Dampfer 2026 bevorzugen.",
+    "author": "Mr. Nice Vape Redaktion",
+    "date": "2026-05-14",
     "category": "Vergleiche",
     "image": "/images/blog/best-flavours-2026.svg",
-    "readTime": "7 Min. Lesezeit",
+    "readTime": "6 Min. Lesezeit",
     "tags": [
-      "flavours",
-      "e-liquid",
+      "Aromen",
+      "E-Liquid",
       "Deutschland",
-      "2026"
+      "Top-Liste"
     ],
-    "content": "<h2>Best Vape Flavours in Deutschland: Our Top Picks for 2026</h2><p>From fruity blends to classic tobacco, here are the most popular e-liquid flavours deutsch vapers are loving in 2026.</p><p>Dieser Ratgeber von Mr. Nice Vape Deutschland erklärt die wichtigsten Punkte verständlich und praxisnah. Ziel ist eine sichere, informierte Produktauswahl: vom passenden Gerät über kompatible Coils und Pods bis hin zu E-Liquids, Pflege und Versand.</p><h2>Worauf Sie achten sollten</h2><ul><li>Prüfen Sie Kompatibilität, Leistungsbereich und empfohlene Nutzungshinweise.</li><li>Wählen Sie Produkte passend zu Erfahrung, Zugverhalten und gewünschter Dampfentwicklung.</li><li>Beachten Sie Altersvorgaben und gesetzliche Hinweise für den deutschen Markt.</li></ul><p>Bei Fragen hilft Ihnen unser Team gern weiter. Entdecken Sie passende Produkte im <a href=\"/collections/shop\">Mr. Nice Vape Shop</a> oder kontaktieren Sie uns direkt.</p>"
+    "content": "<p>Die Geschmackspräferenzen im deutschsprachigen Raum haben sich in den letzten Jahren klar weiterentwickelt: Während beim Umstieg oft authentische Tabak- oder dezente Minznoten gefragt sind, dominieren bei erfahrenen Dampferinnen und Dampfern komplexe Frucht-Ice-Kompositionen und vielschichtige Gebäck-Liquids.</p>\n      <h2>1. Frucht &amp; Frische (Koolada / Menthol)</h2>\n      <p>Klare Favoriten in dieser Kategorie sind Kombinationen aus dunklen Waldbeeren, Ananas-Limette oder gereifter Mango mit einem kühlen Abgang. Besonders bewährt haben sich <strong>Vampire Vape Heisenberg (Koncept)</strong>, <strong>Nasty Juice Slow Blow</strong> (Ananas &amp; Limettenlimonade) sowie die <strong>Dr Frost</strong> Ice-Serie.</p>\n      <h2>2. Dessert, Gebäck &amp; Custard</h2>\n      <p>Wer zum Kaffee oder am Abend weiche, runde Geschmacksnoten sucht, greift zu Klassikern wie <strong>Dinner Lady Lemon Tart</strong> (Zitronencreme auf Mürbeteig) oder <strong>Berry Tart</strong>, den <strong>Custard Monster</strong> Sorten (Vanille-, Erdbeer- oder Butterscotch-Custard) sowie <strong>Jam Monster</strong> (Marmelade auf gebuttertem Toast).</p>\n      <h2>3. Säurebetonte Frucht- &amp; Süßigkeitenprofile</h2>\n      <p>Für Fans spritziger Kombinationen bieten <strong>Cloud Nurdz</strong> (z. B. Peach Blue Razz oder Watermelon Apple), <strong>Candy King</strong> und <strong>Lemonade Monster</strong> intensiv abgestimmte 100-ml-Shortfills im 70VG/30PG-Verhältnis.</p>\n      <h2>4. Natürliche Tabak-Liquids ohne künstliche Süße</h2>\n      <p>Für Puristen, die keinen süßen Nachgeschmack wünschen und Wert auf lange Coil-Haltbarkeit legen, sind die natürlich extrahierten Tabaksorten von <a href=\"/collections/black-note-e-liquids\">Black Note</a> (Virginia, Kentucky, Cavendish) die erste Referenz.</p>\n      <p>Alle Sorten finden Sie direkt in unserer Übersicht <a href=\"/collections/all-e-liquid\">E-Liquids &amp; Shortfills</a>.</p>"
   },
   {
     "slug": "disposable-vapes-vs-reusable-kits",
-    "title": "Einweg-Vapes vs Reusable Kits: Pros and Cons",
-    "excerpt": "Disposables are convenient, but reusable kits save money long term. We compare both options to help you decide.",
-    "author": "Mr. Nice Vape Team",
-    "date": "2025-12-01",
+    "title": "Einweg-Vapes vs. nachfüllbare Pod-Systeme: Kosten- und Umweltvergleich",
+    "excerpt": "Wir rechnen vor: Was kostet das Dampfen mit Disposables im Vergleich zu einem wiederaufladbaren Pod-System mit E-Liquid auf Monats- und Jahressicht?",
+    "author": "Mr. Nice Vape Redaktion",
+    "date": "2026-04-30",
     "category": "Vergleiche",
     "image": "/images/blog/disposable-vs-reusable.svg",
     "readTime": "6 Min. Lesezeit",
     "tags": [
-      "disposable",
-      "reusable",
-      "Vergleich",
-      "Einsteiger"
+      "Einweg-Vapes",
+      "Pod-Systeme",
+      "Kostenvergleich",
+      "Nachhaltigkeit"
     ],
-    "content": "<h2>Einweg-Vapes vs Reusable Kits: Pros and Cons</h2><p>Disposables are convenient, but reusable kits save money long term. We compare both options to help you decide.</p><p>Dieser Ratgeber von Mr. Nice Vape Deutschland erklärt die wichtigsten Punkte verständlich und praxisnah. Ziel ist eine sichere, informierte Produktauswahl: vom passenden Gerät über kompatible Coils und Pods bis hin zu E-Liquids, Pflege und Versand.</p><h2>Worauf Sie achten sollten</h2><ul><li>Prüfen Sie Kompatibilität, Leistungsbereich und empfohlene Nutzungshinweise.</li><li>Wählen Sie Produkte passend zu Erfahrung, Zugverhalten und gewünschter Dampfentwicklung.</li><li>Beachten Sie Altersvorgaben und gesetzliche Hinweise für den deutschen Markt.</li></ul><p>Bei Fragen hilft Ihnen unser Team gern weiter. Entdecken Sie passende Produkte im <a href=\"/collections/shop\">Mr. Nice Vape Shop</a> oder kontaktieren Sie uns direkt.</p>"
+    "content": "<p>Einweg-Vapes (Disposables) haben vielen Menschen gezeigt, wie unkompliziert und geschmacksintensiv moderne Mesh-Coils arbeiten. Wer jedoch regelmäßig dampft, sollte die laufenden Kosten und die Technik von Einweggeräten und nachfüllbaren Pod-Kits nüchtern vergleichen.</p>\n      <h2>Wann Einweg-Vapes sinnvoll sind</h2>\n      <p>Als Ersatzgerät auf Reisen, für ein Festivalwochenende oder um überhaupt erst zu testen, ob Ihnen das Dampfen zusagt, punkten Geräte wie die <a href=\"/collections/disposable-vapes\">Lost Mary BM6000 oder HQD Cuvie Plus</a> durch null Wartungsaufwand: Es werden weder Ladegeräte noch separate Liquidflaschen benötigt.</p>\n      <h2>Warum Mehrweg-Pod-Systeme auf Dauer überlegen sind</h2>\n      <ul>\n        <li><strong>Deutlich geringere Kosten:</strong> Eine 60-ml- oder 100-ml-Flasche E-Liquid ersetzt das Liquidvolumen von 30 bis 50 klassischen 2-ml-Einweg-Vapes. Selbst inklusive frischer Ersatz-Pods liegen die monatlichen Ausgaben bei einem Bruchteil von Einweggeräten.</li>\n        <li><strong>Freie Wahl von Geschmack und Nikotinstärke:</strong> Während Einweg-Vapes meist auf hohe Nikotinsalzstärken festgelegt sind, können Sie in einem offenen Pod-System wie dem <a href=\"/collections/uwell-collection\">Uwell Caliburn G2</a> Ihre Nikotinstärke schrittweise auf 6 mg, 3 mg oder 0 mg senken.</li>\n        <li><strong>Weniger Elektronik- und Rohstoffabfall:</strong> Statt nach wenigen Tagen eine voll funktionsfähige Lithium-Ionen-Zelle zu entsorgen, laden Sie den Akku Ihres Pod-Kits über 300-mal per USB-C wieder auf und tauschen lediglich den kleinen Verdampferkopf aus.</li>\n      </ul>"
   },
   {
     "slug": "troubleshooting-common-vape-issues",
-    "title": "Troubleshooting Common Vape Issues: A Quick Fix Guide",
-    "excerpt": "Leaking tank? Burnt taste? No vapour? Don't panic. Here are quick fixes for the most common vaping problems.",
-    "author": "Mr. Nice Vape Team",
-    "date": "2025-11-24",
+    "title": "Häufige Vape-Probleme lösen: Was tun bei Auslaufen, Kokeln oder „No Atomizer“?",
+    "excerpt": "Der Tank sifft aus der Airflow, die Coil schmeckt verbrannt oder das Display meldet „Check Atomizer“? Hier sind die Ursachen und Sofortlösungen.",
+    "author": "Mr. Nice Vape Redaktion",
+    "date": "2026-04-15",
     "category": "Tipps",
     "image": "/images/blog/troubleshooting-vape.svg",
     "readTime": "7 Min. Lesezeit",
     "tags": [
-      "troubleshooting",
-      "problems",
-      "fixes",
-      "Tipps"
+      "Fehlerbehebung",
+      "Tipps",
+      "Wartung",
+      "Ratgeber"
     ],
-    "content": "<h2>Troubleshooting Common Vape Issues: A Quick Fix Guide</h2><p>Leaking tank? Burnt taste? No vapour? Don&#39;t panic. Here are quick fixes for the most common vaping problems.</p><p>Dieser Ratgeber von Mr. Nice Vape Deutschland erklärt die wichtigsten Punkte verständlich und praxisnah. Ziel ist eine sichere, informierte Produktauswahl: vom passenden Gerät über kompatible Coils und Pods bis hin zu E-Liquids, Pflege und Versand.</p><h2>Worauf Sie achten sollten</h2><ul><li>Prüfen Sie Kompatibilität, Leistungsbereich und empfohlene Nutzungshinweise.</li><li>Wählen Sie Produkte passend zu Erfahrung, Zugverhalten und gewünschter Dampfentwicklung.</li><li>Beachten Sie Altersvorgaben und gesetzliche Hinweise für den deutschen Markt.</li></ul><p>Bei Fragen hilft Ihnen unser Team gern weiter. Entdecken Sie passende Produkte im <a href=\"/collections/shop\">Mr. Nice Vape Shop</a> oder kontaktieren Sie uns direkt.</p>"
+    "content": "<p>Auch bei hochwertiger Hardware von Vaporesso, GeekVape oder Uwell können im Alltag typische Anwendungsfehler auftreten. Die meisten davon lassen sich in wenigen Minuten selbst beheben.</p>\n      <h2>Problem 1: Der Tank läuft aus (Siffen) oder blubbert</h2>\n      <ul>\n        <li><strong>Ursache:</strong> Die Coil sitzt nicht gerade im Gewinde bzw. Steckplatz, ein Dichtungsring (O-Ring) fehlt, das Liquid ist zu dünnflüssig für einen großen Sub-Ohm-Tank, oder es wird mit zu geringer Wattzahl gezogen (Liquid wird angesaugt, aber nicht vollständig verdampft).</li>\n        <li><strong>Lösung:</strong> Sitz der Coil und aller O-Ringe prüfen, beim Befüllen kurz die Airflow schließen und überschüssiges Liquid im Kamin durch kurzes Ausschütteln in ein Papiertuch entfernen. Wer komplett auslaufsicher dampfen möchte, wählt einen Tank mit obenliegender Luftführung (Top-Airflow) wie den <a href=\"/collections/geekvape-collection\">GeekVape Z Sub-Ohm Tank</a>.</li>\n      </ul>\n      <h2>Problem 2: Verbrannter Geschmack (Dry Hit)</h2>\n      <ul>\n        <li><strong>Ursache:</strong> Neue Coil nicht lange genug einziehen lassen, Tank leer gedampft oder Leistung (Watt) zu hoch eingestellt.</li>\n        <li><strong>Lösung:</strong> Ist die Baumwollwatte einmal verbrannt, hilft kein Ausspülen – setzen Sie eine neue <a href=\"/collections/all-coils\">Ersatz-Coil</a> ein, beträufeln Sie die Watteöffnungen vorab mit Liquid und warten Sie nach dem Befüllen volle 10 Minuten.</li>\n      </ul>\n      <h2>Problem 3: Meldung „No Atomizer“ oder „Check Atomizer“</h2>\n      <ul>\n        <li><strong>Ursache:</strong> Kein elektrischer Kontakt zwischen Akkuträger und Coil.</li>\n        <li><strong>Lösung:</strong> Reinigen Sie das 510er-Gewinde bzw. die magnetischen Pod-Kontakte mit einem trockenen Tuch und drücken Sie die Coil fest bis zum Anschlag in die Basis.</li>\n      </ul>"
   }
 ]
