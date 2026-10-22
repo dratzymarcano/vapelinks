@@ -333,36 +333,21 @@ function paymentInstructions(dataOrMethod: any, orderNumber?: string, btcAmount?
           Zahlungsanweisung: SEPA-Bank&uuml;berweisung
         </div>
         <p style="font-size:13px;color:#333A2F;line-height:1.6;margin:0 0 12px;">
-          Bitte &uuml;berweisen Sie den Rechnungsbetrag auf unser deutsches Gesch&auml;ftskonto. Geben Sie als Verwendungszweck ausschlie&szlig;lich Ihre Bestellnummer an:
+          Vielen Dank f&uuml;r Ihre Bestellung! Ihre Artikel sind f&uuml;r Sie reserviert. Unsere aktuellen SEPA-Bankdaten f&uuml;r Ihre &Uuml;berweisung werden Ihnen von unserem Kundenservice zugesendet.
         </p>
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-size:13px;">
-          <tr>
-            <td style="padding:4px 0;color:#71786D;width:130px;">Empf&auml;nger:</td>
-            <td style="padding:4px 0;color:#0B0F0D;font-weight:700;">Mr. Nice Vape Deutschland GmbH</td>
-          </tr>
-          <tr>
-            <td style="padding:4px 0;color:#71786D;">Bankinstitut:</td>
-            <td style="padding:4px 0;color:#0B0F0D;font-weight:600;">Deutsche Bank</td>
-          </tr>
-          <tr>
-            <td style="padding:4px 0;color:#71786D;">IBAN:</td>
-            <td style="padding:4px 0;color:#0B0F0D;font-weight:700;font-family:monospace;letter-spacing:1px;">DE89 3704 0044 0532 0130 00</td>
-          </tr>
-          <tr>
-            <td style="padding:4px 0;color:#71786D;">BIC:</td>
-            <td style="padding:4px 0;color:#0B0F0D;font-weight:600;font-family:monospace;">COBADEFFXXX</td>
-          </tr>
-          <tr>
-            <td style="padding:8px 0 4px;color:#71786D;vertical-align:top;">Verwendungszweck:</td>
-            <td style="padding:8px 0 4px;">
-              <span style="display:inline-block;background:#FEF3C7;color:#92400E;padding:3px 10px;border-radius:4px;font-weight:800;font-family:monospace;border:1px solid #FDE68A;">
-                ${esc(orderNum)}
-              </span>
-            </td>
-          </tr>
-        </table>
-        <p style="font-size:12px;color:#71786D;line-height:1.5;margin:12px 0 0;">
-          Sobald die Zahlung auf unserem Konto verbucht ist, wird Ihre Sendung umgehend aus unserem Lager in K&ouml;ln verpackt und versendet.
+        <div style="background:#FFFFFF;border:1px solid #DCE0D4;border-radius:6px;padding:12px 14px;margin-bottom:12px;">
+          <div style="font-size:12px;font-weight:700;color:#0B0F0D;margin-bottom:6px;">So erhalten Sie sofort unsere Bankverbindung:</div>
+          <p style="font-size:12px;color:#4B5547;line-height:1.55;margin:0;">
+            Kontaktieren Sie unseren Support einfach per <strong>Live-Chat</strong> auf <a href="https://mrnicevape.com" target="_blank" style="color:#15803D;font-weight:700;text-decoration:none;">mrnicevape.com</a> oder antworten Sie direkt auf diese E-Mail an <a href="mailto:info@mrnicevape.com?subject=${encodeURIComponent('Bankverbindung für Bestellung #' + orderNum)}" style="color:#15803D;font-weight:700;text-decoration:none;">info@mrnicevape.com</a> unter Angabe Ihrer Bestellnummer:
+          </p>
+          <div style="margin-top:8px;">
+            <span style="display:inline-block;background:#FEF3C7;color:#92400E;padding:3px 10px;border-radius:4px;font-weight:800;font-family:monospace;border:1px solid #FDE68A;font-size:13px;">
+              ${esc(orderNum)}
+            </span>
+          </div>
+        </div>
+        <p style="font-size:12px;color:#71786D;line-height:1.5;margin:0;">
+          Sobald Ihre Zahlung abgeschlossen ist, wird Ihre Sendung umgehend aus unserem Lager in K&ouml;ln verpackt und versendet.
         </p>
       </div>`;
   }

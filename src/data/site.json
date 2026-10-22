@@ -6,13 +6,6 @@
   "currency": "EUR",
   "money_format": "€ {{amount}}",
   "min_order": 220.00,
-  "bank_details": {
-    "bank_name": "Deutsche Bank",
-    "account_name": "Mr. Nice Vape Deutschland GmbH",
-    "iban": "DE89 3704 0044 0532 0130 00",
-    "bic": "COBADEFFXXX",
-    "reference_label": "Verwendungszweck"
-  },
   "address": {
     "street": "Musterstraße 12",
     "postal_code": "50667",
